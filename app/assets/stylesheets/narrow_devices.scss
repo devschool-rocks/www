@@ -1,0 +1,20 @@
+@media (max-width: 500px) {
+  html,body {
+    font-family: "Lato",Helvetica,sans-serif;
+    font-size: 4vmin !important;
+    line-height: 4.2vmin !important;
+    color: #333;
+    height: 100%;
+    width: 100%;
+    margin: 0px; 
+  }
+
+  .home-full {
+    background-position: left top !important;
+  }
+
+
+  .home-full .above-fold h1 {
+    margin-top: 40vmin !important;
+  }
+}
