@@ -1,0 +1,238 @@
+html,body {
+  font-family: "Lato",Helvetica,sans-serif;
+  font-size: 3vmin;
+  line-height: 3.2vmin;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  margin: 0px; 
+}
+
+
+.home-full {
+  background: url(asset-path('home-bg.jpg')) no-repeat 50% 101% fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.above-fold .jumbotron {
+  background: rgba(9, 8, 7, 0.6); 
+  color: white;
+  text-align: center;
+  padding: 8px;
+  margin: 4vmin auto;
+  max-width: 700px;
+  border-radius: 16px;
+}
+
+.home-full .above-fold h1 {
+  max-width: 850px;
+  text-align: center;
+  color: white;
+  font-size: 7.5vmin;
+  line-height: 9.5vmin;
+  font-weight: 300;
+  margin: 20vmin auto 10vmin;
+  text-shadow: 1px 1px #333;
+  font-family: "Droid Sans", sans-serif;
+  padding-top: 6vmin;
+}
+
+.above-fold a {
+  color: white;
+  text-decoration: underline;
+}
+
+.above-fold h2 {
+  max-width: 850px;
+  text-align: center;
+  color: white;
+  font-size: 4vmin;
+  line-height: 5.5vmin;
+  margin: 1em auto;
+  text-shadow: 1px 1px #333;
+  font-family: "Droid Sans", sans-serif;
+}
+
+
+.card {
+  border: 0.1rem solid #e5e5e5;
+  border-radius: 1rem;
+  padding: 1em;
+  margin-bottom: 4vmin;
+}
+
+.card-title {
+  text-align: center;
+}
+
+
+h2.headline {
+  margin: 20vmin 4vmin 10vmin 10vmin;
+  font-family: Lato, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 7vmin;
+}
+
+.vertical-padding {
+  margin-top: 20vmin;
+}
+
+h2 {
+  margin: 8vmin 4vmin 10vmin;
+  font-family: 'Droid Sans', sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 7vmin;
+  line-height: 10vmin;
+}
+.tailline, .headline {
+  text-align: center;
+}
+
+.apply-now {
+  position: relative;
+  top: 1.2vmin;
+}
+
+.btn.btn-apply {
+  color: #fff;
+  text-transform: uppercase;
+  background: #c73e3e;
+  line-height: 4.4vmin;
+}
+
+.btn.btn-apply:hover,
+.navbar-inverse .navbar-nav>li>a:hover {
+  background: #ff4147;
+}
+
+/* centered columns styles */
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+}
+
+.col-fixed {
+  /* custom width */
+  width:320px;
+}
+.col-min {
+  /* custom min width */
+  min-width:320px;
+}
+.col-max {
+  /* custom max width */
+  max-width:320px;
+}
+
+.slick-slider button.slick-prev:before, 
+.slick-slider button.slick-next:before {
+  color: black;
+}
+
+.slick-slider button.slick-next:before {
+  margin-left: -1em;
+}
+
+.slick-slider button.slick-prev:before {
+  margin-right: -1em;
+}
+
+.slick-slider.slide {
+  padding: 1em;
+}
+
+.slick-slider.slide p {
+  font-family: Lato, sans-serif;
+  font-size: 2.5vmin;
+  line-height: 4vmin;
+  margin-bottom: 4vmin;
+}
+
+hr {
+  width: 88%;
+  border: 0;
+  height: 1px;
+  background: #aaa; /* Old browsers */
+  margin: 3em 2em;
+}
+
+blockquote {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before,
+blockquote:after {
+  color: #ccc;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+}
+blockquote:before {
+  content: open-quote;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  content: close-quote;
+  vertical-align: -0.6em;
+}
+blockquote p {
+  display: inline;
+}
+
+.review-card {
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 4vmin;
+  line-height: 5vmin;
+}
+
+.reviewer-photo {
+  max-width: 300px;
+  min-width: 120px;
+  position: relative;
+  margin: 1em 2em;
+}
+
+body footer {
+  background-color: #333333;
+  color: white;
+  padding: 6vmin;
+  font-size: 2.4vmin;
+  line-height: 4vmin;
+}
+
+footer img.brand {
+  max-width: 50%;
+  float: right;
+}
+
+footer a {
+  color: white;
+  font-weight: 300;
+}
+
+footer a:hover, footer a:active {
+  color: white;
+}
+
+blockquote footer {
+  background: transparent;
+  color: #333;
+  padding: 3vmin;
+  line-height: 2vmin;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
