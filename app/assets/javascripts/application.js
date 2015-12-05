@@ -12,8 +12,11 @@
 //
 //= require jquery
 //= require bootstrap.min
+//= require smooth-scroll.min
 //= require slick.min
 //= require_tree .
+
+smoothScroll.init();
 
 $(document).ready(function() {
   $('.slide').slick({
@@ -26,4 +29,3 @@ $(document).ready(function() {
   $('.navbar-nav a[href="' + this.location.pathname + '"]')
     .addClass('active');
 });
-
