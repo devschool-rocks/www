@@ -1,0 +1,15 @@
+@media (max-width: 700px) and (min-width: 480px) {
+  html,body {
+    font-size: 3vmin !important;
+    line-height: 3.5vmin !important;
+  }
+
+  .what-full, .how-full {
+    background-position: left top !important;
+  }
+
+  .above-fold h1 {
+    margin-top: 20vmin !important;
+  }
+}
+

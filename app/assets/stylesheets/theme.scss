@@ -9,8 +9,18 @@ html,body {
 }
 
 
-.home-full {
-  background: url(asset-path('home-bg.jpg')) no-repeat 50% 101% fixed; 
+.what-full {
+  background: url(asset-path('what-bg.jpg')) no-repeat 50% 101% fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.how-full {
+  background: url(asset-path('how-bg.png')) no-repeat 50% 101% fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -29,7 +39,7 @@ html,body {
   border-radius: 16px;
 }
 
-.home-full .above-fold h1 {
+.above-fold h1 {
   max-width: 850px;
   text-align: center;
   color: white;
