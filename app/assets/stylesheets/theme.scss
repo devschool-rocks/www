@@ -9,24 +9,22 @@ html,body {
 }
 
 
-.what-full {
-  background: url(asset-path('what-bg.jpg')) no-repeat 50% 101% fixed; 
+.full-bg {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
   height: 100%;
+  opacity: 0.9;
 }
 
-.how-full {
-  background: url(asset-path('how-bg.png')) no-repeat 50% 101% fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+.full-what {
+  background: url(asset-path('what-bg.jpg')) no-repeat 100% 60% fixed;
+}
+
+.full-how {
+  background:  url(asset-path('how-bg.png')) no-repeat 100% 80% fixed;
 }
 
 .above-fold .jumbotron {
@@ -42,15 +40,20 @@ html,body {
 .above-fold h1 {
   max-width: 850px;
   text-align: center;
-  color: white;
   font-size: 7.5vmin;
   line-height: 9.5vmin;
   font-weight: 300;
   margin: 20vmin auto 10vmin;
-  text-shadow: 1px 1px #333;
   font-family: "Droid Sans", sans-serif;
   padding-top: 6vmin;
 }
+
+.full-what .above-fold h1,
+.full-how .above-fold h1 {
+  color: white;
+  text-shadow: 1px 1px #333;
+}
+
 
 .above-fold a {
   color: white;
