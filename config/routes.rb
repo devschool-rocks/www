@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   root to: "what#index"
 
   match "what" => "what#index", via: :get
-  match "how" => "how#index", via: :get
+  match "how"  => "how#index",  via: :get
+  match "who"  => "who#index",  via: :get
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

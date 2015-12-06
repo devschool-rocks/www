@@ -19,6 +19,7 @@
 smoothScroll.init();
 
 $(document).ready(function() {
+
   $('.slide').slick({
     autoplay: true,
     accessibility: true,

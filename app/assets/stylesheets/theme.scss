@@ -102,6 +102,10 @@ h2 {
   font-size: 7vmin;
   line-height: 10vmin;
 }
+.headline {
+  text-transform: uppercase;
+}
+
 .tailline, .headline {
   text-align: center;
 }
@@ -173,12 +177,12 @@ h2 {
   margin-bottom: 4vmin;
 }
 
-hr {
+.row hr {
   width: 88%;
   border: 0;
-  height: 1px;
-  background: #aaa; /* Old browsers */
-  margin: 3em 2em;
+  height: 2px;
+  background: #ddd; /* Old browsers */
+  margin: 4.5em 2em;
 }
 
 blockquote {
@@ -213,8 +217,9 @@ blockquote p {
   max-width: 300px;
   min-width: 120px;
   position: relative;
-  margin: 1em 2em;
+  margin: 1em auto;
 }
+
 
 body footer {
   background-color: #333333;

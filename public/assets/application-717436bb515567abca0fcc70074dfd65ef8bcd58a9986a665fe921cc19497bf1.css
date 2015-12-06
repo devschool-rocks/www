@@ -105,12 +105,12 @@ html, body {
 
 /* line 22, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .full-what {
-  background: url("/assets/what-bg-d49552a707c47c75037cd030bd4b2dbb4e6646b794f3974df26dd1aeac126f5c.jpg") no-repeat 100% 60% fixed;
+  background: url("/assets/what-bg-e3c25e2c6622b7ebcb0c1f946c0b3696310580546c95fb5a85c17044f6d13fae.jpg") no-repeat 100% 60% fixed;
 }
 
 /* line 26, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .full-how {
-  background: url("/assets/how-bg-6728a5d3ef10fdc95877304768b918793d8b5037dd335c7de31bc9c83e65769c.png") no-repeat 100% 80% fixed;
+  background: url("/assets/how-bg-23c952d3fd1134da7e3e32daaf1effd8192a49505dd436aef5d7448f64942b53.jpg") no-repeat 100% 80% fixed;
 }
 
 /* line 30, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
@@ -197,17 +197,22 @@ h2 {
 }
 
 /* line 105, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+.headline {
+  text-transform: uppercase;
+}
+
+/* line 109, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .tailline, .headline {
   text-align: center;
 }
 
-/* line 109, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 113, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .apply-now {
   position: relative;
   top: 1.2vmin;
 }
 
-/* line 114, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 118, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .btn.btn-apply {
   color: #fff;
   text-transform: uppercase;
@@ -215,19 +220,19 @@ h2 {
   line-height: 4.4vmin;
 }
 
-/* line 121, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 125, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .btn.btn-apply:hover,
 .navbar-inverse .navbar-nav > li > a:hover {
   background: #ff4147;
 }
 
 /* centered columns styles */
-/* line 127, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 131, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .row-centered {
   text-align: center;
 }
 
-/* line 130, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 134, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .col-centered {
   display: inline-block;
   float: none;
@@ -237,46 +242,46 @@ h2 {
   margin-right: -4px;
 }
 
-/* line 139, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 143, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .col-fixed {
   /* custom width */
   width: 320px;
 }
 
-/* line 143, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 147, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .col-min {
   /* custom min width */
   min-width: 320px;
 }
 
-/* line 147, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 151, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .col-max {
   /* custom max width */
   max-width: 320px;
 }
 
-/* line 152, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 156, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .slick-slider button.slick-prev:before,
 .slick-slider button.slick-next:before {
   color: black;
 }
 
-/* line 157, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 161, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .slick-slider button.slick-next:before {
   margin-left: -1em;
 }
 
-/* line 161, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 165, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .slick-slider button.slick-prev:before {
   margin-right: -1em;
 }
 
-/* line 165, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 169, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .slick-slider.slide {
   padding: 1em;
 }
 
-/* line 169, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 173, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .slick-slider.slide p {
   font-family: Lato, sans-serif;
   font-size: 2.5vmin;
@@ -284,22 +289,22 @@ h2 {
   margin-bottom: 4vmin;
 }
 
-/* line 176, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
-hr {
+/* line 180, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+.row hr {
   width: 88%;
   border: 0;
-  height: 1px;
-  background: #aaa;
+  height: 2px;
+  background: #ddd;
   /* Old browsers */
-  margin: 3em 2em;
+  margin: 4.5em 2em;
 }
 
-/* line 184, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 188, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 blockquote {
   quotes: "“" "”" "‘" "’";
 }
 
-/* line 187, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 191, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 blockquote:before,
 blockquote:after {
   color: #ccc;
@@ -308,39 +313,39 @@ blockquote:after {
   margin-right: 0.25em;
 }
 
-/* line 194, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 198, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 blockquote:before {
   content: open-quote;
   vertical-align: -0.4em;
 }
 
-/* line 198, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 202, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 blockquote:after {
   content: close-quote;
   vertical-align: -0.6em;
 }
 
-/* line 202, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 206, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 blockquote p {
   display: inline;
 }
 
-/* line 206, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 210, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .review-card {
   font-family: 'Lato', Helvetica, sans-serif;
   font-size: 4vmin;
   line-height: 5vmin;
 }
 
-/* line 212, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 216, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 .reviewer-photo {
   max-width: 300px;
   min-width: 120px;
   position: relative;
-  margin: 1em 2em;
+  margin: 1em auto;
 }
 
-/* line 219, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 224, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 body footer {
   background-color: #333333;
   color: white;
@@ -349,24 +354,24 @@ body footer {
   line-height: 4vmin;
 }
 
-/* line 227, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 232, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 footer img.brand {
   max-width: 50%;
   float: right;
 }
 
-/* line 232, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 237, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 footer a {
   color: white;
   font-weight: 300;
 }
 
-/* line 237, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 242, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 footer a:hover, footer a:active {
   color: white;
 }
 
-/* line 241, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
+/* line 246, /Users/jimokelly/development/devschool/www/app/assets/stylesheets/theme.scss */
 blockquote footer {
   background: transparent;
   color: #333;
