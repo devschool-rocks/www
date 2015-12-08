@@ -254,3 +254,23 @@ blockquote footer {
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
+
+.awesome-people {
+  h2 {
+    margin: 4vmin 0;
+    font-size: 6vmin;
+    line-height: 7vmin;
+  }
+
+  h3 {
+    margin: 3vmin 0;
+    font-size: 5vmin;
+    line-height: 6vmin;
+  }
+
+  p {
+    margin: 2vmin 0;
+    font-size: 3vmin;
+    line-height: 3.5vmin;
+  }
+}
