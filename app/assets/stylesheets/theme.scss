@@ -14,7 +14,7 @@ html,body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
   opacity: 0.9;
 }
@@ -26,6 +26,11 @@ html,body {
 .full-how {
   background:  url(asset-path('how-bg.jpg')) no-repeat 100% 80% fixed;
 }
+
+.full-who {
+  background:  url(asset-path('jim-bg.jpg')) no-repeat 50% 50% fixed;
+}
+
 
 .above-fold .jumbotron {
   background: rgba(9, 8, 7, 0.6); 
@@ -48,8 +53,8 @@ html,body {
   padding-top: 6vmin;
 }
 
-.full-what .above-fold h1,
-.full-how .above-fold h1 {
+.above-fold h1,
+.above-fold h1 {
   color: white;
   text-shadow: 1px 1px #333;
 }
@@ -85,10 +90,17 @@ html,body {
 
 
 h2.headline {
-  margin: 20vmin 4vmin 10vmin 10vmin;
+  margin: 10vmin;
   font-family: Lato, sans-serif;
   letter-spacing: 0.02em;
   font-size: 7vmin;
+}
+
+h3.headline {
+  font-family: Lato, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 3.5vmin;
+  margin-bottom: 4vmin;
 }
 
 .vertical-padding {
@@ -112,19 +124,26 @@ h2 {
 
 .apply-now {
   position: relative;
-  top: 1.2vmin;
+  top: 1.3vmin;
 }
 
 .btn.btn-apply {
   color: #fff;
   text-transform: uppercase;
   background: #c73e3e;
-  line-height: 4.4vmin;
+  line-height: 3.4vmin;
+  font-family: "Droid Serif", serif;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  font-family: "Droid Serif", serif;
 }
 
 .btn.btn-apply:hover,
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:active {
   background: #ff4147;
+  color: white;
 }
 
 /* centered columns styles */
@@ -151,6 +170,10 @@ h2 {
 .col-max {
   /* custom max width */
   max-width:320px;
+}
+
+.slick-slide img {
+  margin-bottom: 2vmin;
 }
 
 .slick-slider button.slick-prev:before, 
@@ -213,6 +236,10 @@ blockquote p {
   line-height: 5vmin;
 }
 
+.review-card footer {
+  margin: 3vmin;
+}
+
 .reviewer-photo {
   max-width: 300px;
   min-width: 120px;
@@ -227,6 +254,9 @@ body footer {
   padding: 6vmin;
   font-size: 2.4vmin;
   line-height: 4vmin;
+  margin-top: 10vmin;
+  font-weight: 400;
+  font-family: "Droid Serif", serif;
 }
 
 footer img.brand {
@@ -256,21 +286,26 @@ blockquote footer {
 
 
 .awesome-people {
+
   h2 {
-    margin: 4vmin 0;
+    margin: 3vmin 0 5vmin 0;
     font-size: 6vmin;
     line-height: 7vmin;
+    font-family: "Droid Serif", serif;
   }
 
   h3 {
-    margin: 3vmin 0;
+    margin: 5vmin 0 8vmin 0;
     font-size: 5vmin;
     line-height: 6vmin;
+    font-family: "Droid Serif", serif;
   }
 
   p {
     margin: 2vmin 0;
     font-size: 3vmin;
-    line-height: 3.5vmin;
+    line-height: 4.5vmin;
+    font-family: "Droid Serif", serif;
+    text-align: justify;
   }
 }
