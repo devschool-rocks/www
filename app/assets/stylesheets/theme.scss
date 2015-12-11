@@ -1,13 +1,17 @@
 html,body {
-  font-family: "Lato",Helvetica,sans-serif;
-  font-size: 3vmin;
-  line-height: 3.2vmin;
-  color: #333;
   height: 100%;
   width: 100%;
-  margin: 0px; 
+  margin: 0px;
 }
 
+
+p {
+  margin: 2vmin 0;
+  font-size: 3.2vmin;
+  line-height: 4.7vmin;
+  font-family: "Droid Sans", sans-serif;
+  color: #333;
+}
 
 .full-bg {
   -webkit-background-size: cover;
@@ -193,12 +197,6 @@ h2 {
   padding: 1em;
 }
 
-.slick-slider.slide p {
-  font-family: Lato, sans-serif;
-  font-size: 2.5vmin;
-  line-height: 4vmin;
-  margin-bottom: 4vmin;
-}
 
 .row hr {
   width: 88%;
@@ -252,8 +250,6 @@ body footer {
   background-color: #333333;
   color: white;
   padding: 6vmin;
-  font-size: 2.4vmin;
-  line-height: 4vmin;
   margin-top: 10vmin;
   font-weight: 400;
   font-family: "Droid Serif", serif;
@@ -301,11 +297,4 @@ blockquote footer {
     font-family: "Droid Serif", serif;
   }
 
-  p {
-    margin: 2vmin 0;
-    font-size: 3vmin;
-    line-height: 4.5vmin;
-    font-family: "Droid Serif", serif;
-    text-align: justify;
-  }
 }

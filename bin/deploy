@@ -1,0 +1,13 @@
+#! /usr/bin/env ruby
+
+env = ARGS[0] || "production"
+
+p 'Precompiling assets to speed up deployment'
+`rake assets:precompile`
+
+p 'Committing assets to a deployment branch'
+deploy_branch = "deployment_#{Time.now.to_i}"
+`git checkout -b #{deploy_branch}; git add --all; git commit -m"precompiled assets for deployment to #{env}"`
+
+p "Deploying deployment branch: #{deploy_branch}"
+`gp -f #{env} #{deploy_branch}:master`
