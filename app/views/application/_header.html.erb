@@ -16,13 +16,7 @@
   </div>
 
   <div class="collapse navbar-collapse" id="main-menu-collapse">
-    <ul class="nav navbar-nav">
-      <li><%= link_to 'what', what_path %></li>
-      <li><%= link_to 'where', where_path %></li>
-      <li><%= link_to 'how', how_path %></li>
-      <li><%= link_to 'who', who_path %></li>
-      <li><%= link_to 'price', price_path %></li>
-    </ul>
+    <%= render 'main_menu' %>
     <div class="pull-right apply-now">
       <a href="#apply" class="btn btn-apply">apply</a>
     </div>
