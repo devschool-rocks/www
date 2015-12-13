@@ -1,5 +1,5 @@
 Rails.application.configure do
-  # config.action_controller.asset_host = ".cloudfront.net"
+  config.action_controller.asset_host = "d3ura4x2gavgml.cloudfront.net"
 
   # Settings specified here will take precedence over those in config/application.rb.
 
