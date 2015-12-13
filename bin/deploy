@@ -11,3 +11,5 @@ deploy_branch = "deployment_#{Time.now.to_i}"
 
 p "Deploying deployment branch: #{deploy_branch}"
 `git push -f #{env} #{deploy_branch}:master`
+
+`git checkout master`

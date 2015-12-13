@@ -17,6 +17,9 @@ gem 'rails_12factor', group: :production
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# for both digest and non
+gem 'non-stupid-digest-assets'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -69,6 +69,8 @@ GEM
     minitest (5.8.3)
     nokogiri (1.6.7)
       mini_portile2 (~> 2.0.0.rc2)
+    non-stupid-digest-assets (1.0.6)
+      sprockets (>= 2.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -141,6 +143,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   jquery-rails
+  non-stupid-digest-assets
   rails (= 4.2.3)
   rails_12factor
   sass-rails (~> 5.0)
