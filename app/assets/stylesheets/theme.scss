@@ -35,6 +35,9 @@ p {
   background:  url(asset-path('jim-bg.jpg')) no-repeat 50% 50% fixed;
 }
 
+.full-price {
+  background: url(asset-path('price-bg.jpg')) no-repeat 50% 10% fixed;
+}
 
 .above-fold .jumbotron {
   background: rgba(9, 8, 7, 0.6); 
@@ -60,7 +63,7 @@ p {
 .above-fold h1,
 .above-fold h1 {
   color: white;
-  text-shadow: 1px 1px #333;
+  text-shadow: 1px 1px rgba(45, 45, 45, 0.2);
 }
 
 
@@ -76,7 +79,7 @@ p {
   font-size: 4vmin;
   line-height: 5.5vmin;
   margin: 1em auto;
-  text-shadow: 1px 1px #333;
+  text-shadow: 1px 1px rgba(45, 45, 45, 0.2);
   font-family: "Droid Sans", sans-serif;
 }
 
