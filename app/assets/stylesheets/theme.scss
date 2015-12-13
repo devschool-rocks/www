@@ -24,23 +24,23 @@ p {
 }
 
 .full-what {
-  background: url(asset-path('what-bg.jpg')) no-repeat 100% 60% fixed;
+  background: image-url('what-bg.jpg') no-repeat 100% 60% fixed;
 }
 
 .full-how {
-  background:  url(asset-path('how-bg.jpg')) no-repeat 100% 80% fixed;
+  background:  image-url('how-bg.jpg') no-repeat 100% 80% fixed;
 }
 
 .full-where {
-  background: url(asset-path('where-bg.jpg')) no-repeat 100% 60% fixed;
+  background: image-url('where-bg.jpg') no-repeat 100% 60% fixed;
 }
 
 .full-who {
-  background:  url(asset-path('jim-bg.jpg')) no-repeat 50% 50% fixed;
+  background:  image-url('jim-bg.jpg')) no-repeat 50% 50% fixed;
 }
 
 .full-price {
-  background: url(asset-path('price-bg.jpg')) no-repeat 50% 10% fixed;
+  background: image-url('price-bg.jpg') no-repeat 50% 10% fixed;
 }
 
 .above-fold .jumbotron {
