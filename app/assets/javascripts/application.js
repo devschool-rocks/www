@@ -29,4 +29,9 @@ $(document).ready(function() {
 
   $('.navbar-nav a[href="' + this.location.pathname + '"]')
     .addClass('active');
+
+  if( $('.navbar-nav a.active').length == 0 ) {
+    $(".navbar-nav a.default-active")
+      .addClass('active');
+  }
 });
