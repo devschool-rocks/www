@@ -1,0 +1,96 @@
+<%- content_for(:title) do %>
+  Apply for the Devschool Full Stack Web Developer Program today!
+<%- end %>
+
+<div class="full-bg full-apply">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 above-fold">
+	<h1>Devschool's mission is to provide you knowledge and a job. We also have a strong culture of diversity and getting shit done.</h1>
+	<h2><a data-scroll href="#below-the-fold">Scroll down</a> to learn about our culture!</h2>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+
+<div class="container" id="below-the-fold">
+  <div class="row">
+    <div class="col-md-12 below-fold">
+      <h2 class="headline">We don't like complainers. We don't like excuses. We people who get shit done no matter the odds.</h2>
+      <p>You should be interested in Technology as it impacts your everyday life. You should enjoy learning about science. You should have an inquisitive, kind mind. One that is quick to absorb information and then find evidence to confirm or refute it. In short, you must be a bit of a nerd.</p>
+
+      <p>The great news is there is a bit of nerdiness to most people these days. Artists, Managers, Marketers, Writers, and Chefs all have the nerds among them. They are interested in creating more productive workflows, and inventing new tools to aid them in their trade. They are inquisitive people and they love to solve a good mystery like Scooby Doo.</p>
+    </div>
+  </div>
+
+  <div class="row row-centered">
+    <div class="col-md-4 col-sm-6 col-centered">
+      <h3 class="headline">We Value Diversity</h3>
+      <p class="tailline">Nerds come in all shapes and colors and genders. They are not binary creatures.</p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 col-centered">
+      <h3 class="headline">We Value Humor</h3>
+      <p class="tailline">You are expected to have a bit of a thick skin here. Employers want winners, not whiners.</p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 col-centered">
+      <h3 class="headline">We Value Hard Work</h3>
+      <p class="tailline">Your education is up to you, and you will get out of the program what you put into it.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="enrollment-application-form">
+	<form id="apply" action="https://applications.devschool.rocks"
+              class="form form-horizontal">
+	  <fieldset>
+	    <h3 class="headline">Take charge of your future</h3>
+	    <div class="form-group">
+	      <label class="col-md-4 control-label" for="enrollment[name]">What is your name?</label>  
+	      <div class="col-md-8">
+		<input id="enrollment_name" name="enrollment[name]" type="text" placeholder="Future J Hacker" class="form-control input-md unfilled_field">
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <label class="col-md-4 control-label" for="enrollment[email]">Your primary email address?</label>  
+	      <div class="col-md-8">
+		<input id="enrollment_email" name="enrollment[email]" type="text" placeholder="somebody@someplace.com" class="form-control unfilled_field input-md">
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <label class="col-md-4 control-label" for="enrollment[why]">Why do you want to join Devschool?</label>
+	      <div class="col-md-8">
+		<textarea class="form-control" rows="4" id="enrollment_why" name="enrollment[why]">Tell us why we should accept you to our program, we don't just accept anyone. How doe you get accepted? Show some spunk.</textarea>
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <label class="col-md-4 control-label" for="enrollment[accept_tos]"></label>
+	      <div class="col-md-8">
+		<div class="checkbox">
+		  <input type="checkbox" name="enrollment[accept_tos]" id="enrollment_accept_tos" class="unfilled_field">
+		  <label for="enrollment_accept_tos">I have read and accept the <a href="/terms" target="_blank">Terms of Service</a></label>
+		</div>
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <label class="col-md-4 control-label" for=""></label>
+	      <div class="col-md-8">
+		<button class="btn btn-primary" disabled>I WANT TO JOIN DEVSCHOOL</button>
+	      </div>
+	    </div>
+
+	  </fieldset>
+	</form>
+
+      </div>
+    </div>
+  </div>
+</div>

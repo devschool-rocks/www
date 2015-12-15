@@ -47,6 +47,10 @@ p {
   background: image-url('heroes/price-bg.jpg') no-repeat 50% 10% fixed;
 }
 
+.full-apply {
+  background: image-url('heroes/apply-bg.jpg') no-repeat 50% 10% fixed;
+}
+
 .above-fold .jumbotron {
   background: rgba(9, 8, 7, 0.6); 
   color: white;
@@ -318,4 +322,20 @@ blockquote footer {
   margin: 7vmin  0 !important;
   padding: 5vmin !important;
   font-weight: bold;
+}
+
+form#apply {
+  font-family: "Lato", sans-serif;
+  font-size: 2.4vmin;
+  padding: 4vmin;
+  background: #FFFDCE;
+  border-top: 0.25vmin solid #E8E254;
+  border-bottom: 0.3vmin solid #E8E254;
+  border-left: 0.25vmin solid #E8E254;
+  border-right: 0.3vmin solid #E8E254;
+  margin: 10vmin 0;
+}
+
+.invalid-field {
+  border: 1px solid red;
 }
