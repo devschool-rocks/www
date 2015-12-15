@@ -6,9 +6,9 @@ html,body {
 
 
 p {
-  margin: 2vmin 0;
+  margin: 2vmin !important;
   font-size: 3.2vmin;
-  line-height: 4.7vmin;
+  line-height: 6vmin;
   font-family: "Droid Sans", sans-serif;
   color: #333;
 }
@@ -312,4 +312,10 @@ blockquote footer {
 
 .text-small {
   font-size: 2.5vmin;
+}
+
+.well.next {
+  margin: 7vmin  0 !important;
+  padding: 5vmin !important;
+  font-weight: bold;
 }
