@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   match "who"  => "web_page#who",    via: :get,   as: :who
   match "price"=> "web_page#price",  via: :get,   as: :price
   match "apply"=> "web_page#apply",  via: :get,   as: :apply
+  match "terms"=> "web_page#terms",  via: :get,   as: :terms
 
   root to: "web_page#what"
 

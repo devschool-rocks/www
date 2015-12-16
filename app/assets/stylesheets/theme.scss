@@ -339,3 +339,13 @@ form#apply {
 .invalid-field {
   border: 1px solid red;
 }
+
+form#apply button {
+  margin-top: 3vmin;
+  padding: 3vmin 3vmin;
+  font-size: 3.5vmin;
+}
+
+.padded-top {
+  padding-top: 12vmin;
+}

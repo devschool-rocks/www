@@ -49,6 +49,14 @@
               class="form form-horizontal">
 	  <fieldset>
             <h3 class="headline">Take charge of your future!</h3>
+
+	    <div class="form-group">
+              <div class="col-md-4"></div>
+	      <div class="col-md-8">
+                <h3>Student Information</h3>
+	      </div>
+	    </div>
+
 	    <div class="form-group">
 	      <label class="col-md-4 control-label" for="enrollment[name]">What is your name?</label>  
 	      <div class="col-md-8">
@@ -66,7 +74,30 @@
 	    <div class="form-group">
 	      <label class="col-md-4 control-label" for="enrollment[why]">Why do you want to join Devschool?</label>
 	      <div class="col-md-8">
-		<textarea class="form-control" rows="4" id="enrollment_why" name="enrollment[why]">Tell us why we should accept you to our program, we don't just accept anyone. How doe you get accepted? Show some spunk.</textarea>
+                <textarea class="form-control" rows="8" id="enrollment_why" name="enrollment[why]">
+Tell us why we should accept you to our program, we don't accept everyone. Why? We care deeply about the school culture and the experience of our current students.
+                  
+So what does one say to get accepted? Show some spunk. Show some nerd cred. Tell us how you overcame some shit in your life. We like people who tough it out and overcome.
+                </textarea>
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+              <div class="col-md-4"></div>
+	      <div class="col-md-8">
+                <h3>Method of Payment</h3>
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <label class="col-md-4 control-label" for="enrollment[payment_type]"></label>
+	      <div class="col-md-8">
+		<div class="checkbox">
+                  <input type="radio" name="enrollment[payment_type]" id="enrollment_payment_type_single" value="single" checked="checked">
+		  <label for="enrollment_payment_type_single">I will be paying $4,998 up-front, saving $1,000</label>
+                  <input type="radio" name="enrollment[payment_type]" id="enrollment_payment_type_payments" value="payments">
+		  <label for="enrollment_payment_type_payments">I want to make 6 monthly payments of $998 instead</label>
+		</div>
 	      </div>
 	    </div>
 
@@ -75,13 +106,13 @@
 	      <div class="col-md-8">
 		<div class="checkbox">
 		  <input type="checkbox" name="enrollment[accept_tos]" id="enrollment_accept_tos" class="unfilled_field">
-		  <label for="enrollment_accept_tos">I have read and accept the <a href="/terms" target="_blank">Terms of Service</a></label>
+                  <label for="enrollment_accept_tos">I have read and accept the <a href="/terms" target="_blank">Terms of Service</a></label>
 		</div>
 	      </div>
 	    </div>
 
 	    <div class="form-group">
-	      <label class="col-md-4 control-label" for=""></label>
+	      <div class="col-md-4"></div>
 	      <div class="col-md-8">
 		<button class="btn btn-primary" disabled>I WANT TO JOIN DEVSCHOOL</button>
 	      </div>
