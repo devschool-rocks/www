@@ -6,7 +6,6 @@ var handleValidation = function(validator, control) {
   } else {
     control.removeClass("invalid-field");
   }
-
 }
 
 var validatePresence = function(control) {
@@ -59,5 +58,20 @@ $(document).ready(function() {
 
   $("#enrollment_email").on("keyup blur", function() {
     validate($(this), { email: true });
+  });
+
+
+  $("form#apply").on("submit", function(e) {
+    e.preventDefault();
+    var form = $("form#apply");
+    $.ajax({
+      method: "POST",
+      url: form.attr("action"),
+      data: form.serialize(),
+    }).done(function(data) {
+      console.debug("ok");
+    }).error(function(data) {
+      console.debug("fail");
+    });
   });
 });
