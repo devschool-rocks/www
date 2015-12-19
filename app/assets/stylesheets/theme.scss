@@ -51,6 +51,10 @@ p {
   background: image-url('heroes/apply-bg.jpg') no-repeat 50% 10% fixed;
 }
 
+.full-applied {
+  background: image-url('heroes/applied-bg.jpg') no-repeat 50% 50% fixed;
+}
+
 .above-fold .jumbotron {
   background: rgba(9, 8, 7, 0.6); 
   color: white;

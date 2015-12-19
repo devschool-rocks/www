@@ -69,7 +69,7 @@ $(document).ready(function() {
       url: form.attr("action"),
       data: form.serialize(),
     }).done(function(data) {
-      console.debug("ok");
+      window.location = "/applied"
     }).error(function(data) {
       console.debug("fail");
     });
