@@ -71,7 +71,6 @@ $(document).ready(function() {
     }).done(function(data) {
       window.location = "/applied"
     }).error(function(data) {
-      console.debug("fail");
     });
   });
 });
