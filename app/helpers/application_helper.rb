@@ -7,7 +7,7 @@ module ApplicationHelper
 
   def backend_url
     if Rails.env.production?
-      "https://backend.devschool.rocks"
+      "https://devschool.rocks"
     else
       "http://devschool.dev:4000"
     end

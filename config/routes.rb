@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   match "terms"=> "web_page#terms",  via: :get,   as: :terms
 
 
-  match "apply  "=> "web_page#apply",  via: :get,   as: :apply
+  match "apply"  => "web_page#apply",  via: :get,   as: :apply
   match "applied"=> "web_page#applied",via: :get,   as: :applied
 
   root to: "web_page#what"
