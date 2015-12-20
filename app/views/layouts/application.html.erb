@@ -11,6 +11,9 @@
     <link rel="sitemap" type="application/xml" title="Website sitemap" href="/sitemap.xml" />
     <%= render 'social_cards' %>
 
+    <base href="https://devschool.rocks">
+    <%= content_for(:canonical) %>
+
     <meta name="msvalidate.01" content="19B335BBC041E9DD33BA05045BC19167" />
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
