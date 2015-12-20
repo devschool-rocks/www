@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   match "apply"  => "web_page#apply",  via: :get,   as: :apply
   match "applied"=> "web_page#applied",via: :get,   as: :applied
 
+  get "/sitemap", controller: :sitemap, action: :index
+
   root to: "web_page#what"
 
 end
