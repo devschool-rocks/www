@@ -6,11 +6,11 @@ module ApplicationHelper
   end
 
   def meta_description
-    "An online based web development bootcamp/school consisting of 40 private one on one expert sessions and 420 hours of group and self study."
+    "Devschool is an online based web dev bootcamp/school where you can learn to become a web developer in about 420 hours and 40 private one on one sessions with an expert HTML/CSS, JavaScript, and Ruby on Rails Developer!"
   end
 
   def meta_keywords
-    "devschool, devschool.rocks, ruby, rails, html, css, javascript, bootcamp"
+    "devschool, devschool.rocks, devbootcamp, web, developer, ruby, rails, html, css, javascript, bootcamp"
   end
 
 
