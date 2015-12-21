@@ -1,18 +1,13 @@
 module ApplicationHelper
   def meta_title
     custom = content_for(:title)
-    default = "Become a Web Developer in about 420 hour of guided instruction by an industry expert programmer!"
-    "Devschool: #{custom || default}"
+    default = "Devschool | Become a Web Developer with guided instruction by an expert!"
+    custom || default
   end
 
   def meta_description
-    "Devschool is an online based web dev bootcamp/school where you can learn to become a web developer in about 420 hours and 40 private one on one sessions with an expert HTML/CSS, JavaScript, and Ruby on Rails Developer!"
+    "Devschool is an online programming bootcamp for full stack web developers. Learn to become a full stack web developer in as little as 420 hours!"
   end
-
-  def meta_keywords
-    "devschool, devschool.rocks, devbootcamp, web, developer, ruby, rails, html, css, javascript, bootcamp"
-  end
-
 
   def backend_url
     if Rails.env.production?
