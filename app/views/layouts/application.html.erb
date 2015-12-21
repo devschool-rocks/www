@@ -10,12 +10,9 @@
     <link rel="sitemap" type="application/xml" title="Website sitemap" href="/sitemap.xml" />
     <%= render 'social_cards' %>
 
-    <base href="https://welcome.devschool.rocks">
-    <%= content_for(:canonical) %>
-
-    <meta name="msvalidate.01" content="19B335BBC041E9DD33BA05045BC19167" />
-
     <%= stylesheet_link_tag 'application', media: 'all' %>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <%= csrf_meta_tags %>
     <%= content_for(:meta) %>
   </head>
