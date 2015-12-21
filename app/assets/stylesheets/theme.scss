@@ -4,7 +4,6 @@ html,body {
   margin: 0px;
 }
 
-
 p {
   margin: 2vmin !important;
   font-size: 3.2vmin;
@@ -286,6 +285,21 @@ footer a {
 
 footer a:hover, footer a:active {
   color: white;
+}
+
+footer .bottom {
+  overflow: hidden;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.social-link-list {
+  overflow: hidden;
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 blockquote footer {
