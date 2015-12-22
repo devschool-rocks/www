@@ -14,7 +14,9 @@
 //= require bootstrap.min
 //= require smooth-scroll.min
 //= require slick.min
+
 //= require_tree .
+//= require_self
 
 smoothScroll.init();
 

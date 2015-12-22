@@ -10,8 +10,10 @@ module ApplicationHelper
   end
 
   def backend_url
-    base = "https://backend.devschool.rocks"
-    return base + ":4000" if Rails.env.production?
-    base
+    if Rails.env.development?
+      "http://backend.devschool.dev:4000"
+    else
+      "https://backend.devschool.rocks"
+    end
   end
 end
