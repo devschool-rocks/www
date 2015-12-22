@@ -23,7 +23,7 @@
     <%= yield %>
 
     <%= render 'footer' %>
-    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'application', async: true %>
     <%= render 'gtc' %>
   </body>
 </html>
