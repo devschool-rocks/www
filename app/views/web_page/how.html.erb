@@ -56,13 +56,19 @@
     <hr>
   </div>
 
-  <div class="row review-card">
+  <div class="row review-card" itemscope itemtype="http://schema.org/Review">
     <div class="col-md-offset-1 col-md-4">
+      <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
+        <span class="hidden" itemprop="name">Devshool Online Developer Bootcamp</span>
+      </div>
+      <span class="hidden" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+        <span itemprop="ratingValue">5</span> stars</span>
+      </span> 
       <%= image_tag image_path("reviewers/mehgan-holden.png"), class: "reviewer-photo irg-responsive center-block",
-          height: "282px", width: "300px" %>
+        height: "282px", width: "300px"%>
     </div>
     <div class="col-md-5">
-      <blockquote>
+      <blockquote itemprop="reviewBody">
         <p>At Devschool I learned the skills that I needed to land the job I 
         have today. I completed my Web Development course in 18 weeks as 
         I had other obligations and Devschool was flexible enough for me to 
@@ -72,7 +78,9 @@
         who wants to cut through the cruft and really, really learn the skills 
         they will need to build modern web applications.</p>
 
-        <footer>Mehgan Holden - New York, United States</footer>
+        <footer itemprop="author" itemscope itemtype="http://schema.org/Person">
+          Mehgan Holden - New York, United States
+        </footer>
       </blockquote>
     </div>
   </div>

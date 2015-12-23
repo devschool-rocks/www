@@ -54,15 +54,31 @@
     <hr>
   </div>
 
-  <div class="row review-card">
+  <div class="row review-card" itemscope itemtype="http://schema.org/Review">
     <div class="col-md-offset-1 col-md-4">
+      <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
+        <span class="hidden" itemprop="name">Devshool Online Developer Bootcamp</span>
+      </div>
+      <span class="hidden" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+        <span itemprop="ratingValue">5</span> stars</span>
+      </span> 
       <%= image_tag image_path("reviewers/eric-douglas.png"), class: "reviewer-photo reviewer-photo-shadow img-responsive",
-      height: "282px", width: "300px"%>
+        height: "282px", width: "300px"%>
     </div>
     <div class="col-md-5">
-      <blockquote>
-        <p>Coming from a business background, I found programming intriguing but sometimes very confusing. My instructor excelled at simplifying concepts into easy to repeat axioms and patterns, and I found the experience at Devschool to be a very personal one. I would definitely recommend Devschool to anyone who wants to become a web developer.</p>
-        <footer>Eric Douglas - Ohio, United States</footer>
+      <blockquote itemprop="reviewBody">
+        <p>Coming from a business background, I found programming intriguing but sometimes 
+        very confusing. My instructor excelled at simplifying concepts into easy to repeat 
+        axioms and patterns, and I found the experience at Devschool to be a very 
+        personal one.</p>
+        
+        <p>I am very satisfied with my experience and the value of Devschool and 
+        I would definitely recommend Devschool to anyone who wants to become a 
+        web developer.</p>
+
+        <footer itemprop="author" itemscope itemtype="http://schema.org/Person">
+          Eric Douglas - Ohio, United States
+        </footer>
       </blockquote>
     </div>
   </div>
@@ -70,6 +86,7 @@
   <div class="row">
     <hr>
   </div>
+
   <div class="row">
     <div class="col-md-12 text-center">
       <h2>Meet the tools of your new trade, developer</h2>

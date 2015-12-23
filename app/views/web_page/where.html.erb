@@ -45,16 +45,24 @@
     <hr>
   </div>
 
-  <div class="row review-card">
+  <div class="row review-card" itemscope itemtype="http://schema.org/Review">
     <div class="col-md-offset-1 col-md-4">
+      <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
+        <span class="hidden" itemprop="name">Devshool Online Developer Bootcamp</span>
+      </div>
+      <span class="hidden" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+        <span itemprop="ratingValue">5</span> stars</span>
+      </span> 
       <%= image_tag image_path("reviewers/jorge-madrid.png"), class: "reviewer-photo reviewer-photo-shadow img-responsive center-block",
-          height: "282px", width: "300px"%>
+        height: "282px", width: "300px"%>
     </div>
     <div class="col-md-5">
-      <blockquote>
+      <blockquote itemprop="reviewBody">
         <p>My instructor Jim was the best programming teacher I have had. He is fun, easy going, and when things get hard he doesn't mind repeating a concept until you get the point, and I learned a lot from him that my bootcamp missed.</p>
         <p>Devschool not only helped me learn the skills I would need day to day, Jim also helped me prepare for the interview! I highly recommend Devschool!</p>
-        <footer>Jorge Madrid - Bogotá, Columbia</footer>
+        <footer itemprop="author" itemscope itemtype="http://schema.org/Person">
+          Jorge Madrid - Bogotá, Columbia
+        </footer>
       </blockquote>
     </div>
   </div>
@@ -79,14 +87,14 @@
       </div>
 
       <div class="col-md-4">
-          <h3 class="headline">Pair programming is our lifeblood at Devschool</h3>
+        <h3 class="headline">Pair programming is our lifeblood at Devschool</h3>
         <p>But it doesn't have to be painful. The only time you are forced to pair with anyone
         specifically will be with your instructor. The rest of the pair programming you will do
         will be on "self assembling teams"</p>
       </div>
 
       <div class="col-md-4">
-          <h3 class="headline">Jim will keep you on task and on track</h3>
+        <h3 class="headline">Jim will keep you on task and on track</h3>
         <p>Your homework will be to continue working on your application in between sessions
         with Jim. During that time you will learn to master your searching skills to pluck out 
         the information you want from the mass of noise out there.</p>
@@ -144,5 +152,5 @@
 
   <p class="well next">Awesome, we meet online so I can attend from virtually anywhere! <%= link_to "How much does this program cost?", price_path %></p>
 
-</div>
+  </div>
 
