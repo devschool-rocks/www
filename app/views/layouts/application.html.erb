@@ -13,18 +13,93 @@
 
     <%= render 'schema_info' %>
 
-    <%= stylesheet_link_tag 'application', media: 'all' %>
 
     <%= csrf_meta_tags %>
     <%= content_for(:meta) %>
   </head>
 
   <body>
+
+    <style>
+html,body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+p {
+  margin: 2vmin;
+  font-size: 3.2vmin;
+  line-height: 6vmin;
+  font-family: "Droid Sans", sans-serif;
+  color: #333;
+}
+
+.full-bg {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.above-fold a {
+  color: white !important;
+}
+
+.above-fold .jumbotron {
+  background: rgba(9, 8, 7, 0.6); 
+  color: white;
+  text-align: center;
+  padding: 8px;
+  margin: 4vmin auto;
+  max-width: 700px;
+  border-radius: 16px;
+}
+
+.above-fold h1 {
+  max-width: 850px;
+  text-align: center;
+  font-size: 7.5vmin;
+  line-height: 9.5vmin;
+  font-weight: 300;
+  margin: 20vmin auto 10vmin;
+  font-family: "Droid Sans", sans-serif;
+  padding-top: 6vmin;
+}
+
+.above-fold h1,
+.above-fold h1 {
+  color: white;
+  text-shadow: 1px 1px rgba(45, 45, 45, 0.2);
+}
+
+
+.above-fold a {
+  color: white;
+  text-decoration: underline;
+}
+
+.above-fold h2 {
+  max-width: 850px;
+  text-align: center;
+  color: white;
+  font-size: 4vmin;
+  line-height: 5.5vmin;
+  margin: 1em auto;
+  text-shadow: 1px 1px rgba(45, 45, 45, 0.2);
+  font-family: "Droid Sans", sans-serif;
+}
+    </style>
+
     <%= render 'header' %>
 
     <%= yield %>
 
     <%= render 'footer' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= render 'gtc' %>
   </body>
