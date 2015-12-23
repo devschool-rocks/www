@@ -56,6 +56,37 @@
     <hr>
   </div>
 
+  <div class="row review-card" itemscope itemtype="http://schema.org/Review">
+    <div class="col-md-offset-1 col-md-4">
+      <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
+        <span class="hidden" itemprop="name">Devshool Online Developer Bootcamp</span>
+      </div>
+      <span class="hidden" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+        <span itemprop="ratingValue">5</span> stars</span>
+      </span> 
+      <%= image_tag image_path("reviewers/christian-bastian.png"), class: "reviewer-photo reviewer-photo-shadow img-responsive",
+        height: "282px", width: "300px"%>
+    </div>
+    <div class="col-md-5">
+      <blockquote itemprop="reviewBody">
+        <p>I really like working with Jim.  I find him helpful, patient and extraordinarily 
+        knowledgable.  He is able to help me with basic issues and give me a larger 
+        contextual overviews of how to approach coding.</p>
+
+        <p>Jim has also been able to help me lay a foundation for individual learning - 
+        establishing smaller lessons as well as longer-term projects. Every coding 
+        question I have - Jim has been able to give me insight on.</p>
+      </blockquote>
+      <div class="reviewer" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Chris Bastian</span> - California, United States
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <hr>
+  </div>
+
   <div class="slide">
     <div class="row">
       <div class="col-md-4">
