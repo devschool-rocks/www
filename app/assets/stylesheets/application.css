@@ -12,8 +12,8 @@
  *
  *= require_self
  *= require 'bootstrap.min'
- *= require 'slick'
- *= require 'slick-theme'
+ *= require 'slick-slider.min'
+ *= require 'slick-theme.min'
  *= require 'font-awesome'
  *= require_tree .
  */
