@@ -5,7 +5,7 @@ html,body {
 }
 
 p {
-  margin: 2vmin !important;
+  margin: 2vmin;
   font-size: 3.2vmin;
   line-height: 6vmin;
   font-family: "Droid Sans", sans-serif;
@@ -263,4 +263,23 @@ blockquote p {
   margin: 1em auto;
 }
 
+.faq-section h2, .faq-section h3 {
+  margin: 5vmin 0;
+  font-family: 'Droid Serif', sans-serif;
+}
 
+.faq-section p {
+  margin: 4vmin 0;
+}
+
+.faq-section h2 {
+  letter-spacing: 0.02em;
+  font-size: 7vmin;
+  line-height: 10vmin;
+}
+
+.faq-section h3 {
+  letter-spacing: 0.01em;
+  font-size: 6vmin;
+  line-height: 8vmin;
+}
