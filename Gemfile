@@ -33,7 +33,7 @@ gem "font-awesome-rails"
 # gem 'capistrano-rails', group: :development
 #
 group :production do
-
+  gem 'puma'
 end
 
 group :development, :test do

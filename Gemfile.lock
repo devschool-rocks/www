@@ -73,6 +73,7 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     non-stupid-digest-assets (1.0.6)
       sprockets (>= 2.0)
+    puma (2.15.3)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -149,6 +150,7 @@ DEPENDENCIES
   font-awesome-rails
   jquery-rails
   non-stupid-digest-assets
+  puma
   rails (= 4.2.3)
   rails_12factor
   responders
