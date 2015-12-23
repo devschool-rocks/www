@@ -2,20 +2,41 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-sm-6">
+
+        <div class="col-md-3">
+          <ul class="list-unstyled">
+            <li><%= link_to 'what', what_path %></li>
+            <li><%= link_to 'how', how_path %></li>
+            <li><%= link_to 'who', who_path %></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="list-unstyled">
+            <li><%= link_to 'where', where_path %></li>
+            <li><%= link_to 'price', price_path %></li>
+            <li><%= link_to 'apply', apply_path %></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li><a href="/terms">Terms/Privacy</a></li>
+            <li><a href="mailto:hello@devschool.rocks">Contact Us</a></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-6">
+        <%= image_tag image_path("devschool-logo-big.png"), class: "brand img-responsive",
+          height: "72px", width: "375px" %>
+
         <ul class="social-link-list list-inline">
           <li><a rel="nofollow" href="https://www.facebook.com/Devschool-1089256231104556/" target="_blank"><i class="fa fa-facebook"></i></a></li>
           <li><a rel="nofollow" href="https://twitter.com/devschoolrocks" target="_blank"><i class="fa fa-twitter"></i></a></li>
           <li><a rel="nofollow" href="https://plus.google.com/b/117787107398081371302" target="_blank"><i class="fa fa-google-plus"></i></a></li>
           <li><a rel="nofollow" href="https://www.youtube.com/channel/UCBaSjb4qGVqS_Q5SVbn1hAA" target="_blank"><i class="fa fa-youtube"></i></a></li>
         </ul>
-        <ul class="list-unstyled">
-          <li><a href="/terms">Terms of Service</a></li>
-          <li><a href="mailto:hello@devschool.rocks">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="col-md-8 col-sm-6">
-        <%= image_tag image_path("devschool-logo-big.png"), class: "brand img-responsive",
-            height: "72px", width: "375px" %>
       </div>
     </div>
     <div class="row">
