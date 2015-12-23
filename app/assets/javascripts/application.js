@@ -14,6 +14,7 @@
 //= require bootstrap.min
 //= require smooth-scroll.min
 //= require slick.min
+//= require clickdesk
 
 //= require_tree .
 //= require_self

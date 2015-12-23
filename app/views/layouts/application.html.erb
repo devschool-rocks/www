@@ -99,7 +99,7 @@ p {
     <%= yield %>
 
     <%= render 'footer' %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= stylesheet_link_tag 'application', media: 'all', async: true %>
     <%= javascript_include_tag 'application' %>
     <%= render 'gtc' %>
   </body>
