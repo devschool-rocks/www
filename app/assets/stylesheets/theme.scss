@@ -124,7 +124,7 @@ blockquote:after {
   vertical-align: -0.6em;
 }
 blockquote p {
-  display: inline;
+  font-size: 3vmin;
 }
 
 .review-card {
@@ -167,9 +167,26 @@ blockquote p {
   line-height: 8vmin;
 }
 
-.section-arrow-up {
-
+.blue-arrow-down {
+    position: relative;
+    background: #ffffff;
 }
+.blue-arrow-down:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #5A8CEA;
+    border-width: 30px;
+    margin-left: -30px;
+}
+
+
 
 .section-blue {
   background-color: #5A8CEA;
