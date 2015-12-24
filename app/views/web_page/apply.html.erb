@@ -8,16 +8,16 @@
 
 <div class="full-bg full-apply"
      style="background: url(<%= image_path('heroes/apply-bg.jpg') %>) no-repeat 50% 10% fixed;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 above-fold">
-	<h1>Devschool's mission is to provide you knowledge and a job. We also have a strong culture of diversity and getting things done.</h1>
-	<h2><a data-scroll href="#below-the-fold">Scroll down</a> to learn more and apply!</h2>
-      </div>
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12 above-fold">
+           <h1>Devschool's mission is to provide you knowledge and a job. We also have a strong culture of diversity and getting things done.</h1>
+           <h2><a data-scroll href="#below-the-fold">Scroll down</a> to learn more and apply!</h2>
+         </div>
+       </div>
+       <!-- /.row -->
+     </div>
+     <!-- /.container -->
 </div>
 
 <div class="container" id="below-the-fold">
@@ -47,134 +47,133 @@
     </div>
   </div>
 
-  <div class="row">
-    <hr>
-  </div>
+</div>
 
-  <div class="row">
-    <div class="col-md-12 faq-section">
-      <h2>Devschool Online Developer Bootcamp - The APPLICATION FAQ</h2>
+<div class="section-yellow">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 faq-section">
+        <h2>Application Proccess FAQ</h2>
 
-      <p>Applying at Devschool is a fun and engaging process. You will not be
-      asked to solve puzzlers or write a bunch of code to get accpeted. We prefer
-      to talk to you and have you meet a current student instead.</p>
+        <p>Applying at Devschool is a fun and engaging process. You will not be
+        asked to solve puzzlers or write a bunch of code to get accpeted. We prefer
+        to talk to you and have you meet a current student instead.</p>
 
-      <h3>Q. How does the application process work?</h3>
+        <h3>Q. How does the application process work?</h3>
 
-      <p>A. You start by filling out the form <a href="#apply-now">below this FAQ</a>
-      and make sure you fill out the textarea with something that will make you stand
-      out. We would rather have more to read about your then less!</p>
+        <p>A. You start by filling out the form <a href="#apply-now">below this FAQ</a>
+        and make sure you fill out the textarea with something that will make you stand
+        out. We would rather have more to read about your then less!</p>
 
-      <h3>Q. After I submit my application what happens?</h3>
+        <h3>Q. After I submit my application what happens?</h3>
 
-      <p>A. We review your answers and determine if you sound like someone we would like
-      to talk to. If you answered with some detail and expressed a sincere desire to learn
-      you at least deserve a phone call, so that is the next step based on your answers.</p>
+        <p>A. We review your answers and determine if you sound like someone we would like
+        to talk to. If you answered with some detail and expressed a sincere desire to learn
+        you at least deserve a phone call, so that is the next step based on your answers.</p>
 
-      <h3>Q. How will I know when my "Phone" interview is?</h3>
+        <h3>Q. How will I know when my "Phone" interview is?</h3>
 
-      <p>A. You will receive an email with a link to your Instructor's Calendar and
-      a request to pick a time that suits you for a 30 minute discussion. Email us back
-      with your suggestion and we will take it from there.</p>
+        <p>A. You will receive an email with a link to your Instructor's Calendar and
+        a request to pick a time that suits you for a 30 minute discussion. Email us back
+        with your suggestion and we will take it from there.</p>
 
-      <h3>Q. After I speak with my future Instructor what happens?</h3>
+        <h3>Q. After I speak with my future Instructor what happens?</h3>
 
-      <p>A. We next will have you shcedule 20 minutes to chat with a student currently
-      enrolled in the program, so you can get a perspective from someone much like
-      yourself with the same goals.</p>
+        <p>A. We next will have you shcedule 20 minutes to chat with a student currently
+        enrolled in the program, so you can get a perspective from someone much like
+        yourself with the same goals.</p>
 
-      <h3>Q. Ok, so I talked to a current student and I am still a go!</h3>
+        <h3>Q. Ok, so I talked to a current student and I am still a go!</h3>
 
-      <p>A. At this point there is nothing you have to wait for. Tell us you are dying
-      to get started and we will send you a link to handle your enrollment payment and
-      you can start immediately. There are no cohorts or artificial starts here.</p>
+        <p>A. At this point there is nothing you have to wait for. Tell us you are dying
+        to get started and we will send you a link to handle your enrollment payment and
+        you can start immediately. There are no cohorts or artificial starts here.</p>
 
+      </div>
     </div>
   </div>
+</div>
 
-  <div class="row">
-    <hr>
-    <a name="apply-now"></a>
-  </div>
-
+<a name="apply-now"></a>
+<div class="continaer">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="enrollment-application-form">
         <form id="apply" action="<%= backend_url %>/enrollments.json"
-              class="form form-horizontal">
-	  <fieldset>
-            <h3 class="headline">Take charge of your future!</h3>
+                         class="form form-horizontal">
+                         <fieldset>
+                           <h3 class="headline">Take charge of your future!</h3>
 
-	    <div class="form-group">
-              <div class="col-md-4"></div>
-	      <div class="col-md-8">
-                <h3>Student Information</h3>
-	      </div>
-	    </div>
+                           <div class="form-group">
+                             <div class="col-md-4"></div>
+                             <div class="col-md-8">
+                               <h3>Student Information</h3>
+                             </div>
+                           </div>
 
-	    <div class="form-group">
-	      <label class="col-md-4 control-label" for="enrollment_name">What is your name?</label>  
-	      <div class="col-md-8">
-		<input id="enrollment_name" name="enrollment[name]" type="text" placeholder="Future J Hacker" class="form-control input-md unfilled_field">
-	      </div>
-	    </div>
+                           <div class="form-group">
+                             <label class="col-md-4 control-label" for="enrollment_name">What is your name?</label>  
+                             <div class="col-md-8">
+                               <input id="enrollment_name" name="enrollment[name]" type="text" placeholder="Future J Hacker" class="form-control input-md unfilled_field">
+                             </div>
+                           </div>
 
-	    <div class="form-group">
-	      <label class="col-md-4 control-label" for="enrollment_email">Your primary email address?</label>  
-	      <div class="col-md-8">
-		<input id="enrollment_email" name="enrollment[email]" type="text" placeholder="somebody@someplace.com" class="form-control unfilled_field input-md">
-	      </div>
-	    </div>
+                           <div class="form-group">
+                             <label class="col-md-4 control-label" for="enrollment_email">Your primary email address?</label>  
+                             <div class="col-md-8">
+                               <input id="enrollment_email" name="enrollment[email]" type="text" placeholder="somebody@someplace.com" class="form-control unfilled_field input-md">
+                             </div>
+                           </div>
 
-	    <div class="form-group">
-	      <label class="col-md-4 control-label" for="enrollment_why">Why do you want to join Devschool?</label>
-	      <div class="col-md-8">
-                <textarea class="form-control" rows="8" id="enrollment_why" name="enrollment[why]">
-Tell us why we should accept you to our program, we don't accept everyone. Why? We care deeply about the school culture and the experience of our current students.
-                  
-So what does one say to get accepted? Show some spunk. Show some nerd cred. Tell us how you overcame some challenges in your life. We like people who tough it out and overcome.
-                </textarea>
-	      </div>
-	    </div>
+                           <div class="form-group">
+                             <label class="col-md-4 control-label" for="enrollment_why">Why do you want to join Devschool?</label>
+                             <div class="col-md-8">
+                               <textarea class="form-control" rows="8" id="enrollment_why" name="enrollment[why]">
+                                 Tell us why we should accept you to our program, we don't accept everyone. Why? We care deeply about the school culture and the experience of our current students.
 
-	    <div class="form-group">
-              <div class="col-md-4"></div>
-	      <div class="col-md-8">
-                <h3>Method of Payment</h3>
-	      </div>
-	    </div>
+                                 So what does one say to get accepted? Show some spunk. Show some nerd cred. Tell us how you overcame some challenges in your life. We like people who tough it out and overcome.
+                               </textarea>
+                             </div>
+                           </div>
 
-	    <div class="form-group">
-	      <label class="col-md-4 control-label" for="enrollment_pay_option_prepay"></label>
-	      <div class="col-md-8">
-		<div class="checkbox">
-                  <input type="radio" name="enrollment[pay_option]" checked id="enrollment_pay_option_prepay" value="prepay">
-                  <label for="enrollment_pay_option_prepay">I will be paying $4,998 up-front, saving $1,000</label>
-                  <input type="radio" name="enrollment[pay_option]" id="enrollment_pay_option_payments" value="payments">
-		  <label for="enrollment_pay_option_payments">I want to make 6 monthly payments of $998 instead</label>
-		</div>
-	      </div>
-	    </div>
+                           <div class="form-group">
+                             <div class="col-md-4"></div>
+                             <div class="col-md-8">
+                               <h3>Method of Payment</h3>
+                             </div>
+                           </div>
 
-	    <div class="form-group">
-	      <label class="col-md-4 control-label" for="accept_tos"></label>
-	      <div class="col-md-8">
-		<div class="checkbox">
-		  <input type="checkbox" name="accept_tos" id="accept_tos" class="unfilled_field">
-                  <label for="accept_tos">I have read and accept the <a href="/terms" target="_blank">Terms of Service</a></label>
-		</div>
-	      </div>
-	    </div>
+                           <div class="form-group">
+                             <label class="col-md-4 control-label" for="enrollment_pay_option_prepay"></label>
+                             <div class="col-md-8">
+                               <div class="checkbox">
+                                 <input type="radio" name="enrollment[pay_option]" checked id="enrollment_pay_option_prepay" value="prepay">
+                                 <label for="enrollment_pay_option_prepay">I will be paying $4,998 up-front, saving $1,000</label>
+                                 <input type="radio" name="enrollment[pay_option]" id="enrollment_pay_option_payments" value="payments">
+                                 <label for="enrollment_pay_option_payments">I want to make 6 monthly payments of $998 instead</label>
+                               </div>
+                             </div>
+                           </div>
 
-	    <div class="form-group">
-	      <div class="col-md-4"></div>
-	      <div class="col-md-8">
-		<button class="btn btn-primary" disabled>I WANT TO JOIN DEVSCHOOL</button>
-	      </div>
-	    </div>
+                           <div class="form-group">
+                             <label class="col-md-4 control-label" for="accept_tos"></label>
+                             <div class="col-md-8">
+                               <div class="checkbox">
+                                 <input type="checkbox" name="accept_tos" id="accept_tos" class="unfilled_field">
+                                 <label for="accept_tos">I have read and accept the <a href="/terms" target="_blank">Terms of Service</a></label>
+                               </div>
+                             </div>
+                           </div>
 
-	  </fieldset>
-	</form>
+                           <div class="form-group">
+                             <div class="col-md-4"></div>
+                             <div class="col-md-8">
+                               <button class="btn btn-primary" disabled>I WANT TO JOIN DEVSCHOOL</button>
+                             </div>
+                           </div>
+
+                         </fieldset>
+        </form>
 
       </div>
     </div>

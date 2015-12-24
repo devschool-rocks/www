@@ -8,16 +8,16 @@
 
 <div class="full-bg full-price"
      style="background: url(<%= image_path('heroes/price-bg.jpg') %>) no-repeat 50% 10% fixed;">
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 above-fold">
-      <h1>We don't belive a web development education should cost $15k so we can have shiny offices and toys to impress people</h1>
-      <h2><a data-scroll href="#below-the-fold">Scroll down</a> to read more about our simple pricing!</h2>
-    </div>
-  </div>
-  <!-- /.row -->
-</div>
-<!-- /.container -->
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12 above-fold">
+           <h1>We don't belive a web development education should cost $15k so we can have shiny offices and toys to impress people</h1>
+           <h2><a data-scroll href="#below-the-fold">Scroll down</a> to read more about our simple pricing!</h2>
+         </div>
+       </div>
+       <!-- /.row -->
+     </div>
+     <!-- /.container -->
 </div>
 
 <div class="container" id="below-the-fold">
@@ -44,13 +44,13 @@
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">Refund policy</h3>
       <p class="tailline">We back our performance by a pro-rate refund policy. To date, it has only
-        been used due to financial hardships.</p>
+      been used due to financial hardships.</p>
     </div>
   </div>
 
-  <div class="row">
-    <hr>
-  </div>
+</div>
+
+<div class="section-arrow-up section-blue">
 
   <div class="row review-card" itemscope itemtype="http://schema.org/Review">
     <div class="col-md-offset-1 col-md-4">
@@ -62,73 +62,75 @@
       </span> 
       <%= image_tag image_path("reviewers/hector-moreno.png"), class: "reviewer-photo reviewer-photo-shadow img-responsive",
         height: "282px", width: "300px"%>
-    </div>
-    <div class="col-md-5">
-      <blockquote itemprop="reviewBody">
-        <p>I was already enrolled in Dev Bootcamp, I was in phase zero before I switched to 
-        Devschool and I am going to explain why. During the first 3 weeks of Dev Bootcamp
-        I started realizing that not only was the course over priced, and some of the
-        staff was under qualified.</p>
-        
-        <p>My instructor in phase zero and in phase 1 was going to be a recent graduate from
-        Dev Bootcamp. How can you teach programming when you have never been exposed to 
-        the real world? Not for 13k!</p>
+  </div>
+  <div class="col-md-5">
+    <blockquote itemprop="reviewBody">
+      <p>I was already enrolled in Dev Bootcamp, I was in phase zero before I switched to 
+      Devschool and I am going to explain why. During the first 3 weeks of Dev Bootcamp
+      I started realizing that not only was the course over priced, and some of the
+      staff was under qualified.</p>
 
-        <p>I have in been in Devschool for 2 months now and I feel I have gotten 
-        my moneys worth and then some! Devschool really is an awesome experience!</p>
-      </blockquote>
-      <div class="reviewer" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Hector Moreno</span> - Texas, United States
+      <p>My instructor in phase zero and in phase 1 was going to be a recent graduate from
+      Dev Bootcamp. How can you teach programming when you have never been exposed to 
+      the real world? Not for 13k!</p>
+
+      <p>I have in been in Devschool for 2 months now and I feel I have gotten 
+      my moneys worth and then some! Devschool really is an awesome experience!</p>
+    </blockquote>
+    <div class="reviewer" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Hector Moreno</span> - Texas, United States
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<div class="section-yellow">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12 faq-section">
+        <h2>All about pricing - FAQ</h2>
+
+        <p>Devschool's online developer bootcamp is priced based on some simple
+        factors. We have a small company staff, a very modest Headquarters in affordable
+        Puerto Vallarta, Mexico (come visit us!), and the number of hours you meet
+        personally with your Instructor.</p>
+
+        <h3>Q. What is the complete price of the course?</h3>
+
+        <p>A. $4,988 USD covers everything if you pay up-front.</p>
+
+        <h3>Q. What is the cost if I need to make payments?</h3>
+
+        <p>A. If you choose to make payments instead of paying up front you agree
+        to make 6 payments of $998 USD, which is $5,988 USD.</p>
+
+        <h3>Q. How are payments processed, do you have my Credit Card number?</h3>
+
+        <p>A. All payments are handled by our partner, <a rel=nofollow href="https://stripe.com">
+          Stripe</a> and at no time do we ever store any of your credit card details on
+        our servers or in our databases. We take your financial security seriously.</p>
+
+        <h3>Q. If I go with payments when will they be due each month?</h3>
+
+        <p>A. That depends on the day you pay initially. You will be billed on the same
+        day each month until your balanced is settled. Well unless you sign on a leap day :)</p>
+
+        <h3>Q. What if I decide to get a refund?</h3>
+
+        <p>A. We have refunded a couple of Students so far, but it was always a financial
+        burden they were facing not due to our performance. You can get a refund as per the
+        <a href="/terms">Terms of Service</a>.</p>
+
+        <p>In most cases Students put their education on hold and were able to resume again
+        after the crisis passed by paying back the money they refunded and picking up where
+        they left off. We pride ourselves in being Human first and flexible.</p>
+
       </div>
     </div>
+    <p class="well next">The program sounds really great, I am ready to apply! <%= link_to "How does that work?", apply_path %></p>
   </div>
 
-  <div class="row">
-    <hr>
-  </div>
-
-  <div class="row">
-    <div class="col-md-12 faq-section">
-      <h2>Devschool Online Developer Bootcamp - The PRICE FAQ</h2>
-
-      <p>Devschool's online developer bootcamp is priced based on some simple
-      factors. We have a small company staff, a very modest Headquarters in affordable
-      Puerto Vallarta, Mexico (come visit us!), and the number of hours you meet
-      personally with your Instructor.</p>
-
-      <h3>Q. What is the complete price of the course?</h3>
-
-      <p>A. $4,988 USD covers everything if you pay up-front.</p>
-
-      <h3>Q. What is the cost if I need to make payments?</h3>
-
-      <p>A. If you choose to make payments instead of paying up front you agree
-      to make 6 payments of $998 USD, which is $5,988 USD.</p>
-
-      <h3>Q. How are payments processed, do you have my Credit Card number?</h3>
-
-      <p>A. All payments are handled by our partner, <a rel=nofollow href="https://stripe.com">
-        Stripe</a> and at no time do we ever store any of your credit card details on
-      our servers or in our databases. We take your financial security seriously.</p>
-
-      <h3>Q. If I go with payments when will they be due each month?</h3>
-
-      <p>A. That depends on the day you pay initially. You will be billed on the same
-      day each month until your balanced is settled. Well unless you sign on a leap day :)</p>
-
-      <h3>Q. What if I decide to get a refund?</h3>
-
-      <p>A. We have refunded a couple of Students so far, but it was always a financial
-      burden they were facing not due to our performance. You can get a refund as per the
-      <a href="/terms">Terms of Service</a>.</p>
-
-      <p>In most cases Students put their education on hold and were able to resume again
-      after the crisis passed by paying back the money they refunded and picking up where
-      they left off. We pride ourselves in being Human first and flexible.</p>
-
-    </div>
-  </div>
-
-  <p class="well next">The program sounds really great, I am ready to apply! <%= link_to "How does that work?", apply_path %></p>
 
 </div>
