@@ -6,7 +6,9 @@ module ApplicationHelper
   end
 
   def meta_description
-    "Devschool is an online programming bootcamp for full stack web developers. Learn to become a full stack web developer in as little as 420 hours!"
+    custom = content_for(:description)
+    default = "Devschool is an online programming bootcamp for full stack web developers. Learn to become a full stack web developer in as little as 420 hours!"
+    custom || default
   end
 
   def backend_url
