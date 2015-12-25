@@ -1,0 +1,87 @@
+<%- content_for(:title) do %>
+  At Devschool we work with Non Profits to get you experience early
+<%- end %>
+
+<%- content_for(:description) do %>
+  Why wait until you graduate to get before the eyes of hiring managers? Work for an NGO while in school!
+<%- end %>
+
+<div class="full-bg full-ngo"
+     style="background: url(<%= image_path('heroes/ngo-bg.jpg') %>) no-repeat 100% 80% fixed;">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12 above-fold">
+           <h1>Get 100 hours of experience at one of our NGO partners</h1>
+           <h2><a data-scroll href="#below-the-fold">Scroll down</a> to read about our
+             NGO partner program.
+         </div>
+       </div>
+       <!-- /.row -->
+     </div>
+     <!-- /.container -->
+</div>
+
+<div class="container" id="below-the-fold">
+  <div class="row">
+    <div class="col-md-12 below-fold">
+      <h2 class="headline">Meet NewStory, our featured NGO Partner!</h2>
+      <h3 class="headline">NewStory helps crowd fund homes for families in need!</h3>
+
+      <p class="text-center"><a href="https://newstorycharity.org/leveque-haiti"><img src="<%= image_path("partners/newstory/leveque-newstory.png") %>"></a></p>
+
+      <p>We initially started this program as a way for Students to build experience on
+      real world projects, but quickly we realized that the real benefit was getting
+      to work with companies like NewStory, who do so much amazing work in the world.</p>
+
+      <p>Devschool is in the process of rebuilding their old cobbled together PHP web
+      app into an easy to update, Ruby on Rails application with WebFlow built-in, their
+      prefered content generation and web styles framework.</p>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="section-yellow">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 faq-section">
+        <h2>Devschool Non Profit Partnership program - FAQ</h2>
+
+        <p>Working with NGOs is especially satisfying because you aren't just
+        making a living and earning experience, you are helping an organization
+        help the world. At Devschool we love Non Profits!</p>
+
+        <h3>Q. Why do we have to do intern work at an NGO?</h3>
+
+        <p>A. Our job at Devschool is not to just teach you web development, but
+        to also get you a job in the web development field. In order to get a job
+        you must have first had one. It can be a vicious cycle of No.</p>
+
+        <p>We have found that it is a lot easier to build experience with Non Profits
+        as they are more apt to work with Jr Developers who have enthusiasm for the
+        mission.</p>
+
+        <p>Gaining that initial team experience and referrals is a critical step
+        to becoming a paid web developer, and Devschool's NGO Parter Program is
+        designed to do exactly that.</p>
+
+        <h3>Q. Is this 100 hours of NGO work paid?</h3>
+
+        <p>A. No, the interning hours that you do as part of your school work is
+        not paid work in the sense that you get money. You will however get valuable
+        experience and some people in your corner backing you when you look for you
+        real job.<p>
+
+        <h3>Q. What if I don't want to work for a non profit?</h3>
+
+        <p>A. If you chose to work for a normal, for profit company when you graduate
+        we will help you find and nail your job with Interview readiness resources.</p>
+
+        <p class="well next">Yes, gaining experience while supporting a great cause is awesome! <%= link_to "How do I apply to Devschool then?", apply_path %></p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
