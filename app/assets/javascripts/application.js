@@ -15,6 +15,7 @@
 //= require smooth-scroll.min
 //= require slick.min
 //= require clickdesk.min
+//= require hotjar
 
 //= require_tree .
 
