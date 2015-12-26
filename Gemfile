@@ -23,6 +23,9 @@ gem 'non-stupid-digest-assets'
 gem "responders"
 
 gem "font-awesome-rails"
+
+gem 'rack-rewrite'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
