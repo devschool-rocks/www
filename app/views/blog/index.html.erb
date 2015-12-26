@@ -1,0 +1,14 @@
+<%- content_for(:title) do %>
+  The Devschool blog | information to help you select a developer bootcamp!
+<%- end %>
+
+<div class="container article">
+  <div class="row">
+    <div class="col-md-12">
+      <%- @articles.each do |a| %>
+        <%= render partial: a %>
+        <hr>
+      <%- end %>
+    </div>
+  </div>
+</div>

@@ -37,6 +37,12 @@ group :production do
 end
 
 group :development, :test do
+  gem 'html-pipeline'
+  gem 'pygments.rb'
+  gem 'github-linguist'
+  gem 'gemoji'
+  gem 'github-markdown'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 

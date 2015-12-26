@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   match "ngo-program"=> "web_page#ngo",  via: :get,   as: :ngo
 
+  resources :blog, only: %i[index show]
+
   get "/sitemap", controller: :sitemap, action: :index
 
   root to: "web_page#what"
