@@ -4,8 +4,9 @@ env = ARGV[0] || "production"
 
 p 'Precompiling assets to speed up deployment'
 `rake assets:precompile`
+`rake blog:build`
 
-p 'Committing assets to a deployment branch'
+p 'Committing assets and rebuilt blog articles to a deployment branch'
 deploy_branch = "deployment_#{Time.now.to_i}"
 `git checkout -b #{deploy_branch}; git add --all; git commit -m"precompiled assets for deployment to #{env}"`
 

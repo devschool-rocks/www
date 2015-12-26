@@ -1,25 +1,29 @@
 .container.article {
+  font-family: "Open Sans", helvetica, sans-serif;
   margin-top: 16vmin;
   font-size: 3vmin;
   line-height: 5vmin;
 }
 
+.article p {
+  font-family: "Droid Serif", serif;
+}
+
 .article h1 {
   margin: 4vmin 0 2vmin;
-  font-family: "Droid Serif", times, serif;
   font-size: 5.5vmin;
   line-height: 8vmin;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .article h2 {
   margin: 6vmin 0;
-  font-family: "Droid Sans", helvetica, sans-serif;
   font-size: 4vmin;
   line-height: 5.5vmin;
 }
 
 .article .author {
-  font-family: "Droid Sans", helvetica, sans-serif;
   font-size: 3.5vmin;
   line-height: 4.5vmin;
   margin-top: 6vmin;
@@ -27,7 +31,6 @@
 
 
 .article .timestamp, .article .author.role {
-  font-family: "Droid Sans", helvetica, sans-serif;
   font-size: 2.5vmin;
   line-height: 3.5vmin;
   margin: 0;

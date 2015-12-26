@@ -1,6 +1,18 @@
+require 'yaml'
+
 Article = Struct.new(:markdown, :meta) do
+
   def self.from_markdown(src)
     new(*extract_data(src))
+  end
+
+  def self.from_manifest
+    manifest = "#{Rails.root}/lib/static_blog/manifest.yml"
+    YAML.load(File.read(manifest))
+  end
+
+  def permalink
+    meta[:permalink]
   end
 
   def title

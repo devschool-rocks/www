@@ -1,5 +1,6 @@
 require 'html/pipeline'
 require 'erb'
+require 'yaml'
 
 require 'static_blog/article'
 
@@ -21,20 +22,34 @@ private
     Dir["#{Rails.root}/articles/*.md"]
   end
 
+  def manifest_file
+    "#{Rails.root}/lib/static_blog/manifest.yml"
+  end
+
   def generate
-    source_files.each { |src| write_html(src) }
+    articles = source_files.map do |src|
+      article = Article.from_markdown(File.read(src))
+      write_html(article, src)
+      article[:meta]
+    end
+
+    write_manifest(articles)
+  end
+
+  def write_manifest(articles)
+    File.write manifest_file, articles.to_yaml
   end
 
   def path(src)
     "#{write_path}/#{permalink(src)}"
   end
 
-  def write_html(src)
-    article = Article.from_markdown(File.read(src))
+  def write_html(article, src)
     html = [meta_to_html(article.meta),
             md_to_html(article.markdown)].join
 
     File.write("#{write_path}/_#{permalink(src)}.html.erb", html)
+    article
   end
 
   def permalink(src)
@@ -47,6 +62,9 @@ private
 
   def tag(key, value)
     send("#{key}_tag", value)
+  end
+
+  def permalink_tag(val)
   end
 
   def title_tag(title)
@@ -106,5 +124,6 @@ EOS
 
   def clobber
     `rm -rf #{write_path}/_*`
+    `rm -rf #{manifest_file}`
   end
 end
