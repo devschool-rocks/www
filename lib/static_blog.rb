@@ -68,7 +68,11 @@ private
   end
 
   def title_tag(title)
-    "<h1 itemprop='headline'>#{title}</h1>"
+    <<-EOS
+<a href='/blog/#{title.downcase.gsub(" ","-")}'>
+  <h1 itemprop='headline'>#{title}</h1>
+</a>
+EOS
   end
 
   def author_tag(name)
