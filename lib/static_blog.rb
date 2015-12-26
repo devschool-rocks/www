@@ -29,6 +29,7 @@ private
   def generate
     articles = source_files.map do |src|
       article = Article.from_markdown(File.read(src))
+      write_excerpt(article, src)
       write_html(article, src)
       article[:meta]
     end
@@ -42,6 +43,28 @@ private
 
   def path(src)
     "#{write_path}/#{permalink(src)}"
+  end
+
+  def write_excerpt(article, src)
+    html = [meta_to_html(article.meta),
+            md_to_html(first_section(article.markdown)),
+            read_more_button(article.permalink)].join
+
+    File.write("#{write_path}/_#{permalink(src)}_excerpt.html.erb", html)
+  end
+
+  def read_more_button(permalink)
+    <<-EOS
+    <p class="text-center">
+<a href="/blog/#{permalink}" class="btn btn-primary btn-read-more">
+Keep reading <i class="fa fa-angle-double-right"></i></a>
+</p>
+EOS
+  end
+
+  def first_section(str)
+    stop = str.index("## ")
+    str[0, stop]
   end
 
   def write_html(article, src)
