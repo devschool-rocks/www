@@ -84,6 +84,7 @@ EOS
       avatar_tag(meta[:avatar]),
       author_tag(meta[:author]),
       role_tag(meta[:role]),
+      published_at_tag(meta[:published_at]),
       updated_at_tag(meta[:updated_at])
     ]
   end
