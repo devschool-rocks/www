@@ -43,4 +43,19 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
     xml.priority "0.5"
   end
 
+  xml.url do
+    xml.loc "https://devschool.rocks/blog"
+    xml.changefreq "daily"
+    xml.priority "0.5"
+  end
+
+  ARTICLES.each do |a|
+    xml.url do
+      xml.loc "https://devschool.rocks/blog/#{a[:permalink]}"
+      xml.lastmod a[:updated_at]
+      xml.changefreq "weekly"
+      xml.priority "0.5"
+    end
+  end
+
 end
