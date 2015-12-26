@@ -57,7 +57,12 @@ private
   end
 
   def meta_to_html(meta)
-    meta.map {|key, value| tag(key, value) }.join("\n")
+    [ title_tag(meta[:title], meta[:permalink]),
+      avatar_tag(meta[:avatar]),
+      author_tag(meta[:author]),
+      role_tag(meta[:role]),
+      updated_at_tag(meta[:updated_at])
+    ]
   end
 
   def tag(key, value)
@@ -67,9 +72,9 @@ private
   def permalink_tag(val)
   end
 
-  def title_tag(title)
+  def title_tag(title, permalink)
     <<-EOS
-<a href='/blog/#{title.downcase.gsub(" ","-")}'>
+<a href="/blog/#{permalink}">
   <h1 itemprop='headline'>#{title}</h1>
 </a>
 EOS
