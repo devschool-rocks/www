@@ -4,5 +4,6 @@ Disallow: /cdn-cgi/
 Disallow: /instructors/
 Disallow: /authoring/
 Disallow: /applied
-Sitemap: https://devschool.rocks/sitemap.xml
+Sitemap: /sitemap.xml
+Sitemap: /sitemap
 
