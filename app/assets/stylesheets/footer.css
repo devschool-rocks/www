@@ -101,3 +101,11 @@ form#apply button {
 .padded-top {
   padding-top: 12vmin;
 }
+
+.fa-heart {
+  color: #F44336;
+}
+
+.fa-coffee {
+  color: #795548;
+}
