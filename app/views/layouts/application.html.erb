@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="en" itemscope
+      itemtype="http://schema.org/WebPage">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +8,8 @@
 
     <title><%= meta_title %></title>
     <meta name="description" CONTENT="<%= meta_description %>">
-    <link rel="sitemap" type="application/xml" title="Website sitemap" href="/sitemap.xml" />
+    <link rel="sitemap" type="application/xml" title="Website xml sitemap" href="/sitemap.xml" />
+    <link rel="sitemap" type="application/html" title="Website html sitemap" href="/sitemap" />
 
     <%= render 'social_cards' %>
     <%= render 'schema_info' %>

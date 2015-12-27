@@ -5,10 +5,10 @@
 <div class="container article">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <div class="article" itemscope itemtype="http://schema.org/NewsArticle">
+      <div class="article">
         <meta itemscope itemprop="mainEntityOfPage" 
-                        itemType="https://schema.org/WebPage" 
-                        itemid="https://google.com/article"/>
+                        itemType="https://schema.org/Article" 
+                        itemid="<%= request.url %>"/>
         <div itemprop="publisher" itemscope 
              itemtype="https://schema.org/Organization">
           <div class="hidden" itemprop="logo" itemscope 
