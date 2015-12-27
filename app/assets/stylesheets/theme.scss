@@ -208,3 +208,15 @@ blockquote p {
 .fa-coffee {
   color: #795548;
 }
+
+#share_panel {
+  position: fixed;
+  top: 25%;
+  left: 1%;
+}
+
+#share_panel img {
+  padding: 0.5vmin;
+  border: 0;
+  box-shadow: 0;
+}
