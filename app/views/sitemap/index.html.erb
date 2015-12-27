@@ -1,0 +1,28 @@
+<div class="container padded-top">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>Devschool's Sitemap</h1>
+      <ul class="list-unstyled">
+        <li><h3>Website</h3>
+          <ul>
+            <li><a href="https://devschool.rocks/">Homepage</a></li>
+            <li><a href="https://devschool.rocks/how">How we teach web development</a></li>
+            <li><a href="https://devschool.rocks/who">Who teaches at Devschool?</a></li>
+            <li><a href="https://devschool.rocks/where">Where does 'class' happen?</a></li>
+            <li><a href="https://devschool.rocks/price">How much does the course cost?</a></li>
+            <li><a href="https://devschool.rocks/apply">Apply to Devschool today!</a></li>
+          </ul>
+        </li>
+
+        <li><h3>Articles</h3>
+          <ul><%= ARTICLES.map do |a|
+            link = "https://devschool.rocks#{a[:permalink]}"
+            label = a[:title]
+            "<li><a href='#{link}'>#{label}</a></li>"
+          end.join.html_safe %>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
