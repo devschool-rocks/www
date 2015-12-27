@@ -6,21 +6,6 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="article">
-        <meta itemscope itemprop="mainEntityOfPage" 
-                        itemType="https://schema.org/Article" 
-                        itemid="<%= request.url %>"/>
-        <div itemprop="publisher" itemscope 
-             itemtype="https://schema.org/Organization">
-          <div class="hidden" itemprop="logo" itemscope 
-                              itemtype="https://schema.org/ImageObject">
-            <img src="<%= image_path("ds-logo-sm.png") %>"/>
-            <meta itemprop="url" content="<%= image_path("ds-logo-sm.png") %>">
-            <meta itemprop="width" content="332">
-            <meta itemprop="height" content="64">
-          </div>
-          <meta itemprop="name" content="Devschool">
-        </div>
-
         <%= render @partial %>
       </div>
     </div>

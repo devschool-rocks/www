@@ -36,7 +36,7 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
   ARTICLES.each do |a|
     xml.url do
       xml.loc "https://devschool.rocks/blog/#{a[:permalink]}"
-      xml.lastmod Date.parse(a[:updated_at]).to_s(:db)
+      xml.lastmod Date.parse(a[:updated_at]).to_s
     end
   end
 

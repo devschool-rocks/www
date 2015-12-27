@@ -3,6 +3,9 @@ permalink: why-devschool-teaches-ruby-and-ruby-on-rails
 title: Why Devschool Teaches Ruby and Ruby on Rails in our online coding bootcamp
 avatar: https://s3.amazonaws.com/devschool-shared/jim_okelly.png
 author: Jim OKelly
+image_url: https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png
+image_height: 200
+image_width: 168
 role: Devschool Instructor
 published_at: December 25, 2015
 updated_at: December 25, 2015
@@ -10,7 +13,7 @@ updated_at: December 25, 2015
 
 We have been asked many times why it is that we love Ruby and use it to teach students web development and programming principles and algorithms. The answer is a single word - Simplicity.
 
-Web development is very much not simple. It is by its very nature a complex beast to wrangle. Programming is also full of mind-bending new paradigms and idioms that are unknown outside of the geekdom. And if you want to get into Computer Science and things like memory management, data structures, and algorithms, well that is also the antithesis of simple.
+Web development is very much not a simple endeavor. It is by its very nature a complex beast to wrangle. Programming is also full of mind-bending new paradigms and idioms that are unknown outside of the geekdom. And if you want to get into Computer Science and things like memory management, data structures, and algorithms, well that is also the antithesis of simple.
 
 ## Teaching something complex starts with simple steps
 

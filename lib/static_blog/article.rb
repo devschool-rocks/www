@@ -23,6 +23,18 @@ Article = Struct.new(:markdown, :meta) do
     meta[:author]
   end
 
+  def image_url
+    meta[:image_url]
+  end
+
+  def image_height
+    meta[:image_height]
+  end
+
+  def image_width
+    meta[:image_width]
+  end
+
   def published_at
     meta[:published_at]
   end

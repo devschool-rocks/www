@@ -69,6 +69,7 @@ EOS
 
   def write_html(article, src)
     html = [meta_to_html(article.meta),
+            article_json_ld(article),
             md_to_html(article.markdown)].join
 
     File.write("#{write_path}/_#{permalink(src)}.html.erb", html)
@@ -99,36 +100,23 @@ EOS
   def title_tag(title, permalink)
     <<-EOS
 <a href="/blog/#{permalink}">
-  <h1 itemprop='headline'>#{title}</h1>
+  <h1>#{title}</h1>
 </a>
 EOS
   end
 
   def author_tag(name)
     <<-EOS
-<h3 class="article author" itemprop="author" itemscope
-    itemtype="https://schema.org/Person">
-  By <span itemprop="name">#{name}</span>
-</h3>
+<h3 class="author name">By #{name}</h3>
 EOS
   end
 
   def avatar_tag(url)
     <<-EOS
-<div itemprop="image" itemscope
-     itemtype="https://schema.org/ImageObject">
+<div class="author">
   <img src="#{url}" class="img-circle img-responsive avatar"
        align=left hspace=12 vspace=12 />
-  <meta itemprop="url" content="#{url}">
-  <meta itemprop="width" content="120">
-  <meta itemprop="height" content="120">
 </div>
-EOS
-  end
-
-  def description_tag(description)
-    <<-EOS
-<span itemprop="description">#{description}</span>
 EOS
   end
 
@@ -137,14 +125,52 @@ EOS
   end
 
   def published_at_tag(timestamp)
-    "<meta itemprop='datePublished' content='#{timestamp}' />"
+  ""
   end
 
   def updated_at_tag(timestamp)
     <<-EOS
-<meta itemprop='dateModified' content='#{timestamp}' />
 <div class="article timestamp">Last updated on #{timestamp}</div>
 EOS
+  end
+
+  def article_json_ld(article)
+  <<-EOS
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage":{
+    "@type":"WebPage",
+    "@id":"https://devschool/.rocks/blog/#{article.permalink}"
+  },
+  "headline": "#{article.title}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "#{article.image_url}",
+    "height": #{article.image_height},
+    "width": #{article.image_width}
+  },
+  "datePublished": "#{article.published_at}",
+  "dateModified": "#{article.updated_at}",
+  "author": {
+    "@type": "Person",
+    "name": "#{article.author}"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Devschool",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://s3.amazonaws.com/devschool-shared/large-square-red.png",
+      "width": 200,
+      "height": 200
+    }
+  }
+}
+</script>
+EOS
+
   end
 
   def md_to_html(md)

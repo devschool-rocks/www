@@ -1,2 +1,4 @@
 require 'static_blog/article'
-ARTICLES = Article.from_manifest
+if File.exists?("#{Rails.root}/lib/static_blog/manifest.yml")
+  ARTICLES = Article.from_manifest
+end
