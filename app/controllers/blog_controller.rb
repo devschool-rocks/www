@@ -11,8 +11,9 @@ class BlogController < ApplicationController
       map {|f| f.split("/")[-1].gsub(".html.erb","") }.
       map {|f| f[1..-1] }
 
-    if articles.grep(/params[:id]/).any?
-      @partial = params[:id].gsub("-","_")
+    slug = params[:id].gsub("-","_")
+    if articles.grep(/#{slug}/).any?
+      @partial = slug
     else
       @articles = ARTICLES
       render :index and return
