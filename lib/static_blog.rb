@@ -70,7 +70,8 @@ EOS
   def write_html(article, src)
     html = [meta_to_html(article.meta),
             article_json_ld(article),
-            md_to_html(article.markdown)].join
+            md_to_html(article.markdown),
+            share_buttons(permalink(src))].join
 
     File.write("#{write_path}/_#{permalink(src)}.html.erb", html)
     article
@@ -81,29 +82,47 @@ EOS
   end
 
   def meta_to_html(meta)
-    [ title_tag(meta[:title], meta[:permalink]),
+    [ blog_js,
+      title_tag(meta[:title], meta[:permalink]),
       avatar_tag(meta[:avatar]),
       author_tag(meta[:author]),
       role_tag(meta[:role]),
       published_at_tag(meta[:published_at]),
       updated_at_tag(meta[:updated_at]),
-      share_buttons
+      share_buttons(meta[:permalink])
     ]
   end
 
-  def share_buttons
+  def blog_js
     <<-EOS
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+EOS
+  end
 
+  def share_buttons(permalink)
+    <<-EOS
         <ul class="list-inline">
+        <li>
+          <div class="fb-like" data-href="https://devschool/blog/#{permalink}"
+                               data-layout="button" data-action="like"
+                               data-show-faces="false" data-share="false"></div>
+        </li>
         <li>
           <a href="https://twitter.com/share"
              class="twitter-share-button"{count}
              data-via="devschoolrocks">Share</a>
         </li>
         <li>
-          <g:plus action="share"></g:plus>
+          <g:plusone size="medium" annotation="none"></g:plusone>
         </li>
         </ul>
 EOS
