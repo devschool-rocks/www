@@ -52,13 +52,11 @@ Nothing gets done in a vacuum, and rarely do you work alone as a professional we
 We have a policy of "Self Assembled Teams" which is a fancy way of saying, come together and work together when you can, when you see fit, and when you feel like doing so. There is no pressure in pair programming here at Devschool. By not forcing peer programming, Students "self assemble" and decide it is more engaging and fun to pair up with people they like.
 
 
-## 6. We don't just train you, we put you to work on real projects for real [non-profits and NGOs](https://devschool.rocks/ngo-program)
+## 6. We don't just train you, we put you to work on real projects for real non-profits and NGOs
 
 Building canned applications from a step by step guide is only so useful and interesting, and they benefit no one but you, which isn't very social! So we prefer to get you working on code to impact someone's life as soon as possible!
 
-This also gets you in front of prospective employers before you even graduate, and make connections that will go with you long after you graduate Devschool and start spending those big paychecks. And since the companies in this program are also
-
-NGO or non-profit, your work could literally put a homeless family in a home! Now put THAT on your résumé!
+This also gets you in front of prospective employers before you even graduate, and make connections that will go with you long after you graduate Devschool and start spending those big paychecks. And since the companies in this program are also [NGO or non-profit](https://devschool.rocks/ngo-program), your work could literally put a homeless family in a home! Now put THAT on your résumé!
 
 
 ## 7. We have an excellent refund policy and we aren't afraid to use it
