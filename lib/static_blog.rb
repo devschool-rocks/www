@@ -100,7 +100,7 @@ EOS
 	      data-href="https://www.facebook.com/Devschool-1089256231104556"
 	      data-layout="standard"
 	      data-action="like"
-	      data-show-faces="true">
+	      data-show-faces="false">
         </li>
         <li>
           <g:plusone data-href="https://plus.google.com/+DevschoolRocks-online-developer-bootcamp" size="medium" annotation="none"></g:plusone>
