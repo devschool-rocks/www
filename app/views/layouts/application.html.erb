@@ -31,8 +31,8 @@
     <%= render 'share_btns' %>
 
     <%= render 'footer' %>
-    <%= stylesheet_link_tag 'application', media: 'all', async: true %>
-    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag 'application', media: 'all', async: true, defer: :defer %>
+    <%= javascript_include_tag 'application', async: true, defer: :defer %>
     <%= render 'gtc' %>
     <script type="text/javascript" async defer
   src="https://apis.google.com/js/platform.js?publisherid=100924811766479319060">
