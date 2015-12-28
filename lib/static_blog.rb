@@ -82,8 +82,7 @@ EOS
   end
 
   def meta_to_html(meta)
-    [ blog_js,
-      title_tag(meta[:title], meta[:permalink]),
+    [ title_tag(meta[:title], meta[:permalink]),
       avatar_tag(meta[:avatar]),
       author_tag(meta[:author]),
       role_tag(meta[:role]),
@@ -93,36 +92,18 @@ EOS
     ]
   end
 
-  def blog_js
-    <<-EOS
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-EOS
-  end
-
   def share_buttons(permalink)
     <<-EOS
         <ul class="list-inline">
         <li>
-          <div class="fb-like" data-href="https://devschool/blog/#{permalink}"
-                               data-layout="button" data-action="like"
-                               data-show-faces="false" data-share="false"></div>
+	    <div class="fb-like"
+	      data-href="https://www.facebook.com/Devschool-1089256231104556"
+	      data-layout="standard"
+	      data-action="like"
+	      data-show-faces="true">
         </li>
         <li>
-          <a href="https://twitter.com/share"
-             class="twitter-share-button"{count}
-             data-via="devschoolrocks">Share</a>
-        </li>
-        <li>
-          <g:plusone size="medium" annotation="none"></g:plusone>
+          <g:plusone data-href="https://plus.google.com/+DevschoolRocks-online-developer-bootcamp" size="medium" annotation="none"></g:plusone>
         </li>
         </ul>
 EOS
