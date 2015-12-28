@@ -33,7 +33,7 @@ If you won't be able to make an appointment previously set just give us as much 
 
 ## 3. We are an expert tooling, science and measurements kind of web development bootcamp
 
-We don't train mediocre developers at Devschool, we train GREAT developers at Devschool. This starts with the gated enrollment process to check for both culture and ability, and it extends to our course material and choice of tools, which is purposefully chosen to be what the experts use.
+We don't train mediocre developers at Devschool, we train GREAT developers at Devschool. This starts with the gated enrollment process to check for both culture and ability, and it extends to our course material and [choice of tools](https://devschool.rocks#tools), which is purposefully chosen to be what the experts use.
 
 There are two 'schools' of thought on web development. Some thing it should be a blue collar 'whilly-nilly' 'non-engineery' - that is not us. We take the engineering approach to our code and our teaching and we use real metrics and the scientific method to back it up.
 
@@ -52,7 +52,7 @@ Nothing gets done in a vacuum, and rarely do you work alone as a professional we
 We have a policy of "Self Assembled Teams" which is a fancy way of saying, come together and work together when you can, when you see fit, and when you feel like doing so. There is no pressure in pair programming here at Devschool. By not forcing peer programming, Students "self assemble" and decide it is more engaging and fun to pair up with people they like.
 
 
-## 6. We don't just train you, we put you to work on real projects for real non-profits and NGOs
+## 6. We don't just train you, we put you to work on real projects for real [non-profits and NGOs](https://devschool.rocks/ngo-program)
 
 Building canned applications from a step by step guide is only so useful and interesting, and they benefit no one but you, which isn't very social! So we prefer to get you working on code to impact someone's life as soon as possible!
 
@@ -72,5 +72,5 @@ If at some point in the future you decide to restart your education, maybe you w
 
 Everyone who is close to graduating is encouraged to spend their final two weeks here in our community housing in sunny, warm, friendly, Puerto Vallarta, Mexico. Best of all, the Mexican Government loves tourists so much they subsidize airfare here which is why it is usually less than $500 USD to fly down from the continental USA. Canadian and World based Students are welcome too!
 
-There is no charge from Devschool to take place in this program, you just need yourself a valid Passport and as round trip plane ticket. We can arrange for your arrival when you are ready to come on down!
+There is no charge from Devschool to take place in this program, you just need yourself a valid Passport and a round trip plane ticket. We can arrange for your arrival when you are ready to come on down!
 
