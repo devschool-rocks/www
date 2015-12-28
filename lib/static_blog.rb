@@ -86,8 +86,27 @@ EOS
       author_tag(meta[:author]),
       role_tag(meta[:role]),
       published_at_tag(meta[:published_at]),
-      updated_at_tag(meta[:updated_at])
+      updated_at_tag(meta[:updated_at]),
+      share_buttons
     ]
+  end
+
+  def share_buttons
+    <<-EOS
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <ul class="list-inline">
+        <li>
+          <a href="https://twitter.com/share"
+             class="twitter-share-button"{count}
+             data-via="devschoolrocks">Share</a>
+        </li>
+        <li>
+          <g:plus action="share"></g:plus>
+        </li>
+        </ul>
+EOS
   end
 
   def tag(key, value)
