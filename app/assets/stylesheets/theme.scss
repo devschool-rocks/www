@@ -152,7 +152,9 @@ blockquote p {
 }
 
 .faq-section {
-  margin: 8vmin;
+  width: 90%;
+  padding: 8vmin;
+  font-size: 3vmin;
 }
 
 .faq-section h2, .faq-section h3 {
@@ -168,8 +170,8 @@ blockquote p {
 
 .faq-section h3 {
   letter-spacing: 0.01em;
-  font-size: 6vmin;
-  line-height: 8vmin;
+  font-size: 5vmin;
+  line-height: 7vmin;
 }
 
 .blue-arrow-down {
