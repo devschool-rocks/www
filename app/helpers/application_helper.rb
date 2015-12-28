@@ -18,4 +18,5 @@ module ApplicationHelper
       "https://backend.devschool.rocks"
     end
   end
+
 end

@@ -1,5 +1,9 @@
 <%- content_for(:title) do %>
-  <%= params[:id].gsub("-", " ").capitalize %>
+<%= params[:id].gsub("-", " ").capitalize %>
+<%- end %>
+
+<%- content_for(:canonical) do %>
+https://devschool.rocks/blog/<%= params[:id] %>
 <%- end %>
 
 <div class="container article">

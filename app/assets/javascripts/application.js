@@ -30,7 +30,7 @@ $(document).ready(function() {
     autoplaySpeed: 10000
   });
 
-  if (new RegExp(/blog/).exec(this.location.pathname) != null) {
+  if (new RegExp(/\/blog/).exec(this.location.pathname) != null) {
     $('.navbar-nav a[href="/blog"').addClass('active');
   } else {
     $('.navbar-nav a[href="' + this.location.pathname + '"]')

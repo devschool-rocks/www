@@ -1,9 +1,13 @@
 <%- content_for(:title) do %>
-  How much does Devschool's online web developer school cost?
+How much does Devschool's online web developer school cost?
 <%- end %>
 
 <%- content_for(:description) do %>
-  Devschool makes web developer education simple to afford by offering both up front pay and save or monthly payments
+Devschool makes web developer education simple to afford by offering both up front pay and save or monthly payments
+<%- end %>
+
+<%- content_for(:canonical) do %>
+https://devschool.rocks/price
 <%- end %>
 
 <div class="full-bg full-price"
@@ -23,28 +27,29 @@
 <div class="container" id="below-the-fold">
   <div class="row">
     <div class="col-md-12 below-fold">
-      <h2 class="headline">Our program consists of 40 "one-on-one" 50 minute sessions
-        with your Instructor, up to 5 instructor-led group sessions a week, and
+      <h2 class="headline">Our program consists of <%= Product.session_count %> "one-on-one" <%= Product.session_length %> minute sessions
+        with your Instructor, up to 5 instructor-led group sessions a week, and in total,
         420 hours of building web applications</h2>
-      <h3 class="headline">We don't just train you up, we get you hired out!</h3>
+      <h3 class="headline">We don't just train you up, we get you a job in programming!</h3>
     </div>
   </div>
 
   <div class="row row-centered">
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">Save some money</h3>
-      <p class="tailline">The program costs $4,988 <span class="text-small">USD</span> if you pay in full when you enroll, saving a cool thousand!</p>
+      <p class="tailline">The program costs <%= number_to_currency Product.prepay_price %> <span class="text-small">USD</span> if you pay in full when you enroll, saving a cool <%= number_to_currency Product.prepay_savings_amount %>!
+      Pre-paying your enrollment cost makes a lot of sense if you can swing it, because it is over and done with, and there is no financing charge!</p>
     </div>
 
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">We are flexible</h3>
-      <p class="tailline">You can also make 6 easy, monthly payments of $998 <span class="text-small">USD</span> if that fits your style better.</p>
+      <p class="tailline">You can also make <%= Product.payment_count %> easy, monthly payments of <%= number_to_currency Product.payment_amount %> <span class="text-small">USD</span> if that fits your style better. You pay the financing fee of <%= number_to_currency Product.finance_cost %> but the payments are super simple to make.</p>
     </div>
 
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">Refund policy</h3>
       <p class="tailline">We back our performance by a pro-rate refund policy. To date, it has only
-      been used due to financial hardships.</p>
+      been used due to financial hardships. Of those, both rejoined the program weeks later without losing their place or paying a bunch more to continue their education!</p>
     </div>
   </div>
 

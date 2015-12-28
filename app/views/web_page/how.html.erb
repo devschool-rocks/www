@@ -1,11 +1,14 @@
 <%- content_for(:title) do %>
-  Devschool will teach you to become a web developer in about 420 hours
+Devschool will teach you to become a web developer in about 420 hours
 <%- end %>
 
 <%- content_for(:description) do %>
-  At Devschool our method of teaching is through pair programming with instructors in one on one sessions as well as group sessions and NGO interning
+At Devschool our method of teaching is through pair programming with instructors in one on one sessions as well as group sessions and NGO interning
 <%- end %>
 
+<%- content_for(:canonical) do %>
+https://devschool.rocks/how
+<%- end %>
 
 <div class="full-bg full-how"
      style="background: url(<%= image_path('heroes/how-bg.jpg') %>) no-repeat 100% 80% fixed;">
