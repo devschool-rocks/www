@@ -8,12 +8,13 @@
 
 .article p {
   font-family: "Droid Serif", serif;
+  font-size: 3vmin;
   color: #3A3A3A;
 }
 
 .article h1 {
-  margin: 4vmin 0 2vmin;
-  font-size: 5.5vmin;
+  margin: 6vmin 0 4vmin;
+  font-size: 6vmin;
   line-height: 8vmin;
   font-weight: bold;
   text-transform: uppercase;
@@ -36,7 +37,7 @@
 .article .author.name {
   font-size: 4.5vmin;
   line-height: 5.5vmin;
-  margin-top: 7vmin;
+  margin-top: 4vmin;
 }
 
 .article .role {
@@ -57,9 +58,9 @@
   margin: 3vmin 2vmin 6vmin;
 }
 
-
 .article .avatar {
   height: 20vmin;
+  margin-right: 6vmin;
 }
 
 .article p:first-of-type {

@@ -82,8 +82,7 @@ EOS
   end
 
   def meta_to_html(meta)
-    [ title_tag(meta[:title], meta[:permalink]),
-      avatar_tag(meta[:avatar]),
+    [ header_tag(meta),
       author_tag(meta[:author]),
       role_tag(meta[:role]),
       published_at_tag(meta[:published_at]),
@@ -92,18 +91,28 @@ EOS
     ]
   end
 
+  def header_tag(meta)
+    [ image_tag(meta),
+      title_tag(meta[:title], meta[:permalink]),
+      avatar_tag(meta[:avatar]) ].join
+  end
+
+  def image_tag(meta)
+    "<img width='800' height='255' title='#{meta[:title]}' alt='#{meta[:permalink]}' class='img-responsive' src='#{meta[:image]}' />"
+  end
+
   def share_buttons(permalink)
     <<-EOS
         <ul class="list-inline">
         <li>
-	    <div class="fb-like"
+          <g:plusone data-href="https://plus.google.com/+DevschoolRocks-online-developer-bootcamp" size="medium" annotation="none"></g:plusone>
+        </li>
+        <li>
+	    <div class="fb-like pull-left"
 	      data-href="https://www.facebook.com/Devschool-1089256231104556"
 	      data-layout="standard"
 	      data-action="like"
 	      data-show-faces="false">
-        </li>
-        <li>
-          <g:plusone data-href="https://plus.google.com/+DevschoolRocks-online-developer-bootcamp" size="medium" annotation="none"></g:plusone>
         </li>
         </ul>
 EOS
