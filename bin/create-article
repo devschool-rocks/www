@@ -1,0 +1,23 @@
+#! /usr/bin/env ruby
+require 'date'
+
+YML = <<-EOS
+---
+permalink: PERMALINK
+title: 
+avatar: https://s3.amazonaws.com/devschool-shared/jim_okelly.png
+author: Jim OKelly
+image_url: 
+image_height: 
+image_width: 
+role: Devschool Instructor
+published_at: DATE
+updated_at: DATE
+---
+EOS
+
+title = ARGV.join("-")
+template = YML.gsub("DATE", Date.today.to_s).sub("PERMALINK", title)
+path = File.expand_path("../../articles/#{title}.md", __FILE__)
+
+File.write(path, template)
