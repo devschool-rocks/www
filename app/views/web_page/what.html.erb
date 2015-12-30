@@ -40,8 +40,11 @@ https://devschool.rocks/
         <%= number_to_currency Product.base_price * 0.10 %> off that price by 
         answering a few questions to help us improve our product; something 
         we are <i>always</i> doing!</p>
-        <h4>Simply email <a rel=nofollow href="mailto:claim-my-discount@devschool.rocks">us</a> and we will contact you to set up a good time for a 20 minute skype call.</h4>
-        <p>&nbsp;</p>
+	<div class="top-big-link">
+          <a class="btn apply-modal-btn" 
+             data-target="#modal-apply"
+             data-toggle="modal">Claim your discount</a>
+	</div>
       </div>
     </div>
   </div>
@@ -395,3 +398,5 @@ https://devschool.rocks/
   </div>
 
 </div>
+
+<%= render partial: 'apply_modal' %>
