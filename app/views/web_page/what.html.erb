@@ -1,5 +1,5 @@
 <%- content_for(:title) do %>
-Claim your bootcamp discount! At Devschool train high quality web developers, not high quantity
+  Claim your <%= number_to_currency Product.base_price * 0.10 %> online dev bootcamp discount and let Devschool train you and get you hired
 <%- end %>
 
 <%- content_for(:description) do %>
