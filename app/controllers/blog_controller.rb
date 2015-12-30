@@ -3,7 +3,7 @@ require 'static_blog/article'
 class BlogController < ApplicationController
 
   def index
-    @articles = ARTICLES
+    latest_articles
   end
 
   def show
@@ -15,9 +15,15 @@ class BlogController < ApplicationController
     if articles.grep(/#{slug}/).any?
       @partial = slug
     else
-      @articles = ARTICLES
+      latest_articles
       render :index and return
     end
+  end
+
+private
+
+  def latest_articles
+    @articles ||= ARTICLES.sort {|a,b| b[:published_at] <=> a[:published_at] }
   end
 
 end

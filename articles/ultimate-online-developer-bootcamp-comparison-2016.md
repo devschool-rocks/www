@@ -1,6 +1,6 @@
 ---
 permalink: ultimate-online-developer-bootcamp-comparison-2016
-title: 
+title: The Ultimate Online Developer Bootcamp Comparison for 2016
 avatar: https://s3.amazonaws.com/devschool-shared/jim_okelly.png
 author: Jim OKelly
 role: Devschool Instructor
@@ -35,7 +35,7 @@ We think it takes 4-5 sessions a week with an expert instructor to really get th
 
 ## A look at some of the Top Tier Schools
 
-### Bloc
+### <a rel="nofollow" title="Bloc - online developer bootcamp" href="https://bloc.io">Bloc</a>
 
 Price $4,999
 Job Guarantee: No
@@ -44,7 +44,9 @@ Group Sessions: No
 
 Bloc is the world’s largest online bootcamp, with courses in web development, mobile development, and UX/UI Design. Bloc’s iOS program teaches Objective-C, Swift, and new technologies in iOS 8 and Xcode 6 in a flexible program where students meet throughout the week with an expert mentor and have access to other members of the Bloc community. Students become proficient as they build 4-7 apps of their own, including a Capstone Project of their choosing. During the first third of the course, students learn how to make 3 iOS apps by following our rigorous (but fun) curriculum. During the remaining two thirds, students work with their mentors to build 1-4 complex iOS apps from the ground up.
 
-### Devschool
+<a rel="nofollow" title="more info on bloc's online developer bootcamp program" href="https://bloc.io">More info on Bloc's Online Developer Bootcamp Program</a>
+
+### <a rel="nofollow" title="Devschool - best online developer bootcamp" href="https://devschool.rocks">Devschool</a>
 
 Price $4,988
 Job Guarantee: Yes, 100% Hire Rate
@@ -53,7 +55,10 @@ Group Sessions: 5 a week
 
 Devschool focuses on the quality of it's instructors and students and teaches an entry-level to advanced program to make you a real programmer, not just a developer. Devschool is not interested in just being another "Big Box Bootcamp" where they churn a lot of developers out without a proper focus. There is a strong focus on HTML5/CSS and Responsive Design and Mobile Development, JavaScript for interactivity and rich web interfaces, and Ruby and Ruby on Rails for backend development. The course consists of 420 hours education time, 42 one on one sessions with your expert instructor, up to 5 weekly group sessions, and 100 hours of real non profit interning making a real difference in the world and getting an education.
 
-### CareerFoundry
+
+<a rel="nofollow" title="more info on Devschool's online developer bootcamp program" href="https://devschool.rocks/how">More info on Devschool's Online Developer Bootcamp Program</a>
+
+### <a rel="nofollow" title="CareerFoundry - online developer bootcamp" href="https://careerfoundry.com">CareerFoundry</a>
 
 Price $1,899
 Job Guarantee: No
@@ -61,6 +66,8 @@ Instructor Sessions: 12
 Group Sessions: No
 
 By the time you complete a program at CareerFoundry, you will have completed two web apps, a portfolio, and CV. You also will have had at least 12 sessions with a mentor to help guide your education, who is available to help whenever you need it. Build a set of step by step applications to add to your portfolio. Create a blog and an example website with payment processing. You can study whenever you like as the course material is available online 24/7 and can schedule code reviews and interview prep sessions up to 12 per course. Teaching HTML5/CSS, GitHub, Heroku, Ruby on Rails!
+
+<a rel="nofollow" title="more info on career foundry's online developer bootcamp program" href="https://careerfoundry.com">More info on Career Foundry's Online Developer Bootcamp Program</a>
 
 ## The Importance of Pair Programming and Teamwork in Todays Market
 

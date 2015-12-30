@@ -4,8 +4,8 @@ title: Why Devschool Teaches Ruby and Ruby on Rails in our online coding bootcam
 avatar: https://s3.amazonaws.com/devschool-shared/jim_okelly.png
 author: Jim OKelly
 role: Devschool Instructor
-published_at: December 25, 2015
-updated_at: December 25, 2015
+published_at: 2015-12-25
+updated_at: 2015-12-25
 image_url:
 image_height: 255
 image_width: 800
