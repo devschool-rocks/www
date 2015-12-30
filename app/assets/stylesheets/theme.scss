@@ -178,11 +178,11 @@ blockquote p {
   line-height: 7vmin;
 }
 
-.blue-arrow-down {
+.colored-section {
   position: relative;
-  background: #ffffff;
 }
-.blue-arrow-down:after {
+
+.colored-section:after {
   top: 100%;
   left: 50%;
   border: solid transparent;
@@ -192,12 +192,33 @@ blockquote p {
   position: absolute;
   pointer-events: none;
   border-color: rgba(255, 255, 255, 0);
-  border-top-color: #5A8CEA;
   border-width: 30px;
   margin-left: -30px;
 }
 
-.section-blue {
+.colored-section.red {
+  background: #B52929;
+  color: white;
+  font-weight: 300;
+}
+
+.colored-section.red p {
+  color: white;
+}
+
+.colored-section.red:after {
+  border-top-color: #B52929;
+}
+
+.colored-section.blue {
+  background-color: #5A8CEA;
+}
+
+.colored-section.blue:after {
+  border-top-color: #5A8CEA;
+}
+
+.colored-section.blue {
   background-color: #5A8CEA;
 }
 
