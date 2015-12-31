@@ -47,7 +47,7 @@ Bloc is the world’s largest online bootcamp, with courses in web development, 
 
 <a rel="nofollow" title="more info on bloc's online developer bootcamp program" href="https://bloc.io">More info on Bloc's Online Developer Bootcamp Program</a>
 
-### <a rel="nofollow" title="Devschool - best online developer bootcamp" href="https://devschool.rocks">Devschool</a>
+### <a title="Devschool - best online developer bootcamp" href="https://devschool.rocks">Devschool</a>
 
 Price $4,988
 Job Guarantee: Yes, 100% Hire Rate
@@ -57,7 +57,7 @@ Group Sessions: 5 a week
 Devschool focuses on the quality of it's instructors and students and teaches an entry-level to advanced program to make you a real programmer, not just a developer. Devschool is not interested in just being another "Big Box Bootcamp" where they churn a lot of developers out without a proper focus. There is a strong focus on HTML5/CSS and Responsive Design and Mobile Development, JavaScript for interactivity and rich web interfaces, and Ruby and Ruby on Rails for backend development. The course consists of 420 hours education time, 42 one on one sessions with your expert instructor, up to 5 weekly group sessions, and 100 hours of real non profit interning making a real difference in the world and getting an education.
 
 
-<a rel="nofollow" title="more info on Devschool's online developer bootcamp program" href="https://devschool.rocks/how">More info on Devschool's Online Developer Bootcamp Program</a>
+<a title="more info on Devschool's online developer bootcamp program" href="https://devschool.rocks/how">More info on Devschool's Online Developer Bootcamp Program</a>
 
 ### <a rel="nofollow" title="CareerFoundry - online developer bootcamp" href="https://careerfoundry.com">CareerFoundry</a>
 

@@ -142,7 +142,7 @@ EOS
   def avatar_tag(url)
     <<-EOS
 <div class="author">
-  <img src="#{url}" class="img-circle img-responsive avatar"
+  <img alt="Jim OKelly, Expert Web Developer and Rubyist and Principle Instructor of Devschool" src="#{url}" class="img-circle img-responsive avatar"
        align=left hspace=12 vspace=12 />
 </div>
 EOS
