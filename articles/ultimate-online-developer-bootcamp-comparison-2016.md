@@ -1,6 +1,6 @@
 ---
 permalink: ultimate-online-developer-bootcamp-comparison-2016
-title: Check our comparison of the Best Online Developer Bootcamps!
+title: Check our comparison of the Best Online Coding Bootcamps!
 avatar: https://s3.amazonaws.com/devschool-shared/jim_okelly.png
 author: Jim OKelly
 role: Devschool Instructor
@@ -12,7 +12,7 @@ image: data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQ
 ---
 How does one choose an online web developer training school? How do you know which is the best developer bootcamp? Here are the top 3 online coding schools.
 
-Programming bootcamps, dev bootcamps, developer schools, or coding schools, as they are known have proliferated the Internet.
+Coding bootcamps, dev bootcamps, developer schools, or coding schools, as they are known have proliferated the Internet.
 
 In this article I will try to give you some good questions to have your prospective developer bootcamps answer to determine if they are the best developer bootcamp for you or just another pretender.
 
