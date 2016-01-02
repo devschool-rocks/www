@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   match "/coding-bootcamp" => "web_page#what",
         via: :get, as: :coding_bootcamp_landing
 
-  match "/coding-bootcamp"      => "web_page#what",    via: :get,  as: :what
+  match "/coding-bootcamp"      => "web_page#what",   via: :get,  as: :what
   match "/coding-bootcamp/how"  => "web_page#how",    via: :get,   as: :how
   match "/coding-bootcamp/where"=> "web_page#where",  via: :get,   as: :where
   match "/coding-bootcamp/who"  => "web_page#who",    via: :get,   as: :who
@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   match "/coding-bootcamp/apply"  => "web_page#apply",  via: :get,   as: :apply
   match "/coding-bootcamp/applied"=> "web_page#applied",via: :get,   as: :applied
 
-  match "partnerships/ngo-program"=> "web_page#ngo",  via: :get,   as: :ngo
+  match "/partnerships/ngo-program"=> "web_page#ngo",  via: :get,   as: :ngo
 
   resources :blog, only: %i[index show]
 
