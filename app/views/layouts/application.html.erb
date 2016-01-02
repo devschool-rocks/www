@@ -26,7 +26,7 @@
                 href="/favicon.ico">
 
     <meta name="msvalidate.01" content="19B335BBC041E9DD33BA05045BC19167" />
-    <link async rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link async defer rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <%= csrf_meta_tags %>
     <%= content_for(:meta) %>
   </head>
@@ -42,9 +42,8 @@
     <%= render 'share_btns' %>
 
     <%= render 'footer' %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    </script>
+    <%= stylesheet_link_tag 'application', media: 'all', async: true, defer: true  %>
     <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=100924811766479319060">
   </body>
 </html>
