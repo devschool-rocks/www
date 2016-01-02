@@ -55,6 +55,8 @@ GEM
     execjs (2.6.0)
     font-awesome-rails (4.5.0.0)
       railties (>= 3.2, < 5.0)
+    font_assets (0.1.12)
+      rack
     gemoji (2.1.0)
     github-linguist (4.7.3)
       charlock_holmes (~> 0.7.3)
@@ -167,6 +169,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   font-awesome-rails
+  font_assets
   gemoji
   github-linguist
   github-markdown

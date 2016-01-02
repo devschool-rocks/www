@@ -20,6 +20,9 @@ gem 'jquery-rails'
 # for both digest and non
 gem 'non-stupid-digest-assets'
 
+# cloudfront 
+gem 'font_assets'
+
 gem "responders"
 
 gem "font-awesome-rails"
