@@ -3,7 +3,8 @@
 //= require smooth-scroll.min
 //= require slick.min
 //= require clickdesk.min
-//= require hotjar
+//= require hotjar.min
+//= require ganalytics.min
 
 //= require_tree .
 
