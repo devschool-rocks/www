@@ -43,11 +43,6 @@ blockquote footer {
   line-height: 2vmin;
 }
 
-
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
-@import url(https://fonts.googleapis.com/css?family=Lato);
-
-
 .awesome-people {
 
   h2 {
@@ -77,7 +72,7 @@ blockquote footer {
 }
 
 form#apply {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2.4vmin;
   padding: 4vmin;
   background: #FFFDCE;
