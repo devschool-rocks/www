@@ -17,7 +17,7 @@ module DevschoolWww
       r301 %r{^/(.*)/$}, '/$1', :headers => {'Cache-Control' => 'public, max-age='+2.week.to_s}
     end
 
-    config.font_assets.origin = '*'
+    config.font_assets.origin = 'https://d30pb0mjhm1616.cloudfront.net'
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
