@@ -2,7 +2,7 @@ Rails.application.configure do
   # leverage browser caching
   config.static_cache_control = "public, max-age=31536000"
   # utilize a CDN to deliver static assets
-  config.action_controller.asset_host = "d3ura4x2gavgml.cloudfront.net"
+  config.action_controller.asset_host = "d30pb0mjhm1616.cloudfront.net"
 
   # Settings specified here will take precedence over those in config/application.rb.
 
