@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   match "/coding-bootcamp/terms"=> "web_page#terms",  via: :get,   as: :terms
 
   match "/coding-bootcamp/apply"  => "web_page#apply",  via: :get,   as: :apply
-  match "/coding-bootcamp/applied"=> "web_page#applied",via: :get,   as: :applied
+  match "/applied"=> "web_page#applied",via: :get,   as: :applied
 
   match "/partnerships/ngo-program"=> "web_page#ngo",  via: :get,   as: :ngo
 
