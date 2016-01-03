@@ -1,5 +1,5 @@
 <%- content_for(:title) do %>
-Coding Bootcamp | Devschool gets you your first job!
+Online Coding Bootcamp | Devschool gets you your first job!
 <%- end %>
 
 <%- content_for(:description) do %>
@@ -11,15 +11,19 @@ Coding Bootcamp | Devschool gets you your first job!
 https://devschool.rocks/coding-bootcamp
 <%- end %>
 
-<div class="full-bg full-what">
+<div class="full-bg full-what"
+     style="background: url(<%= image_path('heroes/what-bg.jpg') %>) no-repeat 100% 60% fixed;">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 above-fold">
-        <h1><strong>Devschool</strong> is an online <strong>coding
-            bootcamp</strong> designed to make <strong>YOU</strong> an
-          <strong>employable web developer</strong> in <strong>420
-            hours</strong> and <strong>get you a job</strong>!</h1>
-        <h2><a data-scroll href="#below-the-fold">Scroll down</a> to find out what you will learn at Devschool's online coding bootcamp</h2>
+    <div class="row vertical-center">
+      <div class="col-md-12 above-fold text-center">
+        <h2><strong>Devschool</strong> is an </h2>
+        <h1>online coding bootcamp</h1>
+        <h2>designed to make <strong>YOU</strong> an 
+          <strong>employable web developer</strong> in 
+          <strong>420 hours</strong> and 
+        <strong>get you a job</strong>!</h2>
+
+        <h3><a data-scroll href="#below-the-fold">Scroll down</a> to find out what you will learn at Devschool's online coding bootcamp</h3>
       </div>
     </div>
     <!-- /.row -->

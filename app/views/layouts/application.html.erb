@@ -31,6 +31,36 @@
     <%= content_for(:meta) %>
 
     <%= render 'above_the_fold_css' %>
+<style>
+.above-fold  {
+  margin: 20vmin auto;
+  position: relative;
+  color: white;
+}
+
+.above-fold  h1,
+.above-fold  h2 {
+  display: inline;
+  font-size: 8vmin;
+  line-height: 9vmin;
+}
+
+.above-fold  h1 {
+  font-weight: bold;
+}
+
+.above-fold  h3 {
+  margin-top: 10vmin;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+</style>
   </head>
 
   <body>
