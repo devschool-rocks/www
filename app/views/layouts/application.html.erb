@@ -29,16 +29,16 @@
     <link async defer rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <%= csrf_meta_tags %>
     <%= content_for(:meta) %>
+
+    <%= render 'above_the_fold_css' %>
   </head>
 
   <body>
-    <%= content_for(:below_body) %>
-
-    <%= render 'above_the_fold_css' %>
-    <%= render 'header' %>
 
     <%= yield %>
 
+    <%= render 'header' %>
+    <%= content_for(:below_body) %>
     <%= render 'share_btns' %>
 
     <%= render 'footer' %>
