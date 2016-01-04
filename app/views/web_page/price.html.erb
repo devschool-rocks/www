@@ -42,19 +42,24 @@ https://devschool.rocks/coding-bootcamp/price
   <div class="row row-centered">
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">Save some money</h3>
-      <p class="tailline">The program costs <%= number_to_currency Product.prepay_price %> <span class="text-small">USD</span> if you pay in full when you enroll, saving a cool <%= number_to_currency Product.prepay_savings_amount %>!
-      Pre-paying your enrollment cost makes a lot of sense if you can swing it, because it is over and done with, and there is no financing charge!</p>
+      <p class="tailline">The program costs <span class="price">
+        <%= number_to_currency Product.prepay_price %></span> <span class="text-small">USD</span> if you pay in full when you enroll, saving a cool <%= number_to_currency Product.prepay_savings_amount %>!
+      Pre-paying your enrollment cost makes a lot of sense, because there is no financing cost!</p>
     </div>
 
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">We are flexible</h3>
-      <p class="tailline">You can also make <%= Product.payment_count %> easy, monthly payments of <%= number_to_currency Product.payment_amount %> <span class="text-small">USD</span> if that fits your style better. You pay the financing fee of <%= number_to_currency Product.finance_cost %> but the payments are super simple to make.</p>
+      <p class="tailline">You can also make <span class="price"><%= Product.payment_count %>
+    </span> easy, monthly payments of <span class="price"><%= number_to_currency Product.payment_amount %>
+  </span>
+    <span class="text-small">USD</span> if that fits your style better. You pay the financing fee of <%= number_to_currency Product.finance_cost %> but the payments are super simple to make.</p>
     </div>
 
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">Refund policy</h3>
-      <p class="tailline">We back our performance by a pro-rate refund policy. To date, it has only
-      been used due to financial hardships. Of those, both rejoined the program weeks later without losing their place or paying a bunch more to continue their education!</p>
+      <p class="tailline">We back our performance by a pro-rate refund policy. 
+      Should you decide that Devschool is not for you, we will happily refund your
+      enrollment based on how long you have been with us.</p>
     </div>
   </div>
 
@@ -93,6 +98,31 @@ https://devschool.rocks/coding-bootcamp/price
     </div>
   </div>
 
+</div>
+
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-md-4 col-sm-6 ">
+      <h3 class="headline">intentionally small</h3>
+      <p class="tailline">You cannot perfect a product at mass market scale. The
+      very experience of our students at Devschool, that we put them above our
+      or desire for endless piles of someone else's money.</p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 ">
+      <h3 class="headline">priced honestly</h3>
+      <p class="tailline">In order to be affordable to as many students
+      as possible, we have priced our coding bootcamp based on the real numbers and
+      with modest margins. We are affordable, not cheap.</p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 ">
+      <h3 class="headline">instructor salaries</h3>
+      <p class="tailline">Other online coding bootcamps pay their instructors less
+      than $60k a year so they can make more money. We pay our instructors $90k
+      a year to have better quality Instructors.</p>
+    </div>
+  </div>
 </div>
 
 <div class="section-yellow">
