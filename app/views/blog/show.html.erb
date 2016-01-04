@@ -20,9 +20,18 @@ https://devschool.rocks/blog/<%= params[:id] %>
     <div class="col-md-8 col-md-offset-2">
       <div class="article">
         <%= render @partial %>
-
-        <%= render 'call_to_action_1' %>
       </div>
     </div>
   </div>
 </div>
+
+<div class="well squeeze">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <%= render 'mailchimp' %>
+      </div>
+    </div>
+  </div>
+</div>
+
