@@ -1,9 +1,9 @@
 <ul class="nav navbar-nav">
   <li><%= link_to 'what', what_path, class: "default-active" %></li>
-  <li><%= link_to 'how', how_path %></li>
+  <li><%= link_to 'how', how_path, class: "hidden-sm" %></li>
   <li><%= link_to 'who', who_path %></li>
-  <li><%= link_to 'where', where_path %></li>
+  <li><%= link_to 'where', where_path, class: 'hidden-md hidden-sm' %></li>
   <li><%= link_to 'price', price_path %></li>
-  <li><%= link_to 'work', ngo_path %></li>
-  <li><a href="/blog">blog</a></li>
+  <li><%= link_to 'real experience', ngo_path %></li>
+  <li><a href="/blog" class="hidden-md hidden-sm">blog</a></li>
 </ul>
