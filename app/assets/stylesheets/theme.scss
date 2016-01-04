@@ -7,7 +7,7 @@ p {
   padding-bottom: 1.6em;
   color: #444242;
   font-size: 2.4vmin;
-  line-height: 3vmin;
+  line-height: 4vmin;
 }
 
 .card {
@@ -67,6 +67,7 @@ h3 {
 
 .tailline {
   font-size: 3vmin;
+  line-height: 4vmin;
   font-weight: 200;
 }
 
@@ -110,7 +111,8 @@ blockquote {
 }
 blockquote:before,
 blockquote:after {
-  color: #ccc;
+  color: white;
+  font-smooth: always;
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
@@ -125,6 +127,10 @@ blockquote:after {
 }
 blockquote p {
   font-size: 3vmin;
+  line-height: 4.5vmin;
+  font-weight: 200;
+  color: white;
+  font-smooth: always;
 }
 
 .review-card {
@@ -137,6 +143,8 @@ blockquote p {
 
 .reviewer {
   margin: 3vmin;
+  color: white;
+  font-smooth: always;
 }
 
 .reviewer-photo {
