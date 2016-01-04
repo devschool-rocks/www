@@ -32,11 +32,12 @@ Rails.application.routes.draw do
                "/posts/online-dev-school-br-frequently-asked-questions",
                "/posts/intro-to-javascript-build-a-deck-of-cards-the-card-object",
                "/posts/announcing-our-web-developer-apprenticeship-program",
-               "/categories", "/posts"]
+               "/categories", "/posts", "terms"]
 
 
   dead_urls.each do |url|
     match url, :to => redirect('/coding-bootcamp'), via: :get
   end
 
+  match "/ngo-program", :to => redirect('/partnerships/ngo-program'), via: :get
 end
