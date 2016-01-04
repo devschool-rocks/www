@@ -1,10 +1,10 @@
 body footer {
-  background-color: #31302B;
+  background-color: #000;
   color: #C3C3C3;
   padding: 6vmin;
   margin-top: 10vmin;
-  font-weight: 400;
   font-family: "Droid Serif", serif;
+  font-weight: 100;
 }
 
 footer img.brand {
@@ -14,7 +14,7 @@ footer img.brand {
 
 footer a {
   color: white;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 footer a:hover, footer a:active {

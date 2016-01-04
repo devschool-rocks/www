@@ -6,6 +6,8 @@
 p {
   padding-bottom: 1.6em;
   color: #444242;
+  font-size: 2.4vmin;
+  line-height: 3vmin;
 }
 
 .card {
@@ -45,8 +47,18 @@ h2 {
   font-size: 7vmin;
   line-height: 10vmin;
 }
+
+h3 {
+  margin: 5vmin 3vmin;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.01em;
+  font-size: 5vmin;
+  line-height: 8vmin;
+}
+
 .headline {
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 .tailline, .headline {
@@ -54,7 +66,8 @@ h2 {
 }
 
 .tailline {
-  font-size: 2.4vmin;
+  font-size: 3vmin;
+  font-weight: 200;
 }
 
 
