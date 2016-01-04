@@ -2,7 +2,6 @@
 //= require bootstrap.min
 //= require smooth-scroll.min
 //= require clickdesk.min
-//= require hotjar.min
 //= require ganalytics.min
 
 //= require_tree .
