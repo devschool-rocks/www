@@ -3,6 +3,7 @@ permalink: eight-reasons-to-choose-devschool-as-your-online-dev-bootcamp
 title: 8 more reasons to choose Devschool's online dev bootcamp
 avatar: https://s3.amazonaws.com/devschool-shared/jim_okelly.png
 author: Jim OKelly
+role: Devschool Coding Bootcamp Instructor
 image_url: https://s3.amazonaws.com/devschool-shared/large-square-red.png
 published_at: 2015-12-27
 updated_at: 2015-12-27

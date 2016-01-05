@@ -1,43 +1,3 @@
-
-.modal {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    z-index: 1050;
-    display: none;
-    overflow: hidden;
-    outline: 0px none;
-}
-.fade {
-    opacity: 0;
-    transition: opacity 0.15s linear 0s;
-}
-
-button[type=submit], .apply-modal-btn {
-  display: inline-block;
-  min-height: 50px;
-  margin: 0px 5px 6vmin;
-  padding: 16px 20px 0px;
-  background: #981717 none repeat scroll 0% 0%;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 16px;
-  border-radius: 4px;
-  border: 1px solid #981717;
-  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
-  -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
-  -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
-  color: white;
-  font-weight: bold;
-}
-
-.apply-modal-btn:hover {
-  color: black;
-}
-
-
 .btn-small {
   height: 21px;
   line-height: 11px;
@@ -59,8 +19,6 @@ textarea.form-control {
   margin: 0;
   padding: 0 20px;
   vertical-align: middle;
-  background: #f8f8f8;
-  border: 1px solid #ddd;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -91,33 +49,6 @@ input[type="text"]:-moz-placeholder, textarea:-moz-placeholder, textarea.form-co
 input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { color: #888; }
 input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; }
 
-
-
-button.btn {
-  width: 100%;
-  margin: 0;
-  padding: 0 20px;
-  vertical-align: middle;
-  background: #fd625e;
-  border: 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 50px;
-  color: #fff;
-  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
-  text-shadow: none;
-  -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
-  -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
-}
-
-button.btn:hover { opacity: 0.6; color: #fff; }
-
-button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
-
-button.btn:focus { outline: 0; opacity: 0.6; background: #fd625e; color: #fff; }
-
-button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #fd625e; color: #fff; }
 
 /*Custom Radio Buttons and Checkboxes using Font Awesome*/
 

@@ -3,7 +3,7 @@ permalink: ultimate-online-developer-bootcamp-comparison-2016
 title: Check our comparison of the Best Online Coding Bootcamps!
 avatar: https://s3.amazonaws.com/devschool-shared/jim_okelly.png
 author: Jim OKelly
-role: Devschool Instructor
+role: Devschool Coding Bootcamp Instructor
 published_at: 2015-12-29
 updated_at: 2015-12-29
 image_height: 255

@@ -3,8 +3,8 @@ permalink: coding-bootcamp-preview-free-week-of-code-puerto-vallarta
 title: Join us in Paradise for a Free Week of Code, Developer Bootcamp
 avatar: https://s3.amazonaws.com/devschool-shared/jim_okelly.png
 author: Jim OKelly
+role: Devschool Coding Bootcamp Instructor
 image_url: coding-bootcamp-preview-free-week-of-code-puerto-vallarta.png
-role: Devschool Instructor
 published_at: 2015-12-28
 updated_at: 2015-12-28
 image_url: https://s3.amazonaws.com/devschool-shared/articles/coding-bootcamp-preview-free-week-of-code-puerto-vallarta.jpg

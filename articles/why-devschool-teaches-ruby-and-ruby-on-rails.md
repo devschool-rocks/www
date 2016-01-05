@@ -3,7 +3,7 @@ permalink: why-devschool-teaches-ruby-and-ruby-on-rails
 title: Why Devschool Teaches Ruby and Ruby on Rails in our online coding bootcamp
 avatar: https://s3.amazonaws.com/devschool-shared/jim_okelly.png
 author: Jim OKelly
-role: Devschool Instructor
+role: Devschool Coding Bootcamp Instructor
 published_at: 2015-12-25
 updated_at: 2015-12-25
 image_url:
