@@ -11,9 +11,17 @@
 
     <%- if Rails.env.production? %>
     <link rel="canonical" href="<%= content_for(:canonical) %>" />
+    <link rel="original-source" href="<%= content_for(:canonical) %>">
     <%- end %>
 
     <meta name="description" CONTENT="<%= meta_description %>">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+
+    <link href="https://plus.google.com/100924811766479319060" rel="publisher" />
+
+    <%= meta_keyword_tags %>
 
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Roboto|FontAwesome' rel='stylesheet' type='text/css'>
 
