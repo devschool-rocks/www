@@ -1,8 +1,6 @@
 <ul class="nav navbar-nav">
-  <li><%= link_to 'what', what_path, class: "default-active" %></li>
-  <li><%= link_to 'who', who_path %></li>
-  <li><%= link_to 'where', where_path, class: 'hidden-md hidden-sm' %></li>
-  <li><%= link_to 'price', price_path %></li>
-  <li><%= link_to 'real experience', ngo_path %></li>
-  <li><a href="/blog" class="hidden-md hidden-sm">blog</a></li>
+  <li><%= link_to 'coding bootcamp', what_path, class: "default-active" %></li>
+  <li><%= link_to who_path do %><span class="hidden-sm">our </span>instructors<%end%></li>
+  <li><%= link_to  price_path do %>pricing <span class="hidden-sm">info</span><%end%></li>
+  <li><%= link_to 'real experience', ngo_path, class: "hidden-sm hidden-md" %></li>
 </ul>

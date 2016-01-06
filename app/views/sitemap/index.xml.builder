@@ -10,10 +10,6 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
   end
 
   xml.url do
-    xml.loc "https://devschool.rocks/online-bootcamp/where"
-  end
-
-  xml.url do
     xml.loc "https://devschool.rocks/online-bootcamp/price"
   end
 

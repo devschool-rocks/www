@@ -3,8 +3,7 @@ Apply to Devschool's online coding bootcamp!
 <%- end %>
 
 <%- content_for(:description) do %>
-Don't just join a coding bootcamp, get in front of prospective employers with 
-our NGO internship program! We get you your first job!
+Don't just join a coding bootcamp, get in front of prospective employers with our NGO internship program! We get you your first job!
 <%- end %>
 
 <%- content_for(:canonical) do %>
@@ -13,69 +12,133 @@ https://devschool.rocks/coding-bootcamp/apply
 
 <div class="full-bg full-apply"
      style="background: url(<%= image_path('heroes/apply-bg.jpg') %>) no-repeat 50% 10% fixed;">
-     <div class="container">
-       <div class="row vertical-center">
-         <div class="col-md-12 above-fold text-center">
-           <h2>The mission of our </h2>
-               <h1>online coding bootcamp</h1>
-               <h2>is to provide you  <strong>skills</strong a <strong>job</strong>. We have a 
-             <strong>strong culture</strong> of <strong>getting shit done</strong>
-           and <strong>having fun</strong>!</h2>
+  <div class="container">
+    <div class="row vertical-center">
+      <div class="col-md-12 above-fold text-center">
+        <h2>Our coding bootcamp is a realistic, in-depth 
+          education in web and software development,
+          and then place 100% of our students at a job!</h1>
 
-           <h3><a data-scroll href="#below-the-fold">Scroll down</a> to apply to our online coding bootcamp now!</h3>
-         </div>
-       </div>
-       <!-- /.row -->
-     </div>
-     <!-- /.container -->
-</div>
-
-<div class="container" id="below-the-fold">
-  <div class="row">
-    <div class="col-md-12 below-fold">
-      <h2 class="headline">We don't like crybabies. We don't like excuses. We 
-      like people who get things done no matter the odds.</h2>
-
-      <p>If you are thinking about our coding bootcamp we should be up-front about
-      what we think and how we behave and what we expect from you, our most valuable
-      asset, the Student.</p>
-
-      <p>You should be interested in Technology as it impacts your everyday life. 
-      You should enjoy learning and maybe a bit of a science nerd. You should 
-      have an inquisitive, kind mind. One that is quick to absorb information 
-      and then find evidence to confirm or refute it.</p>
-      
-      <p>In short, you must be a bit of a nerd.</p>
-
-      <p>The great news is there is a bit of nerdiness to most people these days. 
-      Artists, Managers, Marketers, Writers, and Chefs all have the nerds 
-      among them and make excellent developers.</p>
-      
-      <p>You are interested in creating more productive work-flows, and building
-      new tools to aid yourself and to become more powerful and speedy.</p>
-      
-      <p>You count yourself among inquisitive people and you love to solve 
-      a good mystery like Scooby Doo.</p>
+    <h3><a data-scroll href="#below-the-fold"
+                        class="btn btn-attention btn-lg">Apply below!</a></h3>
+      </div>
     </div>
   </div>
+</div>
 
+<div class="colored-section blue">
+  <div class="row inspiration">
+    <div class="col-md-offset-1 col-md-4 text-center">
+      <%= image_tag image_path("steve-jobs.png"), class: "reviewer-photo reviewer-photo-shadow img-responsive img-circle",
+        height: "282px", width: "300px"%>
+      <div class="quote" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div itemprop="name">Steve Jobs</div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <blockquote class="quote">
+        Here's to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes... the ones who see things differently -- they're not fond of rules... You can quote them, disagree with them, glorify or vilify them, but the only thing you can't do is ignore them because they change things... they push the human race forward, and while some may see them as the crazy ones, we see genius, because the ones who are crazy enough to think that they can change the world, are the ones who do.
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<div class="container">
   <div class="row row-centered">
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">We Value Diversity</h3>
-      <p class="tailline">Nerds come in all shapes and colors and genders. They are not binary creatures.</p>
+      <p class="tailline">Nerds come in all shapes and colors and genders. 
+      They are not binary creatures.</p>
+      <p>When we evaluate you for your nerdiness we look for people who were 
+      in the drama club, people who started their own newspapers as kids.</p>
     </div>
 
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">We Value Humor</h3>
-      <p class="tailline">You are expected to have a bit of a thick skin here. Employers want winners, not whiners.</p>
+      <p class="tailline">You are expected to have a bit of a thick skin here. 
+      Employers want the winners, not the whiners.</p>
+      <p>This experience should be fun and somewhat lighthearted for all of our 
+      students and we protect their experience with culture.</p>
     </div>
 
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">We Value Hard Work</h3>
-      <p class="tailline">Your education is up to you, and you will get out of the program what you put into it.</p>
+      <p class="tailline">Your education is up to you, and you will get out of 
+      the program what you put into it.</p>
+      <p>We look for self-starters, people who don't take no for an answer, 
+      and people that have lived colorful life, the rebels, the misfits.</p>
     </div>
   </div>
 
+</div>
+
+<div class="continaer">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="enrollment-application-form">
+        <form id="apply" action="<%= backend_url %>/enrollments.json"
+                         class="form form-horizontal">
+                         <fieldset>
+                           <h2 class="headline">Take charge of your future!</h2>
+
+                           <div class="form-group">
+                             <label class="col-md-4 control-label" for="enrollment_name">What is your name?</label>  
+                             <div class="col-md-8">
+                               <input id="enrollment_name" name="enrollment[name]" type="text" placeholder="Future J Hacker" class="form-control input-md unfilled_field">
+                             </div>
+                           </div>
+
+                           <div class="form-group">
+                             <label class="col-md-4 control-label" for="enrollment_email">Your primary email address?</label>  
+                             <div class="col-md-8">
+                               <input id="enrollment_email" name="enrollment[email]" type="text" placeholder="somebody@someplace.com" class="form-control unfilled_field input-md">
+                             </div>
+                           </div>
+
+                           <div class="form-group">
+                             <label class="col-md-4 control-label" for="enrollment_why">Why do you want to join Devschool?</label>
+                             <div class="col-md-8">
+                               <textarea class="form-control" rows="8" id="enrollment_why" name="enrollment[why]" placeholder="Tell us why we should accept you to our program, we don't accept everyone. Why? We care deeply about the school culture and the experience of our current students.
+
+So what does one say to get accepted? Show some spunk. Show some nerd cred. Tell us how you overcame some challenges in your life. We like people who tough it out and overcome."></textarea>
+                             </div>
+                           </div>
+
+                           <div class="form-group">
+                             <label class="col-md-4 control-label" for="enrollment_pay_option_prepay"></label>
+                             <div class="col-md-8">
+                               <div class="checkbox">
+                                 <input type="radio" name="enrollment[pay_option]" checked id="enrollment_pay_option_prepay" value="prepay">
+                                 <label for="enrollment_pay_option_prepay">I will be paying <%= number_to_currency(Product.prepay_price) %> up-front, saving <%= number_to_currency(Product.prepay_savings_amount) %></label>
+                                 <input type="radio" name="enrollment[pay_option]" id="enrollment_pay_option_payments" value="payments">
+                                 <label for="enrollment_pay_option_payments">I want to make <%= Product.payment_count %> monthly payments of <%= number_to_currency(Product.payment_amount) %> instead</label>
+                               </div>
+                             </div>
+                           </div>
+
+                           <div class="form-group">
+                             <label class="col-md-4 control-label" for="accept_tos"></label>
+                             <div class="col-md-8">
+                               <div class="checkbox">
+                                 <input type="checkbox" name="accept_tos" id="accept_tos" class="unfilled_field">
+                                 <label for="accept_tos">I have read and accept the <a href="/terms" target="_blank">Terms of Service</a></label>
+                               </div>
+                             </div>
+                           </div>
+
+                           <div class="form-group">
+                             <div class="col-md-4"></div>
+                             <div class="col-md-8">
+                               <button class="btn btn-primary" disabled>I WANT TO JOIN DEVSCHOOL</button>
+                             </div>
+                           </div>
+
+                         </fieldset>
+        </form>
+
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="section-yellow">
@@ -120,89 +183,6 @@ https://devschool.rocks/coding-bootcamp/apply
 
       </div>
 <a name="apply-now"></a>
-    </div>
-  </div>
-</div>
-
-<div class="continaer">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="enrollment-application-form">
-        <form id="apply" action="<%= backend_url %>/enrollments.json"
-                         class="form form-horizontal">
-                         <fieldset>
-                           <h3 class="headline">Take charge of your future!</h3>
-
-                           <div class="form-group">
-                             <div class="col-md-4"></div>
-                             <div class="col-md-8">
-                               <h3>Student Information</h3>
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <label class="col-md-4 control-label" for="enrollment_name">What is your name?</label>  
-                             <div class="col-md-8">
-                               <input id="enrollment_name" name="enrollment[name]" type="text" placeholder="Future J Hacker" class="form-control input-md unfilled_field">
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <label class="col-md-4 control-label" for="enrollment_email">Your primary email address?</label>  
-                             <div class="col-md-8">
-                               <input id="enrollment_email" name="enrollment[email]" type="text" placeholder="somebody@someplace.com" class="form-control unfilled_field input-md">
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <label class="col-md-4 control-label" for="enrollment_why">Why do you want to join Devschool?</label>
-                             <div class="col-md-8">
-                               <textarea class="form-control" rows="8" id="enrollment_why" name="enrollment[why]" placeholder="Tell us why we should accept you to our program, we don't accept everyone. Why? We care deeply about the school culture and the experience of our current students.
-                               
-So what does one say to get accepted? Show some spunk. Show some nerd cred. Tell us how you overcame some challenges in your life. We like people who tough it out and overcome."></textarea>
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <div class="col-md-4"></div>
-                             <div class="col-md-8">
-                               <h3>Method of Payment</h3>
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <label class="col-md-4 control-label" for="enrollment_pay_option_prepay"></label>
-                             <div class="col-md-8">
-                               <div class="checkbox">
-                                 <input type="radio" name="enrollment[pay_option]" checked id="enrollment_pay_option_prepay" value="prepay">
-                                 <label for="enrollment_pay_option_prepay">I will be paying <%= number_to_currency(Product.prepay_price) %> up-front, saving <%= number_to_currency(Product.prepay_savings_amount) %></label>
-                                 <input type="radio" name="enrollment[pay_option]" id="enrollment_pay_option_payments" value="payments">
-                                 <label for="enrollment_pay_option_payments">I want to make <%= Product.payment_count %> monthly payments of <%= number_to_currency(Product.payment_amount) %> instead</label>
-                               </div>
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <label class="col-md-4 control-label" for="accept_tos"></label>
-                             <div class="col-md-8">
-                               <div class="checkbox">
-                                 <input type="checkbox" name="accept_tos" id="accept_tos" class="unfilled_field">
-                                 <label for="accept_tos">I have read and accept the <a href="/terms" target="_blank">Terms of Service</a></label>
-                               </div>
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <div class="col-md-4"></div>
-                             <div class="col-md-8">
-                               <button class="btn btn-primary" disabled>I WANT TO JOIN DEVSCHOOL</button>
-                             </div>
-                           </div>
-
-                         </fieldset>
-        </form>
-
-      </div>
     </div>
   </div>
 </div>
