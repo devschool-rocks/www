@@ -1,12 +1,11 @@
 <div class="container padded-top">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <h1>Devschool's Sitemap</h1>
+      <h1>Devschool Sitemap</h1>
       <ul class="list-unstyled">
-        <li><h3>Website</h3>
+        <li><h3>Our coding bootcamp program</h3>
           <ul>
-            <li><a href="https://devschool.rocks/">Homepage</a></li>
-            <li><a href="https://devschool.rocks/how">How we teach web development</a></li>
+            <li><a href="https://devschool.rocks/how">What and how we teach coding</a></li>
             <li><a href="https://devschool.rocks/who">Who teaches at Devschool?</a></li>
             <li><a href="https://devschool.rocks/where">Where does 'class' happen?</a></li>
             <li><a href="https://devschool.rocks/price">How much does the course cost?</a></li>
@@ -14,7 +13,7 @@
           </ul>
         </li>
 
-        <li><h3>Articles</h3>
+        <li><h3>Coding bootcamp articles</h3>
           <ul><%= ARTICLES.map do |a|
             link = "https://devschool.rocks#{a[:permalink]}"
             label = a[:title]

@@ -2,27 +2,23 @@ xml.instruct! :xml, :version => "1.0"
 xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
 
   xml.url do
-    xml.loc "https://devschool.rocks"
+    xml.loc "https://devschool.rocks/online-bootcamp"
   end
 
   xml.url do
-    xml.loc "https://devschool.rocks/how"
+    xml.loc "https://devschool.rocks/online-bootcamp/who"
   end
 
   xml.url do
-    xml.loc "https://devschool.rocks/who"
+    xml.loc "https://devschool.rocks/online-bootcamp/where"
   end
 
   xml.url do
-    xml.loc "https://devschool.rocks/where"
+    xml.loc "https://devschool.rocks/online-bootcamp/price"
   end
 
   xml.url do
-    xml.loc "https://devschool.rocks/price"
-  end
-
-  xml.url do
-    xml.loc "https://devschool.rocks/apply"
+    xml.loc "https://devschool.rocks/online-bootcamp/apply"
   end
 
   xml.url do
