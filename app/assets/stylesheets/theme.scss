@@ -16,10 +16,41 @@ p.note {
   font-size: 1.8vmin;
 }
 
-.well.squeeze {
+.squeeze {
   background-color: #C73E3E;
-  padding: 6vmin;
+  opacity: 0.9;
+  background-size: cover;
   margin-top: 4vmin;
+}
+
+#mc_embed_signup {
+  padding: 6vmin;
+}
+
+.squeeze p {
+  margin: 0;
+  font-size: 2.2vmin;
+  line-height: 4vmin;
+  font-weight: 200;
+  color: white;
+}
+
+.squeeze h3 {
+  font-size: 3vmin;
+  line-height: 4.5vmin;
+  margin: 0;
+  font-weight: 300;
+  color: white;
+}
+
+.squeeze button {
+  margin: 0;
+}
+
+.squeeze label {
+  font-size: 2.2vmin;
+  font-weight: 200;
+  color: white;
 }
 
 span.price {

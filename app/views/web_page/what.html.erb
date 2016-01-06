@@ -55,7 +55,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
       isn't about a single language no matter what JavaScripters might say.</p>
     </div>
 
-    <div class="col-md-4 col-sm-6 square">
+    <div class="col-md-4 col-sm-6 square hidden-sm hidden-xs">
       <h3 class="headline">process</h3>
 
       <p class="tailline">Learn iterative software design and
@@ -119,7 +119,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
       branches, for tracking changes made by other developers, and merging it all back together for deployment.</p>
     </div>
 
-    <div class="col-md-4 col-sm-6 square">
+    <div class="col-md-4 col-sm-6 square hidden-xs hidden-sm">
       <h3 class="headline">databases</h3>
 
       <p>When data must be stored (which is basically all the time), a database is needed to store and retrieve that data
@@ -129,7 +129,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
 
   <div class="row">
 
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
+    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
       <h3 class="headline">an expert editor</h3>
 
       <p>Vim is some super-secret sauce. Not only does it make you look like a wizard while you are creating and editing files (which by 
@@ -152,15 +152,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
   </div>
 </div>
 
-<div class="well squeeze">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <%= render 'mailchimp' %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render 'squeeze_open_group' %>
 
 <div class="container">
   <div class="row">
@@ -178,7 +170,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
       It is a rich markup language, and with the recent implementation of HTML5, new possibilities of integrating media and the web are better than ever!</p>
     </div>
 
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
+    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
       <h3 class="headline">CSS3</h3>
 
       <p>Without CSS the web would be a dull and drab place indeed! Is is these Cascading Style Sheets that provide all of the color, margin, and fonts
@@ -209,7 +201,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
       It has proven to turn common conventions on their heads and still come out ahead of the pack. We think React is the future of the web.</p>
     </div>
 
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
+    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
     <h3 class="headline">Ruby on Rails</h3>
 
       <p>Ruby on Rails provides an excellent back-end framework for websites with a lot of data entry going on. It excels at allowing Developers to quickly pump out
@@ -267,7 +259,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
         day when they are free for a quick chat.</p>
       </div>
 
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
+    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
         <h3 class="headline">Screensharing and pairing</h3>
         <p class="tailline">Interact in real-time using sophisticated video/audio/screenshare software
         with your Instructor. This can save countless hours of "floundering in the
@@ -291,7 +283,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
         is much simpler than absorbing it from a book.</p>
       </div>
 
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
+    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
         <h3 class="headline">An encouraging environment</h3>
         <p class="tailline">When learning difficult concepts for the first time, it helps to have an
         encouraging environment. At our coding bootcamp you will never be made
@@ -307,17 +299,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
     </div>
 </div>
 
-
-<div class="well squeeze">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <%= render 'mailchimp' %>
-      </div>
-    </div>
-  </div>
-</div>
-
+<%= render 'squeeze_open_group' %>
 
 <div class="container">
   <div class="row">
@@ -336,7 +318,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
         of interaction with real people and real software.</p>
       </div>
 
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
+    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
         <h3 class="headline">you've got a friend</h3>
         <p>Self assembling teams are a great way to keep connected to your peers, and
         always have a second set of eyes on a problem when needed. Your peers share
@@ -367,7 +349,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
       live interactive learning sessions where programming concepts are demonstrated in real time.</p>
     </div>
 
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
+    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
       <h3 class="headline">Audio Rocks</h3>
       <p class="tailline">When you type to get your job done, typing to talk isn't really an option. For this
       reason we employ Audio Chat (again through Zoom) so everyone can have a lively discussion.</p>
@@ -446,7 +428,7 @@ coding bootcamps, coding schools, learn to code, dev bootcamp, hack reactor, gen
       and their weaknesses are compensated by their peers.</p>
     </div>
 
-    <div class="col-md-4 col-sm-6 ">
+    <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
       <h3 class="headline">homework</h3>
       <%= image_tag image_path("homework-3rd.png"), class: "img-responsive center-block",
         height: "187px", width: "312px", alt: "A huge part of becoming a web developer is the time you spend banging your head against problems. We built that into our online coding bootcamp curriculum too!" %>
