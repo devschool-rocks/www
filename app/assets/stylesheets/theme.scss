@@ -1,3 +1,17 @@
+.square {
+  border: 1px solid #333;
+  margin: 0 -1px -1px 0;
+  height: 45vmin;
+}
+
+.square p {
+  font-size: 2.4vmin;
+}
+
+.square h3.headline {
+  font-size: 2.6vmin;
+}
+
 p.note {
   font-size: 1.8vmin;
 }
@@ -5,6 +19,7 @@ p.note {
 .well.squeeze {
   background-color: #C73E3E;
   padding: 6vmin;
+  margin-top: 4vmin;
 }
 
 span.price {
