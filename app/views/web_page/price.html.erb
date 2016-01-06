@@ -33,19 +33,21 @@ https://devschool.rocks/coding-bootcamp/price
 <div class="container" id="below-the-fold">
   <div class="row">
     <div class="col-md-12 below-fold">
-      <h2 class="headline">Our program consists of <%= Product.session_count %> "one-on-one" <%= Product.session_length %> minute sessions
-        with your Instructor, up to 5 instructor-led group sessions a week, and in total,
-        420 hours of building web applications</h2>
-      <h3 class="headline">We don't just train you up, we get you a job in programming!</h3>
+      <h2 class="headline">Our program consists of <strong><%= Product.session_count %> 
+      "one-on-one", <%= Product.session_length %> minute sessions</strong>
+        with your Instructor, up to <strong>5 instructor-led group sessions</strong>
+        a week, and in total, <strong>500 hours</strong> of building web apps</h2>
     </div>
   </div>
 
   <div class="row row-centered">
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">Save some money</h3>
-      <p class="tailline">The program costs <span class="price">
-        <%= number_to_currency Product.prepay_price %></span> <span class="text-small">USD</span> if you pay in full when you enroll, saving a cool <%= number_to_currency Product.prepay_savings_amount %>!
-      Pre-paying your enrollment cost makes a lot of sense, because there is no financing cost!</p>
+      <p class="tailline">You can invest in your future for <strong>as low as
+        <%= number_to_currency Product.prepay_price %></strong> 
+      <span class="text-small">USD</span> if you pay in full at enrollment, 
+      <strong>you save <%= number_to_currency Product.prepay_savings_amount %></strong>!
+      Pre-paying for your education makes a lot of sense, because there is no financing cost!</p>
     </div>
 
     <div class="col-md-4 col-sm-6 ">
@@ -58,7 +60,8 @@ https://devschool.rocks/coding-bootcamp/price
 
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">Refund policy</h3>
-      <p class="tailline">We back our performance by a pro-rate refund policy. 
+      <p class="tailline">We <strong>back our performance</strong> by a pro-rated 
+      <strong>money back guarantee</strong>. 
       Should you decide that Devschool is not for you, we will happily refund your
       enrollment based on how long you have been with us.</p>
     </div>
