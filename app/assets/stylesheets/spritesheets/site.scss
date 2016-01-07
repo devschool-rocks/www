@@ -1,7 +1,7 @@
 .site-sprite {
   background-image: asset-url('site-spritesheet.png');
   background-repeat: no-repeat;
-  display: inline-block;
+  display: block;
 }
 
 .sprite-ajax-loader {
@@ -14,6 +14,7 @@
   width: 14px;
   height: 14px;
   background-position: -47px -5px;
+  display: inline-block;
 }
 
 .sprite-ds-fi-fb {
@@ -80,6 +81,7 @@
   width: 14px;
   height: 14px;
   background-position: -5px -79px;
+  display: inline-block;
 }
 
 .sprite-twitter {
