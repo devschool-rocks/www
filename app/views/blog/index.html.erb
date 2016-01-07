@@ -14,10 +14,11 @@ https://devschool.rocks/blog
 <%= render 'social_js' %>
 <%- end %>
 
-<div class="container padded-top">
+
+<div class="container article">
   <div class="row">
-    <div class="col-md-12">
-      <h1 class="headline">Welcome to the Devschool online coding bootcamp blog, baby!</h1>
+    <div class="col-md-8 col-md-offset-2">
+      <%= render partial: Article.most_recent[:permalink].gsub("-","_") %>
     </div>
   </div>
 </div>
@@ -25,8 +26,8 @@ https://devschool.rocks/blog
 <div class="container article">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <%- @articles.each do |a| %>
-        <%= raw render_to_string(partial: a[:permalink].gsub("-","_") + "_excerpt").gsub("h1","h2") %>
+      <%- Article.except_recent.each do |a| %>
+        <%= raw render_to_string(partial: a[:permalink].gsub("-","_") + "_excerpt").gsub("h1\>","h2\>") %>
         <hr>
       <%- end %>
     </div>

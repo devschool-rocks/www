@@ -11,6 +11,14 @@ Article = Struct.new(:markdown, :meta) do
     YAML.load(File.read(manifest))
   end
 
+  def self.most_recent
+    ARTICLES[0]
+  end
+
+  def self.except_recent
+    ARTICLES[1..-1]
+  end
+
   def permalink
     meta[:permalink]
   end
