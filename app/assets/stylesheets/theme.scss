@@ -1,3 +1,8 @@
+.navbar-brand {
+  position: relative;
+  top: -6px;
+}
+
 .square {
   border: 1px solid #333;
   margin: 0 -1px -1px 0;
@@ -57,10 +62,6 @@ span.price {
   font-weight: 500;
 }
 
-.brand {
-  width: 160px;
-  height: 31px;
-}
 
 a.btn {
   text-decoration: none !important;
