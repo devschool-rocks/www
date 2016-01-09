@@ -3,8 +3,9 @@ How much does Devschool's online coding bootcamp cost?
 <%- end %>
 
 <%- content_for(:description) do %>
-For as little as $4489 you can attend Devschool's online coding bootcamp 
-program and become a web developer - We get you your first job!
+For as little as <%= number_to_currency Product.prepay_price %> you can 
+attend Devschool's online coding bootcamp program and become a web developer - 
+We get you your first job!
 <%- end %>
 
 <%- content_for(:canonical) do %>

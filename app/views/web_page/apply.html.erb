@@ -76,66 +76,7 @@ https://devschool.rocks/coding-bootcamp/apply
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="enrollment-application-form">
-        <form id="apply" action="<%= backend_url %>/enrollments.json"
-                         class="form form-horizontal">
-                         <fieldset>
-                           <h2 class="headline">Take charge of your future!</h2>
-
-                           <div class="form-group">
-                             <label class="col-md-4 control-label" for="enrollment_name">What is your name?</label>  
-                             <div class="col-md-8">
-                               <input id="enrollment_name" name="enrollment[name]" type="text" placeholder="Future J Hacker" class="form-control input-md unfilled_field">
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <label class="col-md-4 control-label" for="enrollment_email">Your primary email address?</label>  
-                             <div class="col-md-8">
-                               <input id="enrollment_email" name="enrollment[email]" type="text" placeholder="somebody@someplace.com" class="form-control unfilled_field input-md">
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <label class="col-md-4 control-label" for="enrollment_why">Why do you want to join Devschool?</label>
-                             <div class="col-md-8">
-                               <textarea class="form-control" rows="8" id="enrollment_why" name="enrollment[why]" placeholder="Tell us why we should accept you to our program, we don't accept everyone. Why? We care deeply about the school culture and the experience of our current students.
-
-So what does one say to get accepted? Show some spunk. Show some nerd cred. Tell us how you overcame some challenges in your life. We like people who tough it out and overcome."></textarea>
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <label class="col-md-4 control-label" for="enrollment_pay_option_prepay"></label>
-                             <div class="col-md-8">
-                               <div class="checkbox">
-                                 <input type="radio" name="enrollment[pay_option]" checked id="enrollment_pay_option_prepay" value="prepay">
-                                 <label for="enrollment_pay_option_prepay">I will be paying <%= number_to_currency(Product.prepay_price) %> up-front, saving <%= number_to_currency(Product.prepay_savings_amount) %></label>
-                                 <input type="radio" name="enrollment[pay_option]" id="enrollment_pay_option_payments" value="payments">
-                                 <label for="enrollment_pay_option_payments">I want to make <%= Product.payment_count %> monthly payments of <%= number_to_currency(Product.payment_amount) %> instead</label>
-                               </div>
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <label class="col-md-4 control-label" for="accept_tos"></label>
-                             <div class="col-md-8">
-                               <div class="checkbox">
-                                 <input type="checkbox" name="accept_tos" id="accept_tos" class="unfilled_field">
-                                 <label for="accept_tos">I have read and accept the <a href="/terms" target="_blank">Terms of Service</a></label>
-                               </div>
-                             </div>
-                           </div>
-
-                           <div class="form-group">
-                             <div class="col-md-4"></div>
-                             <div class="col-md-8">
-                               <button class="btn btn-primary" disabled>I WANT TO JOIN DEVSCHOOL</button>
-                             </div>
-                           </div>
-
-                         </fieldset>
-        </form>
-
+        <%= render 'apply_form' %>
       </div>
     </div>
   </div>

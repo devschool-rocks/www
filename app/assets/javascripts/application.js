@@ -2,6 +2,7 @@
 //= require bootstrap.min
 //= require smooth-scroll.min
 //= require clickdesk.min
+//= require js.cookie
 
 //= require_tree .
 

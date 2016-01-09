@@ -26,6 +26,8 @@ Rails.application.routes.draw do
   match '/price', :to => redirect('/coding-bootcamp/price'), via: :get
   match '/apply', :to => redirect('/coding-bootcamp/apply'), via: :get
 
+  match '/:keyword/promotions/:code' => "promotions#show", via: :get
+
   root to: "web_page#what"
 
   dead_urls = ["/affiliates","/what",

@@ -20,6 +20,8 @@ gem 'jquery-rails'
 # for both digest and non
 gem 'non-stupid-digest-assets'
 
+gem 'js_cookie_rails'
+
 # cloudfront 
 gem 'font_assets'
 
