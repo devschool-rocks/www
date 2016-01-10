@@ -26,22 +26,10 @@ https://devschool.rocks/coding-bootcamp/apply
   </div>
 </div>
 
-<div class="colored-section blue" id="below-the-fold">
-  <div class="row inspiration">
-    <div class="col-md-offset-1 col-md-4 text-center">
-      <%= image_tag image_path("steve-jobs.png"), class: "reviewer-photo reviewer-photo-shadow img-responsive img-circle",
-        height: "282px", width: "300px"%>
-      <div class="quote" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <div itemprop="name">Steve Jobs</div>
-      </div>
-    </div>
-    <div class="col-md-5">
-      <blockquote class="quote">
-        Here's to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes... the ones who see things differently -- they're not fond of rules... You can quote them, disagree with them, glorify or vilify them, but the only thing you can't do is ignore them because they change things... they push the human race forward, and while some may see them as the crazy ones, we see genius, because the ones who are crazy enough to think that they can change the world, are the ones who do.
-      </blockquote>
-    </div>
-  </div>
+<div id="below-the-fold">
+  <%= render('discount_notice') if discounted? %>
 </div>
+
 
 <div class="container">
   <div class="row row-centered">
@@ -70,6 +58,23 @@ https://devschool.rocks/coding-bootcamp/apply
     </div>
   </div>
 
+</div>
+
+<div class="colored-section blue">
+  <div class="row inspiration">
+    <div class="col-md-offset-1 col-md-4 text-center">
+      <%= image_tag image_path("steve-jobs.png"), class: "reviewer-photo reviewer-photo-shadow img-responsive img-circle",
+        height: "282px", width: "300px"%>
+      <div class="quote" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div itemprop="name">Steve Jobs</div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <blockquote class="quote">
+        Here's to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes... the ones who see things differently -- they're not fond of rules... You can quote them, disagree with them, glorify or vilify them, but the only thing you can't do is ignore them because they change things... they push the human race forward, and while some may see them as the crazy ones, we see genius, because the ones who are crazy enough to think that they can change the world, are the ones who do.
+      </blockquote>
+    </div>
+  </div>
 </div>
 
 <div class="continaer">
