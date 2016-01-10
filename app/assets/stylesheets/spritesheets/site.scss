@@ -11,9 +11,9 @@
 }
 
 .sprite-cannabis {
-  display: inline-block;
   width: 14px;
   height: 14px;
+  display: inline-block;
   background-position: -47px -5px;
 }
 
@@ -26,61 +26,78 @@
 .sprite-ds-logo {
   width: 176px;
   height: 34px;
-  background-position: -5px -255px;
-}
-
-.sprite-email {
-  margin: 6px;
-  width: 32px;
-  height: 32px;
   background-position: -321px -5px;
 }
 
-.sprite-facebook {
-  margin: 6px;
+.sprite-email {
   width: 32px;
   height: 32px;
-  background-position: -5px -47px;
+  background-position: -507px -5px;
+  margin: 6px;
+}
+
+.sprite-facebook {
+  width: 32px;
+  height: 32px;
+  background-position: -549px -5px;
+  margin: 6px;
 }
 
 .sprite-google {
-  margin: 6px;
   width: 32px;
   height: 32px;
-  background-position: -321px -47px;
+  background-position: -591px -5px;
+  margin: 6px;
 }
 
 .sprite-jim_okelly {
   width: 250px;
   height: 250px;
-  background-position: -363px -5px;
+  background-position: -507px -47px;
+}
+
+.sprite-large-square-red {
+  width: 558px;
+  height: 558px;
+  background-position: -767px -5px;
 }
 
 .sprite-linkedin {
-  margin: 6px;
   width: 32px;
   height: 32px;
-  background-position: -191px -265px;
+  background-position: -633px -5px;
+  margin: 6px;
 }
 
 .sprite-reddit {
-  margin: 6px;
   width: 32px;
   height: 32px;
-  background-position: -233px -265px;
+  background-position: -675px -5px;
+  margin: 6px;
+}
+
+.sprite-squeeze-bg-1 {
+  width: 516px;
+  height: 290px;
+  background-position: -5px -573px;
+}
+
+.sprite-steve-jobs {
+  width: 300px;
+  height: 282px;
+  background-position: -531px -573px;
 }
 
 .sprite-sunshine {
   width: 14px;
   height: 14px;
-  background-position: -623px -5px;
+  background-position: -717px -5px;
   display: inline-block;
 }
 
 .sprite-twitter {
-  margin: 6px;
   width: 32px;
   height: 32px;
-  background-position: -275px -265px;
+  background-position: -1335px -5px;
+  margin: 6px;
 }
-
