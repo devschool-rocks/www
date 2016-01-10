@@ -23,11 +23,11 @@ To that end we proudly present "A Free Week of Code in Paradise - A Coding Bootc
 
 A. https://www.eventbrite.com/e/free-week-of-code-a-coding-bootcamp-introduction-in-paradise-tickets-20160454462
 
-## Q. What will I learn specificall at this bootcamp preview?
+## Q. What will I learn specifically at this bootcamp preview?
 
 A. Since it is a bootcamp preview as well as being a free week of code, the things we will be teaching you will be heavily influenced by how we do things here at Devschool.
 
-For instance we will teach you how to configure Vi from vanilla install to a rockstar developmen tool and how to use it like a true kneckbearded hacker. We will also teach you a bunch of UNIX command line tricks to make you a better developer.
+For instance we will teach you how to configure Vi from vanilla install to a rockstar development tool and how to use it like a true kneckbearded hacker. We will also teach you a bunch of UNIX command line tricks to make you a better developer.
 
 To top it off, we will build some Ruby apps using Jim's own style of functional programming in Ruby and you will learn the difference between a function and a method, and why program state is a dangerous thing.
 
@@ -44,8 +44,8 @@ A. Well, that mostly depends on where you are coming from and when you book your
 
 A. We have room for 12 students in our dorm room here in Bucerias, Nayarit Mexico, about an hour north of the hustle and bustle (and car smog) of Puerto Vallarta. It is between the surf town of Sayulita and the Canadian filled Nuevo Vallarta and we are right on the ocean!
 
-If you should decide to rent a cheap motel or house locally here you are welcome to do that as well but we would caution you against trying to book and pay for anything online unless it is through Orbitz or Kayak or a website like that. Rentals here can be a shady business.
+If you should decide to rent a cheap motel or house locally here you are welcome to do that as well but we would caution you against trying to book and pay for anything online unless it is through Orbits or Kayak or a website like that. Rentals here can be a shady business.
 
 ## How many hours a day of instruction will I get?
 
-A. Each day consists of 2 hours of morning instruction at 11am and then another hour in afternoon for 4 days. On Friday those of us who want to, can go zip lining, or get drunk on a pirate ship depending on the crowd vote and mood. These events are purchased seperately, but we can get a great group deal so it will cost each person around $50-60 USD. These tours are provided by <a rel="nofollow" href="http://vallarta-adventures.com">Vallarta Adventures</a> and they really are a blast!
+A. Each day consists of 2 hours of morning instruction at 11am and then another hour in afternoon for 4 days. On Friday those of us who want to, can go zip lining, or get drunk on a pirate ship depending on the crowd vote and mood. These events are purchased separately, but we can get a great group deal so it will cost each person around $50-60 USD. These tours are provided by <a rel="nofollow" href="http://vallarta-adventures.com">Vallarta Adventures</a> and they really are a blast!

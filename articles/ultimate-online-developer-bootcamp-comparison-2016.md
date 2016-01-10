@@ -54,7 +54,7 @@ Job Guarantee: Yes, 100% Hire Rate
 Instructor Sessions: 42
 Group Sessions: 5 a week
 
-Devschool focuses on the quality of it's instructors and students and teaches an entry-level to advanced program to make you a real programmer, not just a developer. Devschool is not interested in just being another "Big Box Bootcamp" where they churn a lot of developers out without a proper focus. There is a strong focus on HTML5/CSS and Responsive Design and Mobile Development, JavaScript for interactivity and rich web interfaces, and Ruby and Ruby on Rails for backend development. The course consists of 420 hours education time, 42 one on one sessions with your expert instructor, up to 5 weekly group sessions, and 100 hours of real non profit interning making a real difference in the world and getting an education.
+Devschool focuses on the quality of it's instructors and students and teaches an entry-level to advanced program to make you a real programmer, not just a developer. Devschool is not interested in just being another "Big Box Bootcamp" where they churn a lot of developers out without a proper focus. There is a strong focus on HTML5/CSS and Responsive Design and Mobile Development, JavaScript for interactivity and rich web interfaces, and Ruby and Ruby on Rails for back-end development. The course consists of 420 hours education time, 42 one on one sessions with your expert instructor, up to 5 weekly group sessions, and 100 hours of real non profit interning making a real difference in the world and getting an education.
 
 
 <a title="more info on Devschool's online developer bootcamp program" href="https://devschool.rocks/how">More info on Devschool's Online Developer Bootcamp Program</a>
@@ -78,6 +78,6 @@ Without other people around you encouraging you and working with you, it is a lo
 
 ## Why didn't you include any really expensive online developer schools in this list?
 
-We don't feel that bootcamps should be fleecing students out of 10s of thousands of dollars, so we choose not to include them when we present you options. At Devschool we are convinced that dev bootcamp should be both affordable and accessable, and the education you get should be the highest quality possible.
+We don't feel that bootcamps should be fleecing students out of 10s of thousands of dollars, so we choose not to include them when we present you options. At Devschool we are convinced that dev bootcamp should be both affordable and accessible, and the education you get should be the highest quality possible.
 
 We want higher quality graduates, not a higher quantity of graduates!

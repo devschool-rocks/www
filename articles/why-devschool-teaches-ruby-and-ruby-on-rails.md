@@ -26,7 +26,7 @@ Ruby also strips away a lot of the syntax and 'ceremony' also known as the thing
 
 ## A language built to be like English, in more ways than one
 
-Ruby is known to "read" very much like english, but it also shares another trait with English. Did you know for instance, that Skill is an old English word while Craft is a Viking word? English is full of this multi-parentage stuff. It was shaped by French, German, Norse, Arabic, Spanish and more.
+Ruby is known to "read" very much like English, but it also shares another trait with English. Did you know for instance, that Skill is an old English word while Craft is a Viking word? English is full of this multi-parentage stuff. It was shaped by French, German, Norse, Arabic, Spanish and more.
 
 Well, Ruby in built from the "best" parts of PERL, Python, LISP, SmallTalk, Eiffel, and the language itself is written in C. So you can write Ruby in many different styles, including OOP and FP
 
