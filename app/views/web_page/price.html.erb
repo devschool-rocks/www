@@ -3,7 +3,7 @@ How much does Devschool's online coding bootcamp cost?
 <%- end %>
 
 <%- content_for(:description) do %>
-For as little as <%= number_to_currency Product.prepay_price %> you can 
+For as little as <%= number_to_currency prepay_price %> you can 
 attend Devschool's online coding bootcamp program and become a web developer - 
 We get you your first job!
 <%- end %>
@@ -14,24 +14,26 @@ https://devschool.rocks/coding-bootcamp/price
 
 <div class="full-bg full-price"
      style="background: url(<%= image_path('heroes/price-bg.jpg') %>) no-repeat 50% 10% fixed;">
-     <div class="container">
-       <div class="row vertical-center">
-         <div class="col-md-12 above-fold text-center">
-           <h1>We believe in a world where coding bootcamps
-             are staffed only by proven experts, and where
-             a person can learn to code without going in 
-           horribly in debt</h1>
+  <div class="container">
+    <div class="row vertical-center">
+      <div class="col-md-12 above-fold text-center">
+        <h1>We believe in a world where coding bootcamps
+          are staffed only by proven experts, and where
+          a person can learn to code without going in 
+        horribly in debt</h1>
 
-        <h3><a data-scroll href="#below-the-fold"
-                           class="btn btn-attention btn-lg">HOW MUCH DOES IT COST?</a></h3>
-         </div>
-       </div>
-       <!-- /.row -->
-     </div>
-     <!-- /.container -->
+    <h3><a data-scroll href="#below-the-fold"
+                        class="btn btn-attention btn-lg">HOW MUCH DOES IT COST?</a></h3>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="container" id="below-the-fold">
+<div id="below-the-fold">
+  <%= render('discount_notice') if discounted? %>
+</div>
+
+<div class="container">
   <div class="row">
     <div class="col-md-12 below-fold">
       <h2 class="headline">Our program consists of <strong><%= Product.session_count %> 
@@ -40,23 +42,24 @@ https://devschool.rocks/coding-bootcamp/price
         a week, and in total, <strong>500 hours</strong> of building web apps</h2>
     </div>
   </div>
+</div>
 
+<div class="container">
   <div class="row row-centered">
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">Save some money</h3>
-      <p class="tailline">You can invest in your future for <strong>as low as
-        <%= number_to_currency Product.prepay_price %></strong> 
-      <span class="text-small">USD</span> if you pay in full at enrollment, 
-      <strong>you save <%= number_to_currency Product.prepay_savings_amount %></strong>!
-      Pre-paying for your education makes a lot of sense, because there is no financing cost!</p>
+      <p class="tailline">
+      Psst. <strong> Want to save a cool <%= number_to_currency prepay_savings_amount %></strong>?
+      Pre-paying for your education, you will pay only <strong><%= number_to_currency prepay_price %></strong>,
+      and who doesn't like to save some hard earned money?
     </div>
 
     <div class="col-md-4 col-sm-6 ">
       <h3 class="headline">We are flexible</h3>
-      <p class="tailline">You can also make <span class="price"><%= Product.payment_count %>
-    </span> easy, monthly payments of <span class="price"><%= number_to_currency Product.payment_amount %>
-  </span>
-    <span class="text-small">USD</span> if that fits your style better. You pay the financing fee of <%= number_to_currency Product.finance_cost %> but the payments are super simple to make.</p>
+      <p class="tailline">You can also make <strong><%= payment_count %>
+    easy</strong>, monthly payments of <strong><%= number_to_currency payment_amount %>
+  </strong> if that fits your style better. You pay the financing fee of 
+  <strong><%= number_to_currency finance_cost %></strong> but the payments are super simple to make.</p>
     </div>
 
     <div class="col-md-4 col-sm-6 ">
@@ -107,7 +110,7 @@ https://devschool.rocks/coding-bootcamp/price
 <div class="container">
   <div class="row row-centered">
     <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">intentionally small</h3>
+      <h3 class="headline">small and personal</h3>
       <p class="tailline">You cannot perfect a product at mass market scale. The
       very experience of our students at Devschool, that we put them above our
       or desire for endless piles of someone else's money.</p>
@@ -145,12 +148,13 @@ https://devschool.rocks/coding-bootcamp/price
 
         <h3>Q. What is the complete coding bootcamp price?</h3>
 
-        <p>A. $4,988 USD covers everything if you pay up-front.</p>
+        <p>A. <strong><%= number_to_currency financed_price %></strong> covers it if you pay at the time of enrollment.</p>
 
         <h3>Q. What is the cost if I need to make payments?</h3>
 
         <p>A. If you choose to make payments instead of paying up front you agree
-        to make 6 payments of $998 USD, which is $5,988 USD.</p>
+        to make <strong><%= payment_count %></strong> payments of <strong><%= number_to_currency payment_amount %></strong>
+        USD, which is <strong><%= financed_price %></strong> USD.</p>
 
         <h3>Q. How are payments processed, do you have my Credit Card number?</h3>
 

@@ -195,12 +195,19 @@ blockquote p {
   font-smooth: always;
 }
 
-.inspiration, .review-card {
+.notice, .inspiration, .review-card {
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 150%;
   line-height: 1.4;
-  margin: 10vmin 0;
-  padding: 10vmin 0;
+  margin: 8vmin 0;
+  padding: 4vmin 0;
+  color: white;
+  font-smooth: always;
+}
+
+.notice p {
+  color: white;
+  font-smooth: always;
 }
 
 .quote, .reviewer {
