@@ -41,7 +41,7 @@ There are two 'schools' of thought on web development. Some thing it should be a
 
 ## 4. Only at Devschool do you get up to 6-8 hours a week with your Instructor
 
-At some of the online dev bootcamp programs you get 1-2 45 minute sessions with your Instructor a week and that is all. Not at Devschool. You have a direct life-line to your Instructor via Flowdock chat 10am-6pm Monday-Thursday and there is one Instructor-led group session daily. Along with the guaranteed time, Jim pretty much lives on chat 24/7, so if you see him you can probably ask him something!
+At some of the online dev bootcamp programs you get 1-2 45 minute sessions with your Instructor a week and that is all. Not at Devschool. You have a direct life-line to your [Instructor](/coding-bootcamp/who) via Flowdock chat 10am-6pm Monday-Thursday and there is one Instructor-led group session daily. Along with the guaranteed time, Jim pretty much lives on chat 24/7, so if you see him you can probably ask him something!
 
 
 That means you can have a total of 6-8 hours of pair programming time with your Instructor a week vs the 1 and a half or so you get elsewhere! In the real world, software is built by teams, and so we believe in building a strong culture of team and a strong culture of communication.
@@ -74,3 +74,6 @@ Everyone who is close to graduating is encouraged to spend their final two weeks
 
 There is no charge from Devschool to take place in this program, you just need yourself a valid Passport and a round trip plane ticket. We can arrange for your arrival when you are ready to come on down!
 
+## 9. We are a very affordable online coding bootcamp!
+
+I know, I know, I totally cheated and that is 9 reasons, but good reasons to make your life should always be listened to! You can see our [coding bootcamp pricing model here](/coding-bootcamp/price)
