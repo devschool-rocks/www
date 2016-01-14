@@ -4,4 +4,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   helper_method :render_to_string
+
+  def current_affiliate
+    @current_affiliate = Affiliate.find_by_code(cookies['promo-code'])
+  end
+  helper_method :current_affiliate
+
 end
