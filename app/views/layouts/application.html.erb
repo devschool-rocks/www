@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
+    <%= stylesheet_link_tag 'application', media: 'all'  %>
     <title><%= meta_title %></title>
 
     <%- if Rails.env.production? %>
@@ -26,7 +27,8 @@
 
     <%= meta_keyword_tags %>
 
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Roboto|FontAwesome' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700|Open+Sans' rel='stylesheet' type='text/css'>
 
     <link rel="sitemap" type="application/xml" title="Website xml sitemap" href="/sitemap.xml" />
     <link rel="sitemap" type="application/html" title="Website html sitemap" href="/sitemap" />
@@ -41,50 +43,22 @@
     <meta name="msvalidate.01" content="19B335BBC041E9DD33BA05045BC19167" />
     <meta name="p:domain_verify" content="67c2a3f76b4fb20e5bbf0825fa29743d"/>
 
-    <link async defer rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <%= csrf_meta_tags %>
     <%= content_for(:meta) %>
 
-    <%= render 'above_the_fold_css' %>
-<style>
-.above-fold  {
-  position: relative;
-  top: -4vmin;
-  color: white;
-}
-
-.above-fold  h1,
-.above-fold  h2 {
-  font-size: 7vmin;
-  line-height: 9.5vmin;
-}
-
-.above-fold  h1 {
-  font-weight: bold;
-}
-
-.vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
-}
-</style>
   </head>
 
   <body>
     <%= render 'social_js' %>
 
+    <%= render 'header' %>
     <%= yield %>
 
-    <%= render 'header' %>
     <%= content_for(:below_body) %>
-    <%= render 'share_btns' %>
 
     <%= render 'footer' %>
+
     <%= javascript_include_tag 'application' %>
-    <%= stylesheet_link_tag 'application', media: 'all', async: true, defer: true  %>
     <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=100924811766479319060"></script>
 
     <script>

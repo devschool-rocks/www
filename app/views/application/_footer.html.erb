@@ -1,48 +1,62 @@
 <footer>
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-
-        <div class="col-md-6">
-          <ul class="list-unstyled">
-            <li><%= link_to 'Coding bootcamp', what_path %></li>
-            <li><%= link_to 'Our Instructors', who_path %></li>
-            <li><%= link_to 'Pricing info',    price_path %></li>
-          </ul>
+    <div class="footer-top">
+      <div class="footer-top-content">
+        <div class="row">
+          <div class="col-sm-5ths">
+            <div class="foot-content">
+              <h4>Menu</h4>
+              <ul class="list-unstyled">
+                <%= render 'menu_items' %>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-5ths">
+            <div class="foot-content">
+              <h4>Company</h4>
+              <ul class="list-unstyled">
+                <li><a href="/blog">Read Our Blog</a></li>
+                <li><a href="/coding-bootcamp/terms">Terms/Privacy</a></li>
+                <li><a href="mailto:hello@devschool.rocks">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-5ths">		
+            <div class="foot-content">
+              <h4>Resources</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Term & Condition</a></li>
+                <li><a href="#">Privacy Policy </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-5ths">		
+            <div class="foot-content">
+              <h4>we are social :)</h4>
+              <ul class="social-link-list list-inline">
+                <li><a href="https://www.facebook.com/devschoolrocks" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/devschoolrocks" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://google.com/+DevschoolRocks-online-developer-bootcamp" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="http://www.youtube.com/channel/UCBaSjb4qGVqS_Q5SVbn1hAA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.pinterest.com/devschoolrocks" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/devschool" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-5ths">
+            <div class="foot-content sp">
+              <div class="foot-logo">
+                <a href="#"><img src="<%= asset_path('foot-logo.png') %>" class="img-responsive center-block"/></a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="col-md-6">
-          <ul class="list-unstyled">
-            <li><a href="/blog">Read Our Blog</a></li>
-            <li><a href="/coding-bootcamp/terms">Terms/Privacy</a></li>
-            <li><a href="mailto:hello@devschool.rocks">Contact Us</a></li>
-          </ul>
-
-        </div>
-      </div>
-      <div class="col-md-8 col-sm-6">
-        <i class="site-sprite sprite-ds-logo"></i>
-
-        <h4>we are social :)</h4>
-        <ul class="social-link-list list-inline">
-          <li><a href="https://www.facebook.com/devschoolrocks" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/devschoolrocks" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://google.com/+DevschoolRocks-online-developer-bootcamp" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="http://www.youtube.com/channel/UCBaSjb4qGVqS_Q5SVbn1hAA" target="_blank"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="https://www.pinterest.com/devschoolrocks" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/devschool" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="bottom">
-        built by <span itemprop="creator" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">Devschool</span></span>
-        and powered by <i class="fa fa-heart"></i>, 
-        <i class="site-sprite sprite-cannabis"></i>, 
-        <i class="fa fa-coffee"></i>, and 
-        <i class="site-sprite sprite-sunshine"></i><br>
-        &copy; 2015 Devschool llc, - Devschool and it's logo are trademarked - All rights reserved.
-      </div>
+    <hr/>
+    <div class="footer-bottom">
+      <p>&copy; 2015 Devschool llc, - Devschool and it's logo are trademarked - All rights reserved.</p>
     </div>
   </div>
 </footer>

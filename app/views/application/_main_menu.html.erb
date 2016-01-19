@@ -1,6 +1,3 @@
-<ul class="nav navbar-nav">
-  <li><%= link_to 'coding bootcamp', what_path, class: "default-active" %></li>
-  <li><%= link_to who_path do %><span class="hidden-sm">our </span>instructors<%end%></li>
-  <li><%= link_to  price_path do %>pricing <span class="hidden-sm">info</span><%end%></li>
-  <li><%= link_to 'real experience', ngo_path, class: "hidden-sm hidden-md" %></li>
+<ul class="nav navbar-nav navbar-right">
+  <%= render 'menu_items' %>
 </ul>

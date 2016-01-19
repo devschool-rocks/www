@@ -14,728 +14,594 @@ https://devschool.rocks/coding-bootcamp
 online coding bootcamps, online coding schools, learn to code, dev bootcamp, hack reactor, general assembly, devschool, become a web developer
 <%- end %>
 
-<div class="full-bg full-what"
-     style="background: url(<%= image_path('heroes/what-bg.jpg') %>) no-repeat 100% 60% fixed;">
-  <div class="container">
-    <div class="row vertical-center">
-      <div class="col-md-12 above-fold text-center">
-        <h1><strong>Devschool</strong> is an
-          <strong>online coding bootcamp</strong> designed to train you
-          as a <strong>web developer</strong> in about <strong>500 hours</strong>
-          and we get <strong>your first job</strong>!</h1>
+<div class="holder">
+  <div class="learn-skill-holder">
+    <div class="container">
+      <div class="learn-content text-center">
+        <h3>LEARN SKILLS THAT TRANSLATE DIRECTLY INTO THE WORKFORCE</h3>
+        <h4>WE AREN'T JUST ANOTHER ONLINE CODING BOOTCAMP, WE GET YOU HIRED</h4>
+        <div class="learn-icon-text">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-1.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>TOOLSET</h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-2.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>LANGUAGES</h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-3.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>PROCESS</h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="people-says-holder">
+    <div class="container">
+      <div class="people-content">
+        <div class="people-heading text-center">
+          <h3>Alumni Review</h3>
+        </div>
+        <div class="people-in">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="people-image">
+                <img src="<%= asset_path('eric-douglas.jpg') %>" class="img-responsive img-circle center-block"/>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div class="people-content">	
+                <div class="people-para">
+                  <p>Coming from a business background, I found programming intriguing but sometimes very confusing. My instructor excelled at simplifying concepts into easy to repeat axioms and patterns, and I found the experience at Devschool to be a very personal one.</p>
+                  <p>I am very satisfied with my experience and the value of Devschool and I would definitely recommend Devschool to anyone who wants to become a web developer.</p>
+                </div>
+                <div class="people-name">
+                  <h5>Eric Douglas</h5>
+                  <h6>Ohio, United States</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tools-holder">
+    <div class="container">
+      <div class="tools-content text-center">
+        <h3>Meet the tools of your new trade, developer</h3>
+        <h4>At Devschool's online coding bootcamp we teach an expert tool set</h4>
+        <div class="tool-in-content">
+          <div class="tool-row sp">
+            <div class="row">
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('tool-1.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>These are programs known as "shells" and they allow you to interact with a computer via the "Terminal". While both provide scripting capability</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('tool-2.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>We can use Git to secure our files against loss or corruption, for working on experimental branches, for tracking changes made by other developers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('tool-3.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>When data must be stored (which is basically all the time), a database is needed to store and retrieve that data At Devschool we primarily focus on tried and </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tool-row dw">
+            <div class="row">
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('tool-4.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>Vim is some super-secret sauce. Not only does it make you look like a wizard while you are creating and editing files (which by the way is 90% of your new </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('tool-5.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>We LOVE Macs here at Devschool. This is not an accident. Not only are they stunningly beautiful machines for doing computer work on, but they are </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('tool-6.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>We LOVE Linux at the Devschool! Similar to OSX, it is built on the solid core of the UNIX operating system, providing a robust, secure platform to build software </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-holder">
+    <div class="container-fluid">
+      <div class="form-in">
+        <div class="col-sm-6 sp">
+          <div class="form-image">
+            <img src="<%= asset_path('form-image.png') %>" class="img-responsive center-block"/>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="form-text">
+            <h3>Want to join an live coding session to see what Devschool is like?</h3>
+            <p><span>Enter your email and we will let you know a day before the session </span></p>
+            <input type="text" class="form-control" placeholder="Email address">
+            <a href="#" class="btn btn-keep">Keep Update</a>
+            <p>We hate spam and will not send you needless crap. We try to have an open session once a week. You can always unsubscribe later easily!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tools-holder">
+    <div class="container">
+      <div class="tools-content text-center">
+        <h3>Meet the tools of your new trade, developer</h3>
+        <h4>At Devschool's online coding bootcamp we teach an expert tool set</h4>
+        <div class="tool-in-content">
+          <div class="tool-row sp">
+            <div class="row">
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text sp">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('lang-1.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>HTML is the heart and soul of the web. It is the foundation on which all the other languages and technologies revolve around. It is a rich markup language.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text sp">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('lang-2.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text ">
+                    <p>Without CSS the web would be a dull and drab place indeed! Is is these Cascading Style Sheets that provide all of the color, margin, and fonts to your favorite websites.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text sp">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('lang-3.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text ">
+                    <p>JavaScript is the only language embedded in every browser on the planet. It is the mechanism by which content is changed, loaded, sorted, or otherwise animated.  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tool-row dw">
+            <div class="row">
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text sp">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('lang-4.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>Bootstrap is a framework created by Twitter to provide an easy mechanism to render complex content to a web browser no matter what the dimension configuration. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text sp">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('lang-5.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>React comes to us from the minds at Facebook. It is the technology used to create the highly interactive web based components used on the Facebook. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text sp">
+                  <div class="tool-icon">
+                    <img src="<%= asset_path('lang-6.jpg') %>" class="img-responsive center-block"/>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>Ruby on Rails provides an excellent back-end framework for websites with a lot of data entry going on. It excels at allowing Developers to quickly pump  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="faq-folder">	
+    <div class="container">
+      <div class="faq-content">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="faq">
 
-        <h3><a data-scroll href="#below-the-fold"
-               class="btn btn-attention btn-lg">WHAT WILL I LEARN AT DEVSCHOOL?</a></h3>
+              <div class="faq-heading text-center">
+                <h3>FAQ</h3>
+              </div>
 
+              <%= render partial: 'faq_item', locals: {
+                question: "What is the Devschool Curriculum? Is it step by step?",
+                answer: <<-EOS
+Our coding bootcamp focuses on the DOING part of learning. There is no step A,
+step B, step C, prescribed ahead of time in the real world, and since at our
+core, we are an Agile organization, we have no time for things pulled from our
+own rear ends. We like organic solutions, not contrived examples.
+
+You are going to be learning to build web applications. What better way
+then to do it by building web applications, but not some clone of something
+you aren't interested in. Instead you will select (with the help of your
+Instructor) a topic that interests you, and then you will build a web app
+related to that.
+
+Also while learning to become a web developer here at Devschool's online bootcamp
+program you will do REAL work on REAL applications on the REAL interwebs
+for a <a href="/coding-bootcamp/ngo-program">REAL Non Profit Organization</a>!
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "When are school hours 'held' - is it flexible?",
+                answer: <<-EOS
+Our school is in US Central time and sessions happen mostly between
+11am and 4pm, however it is possible to have your one on one's held later
+in the evening based on <a href="who" title="meet the Devschool Instructors">Instructor</a> availablitity. We do this for people who
+work during the day, and for European students.
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "How do I work with my Devschool Instructor?",
+                answer: <<-EOS
+You will work directly with your <a href="who" title="meet the Devschool Instructors">Instructor</a> to plan your web application
+in the exact same way you would once you are working in the 'Real World', 
+figuring out the point of it, what features will it have, how would those
+interfaces would actually look.
+
+Each week you will meet with your <a href="who" title="meet the Devschool Instructors">Instructor</a> via Zoom (https://zoom.us)
+via screen sharing and audio chat. You can broadcast your video if you like,
+but usually we just do a photo instead of video so your hair can be messy
+or you can learn in your pajamas, whatever floats your boat.
+
+The number of times you will meet with your instructor weekly is between
+the two of you, and is scheduled a month in advance. This allows you to adapt
+your learning experience based on your own "real world" events and time-lines.
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What about self study hours? What will I learn on my own?",
+                answer: <<-EOS
+There are a total of 420 hours in the curriculum when you discount the
+time you spend interning with a non profit. That means 40 of those hours are 
+one on one with your <a href="who" title="meet the Devschool Instructors">Instructor</a>. The rest is a combination of group sessions, 
+and "self study" hours, in which you hack on your app and the learning takes
+whatever twists and turns as you run into real-world challenges.
+EOS
+              }%>
+
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What about learning in a group setting?",
+                answer: <<-EOS
+Group sessions are available at least once a day, five days a week,
+and are led by your Instructor. These sessions are live coding sessions.
+
+It is participation pair programming in the sense that if you are following
+along and you understand the material, shout out answers. Challenge your
+Instructor's code. Don't quite yet know what is going on? Stay quiet and
+watch it all unfold.
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "When do these group sessions take place?",
+                answer: <<-EOS
+              Group sessions happen once a day if there is demand. There must be at
+              least 2 students available for the days group session to take place. Otherwise
+              it wouldn't be much of a group! They happen on a revolving schedule, meaning
+              that each day the group session is at a different time. This allows us to
+              accommodate more diverse student schedules.
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "Speaking of scheduling, how does that work?",
+                answer: <<-EOS
+Your first one on one session each month will be partially used to lock
+down your schedule for the rest of the month. You decide your pacing by
+choosing how many one on ones you will attend a week. Each one on one should
+be accompanied with at least 1 group session and 10 hours of self study.
+EOS
+              }%>
+
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What about Pair Programming? Do you teach that at Devschool?",
+                answer: <<-EOS
+Yes we do! Pair programming happens by the process we call "Self Assembling
+Teams" which just means, be as engaged with each other as your comfort
+allows. We think pair programming is powerful and awesome, but not everyone
+wants to pair all the time.
+
+Devschool's online coding bootcamp is meant to fit a large number of
+people with different backgrounds and situations, Some students like to 
+work with others a lot, some like to work alone mostly. We teach you to
+work both ways and give you options!
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "Can I record the group and private sessions to re-watch later?",
+                answer: <<-EOS
+Absolutely! In fact we recommend that you create a folder at the very
+beginning of the course and save a recording of every session you attend
+there for later viewing. It is like having your own personal coding bootcamp
+screencast series!
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What if I don't know what I want to focus on?",
+                answer: <<-EOS
+Maybe the application you want to build will naturally lend itself to a 
+heavy JavaScript interface, creating a very interactive experience. Maybe it
+will be more MBA related and have lots of forms in which to enter data, or
+maybe something more like a marketplace with money changing hands.
+
+One of the greatest strengths of the curriculum at our coding bootcamp is it's
+ability to adapt based on the interests and needs of each student. Not everyone
+wants to build the same five web applications to learn.
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What text editor will I learn and use and learn to use and love?",
+                answer: <<-EOS
+We start you off learning Vim. It is extremely powerful and more importantly,
+better suited in our opinion than anything else to write web based software, which
+is what we are talking about here! Is is great for working on files both locally
+and on remote machines out there in the interwebs. Sublime can't do that!
+
+Developers that show a proficiency in using expert editors like Vim are proven
+to make more money and get more job offers. This is because programmers are 
+interviewed by other programmers and managers that used to be developers. They
+know the difference between someone who 'steals' Sublime vs a developer that
+put love and attention into their tool-set.
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What front-end web developer skills will I learn and focus on?",
+                answer: <<-EOS
+The backbone and foundation of the Internet is HTML and more recently, HTML5. HTML
+is the structure of the web page, but you also need some style. That is where CSS
+and again, more recently, CSS3 comes into play. You 'put' an element on a page 
+(like a unordered list) with HTML, you make it look pretty with CSS.
+
+But there is more to it then just the languages. We also need a front-end framework
+to equalize out all the various differences in browsers and computers. We need
+something that will allow the pages we build respond to changes, like when we
+flip our phones or tablets from vertical to horizontal. Or to just deal with the
+myriad of screen sizes available.
+
+That is where Twitter's Bootstrap front-end framework comes in. We teach you the
+nitty gritty of responsive design using bootstrap and tools like Masonry, which
+is how Pinterest gets such awesome looking flowing pages!.
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "Can I use Windows to learn Web development at your coding bootcamp?",
+                answer: <<-EOS
+Windows is a fine operating system for writing Microsoft software or to
+use as a business platform, and it makes an excellent gaming platform, likely
+the best on the market. However it is not great for writing web software that
+relies on open source libraries and technologies.
+
+We used to advise Windows users to run Linux on a virtual machine, however
+that turned out to be slow and highly problematic. We are no longer advising 
+people to run virtual machines. It is much better to buy a used Windows laptop
+and install Linux on it.
+
+Windows does not support the libraries that are needed, and it doesn't share
+the same architecture. In short Windows speaks a language of it's own, while
+Linux and OSX both agree to support much of UNIX.
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What kind of computer do you recommend for web development learning and work?",
+                answer: <<-EOS
+Our own statistics show: Mac OSX users have the smoothest web development experience
+with the tools you will learn here. That being said, we also love Linux if it is
+run natively and the person wants a real software education and maybe a bit of
+adventure.
+
+Ubuntu and Mint are popular choices for those who want to strut their kneckbeards,
+be they man, be they woman. Both Linux and OSX are built on the foundations of
+UNIX.
+EOS
+              }%>
+
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What kind of Database systems will I learn at Devschool?",
+                answer: <<-EOS
+Most web applications are a collection of Create, Read, Update, and Delete events,
+also known as CRUD. This implies there will be a Database in use, and we teach
+and promote both PostgreSQL and Mongo and Redis depending on the task at hand.
+
+We will teach you how to join tables together like second-nature and how to write
+performant queries that execute quickly and safely with in transactions. The day
+your new boss asks you for some 'Metrics' you will be very happy you chose the
+Devschool online coding bootcamp, because the 'Big Box Bootcamps' completely skip
+this stuff.
+EOS
+              }%>
+
+
+
+              <%= render partial: 'faq_item', locals: {
+                question: "Will I learn the 'Server-Side' at your coding bootcamp?",
+                answer: <<-EOS
+Ruby is commonly listed as the second most listed language in all
+open source job postings. Ruby on Rails is a web framework specifically
+designed to help you get things done quickly. What kind of things? 
+Web development things!
+
+We also will teach you 'Algorithms' and how to write performant code.
+You will be able to roll your own APIs, build "web services", and understand
+the differences in the various types of memory and processors.
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "Will I learn JavaScript at Devschool?",
+                answer: <<-EOS
+JavaScript is said to be the "Next Big Thing" by many, many smart developers
+with their fingers on the pulse of the Internet. We also feel that JavaScript is
+highly important to the future of web development stacks, so we teach a good amount
+of it once you get some basics under your belt.
+EOS
+              }%>
+
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What about Payment processing chat apps and things like that?",
+                answer: <<-EOS
+To be an effective developer you need to know a good measure of all of these things to
+be a candidate worth hiring. And that means a candidate who can wrangle all these tools
+and languages into technology solutions for businesses.
+
+Along the way you will learn how to leverage 
+<a rel="nofollow" href="https://stripe.com/">Stripe for payments</a>
+to accept payments, and how to build real time apps like chat, back end management 
+apps, statistics gathering and chart displays, and anything else that comes up 
+when you are building a real app over a span of months or more.
+
+You will also learn about deployment and setup and DNS at 
+<a rel="nofollow" href="https://heroku.com">Heroku for simple deployment</a>,
+<a rel="nofollow" href="https://aws.amazon.com/">Amazon Web Services (AWS) for professional-grade services</a>, and
+<a rel="nofollow" href="https://www.cloudflare.com/">CloufFlare for DNS and site speed</a>.
+
+It is a lot to learn, but our job is to guide you through it, so you learn what you need
+to know, and not get bogged down in the things that might not matter. You can think of
+the Devschool online developer bootcamp like your technology education flashlight in the dark!
+EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "How is it exactly that we meet together online?",
+                answer: <<-EOS
+Devschool utilizes a mixture of technologies to accomplish a "connected"
+environment and culture for our Students. This is not like Udemy where you
+feel like you are in it alone. We promote a very social atmosphere.
+
+We use <a rel="nofollow" href="https://www.flowdock.com/">Flowdock</a> for
+our chat program, but it is really so much more then that! It allows contextual
+conversations so what you are talking about doesn't get mixed up with other
+people's messages that have nothing to do with what you are saying.
+EOS
+              }%>
+
+
+
+              <h3>Q. What about screen-sharing? How does that work exactly?</h3>
+
+              <p>A. We use a program called <a rel="nofollow" href="http://zoom.us/">Zoom</a> 
+              to broadcast our private and group sessions.
+              This allows the Instructor to share his screen and work and demonstrate things
+              with live lessons, or to switch over to a student's machine and fix something
+              for them.</p>
+
+              <p>It works best with Mac but there is a version for Linux as well.</p>
+
+              <h3>Q. How can we see our Instructor's calendar?</h3>
+
+              <p>You will be given a <a rel="nofollow" href="http://teamup.com">Teamup Calendar</a>
+              link and will be able to view the calendar online whenever
+              you need it. You can even import it into whatever calendar program you 
+              already use! Each month you and your <a href="who" title="meet the Devschool Instructors">Instructor</a> will choose your private
+              session schedule and those appointments will show up in that calendar.</p>
+
+              <p>If you need to cancel or reschedule it is never a problem, just let your
+              <a href="who" title="meet the Devschool Instructors">Instructor</a> know with as much notice as possible and they will reschedule it.</p>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container" id="below-the-fold">
-  <div class="row">
-    <div class="col-md-12">
-      <h2 class="headline"><strong>Learn skills</strong> that 
-        <strong>translate directly</strong> into the 
-      <strong>today's workforce</strong></h2>
-    </div>
-  </div>
-  <div class="row row-centered">
-    <div class="col-md-4 col-sm-6">
-      <a name="toolset"></a>
-      <h3 class="headline">toolset</h3>
-      <i class="what-sprite sprite-toolset-icons img-responsive center-block"></i>
-
-      <p class="tailline">Learn expert toolsets and workflows such as 
-      UNIX and VIM, Git, and ZSH and look like a wizard. We don't teach
-      training wheels here, we teach skills other people envy. Skill envy baby.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6">
-      <h3 class="headline">languages</h3>
-      <i class="what-sprite sprite-languages-icons img-responsive center-block"></i>
-
-      <p class="tailline">Learn Ruby, Rails, Javascript, SQL,
-      ReactJS, HTML5, CSS, and Responsive/Mobile Design. Web development and coding
-      isn't about a single language no matter what JavaScripters might say.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
-      <h3 class="headline">process</h3>
-      <i class="what-sprite sprite-process-icons img-responsive center-block"></i>
-
-      <p class="tailline">Learn iterative software design and
-      development life-cycle planning in the real world. Using collabotative tools
-      and deployment pipelines, you build the real thing.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Here&#39;s to the crazy ones the misfits the rebels the troublemakers the round pegs in the square holes <a href="https://twitter.com/hashtag/ThankYouSteve?src=hash">#ThankYouSteve</a> <a href="https://t.co/Pl4hrvF0fO">pic.twitter.com/Pl4hrvF0fO</a></p>&mdash; Devschool (@devschoolrocks) <a href="https://twitter.com/devschoolrocks/status/684633780565360640">January 6, 2016</a></blockquote>
-      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-  </div>
-</div>
-
-<div class="colored-section blue">
-  <div class="row review-card" itemscope itemtype="http://schema.org/Review">
-    <div class="col-md-offset-1 col-md-4 text-center">
-      <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
-        <span class="hidden" itemprop="name">Devschool Online Developer Bootcamp</span>
-      </div>
-      <span class="hidden" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-        <span itemprop="ratingValue">5</span> stars
-      </span> 
-      <i class="center-block img-responsive reviewer-sprite sprite-eric-douglas-p"></i>
-      <div class="reviewer" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <div itemprop="name">Eric Douglas</div>
-        <div class="text-small">Ohio, United States</div>
-      </div>
-    </div>
-    <div class="col-md-5">
-      <blockquote itemprop="reviewBody">
-        <p>Coming from a business background, I found programming intriguing but sometimes 
-        very confusing. My instructor excelled at simplifying concepts into easy to repeat 
-        axioms and patterns, and I found the experience at Devschool to be a very 
-        personal one.</p>
-
-        <p>I am very satisfied with my experience and the value of Devschool and 
-        I would definitely recommend Devschool to anyone who wants to become a 
-        web developer.</p>
-      </blockquote>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h2>Meet the <strong>tools</strong> of your <strong>new trade</strong>, 
-        <strong>developer</strong></h2>
-    </div>
-  </div>
-
-  <div class="row row-centered">
-    <div class="col-md-4 col-sm-6 square">
-      <i class="what-sprite sprite-bash-zsh-heading img-responsive center-block"></i>
-
-      <p>These are programs known as "shells" and they allow you to interact with a computer via the "Terminal".
-      While both provide scripting capability, we at Devschool find ZSH to be more useful and it is the recommended shell here.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 square">
-      <i class="what-sprite sprite-git-heading img-responsive center-block"></i>
-
-      <p>We can use Git to secure our files against loss or corruption, for working on experimental
-      branches, for tracking changes made by other developers, and merging it all back together for deployment.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 square hidden-xs hidden-sm">
-      <i class="what-sprite sprite-postgres-mongo-heading img-responsive center-block"></i>
-
-      <p>When data must be stored (which is basically all the time), a database is needed to store and retrieve that data
-      At Devschool we primarily focus on tried and true Postgresql and then show you newer formats like Mongo.</p>
-    </div>
-  </div>
-
-  <div class="row">
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
-      <i class="what-sprite sprite-vim-heading img-responsive center-block"></i>
-
-      <p>Vim is some super-secret sauce. Not only does it make you look like a wizard while you are creating and editing files (which by 
-      the way is 90% of your new life as a web developer!) but it also is built to be a very powerful, efficient tool.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-      <i class="what-sprite sprite-osx-heading img-responsive center-block"></i>
-
-      <p>We LOVE Macs here at Devschool. This is not an accident. Not only are they stunningly beautiful machines for doing computer
-      work on, but they are built on UNIX, which is the basis of all those "servers" out there serving up the interwebs.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-      <i class="what-sprite sprite-linux-heading img-responsive center-block"></i>
-
-      <p>We LOVE Linux at the Devschool! Similar to OSX, it is built on the solid core of the UNIX operating system, providing a robust,
-      secure platform to build software like that of the web. If you need a budget machine to attend Devschool, look no further than Linux.</p>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row row-centered">
-    <div class="col-md-6 col-md-offset-3">
-      <h3>Please take a moment from your busy day to like and share</h3>
-      <div class="fb-post" data-href="https://www.facebook.com/devschoolrocks/posts/1168723446491167" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/devschoolrocks/posts/1168723446491167"><p>&#xfe510;&#xfe517;&#xfe516;&#x2764;&#xfe510;&#xfe517;&#xfe516;&#x2764;&#xfe510;&#xfe517;&#xfe516;&#x2764;&#xfe510;&#xfe517;&#xfe516;&#x2764;&#xfe510;Take a moment please from your busy day and give a share on your favorite social network. Someone in...</p>Posted by <a href="https://www.facebook.com/devschoolrocks/">Devschool</a> on&nbsp;<a href="https://www.facebook.com/devschoolrocks/posts/1168723446491167">Sunday, January 10, 2016</a></blockquote></div></div>
-      <p>&nbsp;</p>
-      <p>Someone in your friends or family could have their life changed forever, positively because you shared this page with them! It takes you very little effort and it means the world to us.</p>
-    </div>
-  </div>
-</div>
-
-<%= render 'squeeze_open_group' %>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h2 class="headline">Introducing the <strong>languages</strong> of the 
-        <strong>Internet</strong></h2>
-    </div>
-  </div>
-
-  <div class="row row-centered">
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-      <i class="what-sprite sprite-html-heading img-responsive center-block"></i>
-
-      <p>HTML is the heart and soul of the web. It is the foundation on which all the other languages and technologies revolve around.
-      It is a rich markup language, and with the recent implementation of HTML5, new possibilities of integrating media and the web are better than ever!</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
-      <i class="what-sprite sprite-css-heading img-responsive center-block"></i>
-
-      <p>Without CSS the web would be a dull and drab place indeed! Is is these Cascading Style Sheets that provide all of the color, margin, and fonts
-      to your favorite websites. It also enables multiple screen sizes and configurations to display custom versions of the content formatted for the display.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-      <i class="what-sprite sprite-javascript-heading img-responsive center-block"></i>
-
-      <p>JavaScript is the only language embedded in every browser on the planet. It is the mechanism by which content is changed, loaded, sorted, or otherwise
-      animated. It provides a common browser based platform to build truly interactive web applications that act more like a desktop app than a web app.</p>
-    </div>
-  </div>
-
-  <div class="row row-centered">
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-      <i class="what-sprite sprite-bootstrap-heading img-responsive center-block"></i>
-
-      <p>Bootstrap is a framework created by Twitter to provide an easy mechanism to render complex content to a web browser no matter
-      what the dimension configuration. It provides layout helpers similar to the format of a newspaper and is used the world over to format the display of content.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-      <i class="what-sprite sprite-react-heading img-responsive center-block"></i>
-
-      <p>React comes to us from the minds at Facebook. It is the technology used to create the highly interactive web based components used on the Facebook website.
-      It has proven to turn common conventions on their heads and still come out ahead of the pack. We think React is the future of the web.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
-      <i class="what-sprite sprite-rails-heading img-responsive center-block"></i>
-
-      <p>Ruby on Rails provides an excellent back-end framework for websites with a lot of data entry going on. It excels at allowing Developers to quickly pump out
-      prototype applications as well as powering huge websites with millions of users. It marries React very nicely and can be used as a JSON API server.</p>
-    </div>
-  </div>
-
-</div>
-
-<div class="colored-section blue">
-
-  <div class="row review-card" itemscope itemtype="http://schema.org/Review">
-    <div class="col-md-offset-1 col-md-4 text-center">
-      <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
-        <span class="hidden" itemprop="name">Devschool Online Coding Bootcamp</span>
-      </div>
-      <span class="hidden" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-        <span itemprop="ratingValue">5</span> stars
-      </span> 
-      <i class="center-block img-responsive reviewer-sprite sprite-mehgan-holden-p"></i>
-    <div class="reviewer" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <div itemprop="name">Mehgan Holden</div>
-      <div class="text-small">New York, USA</div>
-    </div>
-  </div>
-  <div class="col-md-5">
-    <blockquote itemprop="reviewBody">
-      <p>At Devschool I learned the skills that I needed to land the job I 
-      have today. I completed my Web Development course in 18 weeks as 
-      I had other obligations and Devschool was flexible enough for me to 
-      handle both!</p>
-
-      <p>I would recommend the Web Developers course at Devschool to anyone 
-      who wants to cut through the cruft and really, really learn the skills 
-      they will need to build modern web applications.</p>
-    </blockquote>
-  </div>
-  </div>
-</div>
-
-<div class="container">
-
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h2 class="headline"><strong>Level up</strong> your studies with a 
-        <strong>real apprenticeship</strong></h2>
-    </div>
-  </div>
-
-    <div class="row row-centered">
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-      <i class="what-sprite sprite--heading img-responsive center-block"></i>
-      <h3 class="headline">Expert Instruction</h3>
-      <p class="tailline">You have questions. Get clear, precise answers directly from your <a href="who" title="meet the Devschool Instructors">Instructor</a>.
-        You will connect with them weekly live and in person, or during the school
-        day when they are free for a quick chat.</p>
-      </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
-        <h3 class="headline">Screensharing and pairing</h3>
-        <p class="tailline">Interact in real-time using sophisticated video/audio/screenshare software
-        with your <a href="who" title="meet the Devschool Instructors">Instructor</a>. This can save countless hours of "floundering in the
-        dark" on problems.</p>
-      </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-        <h3 class="headline">A guided learning experience</h3>
-        <p class="tailline">Sometimes you don't know what you don't know, making it difficult to know
-        what to look for or what to ask. You expert <a href="who" title="meet the Devschool Instructors">Instructor</a> can help you make
-        breakthroughs in your application and learning in record time!</p>
-      </div>
-    </div>
-
-    <div class="row row-centered">
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-        <h3 class="headline">Complex concepts, simplified</h3>
-        <p class="tailline">Get complex problems broken down into a small series of understandable, and
-        repeatable patterns. Having difficult concepts solved in person, one on one
-        is much simpler than absorbing it from a book.</p>
-      </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
-        <h3 class="headline">An Affordable Education</h3>
-        <p class="tailline">At Devschool we really believe a web development education should be <a href="price" title="Devschool helps keep technology education affordable">affordable</a>
-        and accessible. To this end, everything at Devschool was crafted constantly keeping these two
-        missions in mind. We provide a very <a href="/price" title="Devschool is affordably priced">affordable</a>,
-        human experience.</p>
-      </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-        <h3 class="headline">Based on a proven methodology</h3>
-        <p class="tailline">Your <a href="who" title="meet the Devschool Instructors">Instructor</a> is not just a great programmer with more than a few
-        gray hairs. Jim has worked hard to perfect his teaching style, using
-        a mix of German methodology and good ol' humanism to make learning easy.</p>
-      </div>
-    </div>
-</div>
-
-<%= render 'squeeze_open_group' %>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h2><strong>Real world</strong> apps are <strong> built by teams</strong>, 
-      not individuals</h2>
-    </div>
-  </div>
-
-    <div class="row">
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-        <h3 class="headline">we work together</h3>
-
-        <p>Between multiple sessions a week with your instructor and participating
-        in the numerous open group sessions each week, you will have plenty
-        of interaction with real people and real software.</p>
-      </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
-        <h3 class="headline">you've got a friend</h3>
-        <p>Self assembling teams are a great way to keep connected to your peers, and
-        always have a second set of eyes on a problem when needed. Your peers share
-        your deep investment in furthering your education.</p>
-      </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-        <h3 class="headline">like a real team</h3>
-        <p>Create pull requests, comment on each other's code, make suggestions, and
-        help each other write better software. At our coding bootcamp you will learn
-        work flows to engage on each others' projects.</p>
-      </div>
-    </div>
-
-  <div class="row-centered">
-    <div class="col-md-6 col-md-offset-3">
-      <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">A coding bootcamp comparison infograhic between <a href="https://t.co/v5D7ADSg7W">https://t.co/v5D7ADSg7W</a> and <a href="https://t.co/JcXimwh4qJ">https://t.co/JcXimwh4qJ</a> <a href="https://t.co/KRveI0Zq57">pic.twitter.com/KRveI0Zq57</a></p>&mdash; Devschool (@devschoolrocks) <a href="https://twitter.com/devschoolrocks/status/684044293376446468">January 4, 2016</a></blockquote>
-      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col-md-12 below-fold">
-      <h2 class="headline">We use a combination of <strong>Screen Sharing</strong>
-        and <strong>Live Audio</strong> for an awesome <strong>learning experience</strong></h2>
-    </div>
-  </div>
-
-  <div class="row row-centered">
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-      <h3 class="headline">We love Zoom</h3>
-
-      <p class="tailline">This tool allows us to connect a single or multiple Students to an <a href="who" title="meet the Devschool Instructors">Instructor</a> for our
-      live interactive learning sessions where programming concepts are demonstrated in real time.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square hidden-xs hidden-sm">
-      <h3 class="headline">Audio Rocks</h3>
-      <p class="tailline">When you type to get your job done, typing to talk isn't really an option. For this
-      reason we employ Audio Chat (again through Zoom) so everyone can have a lively discussion.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 col-xs-6 square">
-      <h3 class="headline">Pair Programming</h3>
-      <p class="tailline">During both the Private and the Open Sessions you will get to see master level code
-      written before your eyes and explained in detail and of course these sessions can be recorded!</p>
-    </div>
-  </div>
-
-</div>
-
-<div class="colored-section blue">
-  <div class="row review-card" itemscope itemtype="http://schema.org/Review">
-    <div class="col-md-offset-1 col-md-4 text-center">
-      <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
-        <span class="hidden" itemprop="name">Devschool Online Coding Bootcamp</span>
-      </div>
-      <span class="hidden" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-        <span itemprop="ratingValue">5</span> stars
-      </span> 
-      <i class="center-block img-responsive reviewer-sprite sprite-jorge-madrid-p"></i>
-    <div class="reviewer" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <div itemprop="name">Jorge Madrid</div>
-      <div class="text-small">Bogotá, Columbia</div>
-    </div>
-  </div>
-  <div class="col-md-5">
-    <blockquote itemprop="reviewBody">
-      <p>My instructor Jim was the best programming teacher I have had. He is fun, easy going, and when things get hard he doesn't mind repeating a concept until you get the point, and I learned a lot from him that my bootcamp missed.</p>
-      <p>Devschool not only helped me learn the skills I would need day to day, Jim also helped me prepare for the interview! I highly recommend Devschool!</p>
-    </blockquote>
-  </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 below-fold">
-      <h2 class="headline">Code <strong>real world apps</strong> that solve 
-        <strong>real world challenges</strong></h2>
-    </div>
-  </div>
-
-  <div class="row row-centered">
-    <div class="col-md-4 col-sm-6">
-      <h3 class="headline">one on one</h3>
-      <i class="center-block img-responsive what-sprite sprite-one-on-one-3rd"></i>
-
-      <p></p>
-      <p class="tailline">You get 42 one on one expert guided sessions with your <a href="who" title="meet the Devschool Instructors">Instructor</a>,
-      working together on your real-world web applications. During this time you get to
-      see how an expert works, live, in real-time.</p>
-
-      <p>Instead of reading from a list and copying and pasting code,
-      you get custom written classes and methods and features, step by step for you
-      to replicate on your own.</p>
-      
-    </div>
-
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">team work</h3>
-      <i class="center-block img-responsive what-sprite sprite-teamwork-3rd"></i>
-      <p></p>
-      <p class="tailline">Participate in daily group sessions led by your instructor 
-      solving problems as a team. This will build up your tool-kit giving you tips and
-      tricks to enhance your skills!</p>
-
-      <p>Teams build software together, and so that is the model we use
-      and teach. When we work together as a group, people's strengths naturally come out
-      and their weaknesses are compensated by their peers.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
-      <h3 class="headline">homework</h3>
-      <i class="center-block img-responsive what-sprite sprite-homework-3rd"></i>
-      <p></p>
-      <p class="tailline">Your curriculum is formed by the challenges
-      you encounter building your application. As Bruce Lee said, "Be like water", ever
-      changing, ever evolving.</p>
-
-      <p>By focusing on building real apps of your own, 
-      and participating in assisting on real projects for real companies, and real
-      projects that other students are working on.</p>
-    </div>
-  </div>
-
-</div>
-
-<div class="section-yellow">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 faq-section">
-        <h2>What curriculum is taught at Devschool's coding bootcamp? FAQ</h2>
-
-        <p>You want a career that is interesting, safe, and makes money. To do that you
-        need skills. But what skills? In what order? How much do you you need to learn of
-        each one before you can a job that pays more then promises?</p>
-
-        <p>Our training method gets you directly into real web development where you have no
-        training wheels to get used to. That means before we can even talk about learning
-        to build Web Applications we need an editor to edit the "code".</p>
-
-        <h3>Q. What is the Devschool Curriculum? Is it step by step?</h3>
-
-        <p>A. Our coding bootcamp focuses on the DOING part of learning. There is no step A,
-        step B, step C, prescribed ahead of time in the real world, and since at our
-        core, we are an Agile organization, we have no time for things pulled from our
-        own rear ends. We like organic solutions, not contrived examples.</p>
-
-        <p>You are going to be learning to build web applications. What better way
-        then to do it by building web applications, but not some clone of something
-        you aren't interested in. Instead you will select (with the help of your
-        Instructor) a topic that interests you, and then you will build a web app
-        related to that.</p>
-
-        <p>Also while learning to become a web developer here at Devschool's online bootcamp
-        program you will do REAL work on REAL applications on the REAL interwebs
-        for a <%= link_to "REAL Non Profit Organization", ngo_path %>!</p>
-
-        <h3>Q. When are school hours 'held' - is it flexible?</h3>
-
-        <p>A. Our school is in US Central time and sessions happen mostly between
-        11am and 4pm, however it is possible to have your one on one's held later
-        in the evening based on <a href="who" title="meet the Devschool Instructors">Instructor</a> availablitity. We do this for people who
-        work during the day, and for European students. </p>
-
-        <h3>Q. How do I work with my Devschool Instructor?</h3>
-
-        <p>A. You will work directly with your <a href="who" title="meet the Devschool Instructors">Instructor</a> to plan your web application
-        in the exact same way you would once you are working in the 'Real World', 
-        figuring out the point of it, what features will it have, how would those
-        interfaces would actually look.</p>
-
-        <p>Each week you will meet with your <a href="who" title="meet the Devschool Instructors">Instructor</a> via Zoom (https://zoom.us)
-        via screen sharing and audio chat. You can broadcast your video if you like,
-        but usually we just do a photo instead of video so your hair can be messy
-        or you can learn in your pajamas, whatever floats your boat.</p>
-
-        <p>The number of times you will meet with your instructor weekly is between
-        the two of you, and is scheduled a month in advance. This allows you to adapt
-        your learning experience based on your own "real world" events and time-lines.</p>
-
-        <h3>Q. What about self study hours? What will I learn on my own?</h3>
-
-        <p>A. There are a total of 420 hours in the curriculum when you discount the
-        time you spend interning with a non profit. That means 40 of those hours are 
-        one on one with your <a href="who" title="meet the Devschool Instructors">Instructor</a>. The rest is a combination of group sessions, 
-        and "self study" hours, in which you hack on your app and the learning takes
-        whatever twists and turns as you run into real-world challenges.</p>
-
-        <h3>Q. What about learning in a group setting?</h3>
-
-        <p>A. Group sessions are available at least once a day, five days a week,
-        and are led by your Instructor. These sessions are live coding sessions. It
-        is participation pair programming in the sense that if you are following
-        along and you understand the material, shout out answers. Challenge your
-        Instructor's code. Don't quite yet know what is going on? Stay quiet and
-        watch it all unfold.</p>
-
-        <h3>Q. When do these group sessions take place?</h3>
-
-        <p>A. Group sessions happen once a day if there is demand. There must be at
-        least 2 students available for the days group session to take place. Otherwise
-        it wouldn't be much of a group! They happen on a revolving schedule, meaning
-        that each day the group session is at a different time. This allows us to
-        accommodate more diverse student schedules.</p>
-
-        <h3>Q. Speaking of scheduling, how does that work?</h3>
-
-        <p>A. Your first one on one session each month will be partially used to lock
-        down your schedule for the rest of the month. You decide your pacing by
-        choosing how many one on ones you will attend a week. Each one on one should
-        be accompanied with at least 1 group session and 10 hours of self study.</p>
-
-        <h3>Q. What about Pair Programming? Do you teach that at Devschool?</h3>
-
-        <p>A. Yes we do! Pair programming happens by the process we call "Self Assembling
-        Teams" which just means, be as engaged with each other as your comfort
-        allows. We think pair programming is powerful and awesome, but not everyone
-        wants to pair all the time.</p>
-
-        <p>Devschool's online coding bootcamp is meant to fit a large number of
-        people with different backgrounds and situations, Some students like to 
-        work with others a lot, some like to work alone mostly. We teach you to
-        work both ways and give you options!</p>
-
-        <h3>Q. Can I record the group and private sessions to re-watch later?</h3>
-
-        <p>A. Absolutely! In fact we recommend that you create a folder at the very
-        beginning of the course and save a recording of every session you attend
-        there for later viewing. It is like having your own personal coding bootcamp
-        screencast series!</p>
-
-        <h3>Q. What if I don't know what I want to focus on?</h3>
-
-        <p>A. Maybe the application you want to build will naturally lend itself to a 
-        heavy JavaScript interface, creating a very interactive experience. Maybe it
-        will be more MBA related and have lots of forms in which to enter data, or
-        maybe something more like a marketplace with money changing hands.</p>
-
-        <p>One of the greatest strengths of the curriculum at our coding bootcamp is it's
-        ability to adapt based on the interests and needs of each student. Not everyone
-        wants to build the same five web applications to learn.
-        <h3>Q. What text editor will I learn and use and learn to use and love?</h3>
-
-        <p>A. We start you off learning Vim. It is extremely powerful and more importantly,
-        better suited in our opinion than anything else to write web based software, which
-        is what we are talking about here! Is is great for working on files both locally
-        and on remote machines out there in the interwebs. Sublime can't do that!</p>
-
-        <p>Developers that show a proficiency in using expert editors like Vim are proven
-        to make more money and get more job offers. This is because programmers are 
-        interviewed by other programmers and managers that used to be developers. They
-        know the difference between someone who 'steals' Sublime vs a developer that
-        put love and attention into their tool-set.</p>
-
-        <h3>Q. What front-end web developer skills will I learn and focus on?</h3>
-
-        <p>A. The backbone and foundation of the Internet is HTML and more recently, HTML5. HTML
-        is the structure of the web page, but you also need some style. That is where CSS
-        and again, more recently, CSS3 comes into play. You 'put' an element on a page 
-        (like a unordered list) with HTML, you make it look pretty with CSS.</p>
-
-        <p>But there is more to it then just the languages. We also need a front-end framework
-        to equalize out all the various differences in browsers and computers. We need
-        something that will allow the pages we build respond to changes, like when we
-        flip our phones or tablets from vertical to horizontal. Or to just deal with the
-        myriad of screen sizes available.</p>
-
-        <p>That is where Twitter's Bootstrap front-end framework comes in. We teach you the
-        nitty gritty of responsive design using bootstrap and tools like Masonry, which
-        is how Pinterest gets such awesome looking flowing pages!.</p>
-
-        <h3>Q. Can I use Windows to learn Web development at your coding bootcamp?</h3>
-
-        <p>A. Windows is a fine operating system for writing Microsoft software or to
-        use as a business platform, and it makes an excellent gaming platform, likely
-        the best on the market. However it is not great for writing web software that
-        relies on open source libraries and technologies.</p>
-
-        <p>We used to advise Windows users to run Linux on a virtual machine, however
-        that turned out to be slow and highly problematic. We are no longer advising 
-        people to run virtual machines. It is much better to buy a used Windows laptop
-        and install Linux on it.</p>
-
-        <p>Windows does not support the libraries that are needed, and it doesn't share
-        the same architecture. In short Windows speaks a language of it's own, while
-        Linux and OSX both agree to support much of UNIX.</p>
-
-        <h3>Q. What kind of computer do you recommend for web development learning and work?</h3>
-
-        <p>A. Our own statistics show: Mac OSX users have the smoothest web development experience
-        with the tools you will learn here. That being said, we also love Linux if it is
-        run natively and the person wants a real software education and maybe a bit of
-        adventure.</p>
-
-        <p>Ubuntu and Mint are popular choices for those who want to strut their kneckbeards,
-        be they man, be they woman. Both Linux and OSX are built on the foundations of
-        UNIX.</p>
-
-        <h3>Q. What kind of Database systems will I learn at Devschool?</h3>
-
-        <p>A. Most web applications are a collection of Create, Read, Update, and Delete events,
-        also known as CRUD. This implies there will be a Database in use, and we teach
-        and promote both PostgreSQL and Mongo and Redis depending on the task at hand.</p>
-
-        <p>We will teach you how to join tables together like second-nature and how to write
-        performant queries that execute quickly and safely with in transactions. The day
-        your new boss asks you for some 'Metrics' you will be very happy you chose the
-        Devschool online coding bootcamp, because the 'Big Box Bootcamps' completely skip
-        this stuff.</p>
-
-        <h3>Q. Will I learn the "Server-Side" at your coding bootcamp?</h3>
-
-        <p>A. Ruby is commonly listed as the second most listed language in all
-        open source job postings. Ruby on Rails is a web framework specifically
-        designed to help you get things done quickly. What kind of things? 
-        Web development things!</p>
-
-        <p>We also will teach you 'Algorithms' and how to write performant code.
-        You will be able to roll your own APIs, build "web services", and understand
-        the differences in the various types of memory and processors.</p>
-
-        <h3>Q. Will I learn JavaScript at Devschool?</h3>
-
-        <p>A. JavaScript is a scripting language built into every browser on the market today.
-        Any "rich application" features that are interactive without a page-load, yep that was
-        our friend JavaScript. We teach jQuery, along with 'vanilla' JavaScript and also
-        ReactJS.</p>
-
-        <p>JavaScript is said to be the "Next Big Thing" by many, many smart developers
-        with their fingers on the pulse of the Internet. We also feel that JavaScript is
-        highly important to the future of web development stacks, so we teach a good amount
-        of it once you get some basics under your belt.</p>
-
-        <h3>Q. What about Payment processing chat apps and things like that?</h3>
-
-        <p>A. To be an effective developer you need to know a good measure of all of these things to
-        be a candidate worth hiring. And that means a candidate who can wrangle all these tools
-        and languages into technology solutions for businesses.</p>
-
-        <p>Along the way you will learn how to leverage 
-        <a rel="nofollow" href="https://stripe.com/">Stripe for payments</a>
-        to accept payments, and how to build real time apps like chat, back end management 
-        apps, statistics gathering and chart displays, and anything else that comes up 
-        when you are building a real app over a span of months or more.</p>
-
-        <p>You will also learn about deployment and setup and DNS at 
-        <a rel="nofollow" href="https://heroku.com">Heroku for simple deployment</a>,
-        <a rel="nofollow" href="https://aws.amazon.com/">Amazon Web Services (AWS) for professional-grade services</a>, and
-        <a rel="nofollow" href="https://www.cloudflare.com/">CloufFlare for DNS and site speed</a>.</p>
-
-        <p>It is a lot to learn, but our job is to guide you through it, so you learn what you need
-        to know, and not get bogged down in the things that might not matter. You can think of
-        the Devschool online developer bootcamp like your technology education flashlight in the dark!</p>
-
-        <h3>Q. How is it exactly that we meet together online?</h3>
-
-        <p>A. Devschool utilizes a mixture of technologies to accomplish a "connected"
-        environment and culture for our Students. This is not like Udemy where you
-        feel like you are in it alone. We promote a very social atmosphere.</p>
-
-        <p>We use <a rel="nofollow" href="https://www.flowdock.com/">Flowdock</a> for
-        our chat program, but it is really so much more then that! It allows contextual
-        conversations so what you are talking about doesn't get mixed up with other
-        people's messages that have nothing to do with what you are saying.</p>
-
-        <h3>Q. What about screen-sharing? How does that work exactly?</h3>
-
-        <p>A. We use a program called <a rel="nofollow" href="http://zoom.us/">Zoom</a> 
-        to broadcast our private and group sessions.
-        This allows the Instructor to share his screen and work and demonstrate things
-        with live lessons, or to switch over to a student's machine and fix something
-        for them.</p>
-
-        <p>It works best with Mac but there is a version for Linux as well.</p>
-
-        <h3>Q. How can we see our Instructor's calendar?</h3>
-
-        <p>You will be given a <a rel="nofollow" href="http://teamup.com">Teamup Calendar</a>
-        link and will be able to view the calendar online whenever
-        you need it. You can even import it into whatever calendar program you 
-        already use! Each month you and your <a href="who" title="meet the Devschool Instructors">Instructor</a> will choose your private
-        session schedule and those appointments will show up in that calendar.</p>
-
-        <p>If you need to cancel or reschedule it is never a problem, just let your
-        <a href="who" title="meet the Devschool Instructors">Instructor</a> know with as much notice as possible and they will reschedule it.</p>
-
-
-        <p class="well next">Our coding school prepares you with todays skills!  <%= link_to "Now meet your new expert instructor and web developer of over 18 years!", who_path %></p>
-      </div>
-    </div>
-  </div>
-</div>

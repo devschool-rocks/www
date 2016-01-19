@@ -1,0 +1,25 @@
+<div aria-multiselectable="true" role="tablist" id="accordion" class="panel-group">
+  <div class="panel panel-default">
+    <div id="headingone" role="tab" class="panel-heading active">
+      <h4 class="panel-title">
+        <a aria-controls="collapseone" aria-expanded="false" 
+           href="#<%= question.parameterize %>" data-parent="#accordion" data-toggle="collapse" role="button" class="collapsed">
+          <div class="row">
+            <div class="col-sm-10 col-xs-10">
+              <%= raw display_faq_question(question) %>
+            </div>
+            <div class="col-sm-2 col-xs-2 text-right">
+              <i class="collapsed-indicator fa fa-plus-circle"></i>
+            </div>
+          </div>
+        </a>
+      </h4>
+    </div>
+    <div aria-labelledby="heading" role="tabpanel" class="panel-collapse collapse"
+         id="<%= question.parameterize %>" aria-expanded="false" style="height: 0px;">
+      <div class="panel-body">
+        <%= raw display_faq_answer(answer) %>
+      </div>
+    </div>
+  </div>
+</div>
