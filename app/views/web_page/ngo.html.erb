@@ -10,132 +10,200 @@ Why wait until you graduate to get before the eyes of hiring managers? Work for 
 https://devschool.rocks/partnerships/ngo-program
 <%- end %>
 
-<div class="full-bg full-ngo"
-     style="background: url(<%= image_path('heroes/ngo-bg.jpg') %>) no-repeat 100% 80% fixed;">
-     <div class="container">
-       <div class="row vertical-center">
-         <div class="col-md-12 above-fold text-center">
-           <h1>Our <strong>online coding bootcamp</strong>
-             has both an <strong>internship</strong>
-             baked into it's core! You get to 
-             <strong>help the world</strong>, and we get you in front
-             of <strong>great employers</strong>!</h1>
+<%- content_for(:header) do %>
+  <div class="header-bottom">
+    <img src="<%= asset_path("banner_#{(1..6).to_a.sample}.jpg") %>" width="100%" 
+          class="center-block box">
+    <div class="container">
+      <div class="carousel-content-panel text-center">
+        <h1>
+          <div class="top">our online coding bootcamp</div>
+          <div class="middle">trains you as a jr. web developer</div>
+          <div class="bottom">We give you real world experience, and then we get you your first job!
+        </h1>
 
-        <h3><a data-scroll href="#below-the-fold"
-               class="btn btn-attention btn-lg">TELL ME MORE ABOUT THIS</a></h3>
+        <p><a href="#learn-more" class="btn btn-banner">LEARN MORE</a></p>
+      </div>
+    </div>
+  </div>
+<%- end %>
+
+<div class="holder">
+  <div class="learn-skill-holder">
+    <div class="container">
+      <a name="learn-more"></a>
+      <div class="text-center">
+        <h2>We partner with Non Profit and NGO companies</h2>
+        <h3>Through these partnerships we get you real world experience, and you get to help real people!</h3>
+
+        <div class="learn-icon-text">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-7.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>REAL EXPERIENCE</h5>
+                  <p>When you have the basics down and are ready to move to the next level in your education we
+                  pair you with one of our partners and you get to work on real software in the real world.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-8.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>REAL CHARITY</h5>
+                  <p>You could intern working on commercial products and web sites to build the same experience. But why line some rich company's pockets when you can help real people in need?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-9.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>REAL JOBS</h5>
+                  <p>100% of our graduating students get placed in a job within 90 days of completing the program. Getting that first job can be hard, but you will have an expert sidekick!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render partial: 'review', locals: {
+    image_url:'mehgan-holden.png',
+    name: "Meghan Holden",
+    location: "New York, USA",
+    review: <<-EOS
+<p>At Devschool I learned the skills that I needed to land the job I 
+have today. I completed my Web Development course in 18 weeks as 
+I had other obligations and Devschool was flexible enough for me to 
+handle both!</p>
+<p>I would recommend the Web Developers course at Devschool to anyone 
+who wants to cut through the cruft and really, really learn the skills 
+they will need to build modern web applications.</p>
+EOS
+  } %>
+  <center class="well">
+    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;If something is important enough, even if the odds are against you, you should still do it&quot; - <a href="https://twitter.com/elonmusk">@elonmusk</a> <a href="https://twitter.com/hashtag/ThankYou?src=hash">#ThankYou</a>! <a href="https://t.co/diFKQmszud">pic.twitter.com/diFKQmszud</a></p>&mdash; Devschool (@devschoolrocks) <a href="https://twitter.com/devschoolrocks/status/686051112680427520">January 10, 2016</a></blockquote>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </center>
+  <div class="tools-holder">
+    <div class="container">
+      <div class="tools-content text-center">
+        <div class="tool-in-content">
+          <div class="tool-row sp">
+            <div class="row">
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <h5>SMALL AND PERSONAL</h5>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>You cannot perfect a product at mass market scale. The very experience of our students at Devschool, that we put them above our or desire for endless piles of someone else's money.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <h5>PRICED AFFORDABLY</h5>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>In order to be affordable to as many students as possible, we have priced our coding bootcamp based on the real numbers and with modest margins. Affordable, not cheap.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <h5>BEST INSTRUCTORS</h5>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>Other online coding bootcamps pay their instructors less than $60k a year so they can make more money. We pay our instructors $100/yr minimum to have the best quality Instructors.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-holder">
+    <div class="container-fluid">
+      <div class="form-in">
+        <div class="col-sm-6 sp">
+          <div class="form-image">
+            <img src="<%= asset_path('form-image.png') %>" class="img-responsive center-block"/>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <%= render 'squeeze_open_group' %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="faq-folder">	
+    <div class="container">
+      <div class="faq-content">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="faq">
+
+              <div class="faq-heading text-center">
+                <h2>PRICING/PAYMENT FAQ</h2>
+              </div>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "Why do we have to do intern work at an NGO?",
+                answer: <<-EOS
+Our job at Devschool is not to just teach you web development, but
+to also get you a job in the web development field. In order to get a job
+you must have first had one. It can be a vicious cycle of No.
+
+We have found that it is a lot easier to build experience with Non Profits
+as they are more apt to work with Jr Developers who have enthusiasm for the
+mission.
+
+Gaining that initial team experience and referrals is a critical step
+to becoming a paid web developer, and Devschool's NGO Parter Program is
+designed to do exactly that.
+                EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "Is this NGO internship work paid?",
+                answer: <<-EOS
+No, the interning hours that you do as part of your school work is
+not paid work in the sense that you get money. You will however get valuable
+experience and some people in your corner backing you when you look for you
+real job.
+                EOS
+              }%>
+
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What if I don't want to work for a non profit?",
+                answer: <<-EOS
+If you chose to work for a normal, for profit company when you graduate
+we will help you find and nail your job with Interview readiness resources.
+                EOS
+              }%>
+
          </div>
-       </div>
-     </div>
-</div>
-
-<div class="container" id="below-the-fold">
-  <div class="row">
-    <div class="col-md-12 below-fold">
-      <h2 class="headline">Meet NewStory, our featured NGO Partner!</h2>
-
-      <div class="well jumbotron">
-        <p class="text-center"><a target="_blank" href="https://newstorycharity.org/leveque-haiti">
-        <img alt="NewStory charity" src="<%= image_path("partners/newstory/leveque-newstory.png") %>"></a></p>
-
-        <h3 class="headline">NewStory helps crowd fund homes for families in need!</h3>
-
-        <p>We initially started this program as a way for Students to build experience on
-        real world projects, but quickly we realized that the real benefit was getting
-        to work with companies like NewStory, who do so much amazing work in the world.
-        Devschool is in the process of rebuilding their outdated, difficult to change, PHP
-        website into an easy to update, Ruby on Rails application with WebFlow built-in, 
-        their preferred content generation and web styles framework.</p>
-
-        <p>Graduates of our online coding bootcamp didn't just learn some
-        awesome skills for their futures, they also helped feed, house, or provide clean
-        water or medical care to fellow humans in need. It almost sounds icky to follow that with this fact, but Employers
-        LOVE to see this sort of experience on your resumes, so having this program as
-        part of our program also aids you in getting better jobs for the rest of your
-        career in in software and web development!</p>
+        </div>
       </div>
     </div>
   </div>
-
-</div>
-
-
-<div class="container">
-  <div class="row row-centered">
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">real internships</h3>
-      <p class="tailline">You want experience and real projects to work on, our
-      partners want to help real people around the world and need your enthusiasm
-      and hard work.</p>
-
-      <p>The hardest part of breaking into an industry is getting "the chance" to
-      "prove yourself". This is why we started the NGO partnership, to get your
-      resume that first job and recommendation!</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">real experience</h3>
-      <p class="tailline">Working on worthless, stripped down clones of Twitter
-      and Pinterest really don't help you or anyone else. Instead of wasting your
-      time, invest it.</p>
-
-      <p>There is no better feeling then working on a real app, except working on
-      a real app the helps real people. Welcome to the NGO program at Devschool.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">help real people</h3>
-      <p class="tailline">You could intern working on commercial products and
-      web sites to build the same experience. But why line some rich company's
-      pockets when you can help?</p>
-
-      <p>We work with organization who put clothes on people's backs, food in
-      children's tummies, and roofs over needy family's heads. Not many bootcamps
-      can say that.</p>
-    </div>
-  </div>
-</div>
-
-
-<div class="section-yellow">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 faq-section">
-        <h2>Devschool Non Profit Partnership program - FAQ</h2>
-
-        <p>Working with NGOs is especially satisfying because you aren't just
-        making a living and earning experience, you are helping an organization
-        help the world. At Devschool we love Non Profits!</p>
-
-        <h3>Q. Why do we have to do intern work at an NGO?</h3>
-
-        <p>A. Our job at Devschool is not to just teach you web development, but
-        to also get you a job in the web development field. In order to get a job
-        you must have first had one. It can be a vicious cycle of No.</p>
-
-        <p>We have found that it is a lot easier to build experience with Non Profits
-        as they are more apt to work with Jr Developers who have enthusiasm for the
-        mission.</p>
-
-        <p>Gaining that initial team experience and referrals is a critical step
-        to becoming a paid web developer, and Devschool's NGO Parter Program is
-        designed to do exactly that.</p>
-
-        <h3>Q. Is this NGO internship work paid?</h3>
-
-        <p>A. No, the interning hours that you do as part of your school work is
-        not paid work in the sense that you get money. You will however get valuable
-        experience and some people in your corner backing you when you look for you
-        real job.<p>
-
-        <h3>Q. What if I don't want to work for a non profit?</h3>
-
-        <p>A. If you chose to work for a normal, for profit company when you graduate
-        we will help you find and nail your job with Interview readiness resources.</p>
-
-        <p class="well next">Yes, gaining experience while supporting a great cause is awesome! <%= link_to "How do I apply to Devschool then?", apply_path %></p>
-
-      </div>
-    </div>
-  </div>
-
 </div>

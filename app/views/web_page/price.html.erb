@@ -12,185 +12,199 @@ We get you your first job!
 https://devschool.rocks/coding-bootcamp/price
 <%- end %>
 
-<div class="full-bg full-price"
-     style="background: url(<%= image_path('heroes/price-bg.jpg') %>) no-repeat 50% 10% fixed;">
-  <div class="container">
-    <div class="row vertical-center">
-      <div class="col-md-12 above-fold text-center">
-        <h1><strong>We believe in a world</strong> where 
-          you can <strong>learn to code online</strong> 
-          with the help of a <strong>proven expert</strong>
-          and do so 
-          <strong>without a huge loan</strong>!</h1>
+<%- content_for(:header) do %>
+  <div class="header-bottom">
+    <img src="<%= asset_path("banner_#{(1..6).to_a.sample}.jpg") %>" width="100%" 
+          class="center-block box">
+    <div class="container">
+      <div class="carousel-content-panel text-center">
+        <h1>
+          <div class="top">our online coding bootcamp</div>
+          <div class="middle">was designed to be affordable</div>
+          <div class="bottom">and accessible to allow more people to learn web development</div>
+        </h1>
 
-    <h3><a data-scroll href="#below-the-fold"
-                        class="btn btn-attention btn-lg">HOW MUCH DOES IT COST?</a></h3>
+        <p><a href="#learn-more" class="btn btn-banner">LEARN MORE</a></p>
       </div>
     </div>
   </div>
-</div>
+<%- end %>
 
-<div id="below-the-fold">
-  <%= render('discount_notice') if discounted? %>
-</div>
+<div class="holder">
+  <div class="learn-skill-holder">
+    <div class="container">
+      <a name="learn-more"></a>
+      <div class="text-center">
+        <h2>For as little as <%= number_to_currency Product.prepay_price %> and in <%= Product.session_count %> private sessions</h2>
+        <h3>and after your <%= Product.intern_hours %> hours of non profit internship we will get you your first job!</h3>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 below-fold">
-      <h2 class="headline">Our program consists of <strong><%= Product.session_count %> 
-      "one-on-one", <%= Product.session_length %> minute sessions</strong>
-        with your Instructor, up to <strong>5 instructor-led group sessions</strong>
-        a week, and in total, <strong>500 hours</strong> of building web apps</h2>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row row-centered">
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">Save some money</h3>
-      <p class="tailline">
-      Psst. <strong> Want to save a cool <%= number_to_currency prepay_savings_amount %></strong>?
-      Pre-paying for your education, you will pay only <strong><%= number_to_currency prepay_price %></strong>,
-      and who doesn't like to save some hard earned money?
-    </div>
-
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">We are flexible</h3>
-      <p class="tailline">You can also make <strong><%= payment_count %>
-    easy</strong>, monthly payments of <strong><%= number_to_currency payment_amount %>
-  </strong> if that fits your style better. You pay the financing fee of 
-  <strong><%= number_to_currency finance_cost %></strong> but the payments are super simple to make.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">Refund policy</h3>
-      <p class="tailline">We <strong>back our performance</strong> by a pro-rated 
-      <strong>money back guarantee</strong>. 
-      Should you decide that Devschool is not for you, we will happily refund your
-      enrollment based on how long you have been with us.</p>
-    </div>
-  </div>
-
-</div>
-
-<div class="colored-section blue">
-  <div class="row review-card" itemscope itemtype="http://schema.org/Review">
-    <div class="col-md-offset-1 col-md-4 text-center">
-      <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
-        <span class="hidden" itemprop="name">Devschool Online Coding Bootcamp</span>
-      </div>
-      <span class="hidden" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-        <span itemprop="ratingValue">5</span> stars
-      </span> 
-      <i class="center-block img-responsive reviewer-sprite sprite-hector-moreno-p"></i>
-      <div class="reviewer" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <div itemprop="name">Hector Moreno</div>
-        <div class="text-small">Texas, United States</div>
-      </div>
-    </div>
-    <div class="col-md-5">
-      <blockquote itemprop="reviewBody">
-        <p>I was already enrolled in Dev Bootcamp, I was in phase zero before I switched to 
-        Devschool's coding bootcamp and I am going to explain why. During the first 3 weeks of Dev Bootcamp
-        I started realizing that not only was the course over-priced, and some of the
-        staff was under qualified.</p>
-
-        <p>My instructor in phase zero and in phase 1 was going to be a recent graduate from
-        Dev Bootcamp. How can you teach programming when you have never been exposed to 
-        the real world? Not for 13k!</p>
-
-        <p>I have in been in Devschool for 2 months now and I feel I have gotten 
-        my moneys worth and then some! Devschool really is an awesome experience!</p>
-      </blockquote>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row-centered">
-    <div class="col-md-6 col-md-offset-3">
-      <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;If something is important enough, even if the odds are against you, you should still do it&quot; - <a href="https://twitter.com/elonmusk">@elonmusk</a> <a href="https://twitter.com/hashtag/ThankYou?src=hash">#ThankYou</a>! <a href="https://t.co/diFKQmszud">pic.twitter.com/diFKQmszud</a></p>&mdash; Devschool (@devschoolrocks) <a href="https://twitter.com/devschoolrocks/status/686051112680427520">January 10, 2016</a></blockquote>
-      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-  </div>
-
-  <div class="row row-centered">
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">small and personal</h3>
-      <p class="tailline">You cannot perfect a product at mass market scale. The
-      very experience of our students at Devschool, that we put them above our
-      or desire for endless piles of someone else's money.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">priced honestly</h3>
-      <p class="tailline">In order to be affordable to as many students
-      as possible, we have priced our coding bootcamp based on the real numbers and
-      with modest margins. We are affordable, not cheap.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">instructor salaries</h3>
-      <p class="tailline">Other online coding bootcamps pay their instructors less
-      than $60k a year so they can make more money. We pay our instructors $90k
-      a year to have better quality Instructors.</p>
-    </div>
-  </div>
-</div>
-
-<%= render 'squeeze_open_group' %>
-
-<div class="section-yellow">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-md-12 faq-section">
-        <h2>All about pricing - FAQ</h2>
-
-        <p>Devschool's online coding bootcamp price is based on some simple
-        factors. We have a small company staff, a very modest Headquarters in affordable
-        Puerto Vallarta, Mexico (come visit us!), and the number of hours you meet
-        personally with your Instructor.</p>
-
-        <h3>Q. What is the complete coding bootcamp price?</h3>
-
-        <p>A. <strong><%= number_to_currency financed_price %></strong> covers it if you pay at the time of enrollment.</p>
-
-        <h3>Q. What is the cost if I need to make payments?</h3>
-
-        <p>A. If you choose to make payments instead of paying up front you agree
-        to make <strong><%= payment_count %></strong> payments of <strong><%= number_to_currency payment_amount %></strong>
-        USD, which is <strong><%= financed_price %></strong> USD.</p>
-
-        <h3>Q. How are payments processed, do you have my Credit Card number?</h3>
-
-        <p>A. All payments are handled by our partner, <a rel=nofollow href="https://stripe.com">
-          Stripe</a> and at no time do we ever store any of your credit card details on
-        our servers or in our databases. We take your financial security seriously.</p>
-
-        <h3>Q. If I go with payments when will they be due each month?</h3>
-
-        <p>A. That depends on the day you pay initially. You will be billed on the same
-        day each month until your balanced is settled. Well unless you sign on a leap day :)</p>
-
-        <p>This is not a monthly service, so once you make your <%= payment_count %>
-           payments you are done. There are no more to make after that.</p>
-
-        <h3>Q. What if I decide to get a refund?</h3>
-
-        <p>A. We have refunded a couple of Students so far, but it was always a financial
-        burden they were facing not due to our performance. You can get a refund as per the
-        <a href="/coding-bootcamp/terms">Terms of Service</a>.</p>
-
-        <p>In most cases Students put their education on hold and were able to resume again
-        after the crisis passed by paying back the money they refunded and picking up where
-        they left off. We pride ourselves in being Human first and flexible.</p>
-
-    <p class="well next">The program sounds really great, I am ready to apply! <%= link_to "How does that work?", apply_path %></p>
+        <div class="learn-icon-text">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-4.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>SAVE MONEY</h5>
+                  <p>Psst. Want to save a cool <%= number_to_currency Product.prepay_savings_amount %>? pre-paying for your education, and who doesn't like to save some hard earned money?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-5.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>FLEXIBILITY</h5>
+                  <p>You can also make <%= Product.payment_count %> monthly payments of <%= number_to_currency Product.payment_amount %> if that fits your style better. You pay the financing fee of $1,000 but the payments are easy.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-6.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>GUARANTEED</h5>
+                  <p>We back our performance by a pro-rated money back guarantee. Should you decide that Devschool is not for you, we will give you a pro-rated refund.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <%= render partial: 'review', locals: {
+    image_url:'hector-moreno.png',
+    name: "Hector Moreno",
+    location: "Texas, USA",
+    review: <<-EOS
+<p>I was already enrolled in Dev Bootcamp, I was in phase zero before I switched to Devschool's coding bootcamp and I am going to explain why. During the first 3 weeks of Dev Bootcamp I started realizing that not only was the course over-priced, and some of the staff was under qualified.</p>
+<p>At Devschool I feel I have gotten my moneys worth and then some and I appreciate the expert instruction I didn't get at Dev Bootcamp.</p>
+EOS
+  } %>
+  <center class="well">
+    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;If something is important enough, even if the odds are against you, you should still do it&quot; - <a href="https://twitter.com/elonmusk">@elonmusk</a> <a href="https://twitter.com/hashtag/ThankYou?src=hash">#ThankYou</a>! <a href="https://t.co/diFKQmszud">pic.twitter.com/diFKQmszud</a></p>&mdash; Devschool (@devschoolrocks) <a href="https://twitter.com/devschoolrocks/status/686051112680427520">January 10, 2016</a></blockquote>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </center>
+  <div class="tools-holder">
+    <div class="container">
+      <div class="tools-content text-center">
+        <div class="tool-in-content">
+          <div class="tool-row sp">
+            <div class="row">
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <h5>SMALL AND PERSONAL</h5>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>You cannot perfect a product at mass market scale. The very experience of our students at Devschool, that we put them above our or desire for endless piles of someone else's money.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <h5>PRICED AFFORDABLY</h5>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>In order to be affordable to as many students as possible, we have priced our coding bootcamp based on the real numbers and with modest margins. Affordable, not cheap.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <h5>BEST INSTRUCTORS</h5>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>Other online coding bootcamps pay their instructors less than $60k a year so they can make more money. We pay our instructors $100/yr minimum to have the best quality Instructors.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-holder">
+    <div class="container-fluid">
+      <div class="form-in">
+        <div class="col-sm-6 sp">
+          <div class="form-image">
+            <img src="<%= asset_path('form-image.png') %>" class="img-responsive center-block"/>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <%= render 'squeeze_open_group' %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="faq-folder">	
+    <div class="container">
+      <div class="faq-content">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="faq">
+
+              <div class="faq-heading text-center">
+                <h2>PRICING/PAYMENT FAQ</h2>
+              </div>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "What is the complete coding bootcamp price?",
+                answer: <<-EOS
+#{number_to_currency Product.prepay_price} covers it if you pay at the time of enrollment.
+                EOS
+              }%>
+
+            <%= render partial: 'faq_item', locals: {
+              question: "What is the cost if I need to make payments?",
+              answer: <<-EOS
+If you choose to make payments instead of paying up front you agree to make #{Product.payment_count} payments of #{number_to_currency Product.payment_amount}, for a total of #{number_to_currency Product.financed_price}.
+              EOS
+            }%>
+
+          <%= render partial: 'faq_item', locals: {
+            question: "How are payments processed, do you have my Credit Card number?",
+            answer: <<-EOS
+All payments are handled by our partner, <a rel="nofollow" href="https://stripe.com" class="seoquake-nofollow">
+Stripe</a> and at no time do we ever store any of your credit card details on
+our servers or in our databases. We take your financial security seriously.
+            EOS
+          }%>
+
+        <%= render partial: 'faq_item', locals: {
+          question: "If I go with payments when will they be due each month?",
+          answer: <<-EOS
+That depends on the day you pay initially. You will be billed on the same day each month until your balanced is settled. Well unless you sign on a leap day.
+
+This is not a monthly service, so once you make your 6 payments you are done. There are no more to make after that.
+          EOS
+        }%>
 
 
+      <%= render partial: 'faq_item', locals: {
+        question: "What if I decide to get a refund?",
+        answer: <<-EOS
+We have refunded a couple of Students so far, but it was always a financial
+burden they were facing not due to our performance. You can get a refund as per the
+<a href="/coding-bootcamp/terms">Terms of Service</a>.
+        EOS
+      }%>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

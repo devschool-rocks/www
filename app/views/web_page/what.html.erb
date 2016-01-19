@@ -38,7 +38,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
       <a name="learn-more"></a>
       <div class="text-center">
         <h2>LEARN SKILLS THAT TRANSLATE DIRECTLY INTO THE WORKFORCE</h2>
-        <h3>WE AREN'T JUST ANOTHER ONLINE CODING BOOTCAMP, WE GET YOU HIRED</h4>
+        <h3>WE AREN'T JUST ANOTHER ONLINE CODING BOOTCAMP, WE GET YOU HIRED</h3>
         <div class="learn-icon-text">
           <div class="row">
             <div class="col-xs-4">
@@ -79,16 +79,21 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
       </div>
     </div>
   </div>
-  <div class="people-says-holder">
-    <div class="container">
-      <div class="people-content">
-        <div class="people-heading text-center">
-          <h2>Alumni Review</h2>
-        </div>
-        <div class="people-in">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="people-image">
+  <%= render partial: 'review', locals: {
+    image_url:'eric-douglas.png',
+    name: "Eric Douglas",
+    location: "Ohio, USA",
+    review: <<-EOS
+<p>Coming from a business background, I found programming intriguing but sometimes 
+very confusing. My instructor excelled at simplifying concepts into easy to repeat 
+axioms and patterns, and I found the experience at Devschool to be a very 
+personal one.</p>
+
+<p>I am very satisfied with my experience and the value of Devschool and 
+I would definitely recommend Devschool to anyone who wants to become a 
+web developer.</p>
+EOS
+  } %>
                 <img src="<%= asset_path('eric-douglas.jpg') %>" class="img-responsive img-circle center-block"/>
               </div>
             </div>
@@ -307,11 +312,11 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
             <div class="faq">
 
               <div class="faq-heading text-center">
-                <h2>FAQ</h2>
+                <h2>CURRICULUM FAQ</h2>
               </div>
 
               <%= render partial: 'faq_item', locals: {
-                question: "What is the Devschool Curriculum? Is it step by step?",
+                question: "Is the curriculum step by step and preplanned?",
                 answer: <<-EOS
 Our coding bootcamp focuses on the DOING part of learning. There is no step A,
 step B, step C, prescribed ahead of time in the real world, and since at our
@@ -320,13 +325,10 @@ own rear ends. We like organic solutions, not contrived examples.
 
 You are going to be learning to build web applications. What better way
 then to do it by building web applications, but not some clone of something
-you aren't interested in. Instead you will select (with the help of your
-Instructor) a topic that interests you, and then you will build a web app
-related to that.
+you aren't interested in. 
 
-Also while learning to become a web developer here at Devschool's online bootcamp
-program you will do REAL work on REAL applications on the REAL interwebs
-for a <a href="/coding-bootcamp/ngo-program">REAL Non Profit Organization</a>!
+At Devschool you will select (with the help of your Instructor) a topic that 
+interests you, and then you will build a web app related to that.
                 EOS
               }%>
 
@@ -335,7 +337,7 @@ for a <a href="/coding-bootcamp/ngo-program">REAL Non Profit Organization</a>!
               answer: <<-EOS
 Our school is in US Central time and sessions happen mostly between
 11am and 4pm, however it is possible to have your one on one's held later
-in the evening based on <a href="who" title="meet the Devschool Instructors">Instructor</a> availablitity. We do this for people who
+in the evening based on Instructor availablitity. We do this for people who
 work during the day, and for European students.
               EOS
             }%>
@@ -343,12 +345,12 @@ work during the day, and for European students.
           <%= render partial: 'faq_item', locals: {
             question: "How do I work with my Devschool Instructor?",
             answer: <<-EOS
-You will work directly with your <a href="who" title="meet the Devschool Instructors">Instructor</a> to plan your web application
+You will work directly with your Instructor to plan your web application
 in the exact same way you would once you are working in the 'Real World', 
 figuring out the point of it, what features will it have, how would those
 interfaces would actually look.
 
-Each week you will meet with your <a href="who" title="meet the Devschool Instructors">Instructor</a> via Zoom (https://zoom.us)
+Each week you will meet with your Instructor via Zoom (https://zoom.us)
 via screen sharing and audio chat. You can broadcast your video if you like,
 but usually we just do a photo instead of video so your hair can be messy
 or you can learn in your pajamas, whatever floats your boat.
@@ -364,7 +366,7 @@ your learning experience based on your own "real world" events and time-lines.
           answer: <<-EOS
 There are a total of 420 hours in the curriculum when you discount the
 time you spend interning with a non profit. That means 40 of those hours are 
-one on one with your <a href="who" title="meet the Devschool Instructors">Instructor</a>. The rest is a combination of group sessions, 
+one on one with your Instructor. The rest is a combination of group sessions, 
 and "self study" hours, in which you hack on your app and the learning takes
 whatever twists and turns as you run into real-world challenges.
           EOS
@@ -615,11 +617,11 @@ It works best with Mac but there is a version for Linux as well.
               You will be given a <a rel="nofollow" href="http://teamup.com">Teamup Calendar</a>
               link and will be able to view the calendar online whenever
               you need it. You can even import it into whatever calendar program you 
-              already use! Each month you and your <a href="who" title="meet the Devschool Instructors">Instructor</a> will choose your private
+              already use! Each month you and your Instructor will choose your private
               session schedule and those appointments will show up in that calendar.
 
               If you need to cancel or reschedule it is never a problem, just let your
-              <a href="who" title="meet the Devschool Instructors">Instructor</a> know with as much notice as possible and they will reschedule it.
+              Instructor know with as much notice as possible and they will reschedule it.
         EOS
       }%>
 

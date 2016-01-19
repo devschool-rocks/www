@@ -5,6 +5,10 @@ module Product
     4988
   end
 
+  def intern_hours
+    80
+  end
+
   def finance_cost
     1000
   end

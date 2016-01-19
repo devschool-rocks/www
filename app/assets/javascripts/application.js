@@ -17,6 +17,15 @@ $(document).ready(function() {
       .addClass('active');
   }
 
+  $(window).scroll(function() { // check if scroll event happened
+    if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+      $(".navbar-fixed-top").css("background-color", "rgba(0,0,0,.5");
+    } else {
+      $(".navbar-fixed-top").css("background-color", "transparent");
+    }
+  });
+
+
   if( $('.navbar-nav a.active').length == 0 ) {
     $(".navbar-nav a.default-active")
       .addClass('active');

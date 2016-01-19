@@ -1,0 +1,36 @@
+<div class="people-says-holder">
+  <div class="container">
+    <div class="people-content itemscope itemtype="http://schema.org/Review"">
+      <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
+        <span class="hidden" itemprop="name">Devschool Online Developer Bootcamp</span>
+      </div>
+      <span class="hidden" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+        <span itemprop="ratingValue">5</span> stars
+      </span> 
+
+      <div class="people-heading text-center">
+        <h2>Alumni Review</h2>
+      </div>
+      <div class="people-in">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="people-image">
+              <img src="<%= asset_path(image_url) %>" class="img-responsive img-circle center-block"/>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="people-content">
+              <div class="people-para" itemprop="reviewBody">
+                <%= raw review %>
+              </div>
+              <div class="people-name" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <h5 itemprop="name"><%= name %></h5>
+                <h6><%= location %></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
