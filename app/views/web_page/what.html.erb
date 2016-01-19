@@ -16,7 +16,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
 
 <%- content_for(:header) do %>
   <div class="header-bottom">
-    <img src="<%= asset_path('banner.jpg') %>" width="100%" 
+    <img src="<%= asset_path("banner_#{(1..6).to_a.sample}.jpg") %>" width="100%" 
           class="center-block box">
     <div class="container">
       <div class="carousel-content-panel text-center">
