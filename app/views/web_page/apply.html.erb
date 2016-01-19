@@ -10,133 +10,96 @@ Don't just join a coding bootcamp, get in front of prospective employers with ou
 https://devschool.rocks/coding-bootcamp/apply
 <%- end %>
 
-<div class="full-bg full-apply"
-     style="background: url(<%= image_path('heroes/apply-bg.jpg') %>) no-repeat 50% 10% fixed;">
-  <div class="container">
-    <div class="row vertical-center">
-      <div class="col-md-12 above-fold text-center">
-        <h1>Our <strong>coding bootcamp</strong> is an
-          <strong>online, realistic, in-depth</strong>
-          education in <strong>web development</strong>,
-          designed to <strong>train you</strong> and then quickly 
-          <strong>get you a job</strong>!</h1>
+<%- content_for(:header) do %>
+  <div class="header-bottom">
+    <img src="<%= asset_path("banner_apply.jpg") %>" width="100%" class="center-block box">
+    <div class="container">
+      <div class="carousel-content-panel text-center">
+	<h1>
+	  <div class="top">Apply today and begin your</div>
+	  <div class="middle">grand adventure to a better future</div>
+	  <div class="bottom">Unlike other programs, we guide you all the way into a jr. web developer position</div>
+	</h1>
 
-    <h3><a data-scroll href="#below-the-fold"
-                        class="btn btn-attention btn-lg">Apply below!</a></h3>
+	<p><a href="#learn-more" class="btn btn-banner">LEARN MORE</a></p>
+      </div>
+      <a name="learn-more"></a>
+    </div>
+  </div>
+<%- end %>
+
+<div class="holder">
+  <center class="well">
+    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;You don&#39;t learn to walk by following rules You <a href="https://twitter.com/hashtag/LearnByDoing?src=hash">#LearnByDoing</a> and by falling over&quot; - <a href="https://twitter.com/richardbranson">@richardbranson</a> <a href="https://twitter.com/hashtag/WeAgree?src=hash">#WeAgree</a>! <a href="https://t.co/sCTeEQZewI">pic.twitter.com/sCTeEQZewI</a></p>&mdash; Devschool (@devschoolrocks) <a href="https://twitter.com/devschoolrocks/status/686291994650386433">January 10, 2016</a></blockquote>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </center>
+
+  <a name="apply-now"></a>
+  <div class="form-holder">
+    <div class="container">
+      <%= render 'apply_form' %>
+    </div>
+  </div>
+
+  <div class="faq-folder">
+    <div class="container">
+      <div class="faq-content">
+	<div class="row">
+	  <div class="col-sm-10 col-sm-offset-1">
+	    <div class="faq">
+
+	      <div class="faq-heading text-center">
+		<h2>ENROLLMENT FAQ</h2>
+	      </div>
+
+	      <%= render partial: 'faq_item', locals: {
+		question: "How does the application process work?",
+		answer: <<-EOS
+You start by filling out the form <a href="#apply-now">above this FAQ</a>
+and make sure you fill out the text-area with something that will make you stand
+out. We would rather have more to read about your then less!
+		EOS
+	      }%>
+
+	    <%= render partial: 'faq_item', locals: {
+	      question: "After I submit my application what happens?",
+	      answer: <<-EOS
+We review your answers and determine if you sound like someone we would like
+to talk to. If you answered with some detail and expressed a sincere desire to learn
+you at least deserve a phone call, so that is the next step based on your answers.
+	      EOS
+	    }%>
+
+	  <%= render partial: 'faq_item', locals: {
+	    question: "How will I know when my interview is?",
+	    answer: <<-EOS
+You will receive an email with a link to your Instructor's Calendar and
+a request to pick a time that suits you for a 30 minute discussion. Email us back
+with your suggestion and we will take it from there.
+	    EOS
+	  }%>
+
+	<%= render partial: 'faq_item', locals: {
+	  question: "After I speak with my future Instructor what happens?",
+	  answer: <<-EOS
+We next will have you schedule 20 minutes to chat with a student currently
+enrolled in the program, so you can get a perspective from someone much like
+yourself with the same goals.
+	  EOS
+	}%>
+
+      <%= render partial: 'faq_item', locals: {
+	question: "OK, so I talked to a current student and I am still a go!",
+	answer: <<-EOS
+At this point there is nothing you have to wait for. Tell us you are dying
+to get started and we will send you a link to handle your enrollment payment and
+you can start immediately or when it is convenient for you. There are no cohorts 
+or artificial separations here.
+	EOS
+      }%>
+	  </div>
+	  </div>
+	</div>
       </div>
     </div>
   </div>
-</div>
-
-<div id="below-the-fold">
-  <%= render('discount_notice') if discounted? %>
-</div>
-
-
-<div class="container">
-  <div class="row row-centered">
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">We Value Diversity</h3>
-      <p class="tailline">Nerds come in all shapes and colors and genders. 
-      They are not binary creatures.</p>
-      <p>When we evaluate you for your nerdiness we look for people who were 
-      in the drama club, people who started their own newspapers as kids.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">We Value Humor</h3>
-      <p class="tailline">You are expected to have a bit of a thick skin here. 
-      Employers want the winners, not the whiners.</p>
-      <p>This experience should be fun and somewhat lighthearted for all of our 
-      students and we protect their experience with culture.</p>
-    </div>
-
-    <div class="col-md-4 col-sm-6 ">
-      <h3 class="headline">We Value Hard Work</h3>
-      <p class="tailline">Your education is up to you, and you will get out of 
-      the program what you put into it.</p>
-      <p>We look for self-starters, people who don't take no for an answer, 
-      and people that have lived colorful life, the rebels, the misfits.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;You don&#39;t learn to walk by following rules You <a href="https://twitter.com/hashtag/LearnByDoing?src=hash">#LearnByDoing</a> and by falling over&quot; - <a href="https://twitter.com/richardbranson">@richardbranson</a> <a href="https://twitter.com/hashtag/WeAgree?src=hash">#WeAgree</a>! <a href="https://t.co/sCTeEQZewI">pic.twitter.com/sCTeEQZewI</a></p>&mdash; Devschool (@devschoolrocks) <a href="https://twitter.com/devschoolrocks/status/686291994650386433">January 10, 2016</a></blockquote>
-      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-  </div>
-</div>
-
-<div class="colored-section blue">
-  <div class="row inspiration">
-    <div class="col-md-offset-1 col-md-4 text-center">
-      <%= image_tag image_path("steve-jobs.png"), class: "reviewer-photo reviewer-photo-shadow img-responsive img-circle",
-        height: "282px", width: "300px"%>
-      <div class="quote" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <div itemprop="name">Steve Jobs</div>
-      </div>
-    </div>
-    <div class="col-md-5">
-      <blockquote class="quote">
-        Here's to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes... the ones who see things differently -- they're not fond of rules... You can quote them, disagree with them, glorify or vilify them, but the only thing you can't do is ignore them because they change things... they push the human race forward, and while some may see them as the crazy ones, we see genius, because the ones who are crazy enough to think that they can change the world, are the ones who do.
-      </blockquote>
-    </div>
-  </div>
-</div>
-
-<div class="continaer">
-  <div class="row">
-<a name="apply-now"></a>
-    <div class="col-md-8 col-md-offset-2">
-      <div class="enrollment-application-form">
-        <%= render 'apply_form' %>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section-yellow">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 faq-section">
-        <h2>Application Process FAQ</h2>
-
-        <p>Applying at Devschool is a fun and engaging process. You will not be
-        asked to solve puzzlers or write a bunch of code to get accepted. We prefer
-        to talk to you and have you meet a current student instead.</p>
-
-        <h3>Q. How does the application process work?</h3>
-
-        <p>A. You start by filling out the form <a href="#apply-now">above this FAQ</a>
-        and make sure you fill out the text-area with something that will make you stand
-        out. We would rather have more to read about your then less!</p>
-
-        <h3>Q. After I submit my application what happens?</h3>
-
-        <p>A. We review your answers and determine if you sound like someone we would like
-        to talk to. If you answered with some detail and expressed a sincere desire to learn
-        you at least deserve a phone call, so that is the next step based on your answers.</p>
-
-        <h3>Q. How will I know when my "Phone" interview is?</h3>
-
-        <p>A. You will receive an email with a link to your Instructor's Calendar and
-        a request to pick a time that suits you for a 30 minute discussion. Email us back
-        with your suggestion and we will take it from there.</p>
-
-        <h3>Q. After I speak with my future Instructor what happens?</h3>
-
-        <p>A. We next will have you schedule 20 minutes to chat with a student currently
-        enrolled in the program, so you can get a perspective from someone much like
-        yourself with the same goals.</p>
-
-        <h3>Q. OK, so I talked to a current student and I am still a go!</h3>
-
-        <p>A. At this point there is nothing you have to wait for. Tell us you are dying
-        to get started and we will send you a link to handle your enrollment payment and
-        you can start immediately. There are no cohorts or artificial starts here.</p>
-
-      </div>
-    </div>
-  </div>
-</div>

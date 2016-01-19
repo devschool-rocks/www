@@ -2,49 +2,93 @@
 Thank you for applying to Devschool, the premiere online web development school!
 <%- end %>
 
-<div class="full-bg full-applied"
-     style="background: url(<%= image_path('heroes/applied-bg.jpg') %>) no-repeat 50% 50% fixed;">
-  <div class="container">
-    <div class="row vertical-center">
-      <div class="col-md-12 above-fold text-center">
-        <h1>You have taken the first step in an amazing adventure!</h1>
-        <h3><a data-scroll href="#below-the-fold"
-                           class="btn btn-attention btn-lg">You rock!</a></h3>
-      </div>
-    </div>
-  </div>
-</div>
+<%- content_for(:header) do %>
+  <div class="header-bottom">
+    <img src="<%= asset_path("banner_apply.jpg") %>" width="100%" class="center-block box">
+    <div class="container">
+      <div class="carousel-content-panel text-center">
+	<h1>
+	  <div class="top">You have taken your first step</div>
+	  <div class="middle">in a much bigger world my friend</div>
+	  <div class="bottom">and are a little closer to your goal of making a great living and improving your life!</div>
+	</h1>
 
-<div class="container" id="below-the-fold">
-  <div class="row">
-    <div class="col-md-12 below-fold">
-        <h1>Thank you for applying to Devschool!</h1>
-      <h2 class="headline">So you have applied.. what now?</h2>
+	<p><a href="#learn-more" class="btn btn-banner">WHAT NEXT?</a></p>
+      </div>
+      <a name="learn-more"></a>
     </div>
   </div>
+<%- end %>
 
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <p class="tailline">Please take a moment to tweet or share on facebook your awesome decision to apply to Devschool - we give priority to applications to mention us on social media!.</p>
-      <div class="block-center">
-      <div style="margin-left: 20%; width: 80%; text-align: center;">
-        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?button_hashtag=devschoolrocks&text=I%20just%20applied%20at%20https%3A%2F%2Fdevschool.rocks%20to%20become%20a%20web%20developer!" class="twitter-hashtag-button" data-size="large" data-related="devschoolrocks">Tweet it!</a>
-        <div class="fb-share-button" data-href="http://www.katalpa.cz" data-layout="button"></div>
-        <div class="g-plus" data-action="share"></div>
+<div class="holder">
+  <div class="learn-skill-holder">
+    <div class="container">
+      <div class="text-center">
+        <h2>We will examine your application shortly</h2>
+        <h3>If we like what you said about your motivations, we will email you and schedule an interview!</h3>
+        <p>You can read the FAQ below to understand more about this process and so you know what to expect.</p>
       </div>
-      </div>
-    <h3 class="headline">Self Starters ROCK!</h3>
-    <ul class="list-group">
-      <li class="list-group-item">Check out our friends at <a rel="nofollow" href="https://codeschool.com">Codeschool</a> and take the
-        free <a rel="nofollow" href="https://www.codeschool.com/courses/front-end-foundations">HTML</a>,
-        <a rel="nofollow" href="https://www.codeschool.com/courses/try-ruby">Ruby</a>,
-        and <a rel="nofollow" href="https://www.codeschool.com/paths/javascript">JavaScript</a> courses.</li>
-      <li class="list-group-item">Create yourself a <a rel="nofollow" href="https://github.com/join">Github profile</a> to show off what you are learning,
-        and of course take the free <a href="https://www.codeschool.com/courses/try-git" rel="nofollow">Git</a> course at
-      Codeschool!</li>
-      <li class="list-group-item">Create a <a rel=nofollow href="https://learn.co/join/web-prework">Learn.co</a> where you can do
-        some web development setup prework - they require a Mac, but so do we.</li>
-    </ul>
     </div>
   </div>
-</div>
+  <div class="faq-folder">
+    <div class="container">
+      <div class="faq-content">
+	<div class="row">
+	  <div class="col-sm-10 col-sm-offset-1">
+	    <div class="faq">
+
+	      <div class="faq-heading text-center">
+		<h2>ENROLLMENT FAQ</h2>
+	      </div>
+
+	      <%= render partial: 'faq_item', locals: {
+		question: "How does the application process work?",
+		answer: <<-EOS
+You start by filling out the form <a href="#apply-now">above this FAQ</a>
+and make sure you fill out the text-area with something that will make you stand
+out. We would rather have more to read about your then less!
+		EOS
+	      }%>
+
+	    <%= render partial: 'faq_item', locals: {
+	      question: "After I submit my application what happens?",
+	      answer: <<-EOS
+We review your answers and determine if you sound like someone we would like
+to talk to. If you answered with some detail and expressed a sincere desire to learn
+you at least deserve a phone call, so that is the next step based on your answers.
+	      EOS
+	    }%>
+
+	  <%= render partial: 'faq_item', locals: {
+	    question: "How will I know when my interview is?",
+	    answer: <<-EOS
+You will receive an email with a link to your Instructor's Calendar and
+a request to pick a time that suits you for a 30 minute discussion. Email us back
+with your suggestion and we will take it from there.
+	    EOS
+	  }%>
+
+	<%= render partial: 'faq_item', locals: {
+	  question: "After I speak with my future Instructor what happens?",
+	  answer: <<-EOS
+We next will have you schedule 20 minutes to chat with a student currently
+enrolled in the program, so you can get a perspective from someone much like
+yourself with the same goals.
+	  EOS
+	}%>
+
+      <%= render partial: 'faq_item', locals: {
+	question: "OK, so I talked to a current student and I am still a go!",
+	answer: <<-EOS
+At this point there is nothing you have to wait for. Tell us you are dying
+to get started and we will send you a link to handle your enrollment payment and
+you can start immediately or when it is convenient for you. There are no cohorts 
+or artificial separations here.
+	EOS
+      }%>
+	  </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
