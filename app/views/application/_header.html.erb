@@ -10,14 +10,17 @@
             <div class="mainmenu">
               <nav role="navigation" class="navbar top-navbar">
                 <div class="navbar-header">
-                  <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+                  <button data-target="#bs-menu" 
+                    data-toggle="collapse" class="navbar-toggle" type="button">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
                 </div>
-                <%= render 'main_menu' %>
+                <div class="collapse navbar-collapse" id="bs-menu">
+                  <%= render 'main_menu' %>
+                </div>
               </div>
             </div>
           </nav>
@@ -25,75 +28,5 @@
       </div>
     </div>
   </div>
-  <div class="header-bottom">
-    <div id="carousel-banner" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="<%= asset_path('banner.jpg') %>" width="100%" alt="..." class="box">
-          <div class="carousel-content ">
-            <div class="container">
-              <div class="carousel-content-panel hidden-xs text-center">
-                <h2>devschool is an online </h2>
-                <h3>coding bootcamp designed</h3>
-                <h4>to make you an employable web developer in 420 hours</h4>
-                <a href="#" class="btn btn-banner">learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="<%= asset_path('banner.jpg') %>" width="100%" class="box">
-          <div class="carousel-content ">
-            <div class="container">
-              <div class="carousel-content-panel hidden-xs text-center">
-                <h2>devschool is an online </h2>
-                <h3>coding bootcamp designed</h3>
-                <h4>to make you an employable web developer in 420 hours</h4>
-                <a href="#" class="btn btn-banner">learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="<%= asset_path('banner.jpg') %>" width="100%" class="box">
-          <div class="carousel-content ">
-            <div class="container">
-              <div class="carousel-content-panel hidden-xs text-center">
-                <h2>devschool is an online </h2>
-                <h3>coding bootcamp designed</h3>
-                <h4>to make you an employable web developer in 420 hours</h4>
-                <a href="#" class="btn btn-banner">learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="<%= asset_path('banner.jpg') %>" width="100%" class="box">
-          <div class="carousel-content ">
-            <div class="container">
-              <div class="carousel-content-panel hidden-xs text-center">
-                <h2>devschool is an online </h2>
-                <h3>coding bootcamp designed</h3>
-                <h4>to make you an employable web developer in 500 hours</h4>
-                <a href="#" class="btn btn-banner">learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-nav">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-banner" data-slide-to="1"></li>
-          <li data-target="#carousel-banner" data-slide-to="2"></li>
-          <li data-target="#carousel-banner" data-slide-to="3"></li>
-        </ol>
-      </div>
-    </div>
-  </div>
-  <div class="header-after hidden-xs hidden-sm hidden-md">
-    <div class="container-fluid">
-      <img src="<%= asset_path('banner-after.png') %>" class="img-responsive center-block"/>
-    </div>
-  </div>
+  <%= content_for(:header) %>
 </header>
