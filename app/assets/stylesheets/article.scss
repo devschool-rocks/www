@@ -1,0 +1,73 @@
+.container.article {
+  font-family: "Open Sans", helvetica, sans-serif;
+  margin-top: 16vmin;
+  font-size: 3vmin;
+  line-height: 5vmin;
+  color: #3A3A3A;
+}
+
+.article p {
+  font-family: "Droid Serif", serif;
+  font-size: 3vmin;
+  color: #3A3A3A;
+}
+
+.article h1 {
+  margin: 6vmin 0 4vmin;
+  font-size: 6vmin;
+  line-height: 8vmin;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.article a {
+  text-decoration: none;
+}
+
+.article a:hover {
+  text-decoration: none;
+}
+
+.article h2 {
+  margin: 6vmin 0;
+  font-size: 4vmin;
+  line-height: 5.5vmin;
+}
+
+.article .author.name {
+  font-size: 4.5vmin;
+  line-height: 5.5vmin;
+  margin-top: 4vmin;
+}
+
+.article .role {
+  font-weight: bold;
+}
+
+.article .timestamp, .article .author.role {
+  font-size: 2.5vmin;
+  line-height: 3.5vmin;
+  margin: 0;
+}
+
+.article .timestamp {
+  margin: 0 0 4vmin;
+}
+
+.article ul {
+  margin: 3vmin 2vmin 6vmin;
+}
+
+.article .avatar {
+  height: 20vmin;
+  margin-right: 6vmin;
+}
+
+.article p:first-of-type {
+  margin-top: 10vmin;
+}
+
+.btn-read-more {
+  font-size: 3vmin;
+  padding: 2vmin 8vmin;
+}

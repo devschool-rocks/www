@@ -14,22 +14,31 @@ https://devschool.rocks/blog
 <%= render 'social_js' %>
 <%- end %>
 
+<%- content_for(:header) do %>
+  <div class="header-bottom">
+    <img src="<%= asset_path("banner_apply.jpg") %>" width="100%" class="center-block box">
+    <div class="container">
+      <div class="carousel-content-panel text-center">
+        <h1><div class="middle"><%= Article.most_recent[:title] %></div></h1>
 
-<div class="container article">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <%= render partial: Article.most_recent[:permalink].gsub("-","_") %>
+	<p><a href="#read-more" class="btn btn-banner">READ MORE</a></p>
+      </div>
+      <a name="read-more"></a>
     </div>
   </div>
-</div>
+<%- end %>
 
-<div class="container article">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <%- Article.except_recent.each do |a| %>
-        <%= raw render_to_string(partial: a[:permalink].gsub("-","_") + "_excerpt").gsub("h1\>","h2\>") %>
-        <hr>
-      <%- end %>
+<div class="holder">
+  <div class="learn-skill-holder">
+    <div class="container article">
+      <div class="col-md-8 col-md-offset-2">
+        <%= render partial: Article.most_recent[:permalink].gsub("-","_") %>
+
+        <%- Article.except_recent.each do |a| %>
+          <%= raw render_to_string(partial: a[:permalink].gsub("-","_") + "_excerpt").gsub("h1\>","h2\>") %>
+          <%= render 'squeeze_open_group' %>
+        <%- end %>
+      </div>
     </div>
   </div>
 </div>

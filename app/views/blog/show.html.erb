@@ -15,15 +15,32 @@ https://devschool.rocks/blog/<%= params[:id] %>
 <%= render 'social_js' %>
 <%- end %>
 
-<div class="container article">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="article">
+<%- content_for(:header) do %>
+  <div class="header-bottom">
+    <img src="<%= asset_path("banner_apply.jpg") %>" width="100%" class="center-block box">
+    <div class="container">
+      <div class="carousel-content-panel text-center">
+        <h1><div class="top">DEVSCHOOL BLOG</div></h1>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+	<p><a href="#read-more" class="btn btn-banner">READ BELOW</a></p>
+      </div>
+      <a name="read-more"></a>
+    </div>
+  </div>
+<%- end %>
+
+<div class="holder">
+  <div class="learn-skill-holder">
+    <div class="container article">
+      <div class="col-md-8 col-md-offset-2">
         <%= render @partial %>
       </div>
     </div>
   </div>
 </div>
-
 
 <%= render 'squeeze_open_group' %>
