@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   match '/coding-bootcamp/how', :to => redirect('/coding-bootcamp'), via: :get
   match '/where', :to => redirect('/coding-bootcamp'), via: :get
   match '/coding-bootcamp/where', :to => redirect('/coding-bootcamp'), via: :get
-  match '/who', :to => redirect('/coding-bootcamp/who'), via: :get
+  match '/who', :to => redirect('/coding-bootcamp'), via: :get
   match '/price', :to => redirect('/coding-bootcamp/price'), via: :get
   match '/apply', :to => redirect('/coding-bootcamp/apply'), via: :get
 
