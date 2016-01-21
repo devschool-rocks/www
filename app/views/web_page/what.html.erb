@@ -282,7 +282,7 @@ EOS
             <div class="faq">
 
               <div class="faq-heading text-center">
-                <h2>CURRICULUM FAQ</h2>
+                <h2>GENERAL FAQ</h2>
               </div>
 
               <%= render partial: 'faq_item', locals: {
@@ -301,7 +301,20 @@ a topic that interests you, and then you will build a web app related to that.
               }%>
 
             <%= render partial: 'faq_item', locals: {
-              question: "What hours is class held? Is it flexible?",
+              question: "What kind of students do you accept? Newbies? Mid level?",
+              answer: <<-EOS
+Since opening our doors officially, we have taught people from all walks of life and
+of all ages. Some students have never written a line of real code in their life, and
+some students come to us from other Bootcamps or from Universities.
+
+Since our Instructors have a minimum of 10 years in software development and a wide
+range of abilities and skills, it makes it very easy for us to teach students from
+many different backgrounds and from various skill levels.
+              EOS
+            }%>
+
+            <%= render partial: 'faq_item', locals: {
+              question: "What hours are class held? Is it flexible?",
               answer: <<-EOS
 Our school is in US Central time and sessions happen mostly between
 11am and 4pm, however it is possible to have your one on one's held later
