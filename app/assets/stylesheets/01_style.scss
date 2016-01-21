@@ -1,14 +1,33 @@
+header .container {
+  position: relative;
+  top: 8px;
+}
+
+
+header .navbar-toggle {
+position: relative;
+top: -6px;
+}
+
+header .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
 header .navbar-brand, .navbar-nav > li > a {  text-shadow: none; }
 header .navbar-brand { position: relative; top: 0px; }
 header .navbar { border: none;  margin-bottom: 0px;  min-height: 50px; }
-header .navbar-nav { margin: 12px 48px; }
 header .navbar-nav > li > a { color: #eeeeee;  font-family: "Raleway";  font-size: 19px;  padding: 8px 12px; text-transform:uppercase; font-weight:500;}
 header .nav > li > a:hover, .nav > li > a:focus, .nav > li > a.active { text-decoration: none; background-color: transparent; color: #EC2D33; }
 header .header-top { position: absolute;  z-index: 111;  width: 100%;}
 header .carousel-content-panel {  bottom: 30%; position: absolute; width:100%; left:0;}
-header  h1 .top {  color: #ffffff;  font-family: "Raleway";  font-size: 63px;  font-weight: 700; margin:0; text-transform:uppercase;}
-header  h1 .middle {  color: #ffffff;  font-family: "Raleway";  font-size: 46px;  font-weight: 700; margin:0; text-transform:uppercase;}
-header  h1 .bottom {  margin-bottom: 50px; color: #eeeeee;  font-family: "Raleway";  font-size: 20px;  font-weight: 500;text-transform:uppercase; }
+header  h1 { color: #ffffff;  font-family: "Raleway"; }
+header  h1 .top { font-size: 63px;  font-weight: 700; margin:0; text-transform:uppercase;}
+header  h1 .middle {   font-size: 46px;  font-weight: 700; margin:0; text-transform:uppercase;}
+header  h1 .bottom {  margin-bottom: 50px; font-size: 20px;  font-weight: 500;text-transform:uppercase; }
 header .carousel-content-panel .btn-banner  { color:#ffffff;  font-family: "Raleway";  font-size: 17px;  font-weight: 500; background: #EC2D33;
     border: 4px solid #FF2930;
       text-transform: uppercase;
@@ -79,57 +98,6 @@ img.half-size {
 }
 /*Responsive*/
 
-@media (max-width:1280px)
-
-{
-  header .navbar-nav > li > a {  color: #eeeeee;  font-family: "Raleway";  font-size: 19px;  font-weight: 500;  padding: 8px;  text-transform: uppercase;}
-  .logo {  padding: 8px 0;}
-  .holder {  margin-top: 0;}
-  .holder .people-para::after {  background: rgba(0, 0, 0, 0) asset-url("quote-2.png") no-repeat scroll 0 0;  bottom: 50px;  content: "";  display: inline-block;  height: 30px;  position: absolute;  right: 30%;  width: 27px;}
-  .holder p {  color: #606060;  font-family: "Open Sans";  font-size: 14px;  font-weight: 400;  line-height: 25px;}
-  .holder .form-text > h3 {  color: #fff;  font-size: 26px;  padding-top: 0;}
-  .foot-content .img-responsive {  width: 30px;}
-  .foot-logo .img-responsive {  width: 90px;}
-}
-
-@media (max-width:1023px)
-
-{
-    header .header-top {  background: #000 none repeat scroll 0 0;  padding: 0px 0;  position: relative;  width: 100%;  z-index: 111;}
-
-  .logo {  position: relative;  z-index: 111;  padding: 7px 0;}
-  header .navbar-nav > li > a {  color: #eeeeee;  font-family: "Raleway";  font-size: 14px;  font-weight: 500;  padding: 8px 6px;  text-transform: uppercase;}
-  header .carousel-content-panel h2 {  color: #ffffff;  font-family: "Raleway";  font-size: 41px;  font-weight: 700;  margin: 0;  text-transform: uppercase;}
-  header .carousel-content-panel h3 {  color: #ffffff;  font-family: "Raleway";  font-size: 36px;  font-weight: 700;  margin: 0;  text-transform: uppercase;}
-  header .carousel-content-panel h4 {  color: #eeeeee;  font-family: "Raleway";  font-size: 21px;  font-weight: 500;  text-transform: uppercase;}
-  .holder {  margin-top: 0;}
-  .holder .people-para::after {  background: rgba(0, 0, 0, 0) asset-url("quote-2.png") no-repeat scroll 0 0;  bottom: 70px;  content: "";  display: inline-block;  height: 30px;  position: absolute;  right: 19%;  width: 27px;}
-  .holder p {  color: #606060;  font-family: "Open Sans";  font-size: 14px;  font-weight: 400;  line-height: 25px;}
-  .holder .tool-icon-text.sp {  padding: 15px 36px;}
-
-}
-
-
-@media (max-width: 767px) 
-{
-  header .header-top {  background: #000 none repeat scroll 0 0;  padding: 0px 0;  position: relative;  width: 100%;  z-index: 111;}
-
-  header .carousel-content-panel {  bottom: 54%; position: absolute; width:100%; left:0;}
-  header  h1 .top {  color: #ffffff;  font-family: "Raleway";  font-size: 30px;  font-weight: 700; margin:0; text-transform:uppercase;}
-  header  h1 .middle {  color: #ffffff;  font-family: "Raleway";  font-size: 26px;  font-weight: 700; margin:0; text-transform:uppercase;}
-  header  h1 .bottom {  margin-bottom: 50px; color: #eeeeee;  font-family: "Raleway";  font-size: 18px;  font-weight: 500;text-transform:uppercase; }
-.holder h2 { color: #000000;  font-family: "Raleway";  font-size: 28px;  font-weight: 400;  text-transform:uppercase; }
-.holder h3 { color: #606060;  margin-bottom: 28px; font-family: "Open Sans";  font-size: 18px;  font-weight: 400; text-transform:uppercase; }
-.holder p  { color: #606060;  font-family: "Open Sans";  font-size: 13px;  font-weight: 400; line-height:25px; }
-  .logo {  position: relative;  z-index: 111;  padding: 7px 0;}
-  .holder .learn-content.text-center > h3 {  padding: 0;  font-size: 22px;	}
-  .holder {  margin-top: 0;}
-  .holder .learn-content.text-center > h4 {  padding: 5px 0;}
-  .holder .people-para::before {  background: none;  content: "";  display: inline-block; height: 30px;  left: -20px;  position: absolute;  width: 27px;}
-  .holder .people-para::after {  background: none;  bottom: 50px;  content: "";display: inline-block;  height: 30px;  position: absolute;  right: 34%;  width: 27px;}
-  .holder h3 {  color: #000000;  font-family: "Raleway";  font-size: 24px;  font-weight: 400;  text-transform: uppercase;}
-  footer-top {  text-align: center;}
-}
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -143,21 +111,17 @@ img.half-size {
   width: 20%;
   float: left;
 }
-@media (min-width: 768px) {
-  .col-sm-5ths {
-    width: 20%;
-    float: left;
-  }
+
+header nav.navbar-default {
+  background: transparent;
 }
-@media (min-width: 992px) {
-  .col-md-5ths {
-    width: 20%;
-    float: left;
-  }
+
+header .navbar-default .navbar-nav>li>a {
+  font-weight: 200;
+  color: white;
+  text-shadow: none;
 }
-@media (min-width: 1200px) {
-  .col-lg-5ths {
-    width: 20%;
-    float: left;
-  }
+header nav.navbar-default .navbar-nav>li>a:hover {
+  text-shadow: none;
+  color: white;
 }
