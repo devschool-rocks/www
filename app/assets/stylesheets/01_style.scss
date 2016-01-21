@@ -23,7 +23,7 @@ header .navbar { border: none;  margin-bottom: 0px;  min-height: 50px; }
 header .navbar-nav > li > a { color: #eeeeee;  font-family: "Raleway";  font-size: 19px;  padding: 8px 12px; text-transform:uppercase; font-weight:500;}
 header .nav > li > a:hover, .nav > li > a:focus, .nav > li > a.active { text-decoration: none; background-color: transparent; color: #EC2D33; }
 header .header-top { position: absolute;  z-index: 111;  width: 100%;}
-header .carousel-content-panel {  bottom: 30%; position: absolute; width:100%; left:0;}
+header .carousel-content-panel {  bottom: 80px; position: absolute; width:100%; left:0;}
 header  h1 { color: #ffffff;  font-family: "Raleway"; }
 header  h1 .top { font-size: 63px;  font-weight: 700; margin:0; text-transform:uppercase;}
 header  h1 .middle {   font-size: 46px;  font-weight: 700; margin:0; text-transform:uppercase;}
