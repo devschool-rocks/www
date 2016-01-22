@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   match "/applied"=> "web_page#applied",via: :get,   as: :applied
 
   match "/partnerships/ngo-program"=> "web_page#ngo",  via: :get,   as: :ngo
+  match "/partnerships/new-story"=> "web_page#new_story",  via: :get,   as: :new_story
 
   resources :blog, only: %i[index show]
 

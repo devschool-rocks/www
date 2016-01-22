@@ -19,7 +19,7 @@ https://devschool.rocks/partnerships/ngo-program
         <h1>
           <div class="top">our online coding bootcamp</div>
           <div class="middle">trains you as a jr. web developer</div>
-          <div class="bottom">We give you real world experience, and then we get you your first job!
+          <div class="bottom">We give you real world experience, and then we get you your first job!</div>
         </h1>
 
         <p><a href="#learn-more" class="btn btn-banner">LEARN MORE</a></p>
@@ -34,7 +34,7 @@ https://devschool.rocks/partnerships/ngo-program
     <div class="container">
       <div class="text-center">
         <h2>We partner with Non Profit and NGO companies</h2>
-        <h3>Through these partnerships we get you real world experience, and you get to help real people!</h3>
+        <h3>Through these <a href="/partnerships/new-story">partnerships</a> we get you real world experience, and you get to help real people!</h3>
 
         <div class="learn-icon-text">
           <div class="row">
@@ -77,6 +77,7 @@ https://devschool.rocks/partnerships/ngo-program
       </div>
     </div>
   </div>
+
   <%= render partial: 'review', locals: {
     image_url:'mehgan-holden.png',
     name: "Meghan Holden",
@@ -133,6 +134,15 @@ No, the interning hours that you do as part of your school work is
 not paid work in the sense that you get money. You will however get valuable
 experience and some people in your corner backing you when you look for you
 real job.
+                EOS
+              }%>
+
+              <%= render partial: 'faq_item', locals: {
+                question: "Who is your featured NGO Partner?",
+                answer: <<-EOS
+We are very proud to have formed a partnership with <a href="/partnerships/new-story">NewStory Charity</a>.
+They help crowd fund much meeded, life saving homes for homeless families in need! Our interns help
+work on new technology for them so they can do what they do best and help people!.
                 EOS
               }%>
 
