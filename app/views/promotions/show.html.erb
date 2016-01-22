@@ -3,12 +3,22 @@ ga('create', '<%= @ga_code %>', 'auto');
 ga('send', 'pageview');
 </script>
 
-<div class="colored-section red padded-top">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h1 class="headline" style="padding: 32px 32px 46px 36px;">You qualify for a 
-        <%= number_to_currency current_affiliate.discount %> discount on your enrollment from
-        <%= current_affiliate.name %>!</h1>
+<%- content_for(:header) do %>
+  <div class="header-bottom">
+    <img src="<%= asset_path("banner_#{@affiliate.code}.jpg") %>" width="100%" class="center-block box">
+    <div class="container">
+      <div class="carousel-content-panel text-center">
+	<h1>
+          <div class="top">You just saved <%= number_to_currency @affiliate.discount %></div>
+          <div class="middle">thanks to a grant from <%= @affiliate.name %>!</div>
+          <div class="bottom">Well played my friend, you will save some money and join the best bootcamp around!</div>
+	</h1>
+
+	<p><a href="/coding-bootcamp" class="btn btn-banner">learn more</a></p>
+      </div>
     </div>
+    <center>
+      <h2><a href="/coding-bootcamp">Read more about our online coding bootcamp!</a></h2>
+    </center>
   </div>
-</div>
+<%- end %>
