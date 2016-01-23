@@ -1,3 +1,7 @@
+body {
+  letter-spacing: 0.04;
+}
+
 header .container {
   position: relative;
   top: 8px;
@@ -37,7 +41,7 @@ header .carousel-content-panel .btn-banner  { color:#ffffff;  font-family: "Rale
 header .btn.btn-apply {  border: 2px solid #EC2D33 ;  padding: 7px 16px; border-radius:0px; }
 header .header-after {  position: absolute;  bottom: 118px;}
 header .container-fluid { padding:0; }
-header { margin-bottom: 180px; }
+header { margin-bottom: 100px; }
 /*holder*/
 .holder {  margin-top: -65px;}
 .holder h2 { color: #000000;  font-family: "Raleway";  font-size: 39px;  font-weight: 400;  text-transform:uppercase; }
@@ -121,4 +125,22 @@ header .navbar-default .navbar-nav>li>a {
 header nav.navbar-default .navbar-nav>li>a:hover {
   text-shadow: none;
   color: white;
+}
+
+.colored-section.red {
+  padding: 40px 0;
+  background: #ff4147;
+  width: 100%;
+  color: white;
+}
+
+.colored-section h3 {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.colored-section p {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
 }

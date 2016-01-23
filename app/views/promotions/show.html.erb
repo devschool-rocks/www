@@ -11,7 +11,10 @@ ga('send', 'pageview');
 	<h1>
           <div class="top">You just saved <%= number_to_currency @affiliate.discount %></div>
           <div class="middle">thanks to a grant from <%= @affiliate.name %>!</div>
-          <div class="bottom">Well played my friend, you will save some money and join the best bootcamp around!</div>
+          <div class="bottom">
+      Your discount will follow you around until you are ready to pay for 
+      your enrollment. At that time your discount will be applied!
+          </div>
 	</h1>
 
 	<p><a href="/coding-bootcamp" class="btn btn-banner">learn more</a></p>
