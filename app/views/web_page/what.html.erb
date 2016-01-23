@@ -330,10 +330,23 @@ many different backgrounds and from various skill levels.
             }%>
 
             <%= render partial: 'faq_item', locals: {
+              question: "You are based in the USA, do I have to be from the USA?",
+              answer: <<-EOS
+Yes, we are based in the USA, however you can be from anywhere in the world as long
+as you speak enough english to communicate with your Instructor and the other students
+and if your schedule and timezone line up to do class between the hours of 10am and 6pm
+Central US time.
+
+We have had students from Canada, New Zealand, Mexico, The UK, India, and Columbia so
+far and we would love to have to update this list to add your home country!
+              EOS
+            }%>
+
+            <%= render partial: 'faq_item', locals: {
               question: "What hours are class held? Is it flexible?",
               answer: <<-EOS
 Our school is in US Central time and sessions happen mostly between
-11am and 4pm, however it is possible to have your one on one's held later
+10am and 6pm, however it is possible to have your one on one's held later
 in the evening based on Instructor availablitity. We do this for people who
 work during the day, and for our students east of the Atlantic
               EOS
