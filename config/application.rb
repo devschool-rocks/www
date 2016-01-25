@@ -13,6 +13,7 @@ Bundler.require(*Rails.groups)
 module DevschoolWww
   class Application < Rails::Application
 
+    config.middleware.use Rack::Deflater
     config.middleware.insert_before(Rack::Runtime, Rack::Rewrite) do
       r301 %r{^/(.*)/$}, '/$1', :headers => {'Cache-Control' => 'public, max-age='+2.week.to_s}
     end
