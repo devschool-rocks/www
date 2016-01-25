@@ -1,5 +1,10 @@
 <div class="people-says-holder">
   <div class="container">
+                <center><div class="rateit" 
+                             data-rateit-value="<%=rating%>" 
+                             data-rateit-starwidth="32"
+                             data-rateit-ispreset="true" 
+                             data-rateit-readonly="true"></div></center>
     <div itemscope itemtype="http://schema.org/Product">
       <meta itemprop="name" content="Devschool's Online Developer Bootcamp"></meta>
       <div class="people-content" itemscope itemtype="http://schema.org/Review">
@@ -9,11 +14,6 @@
             <div class="col-sm-4">
               <div class="people-image">
                 <img src="<%= asset_path(image_url) %>" class="img-responsive img-circle center-block"/>
-                <center><div class="rateit" 
-                             data-rateit-value="<%=rating%>" 
-                             data-rateit-starwidth="32"
-                             data-rateit-ispreset="true" 
-                             data-rateit-readonly="true"></div></center>
               </div>
             </div>
             <div class="col-sm-8">
@@ -21,7 +21,6 @@
                 <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
                   <span class="hidden" itemprop="ratingValue"><%= rating %></span>
                 </span> 
-                <h2>Alumni Review</h2>
               </div>
               <div class="people-content">
                 <div class="people-para" itemprop="reviewBody">
