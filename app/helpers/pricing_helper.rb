@@ -37,7 +37,7 @@ module PricingHelper
   end
 
   def referrer_name
-    affiliate.name
+    affiliate && affiliate.name
   end
 
   def affiliate
