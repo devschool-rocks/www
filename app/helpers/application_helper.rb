@@ -1,4 +1,5 @@
 module ApplicationHelper
+
   def meta_title
     custom = content_for(:title)
     default = "Devschool | Become a Web Developer with guided instruction by an expert!"

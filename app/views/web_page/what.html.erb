@@ -95,26 +95,15 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
       </div>
     </div>
   </div>
-  <%= render partial: 'review', locals: {
-    image_url:'eric-douglas.png',
-    name: "Eric Douglas",
-    location: "Ohio, USA",
-    review: <<-EOS
-<p>Coming from a business background, I found programming intriguing but sometimes 
-very confusing. My instructor excelled at simplifying concepts into easy to repeat 
-axioms and patterns, and I found the experience at Devschool to be a very 
-personal one.</p>
 
-<p>I am very satisfied with my experience and the value of Devschool and 
-I would definitely recommend Devschool to anyone who wants to become a 
-web developer.</p>
-EOS
-  } %>
+  <%= render 'reviews/hector_moreno' %>
 
   <center class="well">
     <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Here&#39;s to the crazy ones the misfits the rebels the troublemakers the round pegs in the square holes <a rel="nofollow" href="https://twitter.com/hashtag/ThankYouSteve?src=hash">#ThankYouSteve</a> <a rel="nofollow" href="https://t.co/Pl4hrvF0fO">pic.twitter.com/Pl4hrvF0fO</a></p>&mdash; Devschool (@devschoolrocks) <a href="https://twitter.com/devschoolrocks/status/684633780565360640">January 6, 2016</a></blockquote>
           <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </center>
+
+
   <div class="tools-holder">
     <div class="container">
       <div class="tools-content text-center">
@@ -206,6 +195,9 @@ EOS
     <div class="fb-post" data-href="https://www.facebook.com/devschoolrocks/posts/1168723446491167" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/devschoolrocks/posts/1168723446491167"><p>&#xfe510;&#xfe517;&#xfe516;&#x2764;&#xfe510;&#xfe517;&#xfe516;&#x2764;&#xfe510;&#xfe517;&#xfe516;&#x2764;&#xfe510;&#xfe517;&#xfe516;&#x2764;&#xfe510;Take a moment please from your busy day and give a share on your favorite social network. Someone in...</p>Posted by <a rel="nofollow" href="https://www.facebook.com/devschoolrocks/">Devschool</a> on&nbsp;<a rel="nofollow" href="https://www.facebook.com/devschoolrocks/posts/1168723446491167">Sunday, January 10, 2016</a></blockquote></div></div>
     <h3>Please take a moment from your busy day to like and share</h3>
   </center>
+
+  <%= render 'reviews/jorge_madrid' %>
+
   <div class="tools-holder">
     <div class="container">
       <div class="tools-content text-center">
@@ -290,7 +282,8 @@ EOS
       </div>
     </div>
   </div>
-  <div class="faq-folder">	
+
+  <div class="faq-folder">
     <div class="container">
       <div class="faq-content">
         <div class="row">
@@ -585,4 +578,6 @@ It works best with Mac but there is a version for Linux as well.
         </div>
       </div>
     </div>
+
+  <%= render 'reviews/eric_douglas' %>
   </div>
