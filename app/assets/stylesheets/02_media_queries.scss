@@ -107,7 +107,7 @@ header nav.navbar-default .navbar-nav>li>a:hover {
     margin-top: 26px;
   }
 
-  header  h1 { color: black; }
+  header  h1 { color: black; text-shadow: none; color: #333; }
 
   .footer-logo { display: none; }
   .col-sm-5ths {
@@ -118,6 +118,7 @@ header nav.navbar-default .navbar-nav>li>a:hover {
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
 
+  header h1 { text-shadow: none; }
   header  h1 .top {  font-size: 20px;  font-weight: 700; margin:0; text-transform:uppercase;}
   header  h1 .middle {  font-size: 18px;  font-weight: 700; margin:0; text-transform:uppercase;}
   header  h1 .bottom {  margin-bottom: 50px; font-size: 18px;  font-weight: 500;text-transform:uppercase; }
