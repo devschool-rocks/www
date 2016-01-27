@@ -1,4 +1,16 @@
 Rails.application.configure do
+
+#config/environments/production.rb
+config.action_mailer.smtp_settings = {
+    :address   => "smtp.sendgrid.net",
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => ENV["SENDGRID_USERNAME"],
+    :password  => ENV["SENDGRID_PASSWORD"], # SMTP password is any valid API key
+    :authentication => 'login',
+    :domain => 'heroku.com', # your domain to identify your server when connecting
+}
+
   # leverage browser caching
   config.static_cache_control = "public, max-age=31536000"
   # utilize a CDN to deliver static assets
@@ -80,13 +92,3 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
 end
-
-ActionMailer::Base.smtp_settings = {
-  :address        => 'smtp.sendgrid.net',
-  :port           => '587',
-  :authentication => :plain,
-  :user_name      => ENV['SENDGRID_USERNAME'],
-  :password       => ENV['SENDGRID_PASSWORD'],
-  :domain         => 'heroku.com',
-  :enable_starttls_auto => true
-}

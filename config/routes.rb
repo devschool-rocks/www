@@ -17,7 +17,6 @@ Rails.application.routes.draw do
   match "/gift-claimed"=> "web_page#gift_claimed",  via: :get,   as: :gift_claimed
 
   resources :free_gifts, only: %i[create]
-  resources :blog, only: %i[index show]
 
   get "/sitemap", controller: :sitemap, action: :index
 
@@ -38,7 +37,7 @@ Rails.application.routes.draw do
                "/posts/online-dev-school-br-frequently-asked-questions",
                "/posts/intro-to-javascript-build-a-deck-of-cards-the-card-object",
                "/posts/announcing-our-web-developer-apprenticeship-program",
-               "/categories", "/posts", "terms"]
+               "/categories", "/posts", "terms", '/blog']
 
 
   dead_urls.each do |url|
