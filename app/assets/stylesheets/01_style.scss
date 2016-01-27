@@ -1,6 +1,9 @@
 body {
   letter-spacing: 0.04;
-  text-rendering: optimizeLegibility
+}
+
+h1, h2, h3, h4, h5, p {
+  text-rendering: optimizeLegibility;
 }
 
 header .container {

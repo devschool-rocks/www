@@ -1,0 +1,188 @@
+header.green-hero-form {
+  display: none;
+  font-family: "Varela Round";
+  text-rendering: optimizeLegibility;
+  background: #4A97EC;
+  color: white;
+  padding: 72px 0;
+  width: 100%;
+}
+
+header.green-hero-form h2,
+header.green-hero-form .h2 {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+header.green-hero-form h3,
+header.green-hero-form .h3 {
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+header.green-hero-form .form-card {
+  padding: 30px;
+  border-radius: 5px;
+  background: white;
+  text-align: left;
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+  margin: 30px auto 30px;
+}
+
+header.green-hero-form .form-card .trial-banner {
+  background-color: #085EBD;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  font-weight: 500;
+  padding: 20px;
+  margin: -30px -30px 30px;
+  color: #fff;
+}
+
+.green-hero-form .form-card fieldset {
+  border: none;
+  border-bottom: 1px solid #edeff0;
+}
+
+.form-footer {
+  margin-bottom: -10px;
+  width: 100%;
+  display: inline-block;
+}
+
+.button.primary, .button.button-primary {
+  background-color: #085EBD;
+  border: 2px solid #085EBD;
+  color: #fff;
+}
+
+.form-footer .button {
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+
+.button {
+  font-size: 16px;
+  height: 52px;
+  line-height: 48px;
+  padding: 0 32px;
+}
+
+.button {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  position: relative;
+  margin: 0;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 2px solid #1C7AE2;
+  color: #5fcf80;
+}
+
+.green-hero-form .form-card label {
+  left: 28px;
+  color: #a6b0b7;
+}
+
+.form-item label {
+  position: absolute;
+  top: 13px;
+  right: 18px;
+  left: 18px;
+  line-height: 1.3;
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: text;
+  color: #7b8b8e;
+  z-index: 5;
+  overflow: hidden;
+  font-weight: normal;
+  display: block;
+}
+
+.form-item .input-text {
+  margin-bottom: 0;
+}
+
+.input-text, textarea {
+  background: #e8ebed;
+  margin: 0;
+  font-size: 14px;
+  color: #576366;
+  width: 100%;
+  font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 12px 15px;
+  outline: 0;
+  border: 2px solid #e8ebed;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  box-shadow: 0;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+
+.green-hero-form .form-card .play-icon {
+  width: 10px;
+  height: 13px;
+  position: relative;
+  top: 0.1px;
+  margin-left: 10px;
+  fill: #fff;
+}
+
+.button svg {
+  vertical-align: middle;
+}
+
+.button.primary, .button.button-primary {
+  background-color: #085EBD;
+  border: 2px solid #085EBD;
+  color: #fff;
+  margin-top: 15px;
+
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.form-item {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+
+@media screen and (min-width: 900px) {
+  header.green-hero-form h2,
+  header.green-hero-form .h2 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  header.green-hero-form .hero-title {
+    padding-top: 28px;
+  }
+}
+

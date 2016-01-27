@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   match "/partnerships/ngo-program"=> "web_page#ngo",  via: :get,   as: :ngo
   match "/partnerships/new-story"=> "web_page#new_story",  via: :get,   as: :new_story
 
+  match "/gift-claimed"=> "web_page#gift_claimed",  via: :get,   as: :gift_claimed
+
+  resources :free_gifts, only: %i[create]
   resources :blog, only: %i[index show]
 
   get "/sitemap", controller: :sitemap, action: :index

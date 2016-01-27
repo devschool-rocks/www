@@ -17,24 +17,26 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
 <%- content_for(:header) do %>
   <div class="header-bottom">
     <img src="<%= asset_path("banner_#{(1..6).to_a.sample}.jpg") %>" width="100%" 
-          class="center-block box">
-    <div class="container">
-      <div class="carousel-content-panel text-center">
-        <h1>
-          <div class="top">devschool is an online</div>
-          <div class="middle">coding bootcamp designed</div>
-          <div class="bottom">to make you an employable web developer in 500 hours</div>
-        </h1>
-      </div>
-    </div>
+                                                                     class="center-block box">
+                                                                     <div class="container">
+                                                                       <div class="carousel-content-panel text-center">
+                                                                         <h1>
+                                                                           <div class="top">devschool is an online</div>
+                                                                           <div class="middle">coding bootcamp designed</div>
+                                                                           <div class="bottom">to make you an employable web developer in 500 hours</div>
+                                                                         </h1>
+                                                                       </div>
+                                                                     </div>
   </div>
 <%- end %>
+
+<%= render 'repeat_viewer_modals' %>
 
 <div class="holder">
   <div class="learn-skill-holder">
     <div class="container">
       <div class="text-center">
-        <h2>YOU WILL LEARN THE SKILLS THAT WILL GET YOU HIRED</h2>
+        <h2>YOU WILL LEARN SKILLS THAT GET YOU HIRED</h2>
         <h3>BUT WE DON'T JUST TEACH YOU, WE GUARANTEE YOU A JOB WHEN YOU GRADUATE</h3>
         <div class="learn-icon-text">
 
@@ -117,7 +119,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
       </div>
     </div>
 
-      <%= render 'reviews/eric_douglas' %>
+    <%= render 'reviews/eric_douglas' %>
 
     <center class="well">
       <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Here&#39;s to the crazy ones the misfits the rebels the troublemakers the round pegs in the square holes <a rel="nofollow" href="https://twitter.com/hashtag/ThankYouSteve?src=hash">#ThankYouSteve</a> <a rel="nofollow" href="https://t.co/Pl4hrvF0fO">pic.twitter.com/Pl4hrvF0fO</a></p>&mdash; Devschool (@devschoolrocks) <a href="https://twitter.com/devschoolrocks/status/684633780565360640">January 6, 2016</a></blockquote>
@@ -128,8 +130,8 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
     <div class="tools-holder">
       <div class="container">
         <div class="tools-content text-center">
-        <h2>Some of the awesome stuff you will learn</h2>
-        <h3>We don't believe in training wheels, we believe in teaching professional grade stuff</h3>
+          <h2>Some of the awesome stuff you will learn</h2>
+          <h3>We don't believe in training wheels, we believe in teaching professional grade stuff</h3>
           <div class="tool-in-content">
             <div class="tool-row sp">
               <div class="row">
@@ -588,9 +590,9 @@ It works best with Mac but there is a version for Linux as well.
         }%>
 
             </div>
-            </div>
           </div>
         </div>
       </div>
-
     </div>
+  </div>
+</div>
