@@ -1,4 +1,4 @@
-header.green-hero-form {
+header.blue-hero-form {
   display: none;
   font-family: "Varela Round";
   text-rendering: optimizeLegibility;
@@ -8,19 +8,19 @@ header.green-hero-form {
   width: 100%;
 }
 
-header.green-hero-form h2,
-header.green-hero-form .h2 {
+header.blue-hero-form h2,
+header.blue-hero-form .h2 {
   font-size: 30px;
   line-height: 1.5;
 }
 
-header.green-hero-form h3,
-header.green-hero-form .h3 {
+header.blue-hero-form h3,
+header.blue-hero-form .h3 {
   font-size: 20px;
   line-height: 1.35;
 }
 
-header.green-hero-form .form-card {
+header.blue-hero-form .form-card {
   padding: 30px;
   border-radius: 5px;
   background: white;
@@ -29,9 +29,10 @@ header.green-hero-form .form-card {
   margin: 30px auto 30px;
 }
 
-header.green-hero-form .form-card .trial-banner {
-  background-color: #085EBD;
+header.blue-hero-form .form-card .trial-banner {
+  background-color: #0565D0;
   border-radius: 5px 5px 0 0;
+  border-bottom: solid 2px #1A5BA2;
   text-align: center;
   font-weight: 500;
   padding: 20px;
@@ -39,7 +40,7 @@ header.green-hero-form .form-card .trial-banner {
   color: #fff;
 }
 
-.green-hero-form .form-card fieldset {
+.blue-hero-form .form-card fieldset {
   border: none;
   border-bottom: 1px solid #edeff0;
 }
@@ -54,6 +55,7 @@ header.green-hero-form .form-card .trial-banner {
   background-color: #085EBD;
   border: 2px solid #085EBD;
   color: #fff;
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
 }
 
 .form-footer .button {
@@ -85,7 +87,6 @@ header.green-hero-form .form-card .trial-banner {
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
-  font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   position: relative;
   margin: 0;
@@ -99,7 +100,7 @@ header.green-hero-form .form-card .trial-banner {
   color: #5fcf80;
 }
 
-.green-hero-form .form-card label {
+.blue-hero-form .form-card label {
   left: 28px;
   color: #a6b0b7;
 }
@@ -131,10 +132,9 @@ header.green-hero-form .form-card .trial-banner {
   font-size: 14px;
   color: #576366;
   width: 100%;
-  font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 12px 15px;
   outline: 0;
-  border: 2px solid #e8ebed;
+  border: 2px solid #DDE1E2;
   -webkit-appearance: none;
   border-radius: 5px;
   box-shadow: 0;
@@ -144,7 +144,7 @@ header.green-hero-form .form-card .trial-banner {
 }
 
 
-.green-hero-form .form-card .play-icon {
+.blue-hero-form .form-card .play-icon {
   width: 10px;
   height: 13px;
   position: relative;
@@ -176,12 +176,12 @@ input, select {
 
 
 @media screen and (min-width: 900px) {
-  header.green-hero-form h2,
-  header.green-hero-form .h2 {
+  header.blue-hero-form h2,
+  header.blue-hero-form .h2 {
     font-size: 22px;
     line-height: 1.5;
   }
-  header.green-hero-form .hero-title {
+  header.blue-hero-form .hero-title {
     padding-top: 28px;
   }
 }
