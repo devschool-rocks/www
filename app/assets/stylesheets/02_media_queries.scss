@@ -1,6 +1,13 @@
 /* Large Devices, Wide Screens */
 @media (max-width:1280px){
-  header .navbar-nav > li > a {  color: #eeeeee;  font-family: "Raleway";  font-size: 19px;  font-weight: 500;  padding: 8px;  text-transform: uppercase;}
+  header .navbar-nav > li > a {
+  color: #eeeeee;  font-family: "Raleway";
+  font-size: 19px;  font-weight: 500;  padding: 8px;
+  text-transform: none;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-shadow: 0px 1px 0.5px #000;
+}
   .logo {  padding: 8px 0;}
   .holder {  margin-top: 0;}
   .holder .people-para::after {  background: rgba(0, 0, 0, 0) asset-url("quote-2.png") no-repeat scroll 0 0;  bottom: 50px;  content: "";  display: inline-block;  height: 30px;  position: absolute;  right: 30%;  width: 27px;}
@@ -16,7 +23,9 @@
   header .header-top {  background: #000 none repeat scroll 0 0;  padding: 0px 0;  position: relative;  width: 100%;  z-index: 111;}
 
   .logo {  position: relative;  z-index: 111;  padding: 7px 0;}
-  header .navbar-nav > li > a {  color: #eeeeee;  font-family: "Raleway";  font-size: 14px;  font-weight: 500;  padding: 8px 6px;  text-transform: uppercase;}
+  header .navbar-nav > li > a {
+  color: #eeeeee;  font-family: "Raleway";  font-size: 14px;  font-weight: 500;  padding: 8px 6px;
+}
   header  h1 .top {  font-size: 38px;  font-weight: 700; margin:0; text-transform:uppercase;}
   header  h1 .middle {  font-size: 26px;  font-weight: 700; margin:0; text-transform:uppercase;}
   header  h1 .bottom {  font-size: 18px;  font-weight: 500;text-transform:uppercase; }
@@ -59,7 +68,6 @@ header .carousel-content-panel .btn-banner {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
 
 header .navbar-collapse {
   background: rgba(0,0,0,1);
