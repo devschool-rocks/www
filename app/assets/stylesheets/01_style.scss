@@ -1,9 +1,23 @@
-body {
-  letter-spacing: 0.04;
+h2, h3, h4, h5 {
+  font-family: "Droid Sans";
+  letter-spacing: 1.5px;
+  text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5, p {
-  text-rendering: optimizeLegibility;
+body p { 
+  letter-spacing: 1px;
+  font-family: "Varela Round";
+}
+
+body .well {
+  min-height: 20px;
+  padding: 24px;
+  background-color: #F3F0F0;
+  border: 2px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  margin: 80px 16px;
 }
 
 header .container {
@@ -28,15 +42,23 @@ header .navbar-brand {
 header .navbar-brand, .navbar-nav > li > a {  text-shadow: none; }
 header .navbar-brand { position: absolute; top: 0px; }
 header .navbar { border: none;  margin-bottom: 0px;  min-height: 50px; }
-header .navbar-default .navbar-nav > li > a {
-  text-shadow: 0px 2px 3px #1F1F1F;
-}
+
 header .header-top { position: absolute;  z-index: 111;  width: 100%;}
 header .carousel-content-panel {  bottom: 100px; position: absolute; width:100%; left:0;}
-header  h1 { text-shadow: 0px 2px 3px #1F1F1F; color: #ffffff;  font-family: "Varela Round"; }
-header  h1 .top { font-size: 63px;  font-weight: 700; margin:0; text-transform:uppercase;}
-header  h1 .middle {   font-size: 46px;  font-weight: 700; margin:0; text-transform:uppercase;}
-header  h1 .bottom {  margin-bottom: 10%; font-size: 20px;  font-weight: 500;text-transform:uppercase; }
+header  h1 {
+font-family: "Monda";
+color: #ffffff;  
+letter-spacing: 2px; }
+header  h1 .top { 
+text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+font-size: 63px;  font-weight: 500; margin:0; text-transform:uppercase;}
+header  h1 .middle {   
+text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+font-size: 46px;  font-weight: 500; margin:0; text-transform:uppercase;}
+header  h1 .bottom {  
+text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+margin-bottom: 10%; font-size: 20px;  
+font-weight: 300;text-transform:uppercase; }
 header .carousel-content-panel .btn-banner  { color:#ffffff;  font-family: "Varela Round";  font-weight: 500; background: #EC2D33;
   border: 4px solid #FF2930;
   text-transform: uppercase;
@@ -58,7 +80,7 @@ header { margin-bottom: 28px; }
 /**/
 .holder .people-says-holder { background:asset-url('test-bg.jpg') no-repeat scroll ; background-size:cover; padding: 70px 0 70px;  }
 .holder .people-heading.text-center > h2 {  color: #fff; padding-bottom:25px;}
-.holder .people-para > p {  color: #fff;  font-size: 16px;  font-style: italic;  line-height: 33px; margin: 20px 0;}
+.holder .people-para > p {  color: #fff;  font-size: 18px; line-height: 33px; margin: 20px 0;}
 .holder .people-name > h5 { font-size:18px; text-transform:uppercase; font-family:'Open Sans'; text-transform:uppercase; color:#fff; }
 .holder .people-name > h6 { color: #fff;  font-size: 16px; font-family:'Open Sans'; }
 .holder .people-image .img-responsive.img-circle.center-block {  border: 8px solid #fff;}
@@ -125,8 +147,9 @@ header nav.navbar-default {
 header .navbar-default .navbar-nav>li>a {
   font-weight: 100;
   color: white;
-  text-shadow: 0px 1px 1px #585757;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
 }
+
 header nav.navbar-default .navbar-nav>li>a:hover {
   text-shadow: none;
   color: white;
