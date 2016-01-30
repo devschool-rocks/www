@@ -16,19 +16,25 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
 
 <%- content_for(:header) do %>
   <div class="header-bottom">
-    <img src="<%= asset_path("banner_#{(1..6).to_a.sample}.jpg") %>" width="100%" 
-                                                                     class="center-block box">
-                                                                     <div class="container">
-                                                                       <div class="carousel-content-panel text-center">
-                                                                         <h1>
-                                                                           <div class="top">devschool is an online</div>
-                                                                           <div class="middle">coding bootcamp designed</div>
-                                                                           <div class="bottom">to make you an employable web developer in 500 hours</div>
-                                                                         </h1>
-                                                                       </div>
-                                                                     </div>
+    <img src="<%= asset_path("banner_#{(1..6).to_a.sample}.jpg") %>" width="100%" class="center-block box">
+    <div class="container">
+      <div class="carousel-content-panel text-center">
+        <h1>
+          <div class="top">LEARN WEB DEVELOPMENT</div>
+          <div class="middle">THROUGH PRIVATE, EXPERT INSTRUCTION</div>
+          <div class="bottom">IN ABOUT 500 HOURS OF HACKING TOGETHER, ONLINE, IN A SUPPORTIVE, SOCIAL ENVIRONMENT</div>
+        </h1>
+      </div>
+    </div>
   </div>
 <%- end %>
+
+  <section class="container">
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ElaFu6i7ZEU" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
 
 <%= render 'repeat_viewer_modals' %>
 
@@ -119,8 +125,6 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
       </div>
     </div>
 
-    <%= render 'reviews/eric_douglas' %>
-
     <div class="tools-holder">
       <div class="container">
         <div class="tools-content text-center">
@@ -206,7 +210,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
       </div>
     </div>
 
-    <%= render 'reviews/jorge_madrid' %>
+    <%= render 'reviews/eric_douglas' %>
 
     <div class="tools-holder">
       <div class="container">
@@ -570,7 +574,6 @@ people's messages that have nothing to do with what you are saying.
             EOS
           }%>
 
-
         <%= render partial: 'faq_item', locals: {
           question: "What about screen-sharing? How does that work exactly?",
           answer: <<-EOS
@@ -588,5 +591,8 @@ It works best with Mac but there is a version for Linux as well.
         </div>
       </div>
     </div>
+
+    <%= render 'reviews/meghan_holden' %>
+
   </div>
 </div>
