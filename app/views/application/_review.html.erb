@@ -1,35 +1,30 @@
-<div class="people-says-holder">
-  <div class="container">
-    <div itemscope itemtype="http://schema.org/Product">
-      <meta itemprop="name" content="Devschool's Online Developer Bootcamp"></meta>
-      <div class="people-content" itemscope itemtype="http://schema.org/Review">
-        <meta itemprop="itemReviewed" content="Devschool's Online Developer Bootcamp"></meta>
-        <div class="people-in">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="people-image">
-                <img src="<%= asset_path(image_url) %>" class="img-responsive img-circle center-block"/>
-              </div>
-            </div>
-            <div class="col-sm-8">
-              <div class="people-heading text-center">
-                <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-                  <span class="hidden" itemprop="ratingValue"><%= rating %></span>
-                </span> 
-              </div>
-              <div class="people-content">
-                <div class="people-para" itemprop="reviewBody">
-                  <%= raw review %>
-                </div>
-                <div class="people-name" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <h5 itemprop="name"><%= name %></h5>
-                  <h6><%= location %></h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<div itemscope itemtype="http://schema.org/Product">
+  <div class="people-review-card people-content" itemscope itemtype="http://schema.org/Review">
+    <meta itemprop="name" content="Devschool's Online Developer Bootcamp"></meta>
+    <meta itemprop="itemReviewed" content="Devschool's Online Developer Bootcamp"></meta>
+    <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+      <span class="hidden" itemprop="ratingValue"><%= rating %></span>
+    </span> 
+
+    <div class="people-image center-block">
+      <img src="<%= asset_path(person_image_url) %>" class="img-responsive img-circle"/>
     </div>
+
+    <div class="people-job">
+      <img src="<%= asset_path(job_image_url) %>" class="img-responsive center-block"/>
+    </div>
+
+    <div class="people-quote">
+      <%= quote %>
+    </div>
+
+    <div class="people-name">
+      <%= name %> <%= year %>
+    </div>
+
+    <div class="people-place">
+      <%= from %>
+    </div>
+
   </div>
 </div>

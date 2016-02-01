@@ -1,0 +1,42 @@
+<div class="holder">
+  <h2 class="text-center">Real students. Real results.</h2>
+  <div class="container">
+    <div class="people-in">
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <%= render partial: 'review', locals: {
+                person_image_url: 'reviewers/eric-douglas.png',
+                job_image_url: 'logos/intuit.png',
+                rating: 5,
+                quote: "My instructor excelled at simplifying concepts into easy to repeat patterns, and I found the experience at Devschool to be a very friendly, personal one. I have already recommended Devschool to friends!",
+                name: 'Eric Douglas',
+                year: 2015,
+                from: "Ohio, United States"
+          } %>
+        </div>
+        <div class="col-sm-4 xs-hidden text-center">
+          <%= render partial: 'review', locals: {
+                person_image_url: 'reviewers/meghan-holden.png',
+                job_image_url: 'logos/akav.png',
+                rating: 5,
+                quote: "I would recommend Devschool to anyone who wants to cut through the cruft and really, really learn the skills they will need to build modern web applications.",
+                name: 'Meghan Holden',
+                year: 2015,
+                from: "New York, United States"
+          } %>
+        </div>
+        <div class="col-sm-4 text-center">
+          <%= render partial: 'review', locals: {
+                person_image_url: 'reviewers/hector-moreno.png',
+                job_image_url: 'logos/remotetiger.png',
+                rating: 5,
+                quote: "I was enrolled in another coding bootcamp and I switched to Devschool because I realized how inexperienced my other instructor was and how much the course was overpriced!",
+                name: 'Hector Moreno',
+                year: 2015,
+                from: "Texas, United States"
+          } %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

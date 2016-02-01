@@ -29,6 +29,12 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
   </div>
 <%- end %>
 
+<hr>
+
+<%= render 'reviews' %>
+
+<hr>
+
 <section class="container">
   <div class="text-center">
     <h2 class="jumbotron">YOU WANT TO LEARN TO CODE SO YOU CAN EARN BETTER 💰 AND BECUASE YOU REALLY <span class="red">❤</span> TO BUILD STUFF! WE TOTALLY GET IT!</h2>
@@ -43,58 +49,50 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
   </div>
 </section>
 
+<hr>
+
 <div class="holder">
   <div class="learn-skill-holder">
     <div class="container">
       <div class="text-center">
+        <h2>Full Stack Developer Course: <%= number_to_currency Product.prepay_price %></h2>
+        <h3>Make 2016 the year you make a change in your life you will look back on very fondly of!</h3>
+
         <div class="learn-icon-text">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <div class="icon-image-para">
                 <div class="icon-image">
-                  <img src="<%= asset_path('icon-1.png') %>" 
-                       class="img-responsive center-block"/>
+                  <img src="<%= asset_path('icon-4.png') %>" class="img-responsive center-block"/>
                 </div>
                 <div class="icon-para">
-                  <h5>EXPERT TOOLS</h5>
-                  <p>Learn expert tools and workflows such as UNIX and VIM, Git, 
-                  and ZSH and look like a wizard. You won't learn toys with
-                  training wheels at Devschool, we teach the skills people envy.
+                  <h5>PREPAY ENROLLMENT</h5>
+                  <p>Psst. Want to save a cool <%= number_to_currency Product.prepay_savings_amount %>? Pre-paying for your education is a great way to save and who doesn't like to save some hard earned money?</p>
                 </div>
               </div>
             </div>
-
             <div class="col-sm-4">
               <div class="icon-image-para">
                 <div class="icon-image">
-                  <img src="<%= asset_path('icon-2.png') %>" 
-                       class="img-responsive center-block"/>
+                  <img src="<%= asset_path('icon-5.png') %>" class="img-responsive center-block"/>
                 </div>
                 <div class="icon-para">
-                  <h5>CODE THE WEB</h5>
-                  <p>Learn Ruby, Rails, Javascript, SQL, ReactJS, HTML5, CSS, 
-                  and Responsive/Mobile Design. Web development and coding 
-                  isn't about a single language no matter what JavaScripters 
-                  might say.</p>
+                  <h5>MAKE PAYMENTS</h5>
+                  <p>You can also make <%= Product.payment_count %> monthly payments of <%= number_to_currency Product.payment_amount %> if that fits your style better. You pay the financing fee of $1,000 but the payments are easy.</p>
                 </div>
               </div>
             </div>
-
             <div class="col-sm-4">
               <div class="icon-image-para">
                 <div class="icon-image">
-                  <img src="<%= asset_path('icon-3.png') %>" 
-                       class="img-responsive center-block"/>
+                  <img src="<%= asset_path('icon-6.png') %>" class="img-responsive center-block"/>
                 </div>
                 <div class="icon-para">
-                  <h5>BE LIKE WATER</h5>
-                  <p>Learn iterative software design and development life-cycle 
-                  planning in the real world. Using collabotative tools and 
-                  deployment pipelines, you build the real thing. We like 'the real'.</p>
+                  <h5>WE GUARANTE IT</h5>
+                  <p>We back our performance by a pro-rated money back guarantee. Should you decide that Devschool is not for you, we will give you a pro-rated refund.</p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -102,30 +100,8 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
   </div>
 </div>
 
-
-<div class="well">
-  <div class="row">
-    <div class="col-md-4">
-      <%= image_tag 'focus-icon.png', class: "img-responsive" %>
-    </div>
-    <div class="col-md-8">
-      <h2>We focus on what matters</h2>
-
-      <p>At our coding school, we are truely agile to core. Our focus is constantly
-      being calibrated on the skills that help you get hired, keep your jobs, and 
-      improve your salary opportunities.</p>
-
-      <p>At the big box bootcamps there is a tendency to focus on
-      all the things a web developer or programmer <em>does not get paid for</em> and
-      not enough on what your future boss <em>actually cuts your checks for</em>.</p>
-
-      <p>In reality you don't get paid to write lines
-      of code. You get paid to solve business solutions with your technology
-      wizardry. You won't learn how to <em>write more lines</em> of code,
-      but instead how to <em>write less lines</em> of code that do a whole lot more!</p>
-    </div>
-  </div>
-</div>
+<hr>
+<%= render 'get_started' %>
 
 <div class="holder">
   <div class="learn-skill-holder">
@@ -208,21 +184,6 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <%= render 'reviews/eric_douglas' %>
-
-  <div class="tools-holder">
-    <div class="container">
-      <div class="tools-content text-center">
-        <h2>Meet the tools of your trade, web developer</h2>
-        <h3>These are the languages and frameworks that make web development accessible and enjoyable</h3>
-        <div class="tool-in-content">
-          <div class="tool-row sp">
             <div class="row">
               <div class="col-sm-4 sp">
                 <div class="tool-icon-text sp">
@@ -258,8 +219,6 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
                 </div>
               </div>
             </div>
-          </div>
-          <div class="tool-row dw">
             <div class="row">
               <div class="col-sm-4 sp">
                 <div class="tool-icon-text sp">
@@ -300,111 +259,63 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
       </div>
     </div>
   </div>
+</div>
 
-  <%= render 'reviews/meghan_holden' %>
+<hr>
 
+<div class="holder">
   <div class="learn-skill-holder">
     <div class="container">
       <div class="text-center">
-        <h2>For as little as <%= number_to_currency Product.prepay_price %>, in <%= Product.session_count %> private sessions</h2>
-        <h3>and after your <%= Product.intern_hours %> hours of non profit internship we will get you your first job!</h3>
+        <h2>We partner with Non Profit companies</h2>
+        <h3>Through these partnerships you real world experience, and you help real people!</h3>
+
+        <%= image_tag 'newstory-screen.jpg', class: 'img-responsive center-block' %>
+
+      <hr>
 
         <div class="learn-icon-text">
           <div class="row">
             <div class="col-xs-4">
               <div class="icon-image-para">
                 <div class="icon-image">
-                  <img src="<%= asset_path('icon-4.png') %>" class="img-responsive center-block"/>
+                  <img src="<%= asset_path('icon-10.png') %>" class="img-responsive center-block"/>
                 </div>
                 <div class="icon-para">
-                  <h5>SAVE MONEY</h5>
-                  <p>Psst. Want to save a cool <%= number_to_currency Product.prepay_savings_amount %>? Pre-paying for your education is a great way to save and who doesn't like to save some hard earned money?</p>
+                  <h5>REAL IMPACT</h5>
+                  <p>The work you do will actual impact literally hundres of families' lives. Can you say the same of
+                  building a clone at one of the "Big Box Bootcamps"? Yeah, we didn't think so!</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="icon-image-para">
                 <div class="icon-image">
-                  <img src="<%= asset_path('icon-5.png') %>" class="img-responsive center-block"/>
+                  <img src="<%= asset_path('icon-11.png') %>" class="img-responsive center-block"/>
                 </div>
                 <div class="icon-para">
-                  <h5>FLEXIBILITY</h5>
-                  <p>You can also make <%= Product.payment_count %> monthly payments of <%= number_to_currency Product.payment_amount %> if that fits your style better. You pay the financing fee of $1,000 but the payments are easy.</p>
+                  <h5>REAL SOFTWARE</h5>
+                  <p>This isn't just any software, it processes hundreds of donations and thousands upon thousands of dollars,
+                  so in your interview when your potential new boss asks if you have work on a 'real' site you yeah, Yeah!</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="icon-image-para">
                 <div class="icon-image">
-                  <img src="<%= asset_path('icon-6.png') %>" class="img-responsive center-block"/>
+                  <img src="<%= asset_path('icon-12.png') %>" class="img-responsive center-block"/>
                 </div>
                 <div class="icon-para">
-                  <h5>GUARANTEED</h5>
-                  <p>We back our performance by a pro-rated money back guarantee. Should you decide that Devschool is not for you, we will give you a pro-rated refund.</p>
+                  <h5>REAL TEAMWORK</h5>
+                  <p>In order to participate in these kinds of large-scale projects, you have to learn to work with other people
+                  and at Devschool we teach you toold and workflows to faciliate this to happen.</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="tools-holder">
-    <div class="container">
-      <div class="tools-content text-center">
-        <div class="tool-in-content">
-          <div class="tool-row sp">
-            <div class="row">
-              <div class="col-sm-4 sp">
-                <div class="tool-icon-text">
-                  <div class="tool-icon">
-                    <h5>SMALL AND PERSONAL</h5>
-                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
-                  </div>
-                  <div class="tool-text">
-                    <p>You cannot perfect a product at mass market scale. We don't accept everyone in order to give the best experience to our existing students. Devschool is a personal experience.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 sp">
-                <div class="tool-icon-text">
-                  <div class="tool-icon">
-                    <h5>PRICED AFFORDABLY</h5>
-                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
-                  </div>
-                  <div class="tool-text">
-                    <p>In order to be affordable to as many students as possible, we have priced our coding bootcamp based on the real numbers and with modest margins. Affordable, not cheap.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 sp">
-                <div class="tool-icon-text">
-                  <div class="tool-icon">
-                    <h5>BEST INSTRUCTORS</h5>
-                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
-                  </div>
-                  <div class="tool-text">
-                    <p>Other online coding bootcamps pay their instructors $60k a year so the company can make more money. We pay our instructors $100k/yr minimum to have the highest quality Instructors.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <%= render 'get_started' %>
-
-  <div class="learn-skill-holder">
-    <div class="container">
-      <div class="text-center">
-        <h2>We partner with Non Profit and NGO companies</h2>
-        <h3>Through these <a href="/partnerships/new-story">partnerships</a> we get you real world experience, and you get to help real people!</h3>
-
-        <div class="learn-icon-text">
+          <hr>
+          
           <div class="row">
             <div class="col-xs-4">
               <div class="icon-image-para">
@@ -445,19 +356,8 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
       </div>
     </div>
   </div>
-
-  <div class="learn-skill-holder">
-    <div class="container">
-      <div class="text-center">
-        <h3>Meet our featured NGO Partner, NewStory!</h3>
-        <a href="/partnerships/new-story">
-          <%= image_tag 'newstory-screen.jpg', class: 'img-responsive center-block' %>
-        </a>
-      </div>
-
-    </div>
-  </div>
-  <%= render 'reviews/hector_moreno' %>
+  
+  <%= render 'get_started' %>
 
   <span id="faq"><a name="faq"></a></span>
 
@@ -783,5 +683,7 @@ It works best with Mac but there is a version for Linux as well.
       </div>
     </div>
   </div>
+
   <%= render 'get_started' %>
+
 </div>
