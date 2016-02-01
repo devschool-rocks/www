@@ -77,7 +77,7 @@ $(document).ready(function() {
   var d = new Date().getSecondMonday();
   $('#countdown_dashboard').countDown({
     targetDate: {
-      'day':   d.getDay()+1,
+      'day':   d.getDate()+1,
       'month': d.getMonth()+1,
       'year':  d.getYear()+1900,
       'hour':  0,
