@@ -1,25 +1,37 @@
-header.blue-hero-form {
-  font-family: "Varela Round";
-  text-rendering: optimizeLegibility;
+.blue-hero-form {
   background: #4A97EC;
   color: white;
   padding: 72px 0;
   width: 100%;
 }
 
-header.blue-hero-form h2,
-header.blue-hero-form .h2 {
+.blue-hero-form h2,
+.blue-hero-form .h2 {
+  font-family: "Varela Round";
+  text-rendering: optimizeLegibility;
+  color: white;
   font-size: 30px;
   line-height: 1.5;
 }
 
-header.blue-hero-form h3,
-header.blue-hero-form .h3 {
+.blue-hero-form h3,
+.blue-hero-form .h3 {
+  font-family: "Varela Round";
+  text-rendering: optimizeLegibility;
+  color: white;
   font-size: 20px;
   line-height: 1.35;
 }
 
-header.blue-hero-form .form-card {
+.blue-hero-form p {
+  font-family: "Varela Round";
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+  color: white;
+}
+
+.blue-hero-form .form-card {
+  color: white;
   padding: 30px;
   border-radius: 5px;
   background: white;
@@ -28,7 +40,7 @@ header.blue-hero-form .form-card {
   margin: 30px auto 30px;
 }
 
-header.blue-hero-form .form-card .trial-banner {
+.blue-hero-form .form-card .trial-banner {
   background-color: #0565D0;
   border-radius: 5px 5px 0 0;
   border-bottom: solid 2px #1A5BA2;
@@ -44,33 +56,30 @@ header.blue-hero-form .form-card .trial-banner {
   border-bottom: 1px solid #edeff0;
 }
 
-.form-footer {
+.blue-hero-form .form-footer {
   margin-bottom: -10px;
   width: 100%;
   display: inline-block;
 }
 
-.button.primary, .button.button-primary {
+.blue-hero-form .button.primary,
+.blue-hero-form .button.button-primary {
   background-color: #085EBD;
   border: 2px solid #085EBD;
   color: #fff;
   box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
 }
 
-.form-footer .button {
+.blue-hero-form .form-footer .button {
   margin: 0 10px 10px 0;
   float: left;
 }
 
-
-.button {
+.blue-hero-form .button {
   font-size: 16px;
   height: 52px;
   line-height: 48px;
   padding: 0 32px;
-}
-
-.button {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -104,7 +113,7 @@ header.blue-hero-form .form-card .trial-banner {
   color: #a6b0b7;
 }
 
-.form-item label {
+.blue-hero-form .form-item label {
   position: absolute;
   top: 13px;
   right: 18px;
@@ -121,11 +130,11 @@ header.blue-hero-form .form-card .trial-banner {
   display: block;
 }
 
-.form-item .input-text {
+.blue-hero-form .form-item .input-text {
   margin-bottom: 0;
 }
 
-.input-text, textarea {
+.blue-hero-form .input-text, textarea {
   background: #e8ebed;
   margin: 0;
   font-size: 14px;
@@ -152,11 +161,11 @@ header.blue-hero-form .form-card .trial-banner {
   fill: #fff;
 }
 
-.button svg {
+.blue-hero-form .button svg {
   vertical-align: middle;
 }
 
-.button.primary, .button.button-primary {
+.blue-hero-form .button.primary, .button.button-primary {
   background-color: #085EBD;
   border: 2px solid #085EBD;
   color: #fff;
@@ -164,23 +173,23 @@ header.blue-hero-form .form-card .trial-banner {
 
 }
 
-input, select {
+.blue-hero-form input, select {
   vertical-align: middle;
 }
 
-.form-item {
+.blue-hero-form .form-item {
   position: relative;
   margin-bottom: 13px;
 }
 
 
 @media screen and (min-width: 900px) {
-  header.blue-hero-form h2,
-  header.blue-hero-form .h2 {
+  .blue-hero-form h2,
+  .blue-hero-form .h2 {
     font-size: 22px;
     line-height: 1.5;
   }
-  header.blue-hero-form .hero-title {
+  .blue-hero-form .hero-title {
     padding-top: 28px;
   }
 }
