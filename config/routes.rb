@@ -19,7 +19,8 @@ Rails.application.routes.draw do
                "/posts/intro-to-javascript-build-a-deck-of-cards-the-card-object",
                "/posts/announcing-our-web-developer-apprenticeship-program",
                "/categories", "/posts", "terms", '/blog', "/coding-bootcamp/how",
-               "/coding-bootcamp/who", "pricing"]
+               "/partnerships/ngo-program", "/coding-bootcamp/who", "pricing",
+               "/coding-bootcamp/pricing"]
 
 
   dead_urls.each do |url|
