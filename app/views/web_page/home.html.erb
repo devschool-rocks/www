@@ -301,9 +301,165 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
     </div>
   </div>
 
-<%= render 'reviews/meghan_holden' %>
+  <%= render 'reviews/meghan_holden' %>
+
+  <div class="learn-skill-holder">
+    <div class="container">
+      <div class="text-center">
+        <h2>For as little as <%= number_to_currency Product.prepay_price %>, in <%= Product.session_count %> private sessions</h2>
+        <h3>and after your <%= Product.intern_hours %> hours of non profit internship we will get you your first job!</h3>
+
+        <div class="learn-icon-text">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-4.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>SAVE MONEY</h5>
+                  <p>Psst. Want to save a cool <%= number_to_currency Product.prepay_savings_amount %>? Pre-paying for your education is a great way to save and who doesn't like to save some hard earned money?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-5.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>FLEXIBILITY</h5>
+                  <p>You can also make <%= Product.payment_count %> monthly payments of <%= number_to_currency Product.payment_amount %> if that fits your style better. You pay the financing fee of $1,000 but the payments are easy.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-6.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>GUARANTEED</h5>
+                  <p>We back our performance by a pro-rated money back guarantee. Should you decide that Devschool is not for you, we will give you a pro-rated refund.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tools-holder">
+    <div class="container">
+      <div class="tools-content text-center">
+        <div class="tool-in-content">
+          <div class="tool-row sp">
+            <div class="row">
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <h5>SMALL AND PERSONAL</h5>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>You cannot perfect a product at mass market scale. We don't accept everyone in order to give the best experience to our existing students. Devschool is a personal experience.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <h5>PRICED AFFORDABLY</h5>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>In order to be affordable to as many students as possible, we have priced our coding bootcamp based on the real numbers and with modest margins. Affordable, not cheap.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 sp">
+                <div class="tool-icon-text">
+                  <div class="tool-icon">
+                    <h5>BEST INSTRUCTORS</h5>
+                    <img src="<%= asset_path('red-line.jpg') %>" class="img-responsive center-block"/>
+                  </div>
+                  <div class="tool-text">
+                    <p>Other online coding bootcamps pay their instructors $60k a year so the company can make more money. We pay our instructors $100k/yr minimum to have the highest quality Instructors.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <%= render 'get_started' %>
+
+  <div class="learn-skill-holder">
+    <div class="container">
+      <div class="text-center">
+        <h2>We partner with Non Profit and NGO companies</h2>
+        <h3>Through these <a href="/partnerships/new-story">partnerships</a> we get you real world experience, and you get to help real people!</h3>
+
+        <div class="learn-icon-text">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-7.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>REAL EXPERIENCE</h5>
+                  <p>When you have the basics down and are ready to move to the next level in your education we
+                  pair you with one of our partners and you get to work on real software in the real world.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-8.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>REAL CHARITY</h5>
+                  <p>You could intern working on commercial products and web sites to build the same experience. But why line some rich company's pockets when you can help real people in need?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon-image-para">
+                <div class="icon-image">
+                  <img src="<%= asset_path('icon-9.png') %>" class="img-responsive center-block"/>
+                </div>
+                <div class="icon-para">
+                  <h5>REAL JOBS</h5>
+                  <p>100% of our graduating students get placed in a job within 90 days of completing the program. Getting that first job can be hard, but you will have an expert sidekick!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="learn-skill-holder">
+    <div class="container">
+      <div class="text-center">
+        <h3>Meet our featured NGO Partner, NewStory!</h3>
+        <a href="/partnerships/new-story">
+          <%= image_tag 'newstory-screen.jpg', class: 'img-responsive center-block' %>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <%= render 'reviews/hector_moreno' %>
+
+  <span id="faq"><a name="faq"></a></span>
 
   <div class="faq-folder">
     <div class="container">
@@ -313,7 +469,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
             <div class="faq">
 
               <div class="faq-heading text-center">
-                <h2>CODING BOOTCAMP GENERAL FAQ</h2>
+                <h2>THE DEVSCHOOL FAQ</h2>
               </div>
 
               <%= render partial: 'faq_item', locals: {
@@ -387,12 +543,12 @@ your learning experience based on your own ever-changing availability.
       }%>
 
     <%= render partial: 'faq_item', locals: {
-      question: "What about self study hours? What will I learn on my own?",
+      question: "What about 'homework &amp; hacking' time? What will I learn on my own?",
       answer: <<-EOS
 There are a total of 420 hours in the curriculum when you discount the
 time you spend interning with a non profit. That means 40 of those hours are 
 one on one with your Instructor. The rest is a combination of group sessions, 
-and "self study" hours, in which you hack on your app and the learning takes
+and "homework and hacking" hours, in which you hack on your app and the learning takes
 whatever twists and turns as you run into challenges along the way.
       EOS
     }%>
@@ -449,21 +605,6 @@ wants to build the same five web applications to learn.
               EOS
             }%>
 
-          <%= render partial: 'faq_item', locals: {
-            question: "What text editor will I learn and use and learn to use and love?",
-            answer: <<-EOS
-We start you off learning Vim. It is extremely powerful and more importantly,
-better suited in our opinion than anything else to write web based software, which
-is what we are talking about here! Is is great for working on files both locally
-and on remote machines out there in the interwebs. Sublime can't do that!
-
-Developers that show a proficiency in using expert editors like Vim are proven
-to make more money and get more job offers. This is because programmers are 
-interviewed by other programmers and managers that used to be developers. They
-know the difference between someone who 'steals' Sublime vs a developer that
-put love and attention into their tool-set.
-            EOS
-          }%>
 
         <%= render partial: 'faq_item', locals: {
           question: "What front-end web developer skills will I learn and focus on?",
@@ -568,6 +709,48 @@ the Devschool online developer bootcamp like your technology education flashligh
               EOS
             }%>
 
+              <%= render partial: 'faq_item', locals: {
+                question: "What is the complete coding bootcamp price?",
+                answer: <<-EOS
+#{number_to_currency Product.prepay_price} covers it if you pay at the time of enrollment.
+                EOS
+              }%>
+
+            <%= render partial: 'faq_item', locals: {
+              question: "What is the cost if I need to make payments?",
+              answer: <<-EOS
+If you choose to make payments instead of paying up front you agree to make #{Product.payment_count} payments of #{number_to_currency Product.payment_amount}, for a total of #{number_to_currency Product.financed_price}.
+              EOS
+            }%>
+
+          <%= render partial: 'faq_item', locals: {
+            question: "How are payments processed, do you have my Credit Card number?",
+            answer: <<-EOS
+All payments are handled by our partner, <a rel="nofollow" href="https://stripe.com" class="seoquake-nofollow">
+Stripe</a> and at no time do we ever store any of your credit card details on
+our servers or in our databases. We take your financial security seriously.
+            EOS
+          }%>
+
+        <%= render partial: 'faq_item', locals: {
+          question: "If I go with payments when will they be due each month?",
+          answer: <<-EOS
+That depends on the day you pay initially. You will be billed on the same day each month until your balanced is settled. Well unless you sign on a leap day.
+
+This is not a monthly service, so once you make your 6 payments you are done. There are no more to make after that.
+          EOS
+        }%>
+
+
+      <%= render partial: 'faq_item', locals: {
+        question: "What if I decide to get a refund?",
+        answer: <<-EOS
+We have refunded a couple of Students so far, but it was always a financial
+burden they were facing not due to our performance. You can get a refund as per the
+<a href="/coding-bootcamp/terms">Terms of Service</a>.
+        EOS
+      }%>
+
           <%= render partial: 'faq_item', locals: {
             question: "How is it exactly that we meet together online?",
             answer: <<-EOS
@@ -600,4 +783,5 @@ It works best with Mac but there is a version for Linux as well.
       </div>
     </div>
   </div>
+  <%= render 'get_started' %>
 </div>

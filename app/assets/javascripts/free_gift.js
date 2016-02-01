@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('form#free_gift').formValidation({
+  $('form.get-started').formValidation({
     framework: 'bootstrap',
     icon: {
       valid: 'glyphicon glyphicon-ok',
