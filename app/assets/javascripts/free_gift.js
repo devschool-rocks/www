@@ -15,19 +15,6 @@ $(document).ready(function() {
 	  }
 	}
       },
-      twitter: {
-	row: '.col-xs-4',
-	validators: {
-	  notEmpty: {
-	    message: 'Your twitter name is required'
-	  },
-	  regexp: {
-	    message: 'Your twitter name does not look right',
-	    regexp: /^@[A-Za-z0-9_]{1,15}$/
-
-	  }
-	}
-      },
       email: {
 	validators: {
 	  notEmpty: {
