@@ -1,4 +1,4 @@
-<header id="repeat_viewer_2" class="section-header
+<header class="section-header
   blue-hero-form hero-loaded" data-layout-element="hero">
   <section class="container">
     <div class="row">
@@ -21,7 +21,8 @@
       <div class="col-sm-6">
         <div class="form-card">
           <p class="trial-banner basic">MAKE 2016 THE YEAR YOUR LIFE CHANGES!</p>
-          <%= form_tag "/free_gifts" do %>
+          <%= form_tag "/free_gifts", id: "free_gift" do %>
+          <div id="alertContainer" class="alert" style="display: none;"></div>
             <fieldset>
 
               <div class="row">
