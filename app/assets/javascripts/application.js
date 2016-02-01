@@ -4,7 +4,6 @@
 //= require js.cookie
 //= require formValidation.min
 //= require formValidationBootstrapFramework.min
-//= require countdown.min
 
 //= require_self
 //= require_tree .
