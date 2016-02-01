@@ -109,7 +109,7 @@ header { margin-bottom: 28px; }
 .holder .form-control.contact {  background: #fff asset-url("contact.png") no-repeat scroll 2% 10px;  border: 1px solid #ccc;  border-radius: 4px;  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;  color: #555;  display: block;  font-family: "Open Sans";  font-size: 14px;  height: 42px;  line-height: 1.42857;  padding: 6px 45px;  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;  width: 100%;}
 .holder .form-text .btn.btn-squeeze, .btn.btn-apply-submit {  background: #363636; font-family:'Varela Round'; font-weight:400; font-size:18px; color:#fff; text-transform:uppercase; border-radius:0px; margin:20px 0;}
 .holder .tool-icon-text.sp {  padding: 15px 41px;}
-.holder .faq-folder {  background: #e8e8e8 none repeat scroll 0 0;  padding: 25px 0 35px; }
+.holder .faq-folder { padding: 25px 0 35px; }
 .holder .faq-heading h2 { margin: 60px; }
 .holder .panel-group {  margin-bottom: 0;}
 .holder .panel-heading h4 {  color: #fff;  font-family: "Open Sans";  font-size: 16px;  font-weight: 400;  text-transform: uppercase;}
@@ -254,5 +254,10 @@ header nav.navbar-default .navbar-nav>li>a:hover {
 }
 
 .navbar-default .navbar-nav>li>a {
-      color: #777;
-    }
+  color: #777;
+}
+
+.tool-icon-text:hover {
+  background-color: rgba(255,255,0,.4);
+}
+
