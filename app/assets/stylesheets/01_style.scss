@@ -1,5 +1,13 @@
+body {
+    font-family: "Varela Round", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
 h2, h3, h4, h5 {
-  font-family: "Droid Sans";
+  font-family: "Open Sans";
   letter-spacing: 1.5px;
   text-rendering: optimizeLegibility;
 }
@@ -110,7 +118,6 @@ header { margin-bottom: 28px; }
 .holder .form-text .btn.btn-squeeze, .btn.btn-apply-submit {  background: #363636; font-family:'Varela Round'; font-weight:400; font-size:18px; color:#fff; text-transform:uppercase; border-radius:0px; margin:20px 0;}
 .holder .tool-icon-text.sp {  padding: 15px 41px;}
 .holder .faq-folder { padding: 25px 0 35px; }
-.holder .faq-heading h2 { margin: 60px; }
 .holder .panel-group {  margin-bottom: 0;}
 .holder .panel-heading h4 {  color: #fff;  font-family: "Open Sans";  font-size: 16px;  font-weight: 400;  text-transform: uppercase;}
 .panel-default > .panel-heading {  background-color: #ff4147;  border-color: #ff4147;  color: #fff; font-size:16px;}
@@ -264,3 +271,4 @@ header nav.navbar-default .navbar-nav>li>a:hover {
 .countdown {
   background: #2e2e2e;
 }
+

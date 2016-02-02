@@ -29,7 +29,8 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
   </div>
 <%- end %>
 
-<section class="container">
+<div class="section section-below-fold">
+<div class="container">
   <div class="text-center">
     <h2 class="jumbotron">YOU WANT TO LEARN TO CODE SO YOU CAN EARN BETTER 💰 AND BECAUSE YOU REALLY <span class="red">❤</span> TO BUILD STUFF! WE TOTALLY GET IT!</h2>
   </div>
@@ -41,16 +42,16 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
       PREPARE YOU FOR YOUR INTERVIEWS, AND HELP YOU SOLVE CODE CHALLENGES. YOU GRADUATE WHEN 
       YOU GET A JOB!</h2>
   </div>
-</section>
-
-<hr>
+</div>
+</div>
 
 <div class="holder">
-  <div class="learn-skill-holder">
+  <div class="section pricing-section">
     <div class="container">
       <div class="text-center">
         <h2>Full Stack Developer Course: <%= number_to_currency Product.prepay_price %></h2>
-        <h3>Make 2016 the year you make a change in your life you will look back on very fondly of!</h3>
+        <h3>YOU GET 42 "ONE ON ONE" LESSONS, 42 GROUP LESSONS, ACCESS TO TEAM CHAT, & 80+ HOURS INTERNSHIP</h3>
+        <h4>All of this for a total of more than 500 hours of hacking and learning from an expert, in a small team environment working on real applications!</h4>
 
         <div class="learn-icon-text">
           <div class="row">
@@ -95,7 +96,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
 </div>
 
 <div class="holder">
-  <div class="learn-skill-holder">
+  <div class="section skills-section">
     <div class="container">
 
       <div class="tools-content text-center">
@@ -240,94 +241,88 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
   </div>
 </div>
 
-<hr>
-
 <div class="holder">
-  <div class="learn-skill-holder">
+  <div class="section partnership-section">
     <div class="container">
       <div class="text-center">
         <h2>We partner with Non Profit companies</h2>
         <h3>Through these partnerships you real world experience, and you help real people!</h3>
 
-        <%= image_tag 'newstory-screen.jpg', class: 'img-responsive center-block' %>
+        <div class="row">
+          <%= image_tag 'newstory-screen.jpg', class: 'img-responsive center-block' %>
+        </div>
 
-      <hr>
-
-        <div class="learn-icon-text">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="icon-image-para">
-                <div class="icon-image">
-                  <img src="<%= asset_path('icon-10.png') %>" class="img-responsive center-block"/>
-                </div>
-                <div class="icon-para">
-                  <h5>REAL IMPACT</h5>
-                  <p>The work you do will actual impact literally hundreds of families' lives. Can you say the same of
-                  building a clone at one of the "Big Box Bootcamps"? Yeah, we didn't think so!</p>
-                </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-10.png') %>" class="img-responsive center-block"/>
               </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="icon-image-para">
-                <div class="icon-image">
-                  <img src="<%= asset_path('icon-11.png') %>" class="img-responsive center-block"/>
-                </div>
-                <div class="icon-para">
-                  <h5>REAL SOFTWARE</h5>
-                  <p>This isn't just any software, it processes hundreds of donations and thousands upon thousands of dollars,
-                  so in your interview when your potential new boss asks if you have work on a 'real' site you yeah, Yeah!</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="icon-image-para">
-                <div class="icon-image">
-                  <img src="<%= asset_path('icon-12.png') %>" class="img-responsive center-block"/>
-                </div>
-                <div class="icon-para">
-                  <h5>REAL TEAMWORK</h5>
-                  <p>In order to participate in these kinds of large-scale projects, you have to learn to work with other people
-                  and at Devschool we teach you tools and workflows to facilitate this to happen.</p>
-                </div>
+              <div class="icon-para">
+                <h5>REAL IMPACT</h5>
+                <p>The work you do will actual impact literally hundreds of families' lives. Can you say the same of
+                building a clone at one of the "Big Box Bootcamps"? Yeah, we didn't think so!</p>
               </div>
             </div>
           </div>
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-11.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>REAL SOFTWARE</h5>
+                <p>This isn't just any software, it processes hundreds of donations and thousands upon thousands of dollars,
+                so in your interview when your potential new boss asks if you have work on a 'real' site you yeah, Yeah!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-12.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>REAL TEAMWORK</h5>
+                <p>In order to participate in these kinds of large-scale projects, you have to learn to work with other people
+                and at Devschool we teach you tools and workflows to facilitate this to happen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <hr>
-          
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="icon-image-para">
-                <div class="icon-image">
-                  <img src="<%= asset_path('icon-7.png') %>" class="img-responsive center-block"/>
-                </div>
-                <div class="icon-para">
-                  <h5>REAL EXPERIENCE</h5>
-                  <p>When you have the basics down and are ready to move to the next level in your education we
-                  pair you with one of our partners and you get to work on real software in the real world.</p>
-                </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-7.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>REAL EXPERIENCE</h5>
+                <p>When you have the basics down and are ready to move to the next level in your education we
+                pair you with one of our partners and you get to work on real software in the real world.</p>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="icon-image-para">
-                <div class="icon-image">
-                  <img src="<%= asset_path('icon-8.png') %>" class="img-responsive center-block"/>
-                </div>
-                <div class="icon-para">
-                  <h5>REAL CHARITY</h5>
-                  <p>You could intern working on commercial products and web sites to build the same experience. But why line some rich company's pockets when you can help real people in need?</p>
-                </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-8.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>REAL CHARITY</h5>
+                <p>You could intern working on commercial products and web sites to build the same experience. But why line some rich company's pockets when you can help real people in need?</p>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="icon-image-para">
-                <div class="icon-image">
-                  <img src="<%= asset_path('icon-9.png') %>" class="img-responsive center-block"/>
-                </div>
-                <div class="icon-para">
-                  <h5>REAL JOBS</h5>
-                  <p>100% of our graduating students get placed in a job within 90 days of completing the program. Getting that first job can be hard, but you will have an expert sidekick!</p>
-                </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-9.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>REAL JOBS</h5>
+                <p>100% of our graduating students get placed in a job within 90 days of completing the program. Getting that first job can be hard, but you will have an expert sidekick!</p>
               </div>
             </div>
           </div>
@@ -339,8 +334,6 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
 
 <%= render 'reviews' %>
 
-<hr>
-
 <%= render 'countdown' %>
 
 <%= render 'get_started' %>
@@ -349,7 +342,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
 <div class="holder">
   <span id="faq"><a name="faq"></a></span>
 
-  <div class="faq-folder">
+  <div class="section faq-section">
     <div class="container">
       <div class="faq-content">
         <div class="row">
@@ -494,9 +487,9 @@ wants to build the same five web applications to learn.
             }%>
 
 
-        <%= render partial: 'faq_item', locals: {
-          question: "What front-end web developer skills will I learn and focus on?",
-          answer: <<-EOS
+          <%= render partial: 'faq_item', locals: {
+            question: "What front-end web developer skills will I learn and focus on?",
+            answer: <<-EOS
 The backbone and foundation of the Internet is HTML and more recently, HTML5. HTML
 is the structure of the web page, but you also need some style. That is where CSS
 and again, more recently, CSS3 comes into play. You 'put' an element on a page 
@@ -511,12 +504,12 @@ myriad of screen sizes available.
 That is where Twitter's Bootstrap front-end framework comes in. We teach you the
 nitty gritty of responsive design using bootstrap and tools like Masonry, which
 is how Pinterest gets such awesome looking flowing pages!.
-          EOS
-        }%>
+            EOS
+          }%>
 
-      <%= render partial: 'faq_item', locals: {
-        question: "Can I use Windows to learn Web development at your coding bootcamp?",
-        answer: <<-EOS
+        <%= render partial: 'faq_item', locals: {
+          question: "Can I use Windows to learn Web development at your coding bootcamp?",
+          answer: <<-EOS
 Windows is a fine operating system for writing Microsoft software or to
 use as a business platform, and it makes an excellent gaming platform, likely
 the best on the market. However it is not great for writing web software that
@@ -530,12 +523,12 @@ and install Linux on it.
 Windows does not support the libraries that are needed, and it doesn't share
 the same architecture. In short Windows speaks a language of it's own, while
 Linux and OSX both agree to support much of UNIX.
-        EOS
-      }%>
+          EOS
+        }%>
 
-    <%= render partial: 'faq_item', locals: {
-      question: "What computer do you recommend for learning web development?",
-      answer: <<-EOS
+      <%= render partial: 'faq_item', locals: {
+        question: "What computer do you recommend for learning web development?",
+        answer: <<-EOS
 Our own statistics show: Mac OSX users have the smoothest web development experience
 with the tools you will learn here. That being said, we also love Linux if it is
 run natively and the person wants a real software education and maybe a bit of
@@ -544,13 +537,13 @@ adventure.
 Ubuntu and Mint are popular choices for those who want to strut their kneckbeards,
 be they man, be they woman. Both Linux and OSX are built on the foundations of
 UNIX.
-      EOS
-    }%>
+        EOS
+      }%>
 
 
-  <%= render partial: 'faq_item', locals: {
-    question: "Will I learn the 'Server-Side' at your coding bootcamp?",
-    answer: <<-EOS
+    <%= render partial: 'faq_item', locals: {
+      question: "Will I learn the 'Server-Side' at your coding bootcamp?",
+      answer: <<-EOS
 Ruby is commonly listed as the second most listed language in all
 open source job postings. Ruby on Rails is a web framework specifically
 designed to help you get things done quickly. What kind of things? 
@@ -559,23 +552,23 @@ Web development things!
 We also will teach you 'Algorithms' and how to write performant code.
 You will be able to roll your own APIs, build "web services", and understand
 the differences in the various types of memory and processors.
-    EOS
-  }%>
+      EOS
+    }%>
 
-<%= render partial: 'faq_item', locals: {
-  question: "Will I learn JavaScript at Devschool?",
-  answer: <<-EOS
+  <%= render partial: 'faq_item', locals: {
+    question: "Will I learn JavaScript at Devschool?",
+    answer: <<-EOS
 JavaScript is said to be the "Next Big Thing" by many, many smart developers
 with their fingers on the pulse of the Internet. We also feel that JavaScript is
 highly important to the future of web development stacks, so we teach a good amount
 of it once you get some basics under your belt.
-  EOS
-}%>
+    EOS
+  }%>
 
 
-            <%= render partial: 'faq_item', locals: {
-              question: "What about Payment processing chat apps and things like that?",
-              answer: <<-EOS
+<%= render partial: 'faq_item', locals: {
+  question: "What about Payment processing chat apps and things like that?",
+  answer: <<-EOS
 To be an effective developer you need to know a good measure of all of these things to
 be a candidate worth hiring. And that means a candidate who can wrangle all these tools
 and languages into technology solutions for businesses.
@@ -594,13 +587,13 @@ You will also learn about deployment and setup and DNS at
 It is a lot to learn, but our job is to guide you through it, so you learn what you need
 to know, and not get bogged down in the things that might not matter. You can think of
 the Devschool online developer bootcamp like your technology education flashlight in the dark!
-              EOS
-            }%>
+  EOS
+}%>
 
               <%= render partial: 'faq_item', locals: {
                 question: "What is the complete coding bootcamp price?",
                 answer: <<-EOS
-#{number_to_currency Product.prepay_price} covers it if you pay at the time of enrollment.
+                #{number_to_currency Product.prepay_price} covers it if you pay at the time of enrollment.
                 EOS
               }%>
 
@@ -639,9 +632,9 @@ burden they were facing not due to our performance. You can get a refund as per 
         EOS
       }%>
 
-          <%= render partial: 'faq_item', locals: {
-            question: "How is it exactly that we meet together online?",
-            answer: <<-EOS
+    <%= render partial: 'faq_item', locals: {
+      question: "How is it exactly that we meet together online?",
+      answer: <<-EOS
 Devschool utilizes a mixture of technologies to accomplish a "connected"
 environment and culture for our Students. This is not like Udemy where you
 feel like you are in it alone. We promote a very social atmosphere.
@@ -650,20 +643,20 @@ We use <a rel="nofollow" href="https://www.flowdock.com/">Flowdock</a> for
 our chat program, but it is really so much more then that! It allows contextual
 conversations so what you are talking about doesn't get mixed up with other
 people's messages that have nothing to do with what you are saying.
-            EOS
-          }%>
+      EOS
+    }%>
 
-        <%= render partial: 'faq_item', locals: {
-          question: "What about screen-sharing? How does that work exactly?",
-          answer: <<-EOS
+  <%= render partial: 'faq_item', locals: {
+    question: "What about screen-sharing? How does that work exactly?",
+    answer: <<-EOS
 We use a program called <a rel="nofollow" href="http://zoom.us/">Zoom</a> 
 to broadcast our private and group sessions. This allows the Instructor to 
 share his screen and work and demonstrate things with live lessons, or to 
 switch over to a student's machine and fix something for them.
 
 It works best with Mac but there is a version for Linux as well.
-          EOS
-        }%>
+    EOS
+  }%>
 
           </div>
           </div>
