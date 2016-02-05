@@ -1,12 +1,19 @@
-.blue-hero-form {
+.form.blue {
   background: #4A97EC;
   color: white;
   padding: 72px 0;
   width: 100%;
 }
 
-.blue-hero-form h2,
-.blue-hero-form .h2 {
+.form.green {
+  background: #168A24;
+  color: white;
+  padding: 72px 0;
+  width: 100%;
+}
+
+.form h2,
+.form .h2 {
   font-family: "Varela Round";
   text-rendering: optimizeLegibility;
   color: white;
@@ -14,8 +21,8 @@
   line-height: 1.5;
 }
 
-.blue-hero-form h3,
-.blue-hero-form .h3 {
+.form h3,
+.form .h3 {
   font-family: "Varela Round";
   text-rendering: optimizeLegibility;
   color: white;
@@ -23,21 +30,18 @@
   line-height: 1.35;
 }
 
-.blue-hero-form p {
-  font-family: "Varela Round";
-  text-rendering: optimizeLegibility;
+.form p {
   font-size: 18px;
+  font-weight: normal;
   color: white;
 }
 
-.blue-hero-form a {
-  font-family: "Varela Round";
-  text-rendering: optimizeLegibility;
+.form a {
   font-size: 18px;
   color: #FFF66F;
 }
 
-.blue-hero-form .form-card {
+.form .form-card {
   color: white;
   padding: 30px;
   border-radius: 5px;
@@ -47,10 +51,18 @@
   margin: 30px auto 30px;
 }
 
-.blue-hero-form .form-card .trial-banner {
+.form.blue .form-card .title {
   background-color: #0565D0;
-  border-radius: 5px 5px 0 0;
   border-bottom: solid 2px #1A5BA2;
+}
+
+.form.green .form-card .title {
+  background-color: #1FAD3D;
+  border-bottom: solid 2px #1CA539;
+}
+
+.form .form-card .title {
+  border-radius: 5px 5px 0 0;
   text-align: center;
   font-weight: 500;
   padding: 20px;
@@ -58,31 +70,39 @@
   color: #fff;
 }
 
-.blue-hero-form .form-card fieldset {
+.form .form-card fieldset {
   border: none;
   border-bottom: 1px solid #edeff0;
 }
 
-.blue-hero-form .form-footer {
+.form .form-footer {
   margin-bottom: -10px;
   width: 100%;
   display: inline-block;
 }
 
-.blue-hero-form .button.primary,
-.blue-hero-form .button.button-primary {
+.form.green .button.primary {
+  background-color: #1EB730;
+  border: 2px solid #1AAB2B;
+}
+
+.form.blue .button.primary {
   background-color: #085EBD;
   border: 2px solid #085EBD;
+}
+
+.form .button.primary,
+.form .button.button-primary {
   color: #fff;
   box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
 }
 
-.blue-hero-form .form-footer .button {
+.form .form-footer .button {
   margin: 0 10px 10px 0;
   float: left;
 }
 
-.blue-hero-form .button {
+.form .button {
   font-size: 16px;
   height: 52px;
   line-height: 48px;
@@ -115,12 +135,12 @@
   color: #5fcf80;
 }
 
-.blue-hero-form .form-card label {
+.form .form-card label {
   left: 28px;
   color: #a6b0b7;
 }
 
-.blue-hero-form .form-item label {
+.form .form-item label {
   position: absolute;
   top: 13px;
   right: 18px;
@@ -137,11 +157,11 @@
   display: block;
 }
 
-.blue-hero-form .form-item .input-text {
+.form .form-item .input-text {
   margin-bottom: 0;
 }
 
-.blue-hero-form .input-text, textarea {
+.form .input-text, textarea {
   background: #e8ebed;
   margin: 0;
   font-size: 14px;
@@ -159,7 +179,7 @@
 }
 
 
-.blue-hero-form .form-card .play-icon {
+.form .form-card .play-icon {
   width: 10px;
   height: 13px;
   position: relative;
@@ -168,11 +188,11 @@
   fill: #fff;
 }
 
-.blue-hero-form .button svg {
+.form .button svg {
   vertical-align: middle;
 }
 
-.blue-hero-form .button.primary, .button.button-primary {
+.form .button.primary, .button.button-primary {
   background-color: #085EBD;
   border: 2px solid #085EBD;
   color: #fff;
@@ -180,23 +200,23 @@
 
 }
 
-.blue-hero-form input, select {
+.form input, select {
   vertical-align: middle;
 }
 
-.blue-hero-form .form-item {
+.form .form-item {
   position: relative;
   margin-bottom: 13px;
 }
 
 
 @media screen and (min-width: 900px) {
-  .blue-hero-form h2,
-  .blue-hero-form .h2 {
+  .form h2,
+  .form .h2 {
     font-size: 22px;
     line-height: 1.5;
   }
-  .blue-hero-form .hero-title {
+  .form .title {
     padding-top: 28px;
   }
 }

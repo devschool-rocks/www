@@ -1,25 +1,40 @@
-<div class="form-holder">
-  <div class="container-fluid">
-    <div class="form-in">
-      <div class="col-sm-6 sp">
-        <div class="form-image">
-          <img src="<%= asset_path('form-image.png') %>" class="img-responsive center-block"/>
-        </div>
-      </div>
-      <div class="col-sm-5">
+<div class="green form">
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-6">
         <form action="//rocks.us12.list-manage.com/subscribe/post?u=93252fdea9ccab76d227ec7a4&amp;id=7d4923dc65"
               method="post" id="mc-embedded-subscribe-form"
                             name="mc-embedded-subscribe-form"
                             target="_blank" novalidate>
-          <div class="form-text">
-            <h2>Want to join a live coding session to see what Devschool is like?</h2>
-            <p><span>Enter your email and we will let you know a few days before the session </span></p>
-            <input type="text" class="email form-control" value="" name="EMAIL" 
-                                                                   placeholder="What is your email?">
-            <button type="submit" name="subscribe"  class="btn btn-squeeze pull-right">Notify me</button>
+          <div class="form-card">
+            <h3 class="title">Want to be notified of free workshops?</h3>
+            <fieldset>
+              <div class="row">
+                <div class="form-item col-sm-12">
+                  <input type="text" class="email input-text" value="" name="EMAIL" placeholder="What is your email?">
+                </div>
+              </div>
+            </fieldset>
+
+
+            <div class="form-footer">
+              <button type="submit" name="subscribe"  class="button primary">Yes, let me know!&nbsp; ❤</button>
+            </div>
           </div>
         </form>
       </div>
+
+      <div class=col-sm-6">
+        <h2>Introducing Devschool Weekend Workshops!</h2>
+
+        <p>Join us for our FREE Weekend Workshop series, where we teach intro
+        some basic programming patterns and techniques and unix hackery that
+        give you powerful tools in your daily programming lives!</p>
+
+        <p>We don't know very far ahead of time when we are available to teach these
+        but if you put your email on the list, we will let you know a few days before
+        one happens!</p>
+      </div>
     </div>
-  </div>
+  </section>
 </div>
