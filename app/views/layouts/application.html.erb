@@ -57,18 +57,17 @@
 
     <%= javascript_include_tag 'application' %>
 
+      <!-- chatio - slack -->
+      <script type="text/javascript">
+window._chatlio = window._chatlio||[];
+!function(){ var t=document.getElementById("chatlio-widget-embed");if(t&&window.React&&_chatlio.init)return void _chatlio.init(t,React);for(var e=function(t){return function(){_chatlio.push([t].concat(arguments)) }},i=["configure","identify","track","show","hide","isShown","isOnline"],a=0;a<i.length;a++)_chatlio[i[a]]||(_chatlio[i[a]]=e(i[a]));var n=document.createElement("script"),c=document.getElementsByTagName("script")[0];n.id="chatlio-widget-embed",n.src="https://w.chatlio.com/w.chatlio-widget.js",n.async=!0,n.setAttribute("data-embed-version","2.0");
+  n.setAttribute('data-widget-id','a7a9037f-602e-454f-60ec-72438abeecf1');
+  c.parentNode.insertBefore(n,c);
+}();
+      </script>
     <% unless %w[127.0.0.1 localhost].include?(request.host.to_s) %>
       <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=100924811766479319060"></script>
 
-      <script>
-var _glc =_glc || []; _glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyDwsSBXVzZXJzGKrjhpIODA');
-var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/' : 
-    'http://my.clickdesk.com/clickdesk-ui/browser/');
-var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://');
-var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; 
-glcspt.async = true; glcspt.src = glcpath + 'livechat-new.js';
-var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
-      </script>
       <!-- Hotjar Tracking Code for https://devschool.rocks -->
       <script>
 (function(h,o,t,j,a,r){
