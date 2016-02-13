@@ -1,9 +1,9 @@
 <%- content_for(:title) do %>
-Online Coding Bootcamp - Learn to Code | Devschool
+A BOUTIQUE Online Coding Bootcamp | We are Devschool!
 <%- end %>
 
 <%- content_for(:description) do %>
-At Devschool's online coding bootcamp we don't just train you to become a web developer, we GUARANTEE YOU A JOB when you graduate!
+At our affordable online bootcamp where you learn side by side from an expert mentor!
 <%- end %>
 
 <%- content_for(:canonical) do %>
@@ -11,7 +11,8 @@ https://devschool.rocks/coding-bootcamp
 <%- end %>
 
 <%- content_for(:keyword_tags) do %>
-online coding bootcamps, online coding schools, learn to code, dev bootcamp, hack reactor, general assembly, devschool, become a web developer
+online coding bootcamp, online coding school, learn to code, dev bootcamp,
+hack reactor, general assembly, devschool, become a web developer
 <%- end %>
 
 <%- content_for(:header) do %>
@@ -31,13 +32,10 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
 
 <div class="section section-below-fold">
   <div class="container">
-    <div class="text-center">
-      <h2 class="jumbotron">YOU WANT TO LEARN TO CODE SO YOU CAN EARN BETTER 💰 AND BECAUSE YOU REALLY <span class="red">❤</span> TO BUILD STUFF! WE TOTALLY GET IT!</h2>
-    </div>
     <div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/GD_nvaQERxk" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div class="text-center">
+    <div class="col-md-8 col-md-offset-2 text-center">
       <h2 class="jumbotron">AT DEVSCHOOL YOU WILL LEARN TO CODE, BUT FAR MORE THAN THAT, WE 
         PREPARE YOU FOR YOUR INTERVIEWS, AND HELP YOU SOLVE CODE CHALLENGES. YOU GRADUATE WHEN 
         YOU GET A JOB!</h2>
@@ -107,11 +105,15 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
 <div class="holder">
   <div class="section pricing-section">
     <div class="container">
-      <div class="text-center">
+      <div class="col-md-8 col-md-offset-2 text-center">
         <h2>Full Stack Developer Course: <%= number_to_currency Product.prepay_price %></h2>
-        <h3>YOU GET 42 "ONE ON ONE" LESSONS, 42 GROUP LESSONS, ACCESS TO TEAM <a
-           rel=nofollow href="https://slack.com">SLACK</a>, & 80+ HOURS INTERNSHIP</h3>
-        <h4>All of this for a total of more than 500 hours of hacking and learning from an expert, in a small team environment working on real applications!</h4>
+        <h3>YOU GET 42 "ONE ON ONE" LESSONS, 42 GROUP LESSONS, 80+ HOURS INTERNSHIP,
+            AND CONSTANT TEAM COMMUNICATION VIA <a
+           rel=nofollow href="https://slack.com">SLACK</a></h3>
+        <h4>All of this for a total of more than 500 hours of hacking and 
+          learning, guided by an expert, in a small team environment working on 
+          real applications!</h4>
+        <p>&nbsp;</p>
 
         <div class="learn-icon-text">
           <div class="row">
@@ -121,7 +123,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
                   <img src="<%= asset_path('icon-4.png') %>" class="img-responsive center-block"/>
                 </div>
                 <div class="icon-para">
-                  <h5>PREPAY ENROLLMENT</h5>
+                  <h5>SAVE MONEY</h5>
                   <p>Psst. Want to save a cool <%= number_to_currency Product.prepay_savings_amount %>? Pre-paying for your education is a great way to save and who doesn't like to save some hard earned money?</p>
                 </div>
               </div>
@@ -132,7 +134,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
                   <img src="<%= asset_path('icon-5.png') %>" class="img-responsive center-block"/>
                 </div>
                 <div class="icon-para">
-                  <h5>MAKE PAYMENTS</h5>
+                  <h5>PAYMENTS</h5>
                   <p>You can also make <%= Product.payment_count %> monthly payments of <%= number_to_currency Product.payment_amount %> if that fits your style better. You pay the financing fee of $1,000 but the payments are easy.</p>
                 </div>
               </div>
@@ -143,8 +145,9 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
                   <img src="<%= asset_path('icon-6.png') %>" class="img-responsive center-block"/>
                 </div>
                 <div class="icon-para">
-                  <h5>WE GUARANTEE IT</h5>
-                  <p>We back our performance by a pro-rated money back guarantee. Should you decide that Devschool is not for you, we will give you a pro-rated refund.</p>
+                  <h5>GUARANTEED</h5>
+                  <p>We back our performance by a money back guarantee. Should you 
+                  decide that Devschool is not for you, we will give you a pro-rated refund.</p>
                 </div>
               </div>
             </div>
@@ -155,13 +158,13 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
   </div>
 </div>
 
+<%= render 'reviews' %>
+
 <div class="holder">
   <div class="section skills-section">
     <div class="container">
-
-      <div class="tools-content text-center">
+      <div class="col-md-8 col-md-offset-2 tools-content text-center">
         <h2>Some of the awesome stuff you will learn</h2>
-        <h3>We don't believe in training wheels, we believe in teaching professional grade stuff</h3>
         <div class="tool-in-content">
           <div class="tool-row sp">
             <div class="row">
@@ -205,7 +208,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
                     <img src="<%= asset_path('tool-4.png') %>" class="img-responsive center-block"/>
                   </div>
                   <div class="tool-text">
-                    <p>Vim is some super-secret sauce. Not only does it make you look like a wizard while you are creating and editing files (which by the way is 90% of your new life as a web developer!) but it also is built to be a very powerful, efficient tool.</p>
+                    <p>Vim is some super-secret sauce. Not only does it make you look like a wizard while you are creating and editing files, which is a large part of a developer's life, but it also is built to be a very powerful, efficient tool.</p>
                   </div>
                 </div>
               </div>
@@ -225,7 +228,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
                     <img src="<%= asset_path('tool-6.png') %>" class="img-responsive center-block"/>
                   </div>
                   <div class="tool-text">
-                    <p>We LOVE Linux at the Devschool! Similar to OSX, it is built on the solid core of the UNIX operating system, providing a robust, secure platform to build software like that of the web. It has a bit of a steep learning curve though.</p>
+                    <p>We think Linux is a great budget OS. Similar to OSX, it is built on the solid core of the UNIX operating system, providing a robust, secure platform to build software like that of the web. It has a bit of a steep learning curve though.</p>
                   </div>
                 </div>
               </div>
@@ -257,7 +260,7 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
                     <img src="<%= asset_path('tool-9.png') %>" class="img-responsive center-block"/>
                   </div>
                   <div class="tool-text ">
-                    <p>JavaScript is the only language embedded in every browser on the planet. It is the mechanism by which content is changed, loaded, sorted, or otherwise animated.  </p>
+                    <p>JavaScript is the only language embedded in every browser on the planet. It is the mechanism by which content is changed or animated.  </p>
                   </div>
                 </div>
               </div>
@@ -302,12 +305,105 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
 </div>
 
 <div class="holder">
+  <div class="section partnership-section">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h2>We partner with Non Profit companies</h2>
+        <h3>Through these partnerships you real world experience, and you help real people!</h3>
+
+        <div class="row">
+          <%= image_tag 'newstory-screen.jpg', class: 'img-responsive center-block' %>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-10.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>REAL IMPACT</h5>
+                <p>The work you do will actual impact literally hundreds of families' lives. Can you say the same of
+                building a clone at one of the "Big Box Bootcamps"? Yeah, we didn't think so!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-11.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>BUILD STUFF</h5>
+                <p>This isn't just any software, it processes hundreds of donations and thousands upon thousands of dollars,
+                so in your interview when your potential new boss asks if you have work on a 'real' site you yeah, Yeah!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-12.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>TEAMWORK</h5>
+                <p>In order to participate in these kinds of large-scale projects, you have to learn to work with other people
+                and at Devschool we teach you tools and workflows to facilitate this to happen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-7.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>INTERNSHIP</h5>
+                <p>When you have the basics down and are ready to move to the next level in your education we
+                pair you with one of our partners and you get to work on real software in the real world.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-8.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>HELP PEOPLE</h5>
+                <p>You could intern working on commercial products and web sites to build the same experience. But why line some rich company's pockets when you can help real people in need?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="icon-image-para">
+              <div class="icon-image">
+                <img src="<%= asset_path('icon-9.png') %>" class="img-responsive center-block"/>
+              </div>
+              <div class="icon-para">
+                <h5>GET HIRED</h5>
+                <p>100% of our graduating students get placed in a job within 90 days of completing the program. Getting that first job can be hard, but you will have an expert sidekick!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="holder">
   <div class="section chat-section">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
+
         <h2>We work as a team and communcate like #Slackers</h2>
 
         <%= image_tag('slack-screenshot.png', class: "img-responsive") %>
+
+        <h2 class="jumbotron">YOU WANT TO LEARN TO CODE SO YOU CAN EARN BETTER 💰 AND BECAUSE YOU REALLY <span class="red">❤</span> TO BUILD STUFF! WE TOTALLY GET IT!</h2>
       </div>
     </div>
   </div>
@@ -342,99 +438,6 @@ online coding bootcamps, online coding schools, learn to code, dev bootcamp, hac
 </div>
 
 <%= render 'squeeze_open_group' %>
-
-<div class="holder">
-  <div class="section partnership-section">
-    <div class="container">
-      <div class="text-center">
-        <h2>We partner with Non Profit companies</h2>
-        <h3>Through these partnerships you real world experience, and you help real people!</h3>
-
-        <div class="row">
-          <%= image_tag 'newstory-screen.jpg', class: 'img-responsive center-block' %>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="icon-image-para">
-              <div class="icon-image">
-                <img src="<%= asset_path('icon-10.png') %>" class="img-responsive center-block"/>
-              </div>
-              <div class="icon-para">
-                <h5>REAL IMPACT</h5>
-                <p>The work you do will actual impact literally hundreds of families' lives. Can you say the same of
-                building a clone at one of the "Big Box Bootcamps"? Yeah, we didn't think so!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="icon-image-para">
-              <div class="icon-image">
-                <img src="<%= asset_path('icon-11.png') %>" class="img-responsive center-block"/>
-              </div>
-              <div class="icon-para">
-                <h5>REAL SOFTWARE</h5>
-                <p>This isn't just any software, it processes hundreds of donations and thousands upon thousands of dollars,
-                so in your interview when your potential new boss asks if you have work on a 'real' site you yeah, Yeah!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="icon-image-para">
-              <div class="icon-image">
-                <img src="<%= asset_path('icon-12.png') %>" class="img-responsive center-block"/>
-              </div>
-              <div class="icon-para">
-                <h5>REAL TEAMWORK</h5>
-                <p>In order to participate in these kinds of large-scale projects, you have to learn to work with other people
-                and at Devschool we teach you tools and workflows to facilitate this to happen.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="icon-image-para">
-              <div class="icon-image">
-                <img src="<%= asset_path('icon-7.png') %>" class="img-responsive center-block"/>
-              </div>
-              <div class="icon-para">
-                <h5>REAL EXPERIENCE</h5>
-                <p>When you have the basics down and are ready to move to the next level in your education we
-                pair you with one of our partners and you get to work on real software in the real world.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="icon-image-para">
-              <div class="icon-image">
-                <img src="<%= asset_path('icon-8.png') %>" class="img-responsive center-block"/>
-              </div>
-              <div class="icon-para">
-                <h5>REAL CHARITY</h5>
-                <p>You could intern working on commercial products and web sites to build the same experience. But why line some rich company's pockets when you can help real people in need?</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="icon-image-para">
-              <div class="icon-image">
-                <img src="<%= asset_path('icon-9.png') %>" class="img-responsive center-block"/>
-              </div>
-              <div class="icon-para">
-                <h5>REAL JOBS</h5>
-                <p>100% of our graduating students get placed in a job within 90 days of completing the program. Getting that first job can be hard, but you will have an expert sidekick!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<%= render 'reviews' %>
 
 <div class="holder">
   <div class="section percentage-section">
