@@ -26,3 +26,41 @@
 
 }
 
+.section.different-section {
+  background-color: #FDFCE8;
+}
+
+.section.underdog-section {
+  background-color: #E8F7FD;
+}
+.section.percentage-section {
+  background-color: #E6FDD5;
+}
+
+
+.section.different-section,
+.section.underdog-section,
+.section.percentage-section {
+  h2 {
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    text-rendering: optimizeLegibility;
+  }
+
+h3 {
+    color: #020202;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 2em 0 1em 0;
+}
+
+  p {
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    text-rendering: optimizeLegibility;
+  }
+}
