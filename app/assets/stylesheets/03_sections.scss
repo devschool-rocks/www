@@ -4,7 +4,6 @@
 }
 
 .section.partnership-section {
-  background-color: #FDFCE8;
   .row {
     margin: 32px 0;
   }
@@ -19,8 +18,12 @@
 }
 
 .section.skills-section {
-}
+    }
 
+.section.video-section {
+  padding: 3em;
+  margin: 4em auto;
+}
 
 .section.reviews-section {
 
@@ -31,7 +34,6 @@
 }
 
 .section.underdog-section {
-  background-color: #E8F7FD;
 }
 .section.percentage-section {
   background-color: #E6FDD5;
@@ -65,5 +67,5 @@ h3 {
   }
 }
 .section.reviews-section {
-      background-color: #9CC79C;
+      background-color: #E6FDD5;
     }

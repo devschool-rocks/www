@@ -1,5 +1,5 @@
 body {
-    font-family: "Varela Round", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -7,14 +7,14 @@ body {
 }
 
 h2, h3, h4, h5 {
-  font-family: "Open Sans";
+  font-family: "Cardo";
   letter-spacing: 1.5px;
   text-rendering: optimizeLegibility;
 }
 
 body p { 
   letter-spacing: 1px;
-  font-family: "Varela Round";
+  font-family: "Cardo";
 }
 
 body .video-section {
@@ -56,7 +56,7 @@ header .navbar { background-color: rgba(0,0,0,0.5); border: none;  margin-bottom
 header .header-top { position: absolute;  z-index: 111;  width: 100%;}
 header .carousel-content-panel {  bottom: 150px; position: absolute; width:100%; left:0;}
 h1 {
-font-family: "Monda";
+font-family: "Montserrat";
 color: #000;  
 letter-spacing: 2px; }
 h1 .top { 
@@ -67,7 +67,7 @@ h1 .bottom {
 margin-bottom: 10%; font-size: 1em;  
 font-weight: 300;text-transform:uppercase; }
 header h2 { color: white; font-size: 3em; }
-header .carousel-content-panel .btn-banner  { color:#ffffff;  font-family: "Varela Round";  font-weight: 500; background: #EC2D33;
+header .carousel-content-panel .btn-banner  { color:#ffffff;  font-family: "Montserrat";  font-weight: 500; background: #EC2D33;
   border: 4px solid #FF2930;
   text-transform: uppercase;
   border-radius: 2px;
@@ -81,11 +81,11 @@ font-weight: 700 !important; }
 header .container-fluid { padding:0; }
 /*holder*/
 .holder {  margin-top: -65px;}
-.holder h2 { color: #000000;  font-family: "Varela Round";  font-size: 39px;  font-weight: 400;  text-transform:uppercase; }
-.holder h3 { color: #606060;  font-family: "Open Sans";  font-size: 19px;  font-weight: 400; text-transform:uppercase; margin-bottom: 48px; }
-.holder p  { color: #606060;  font-family: "Open Sans";  font-size: 15px;  font-weight: 400; line-height:25px; }
+.holder h2 { color: #000000;  font-family: "Montserrat";  font-size: 39px;  font-weight: 400;  text-transform:uppercase; }
+.holder h3 { color: #606060;  font-family: "Cardo";  font-size: 19px;  font-weight: 400; text-transform:uppercase; margin-bottom: 48px; }
+.holder p  { color: #606060;  font-family: "Cardo";  font-size: 15px;  font-weight: 400; line-height:25px; }
 .holder .learn-content.text-center > h2 {  padding: 5px 135px;}
-.holder .icon-para > h5 { color:#4c4c4c; font-size:22px; font-family:'Varela Round'; }
+.holder .icon-para > h5 { color:#4c4c4c; font-size:22px; font-family:'Montserrat'; }
 .holder .learn-content.text-center > h4 {  padding: 25px 0;}
 .holder .learn-skill-holder {  padding-bottom: 40px;}
 /**/
@@ -93,30 +93,31 @@ header .container-fluid { padding:0; }
 .holder .people-says-holder { background:asset-url('test-bg.jpg') no-repeat scroll ; background-size:cover; padding: 70px 0 70px;  }
 .holder .people-heading.text-center > h2 {  color: #fff; padding-bottom:25px;}
 .holder .people-para > p {  color: #fff;  font-size: 18px; line-height: 33px; margin: 20px 0;}
-.holder .people-name > h5 { font-size:18px; text-transform:uppercase; font-family:'Open Sans'; text-transform:uppercase; color:#fff; }
-.holder .people-name > h6 { color: #fff;  font-size: 16px; font-family:'Open Sans'; }
+.holder .people-name > h5 { font-size:18px; text-transform:uppercase; font-family:'Cardo'; text-transform:uppercase; color:#fff; }
+.holder .people-name > h6 { color: #fff;  font-size: 16px; font-family:'Cardo'; }
 .holder .people-image .img-responsive.img-circle.center-block {  border: 8px solid #fff; position: relative; top: 50px;}
 .holder .people-para::before {  content: "";  display: inline-block;  height: 30px;  left: -20px;  position: absolute;  width: 27px; background:asset-url('quote-1.png') no-repeat;}
 .holder .people-para::after {  background: rgba(0, 0, 0, 0) assset-url("quote-2.png") no-repeat scroll 0 0;  content: "";  display: inline-block;  height: 30px;  position: absolute;   width: 27px;}
 .holder .tool-text > p {  padding-top: 25px;}
-.holder .tool-icon-text {  border: 1px solid #dedede;  padding: 21px ;}
+.holder .row .sp { background-color: white; }
+.holder .tool-icon-text {  padding: 21px ;}
 .holder .col-sm-4.sp {  padding: 0;}
 .holder .tools-holder {  padding: 35px 0 65px;}
-.holder .tool-row.sp {  padding-top: 35px;}
+.holder .tool-row.sp { padding-top: 35px;}
 .holder .tool-row.dw {  padding-bottom: 15px;}
 .holder .container-fluid { padding:0; }
 .holder .col-sm-6.sp {  padding: 0;}
 .holder .form-holder {  background: #ff4147;}
 .holder .form-text > h2 {  color: #fff;  font-size: 26px;  padding-top: 35px;}
-.holder .form-text > p span {  color: #fff;  font-family: 'Varela Round'; font-size:17px;}
-.holder .form-text > p {  color: #fff;  font-family: 'Open Sans'; font-size:14px;}
-.holder .form-control.email {  background: #fff asset-url("envelope.png") no-repeat scroll 2% 10px;  border: 1px solid #ccc;  border-radius: 4px;  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;  color: #555;  display: block;  font-family: "Open Sans";  font-size: 14px;  height: 42px;  line-height: 1.42857;  padding: 6px 45px;  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;  width: 100%;}
-.holder .form-control.contact {  background: #fff asset-url("contact.png") no-repeat scroll 2% 10px;  border: 1px solid #ccc;  border-radius: 4px;  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;  color: #555;  display: block;  font-family: "Open Sans";  font-size: 14px;  height: 42px;  line-height: 1.42857;  padding: 6px 45px;  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;  width: 100%;}
-.holder .form-text .btn.btn-squeeze, .btn.btn-apply-submit {  background: #363636; font-family:'Varela Round'; font-weight:400; font-size:18px; color:#fff; text-transform:uppercase; border-radius:0px; margin:20px 0;}
+.holder .form-text > p span {  color: #fff;  font-family: 'Montserrat'; font-size:17px;}
+.holder .form-text > p {  color: #fff;  font-family: 'Cardo'; font-size:14px;}
+.holder .form-control.email {  background: #fff asset-url("envelope.png") no-repeat scroll 2% 10px;  border: 1px solid #ccc;  border-radius: 4px;  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;  color: #555;  display: block;  font-family: "Cardo";  font-size: 14px;  height: 42px;  line-height: 1.42857;  padding: 6px 45px;  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;  width: 100%;}
+.holder .form-control.contact {  background: #fff asset-url("contact.png") no-repeat scroll 2% 10px;  border: 1px solid #ccc;  border-radius: 4px;  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;  color: #555;  display: block;  font-family: "Cardo";  font-size: 14px;  height: 42px;  line-height: 1.42857;  padding: 6px 45px;  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;  width: 100%;}
+.holder .form-text .btn.btn-squeeze, .btn.btn-apply-submit {  background: #363636; font-family:'Montserrat'; font-weight:400; font-size:18px; color:#fff; text-transform:uppercase; border-radius:0px; margin:20px 0;}
 .holder .tool-icon-text.sp {  padding: 15px 41px;}
 .holder .faq-folder { padding: 25px 0 35px; }
 .holder .panel-group {  margin-bottom: 0;}
-.holder .panel-heading h4 {  color: #fff;  font-family: "Open Sans";  font-size: 16px;  font-weight: 400;  text-transform: uppercase;}
+.holder .panel-heading h4 {  color: #fff;  font-family: "Cardo";  font-size: 16px;  font-weight: 400;  text-transform: uppercase;}
 .panel-default > .panel-heading {  background-color: #ff4147;  border-color: #ff4147;  color: #fff; font-size:16px;}
 .panel-default > .panel-heading {  background-image: none;  background-repeat: repeat-x;}
 .panel-heading {  border-bottom: 1px solid transparent;  border-top-left-radius: 0;  border-top-right-radius: 0;  padding: 10px 15px;	}
@@ -128,9 +129,9 @@ header .container-fluid { padding:0; }
 /*footer*/
 footer .footer-hidden { display: none; }
 footer {  background: #2a2a2a none repeat scroll 0 0;  padding: 25px 0;}
-footer .foot-content > h4 { color:#fff; font-size:22px; font-family:'Varela Round'; }
-footer .foot-content > ul li a { color: #cccccc;  font-family: 'Varela Round'; font-size:14px; line-height:28px; }
-footer  p	 { color: #cccccc;  font-family: 'Varela Round'; font-size:14px; line-height:28px; }
+footer .foot-content > h4 { color:#fff; font-size:22px; font-family:'Montserrat'; }
+footer .foot-content > ul li a { color: #cccccc;  font-family: 'Montserrat'; font-size:14px; line-height:28px; }
+footer  p	 { color: #cccccc;  font-family: 'Montserrat'; font-size:14px; line-height:28px; }
 footer .footer-bottom > p {  margin: 0;}
 footer .foot-logo {  padding-top: 20px;}
 footer hr { border-color:#484848; }
@@ -207,7 +208,7 @@ header nav.navbar-default .navbar-nav>li>a:hover {
 }
 
 .people-quote {
-  font-family: "Droid Serif";
+  font-family: "Montserrat";
   font-size: 18px;
   margin: 30px auto;
 }
