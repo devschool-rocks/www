@@ -27,11 +27,13 @@ hack reactor, general assembly, devschool, become a web developer
   </div>
 <%- end %>
 
+
 	<h1 class="text-center">
 	  <div class="top">We are a different kind of online coding bootcamp</div>
 	  <div class="middle">where you learn by coding side by side</div>
 	  <div class="middle">with an expert mentor, building real applications you actually care about!</div>
 	</h1>
+
 
 <div class="section section-below-fold">
   <div class="container">
@@ -50,73 +52,15 @@ hack reactor, general assembly, devschool, become a web developer
 
     <div class="col-md-10 col-md-offset-1 text-center">
       <div class="jumbotron">
-        <h2>At Devschool we teach you to code and build applications, but we go much further,
-          we help you practice for interviews, help you solve code challenges, and we even
-          let you in on tricks and secrets that make you more direable by employers!</h2>
+        <h2>Yes, Devschool teaches you to code, but we go much further than that!
+          We help you practice for interviews, solve code challenges, and we don't
+          stop working to get you a job until you are hired - that is our promise to you.</h2>
       </div>
     </div>
   </div>
 </div>
 
-<div class="holder">
-  <div class="section different-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <h2>And now for something completely different..</h2>
-          <p>Instead of wasting your time pairing with another student who is
-          just as lost as you (like they do at the Big Box Bootcamps),
-          you will spend your time with an expert mentor, one on
-          one, side by side, tackling the problems you face as you build the
-          software YOU want to build.</p>
-
-          <h3>Enjoy a 100% organic education!</h3>
-          <p>At Devschool, our curriculum is 100% ORGANIC and crafted
-          specifically to meet the goals of the student. What does organic mean
-          in this context? WE ARE SO GLAD YOU ASKED!</p>
-
-          <p>Why slog away countless hours building applications you have no 
-          emotional attachment to, while following a boring STATIC set of step A,
-          step B, step C, when you can build something that you are actually 
-          interested in?</p>
-
-          <p>There is no one size fits all programmer education, because it is a vastly
-          huge topic with as many branches as the tree of life. Instead of trying
-          to master everything we encourage you to pick an area and dive in deep!</p>
-
-          <h3>Education shouldn't be cookie-cutter</h3>
-          <p>Want to build highly interactive web application with amazing
-          interfaces? My friend, meet your new friend, JavaScript! At Devschool you will learn the
-          actual language, and then once you have gotten the language down, 
-          we will start teaching you a framework to go with
-          it!</p>
-          <p>Or maybe you want to build data driven, giant sites like facebook,
-          in that case you will need to learn Ruby and we can help you every step of
-          the way, from writing web scrapers to building social networks.</p>
-          <p>Or maybe you don't want to be a web developer, maybe you want to be one
-          of those, you know, real programmers! You want to eat object orient programming
-          for breakfast and have a nice lunch in algorithms and data structures and
-          you still have room for a functional programming dinner!</p>
-          <p>JavaScript and Ruby
-          are both capable of everything I just described and we even encourage you to
-          go "off the reservation" in your later studies and pick up something like
-          Clojure or Haskell!</p>
-
-          <h3>Que the bells and Rocky music..</h3>
-          <p>No matter what path you choose, your Instructor will with you side by side,
-          every step of the way, keeping you motivated, helping you stay unstuck, and
-          teaching you how to dig through the vast amounts of information out there for
-          the jewels that save time!</p>
-	  <p>And we don't stop at just teaching you, our Instructors are all students
-          in the art of MOTIVATION and the program itself includes listening to audio
-          books in your spare time to help expand your mind and make you more attractive
-          to employers, and to help you unlock doors of potential you never guessed you
-          had!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render 'reviews' %>
 
 <div class="holder">
   <div class="section pricing-section">
@@ -174,7 +118,35 @@ hack reactor, general assembly, devschool, become a web developer
   </div>
 </div>
 
-<%= render 'reviews' %>
+<div class="holder">
+  <div class="section underdog-section">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>It's David vs. Goliath, and we aren't playing!</h2>
+
+        <p>The Big Box Bootcamps want to take your money and then shove you into
+        a shoebox like a cheap airline packing as many of its flyers into a square
+        inch as possible.</p>
+        <p>They seem to think this is a gold rush, and that you are the miners,
+        coming far and wide, filled with dreams of getting a piece of your own, and
+        that it is their job to sell you shovels, wheelbarrows, burros and mercury
+        for 3x a fair amount.</p>
+
+        <h3>Devschool is here to fight on your side!</h3>
+
+        <p>Devschool was <strong>founded by developers and engineers</strong>, not MBAs who
+        are on a money-grab. As new programmers, you are our new Brothers and Sisters
+        and we are fiercely protective of our own, this is one of the many reasons why
+        we are priced at about $5k.</p>
+        <p>We feel anyone should be able to learn how to code, and this
+        is a reasonable amount that anyone with some drive can save up in 
+        order to change their lives.</p>
+        <p>Our program is for EVERYONE with a good attitude and a deep desire 
+        to learn and help others. Not just for the privileged few.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="holder">
   <div class="section skills-section">
@@ -321,6 +293,66 @@ hack reactor, general assembly, devschool, become a web developer
 </div>
 
 <div class="holder">
+  <div class="section different-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h2>And now for something completely different..</h2>
+          <p>Instead of wasting your time pairing with another student who is
+          just as lost as you (like they do at the Big Box Bootcamps),
+          you will spend your time with an expert mentor, one on
+          one, side by side, tackling the problems you face as you build the
+          software YOU want to build.</p>
+
+          <h3>Enjoy a 100% organic education!</h3>
+          <p>At Devschool, our curriculum is 100% ORGANIC and crafted
+          specifically to meet the goals of the student. What does organic mean
+          in this context? WE ARE SO GLAD YOU ASKED!</p>
+
+          <p>Why slog away countless hours building applications you have no 
+          emotional attachment to, while following a boring STATIC set of step A,
+          step B, step C, when you can build something that you are actually 
+          interested in?</p>
+
+          <p>There is no one size fits all programmer education, because it is a vastly
+          huge topic with as many branches as the tree of life. Instead of trying
+          to master everything we encourage you to pick an area and dive in deep!</p>
+
+          <h3>Education shouldn't be cookie-cutter</h3>
+          <p>Want to build highly interactive web application with amazing
+          interfaces? My friend, meet your new friend, JavaScript! At Devschool you will learn the
+          actual language, and then once you have gotten the language down, 
+          we will start teaching you a framework to go with
+          it!</p>
+          <p>Or maybe you want to build data driven, giant sites like facebook,
+          in that case you will need to learn Ruby and we can help you every step of
+          the way, from writing web scrapers to building social networks.</p>
+          <p>Or maybe you don't want to be a web developer, maybe you want to be one
+          of those, you know, real programmers! You want to eat object orient programming
+          for breakfast and have a nice lunch in algorithms and data structures and
+          you still have room for a functional programming dinner!</p>
+          <p>JavaScript and Ruby
+          are both capable of everything I just described and we even encourage you to
+          go "off the reservation" in your later studies and pick up something like
+          Clojure or Haskell!</p>
+
+          <h3>Que the bells and Rocky music..</h3>
+          <p>No matter what path you choose, your Instructor will with you side by side,
+          every step of the way, keeping you motivated, helping you stay unstuck, and
+          teaching you how to dig through the vast amounts of information out there for
+          the jewels that save time!</p>
+	  <p>And we don't stop at just teaching you, our Instructors are all students
+          in the art of MOTIVATION and the program itself includes listening to audio
+          books in your spare time to help expand your mind and make you more attractive
+          to employers, and to help you unlock doors of potential you never guessed you
+          had!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="holder">
   <div class="section partnership-section">
     <div class="container">
       <div class="col-md-10 col-md-offset-1 text-center">
@@ -420,36 +452,6 @@ hack reactor, general assembly, devschool, become a web developer
 
         <%= image_tag('slack-screenshot.png', class: "img-responsive") %>
 
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="holder">
-  <div class="section underdog-section">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <h2>It's David vs. Goliath, and we aren't playing!</h2>
-
-        <p>The Big Box Bootcamps want to take your money and then shove you into
-        a shoebox like a cheap airline packing as many of its flyers into a square
-        inch as possible.</p>
-        <p>They seem to think this is a gold rush, and that you are the miners,
-        coming far and wide, filled with dreams of getting a piece of your own, and
-        that it is their job to sell you shovels, wheelbarrows, burros and mercury
-        for 3x a fair amount.</p>
-
-        <h3>Devschool is here to fight on your side!</h3>
-
-        <p>Devschool was <strong>founded by developers and engineers</strong>, not MBAs who
-        are on a money-grab. As new programmers, you are our new Brothers and Sisters
-        and we are fiercely protective of our own, this is one of the many reasons why
-        we are priced at about $5k.</p>
-        <p>We feel anyone should be able to learn how to code, and this
-        is a reasonable amount that anyone with some drive can save up in 
-        order to change their lives.</p>
-        <p>Our program is for EVERYONE with a good attitude and a deep desire 
-        to learn and help others. Not just for the privileged few.</p>
       </div>
     </div>
   </div>
