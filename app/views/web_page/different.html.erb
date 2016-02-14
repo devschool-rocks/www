@@ -28,11 +28,11 @@ hack reactor, general assembly, devschool, become a web developer
   </div>
 <%- end %>
 
-        <h1 class="text-center">
-          <div class="top">A different kind of online coding school</div>
-          <div class="middle">where you learn by building software</div>
-          <div class="bottom">side by side with an expert mentor, not a webpage checklist!</div>
-        </h1>
+<h1 class="text-center">
+  <div class="top">A different kind of online coding school</div>
+  <div class="middle">where you learn by building software</div>
+  <div class="bottom">side by side with an expert mentor, not a webpage checklist!</div>
+</h1>
 
 <div class="holder">
   <div class="section different-section">
@@ -87,7 +87,19 @@ hack reactor, general assembly, devschool, become a web developer
           anyone with less than ten years at a skill has any business teaching what they
           know. In order to teach you must first have learned, and then put that learning
           into practice, failed a bunch, and then learned some more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<%= render 'squeeze_open_group' %>
+
+<div class="holder">
+  <div class="section different-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
           <h2>We provide job preperation services</h2>
 
           <p>We do mock interviews over skype with our Students to help prepare them for
@@ -120,10 +132,12 @@ hack reactor, general assembly, devschool, become a web developer
           so called "competition". We actually care and are invested in our Students' for
           far more than just their money!</p>
 
-          <p>Learn more about our <a href="/coding-bootcamp">online coding bootcamp program</a>!</p>
-
+          <p>Learn more about our <a href="/coding-bootcamp">online coding bootcamp program</a>
+          or start today by requesting your free devschool preview below!</p>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<%= render 'get_started' %>
