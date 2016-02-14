@@ -55,18 +55,15 @@ header .navbar { background-color: rgba(0,0,0,0.5); border: none;  margin-bottom
 
 header .header-top { position: absolute;  z-index: 111;  width: 100%;}
 header .carousel-content-panel {  bottom: 150px; position: absolute; width:100%; left:0;}
-header  h1 {
+h1 {
 font-family: "Monda";
-color: #ffffff;  
+color: #000;  
 letter-spacing: 2px; }
-header  h1 .top { 
-text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+h1 .top { 
 font-size: 2em;  font-weight: 500; margin:0; text-transform:uppercase;}
-header  h1 .middle {   
-text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+h1 .middle {   
 font-size: 1.2em;  font-weight: 500; margin:0; text-transform:uppercase;}
-header  h1 .bottom {  
-text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+h1 .bottom {  
 margin-bottom: 10%; font-size: 1em;  
 font-weight: 300;text-transform:uppercase; }
 header .carousel-content-panel .btn-banner  { color:#ffffff;  font-family: "Varela Round";  font-weight: 500; background: #EC2D33;

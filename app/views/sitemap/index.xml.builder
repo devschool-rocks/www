@@ -6,23 +6,11 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
   end
 
   xml.url do
-    xml.loc "https://devschool.rocks/coding-bootcamp/who"
+    xml.loc "https://devschool.rocks/coding-bootcamp/terms"
   end
 
   xml.url do
-    xml.loc "https://devschool.rocks/coding-bootcamp/price"
-  end
-
-  xml.url do
-    xml.loc "https://devschool.rocks/coding-bootcamp/apply"
-  end
-
-  xml.url do
-    xml.loc "https://devschool.rocks/partnerships/ngo-program"
-  end
-
-  xml.url do
-    xml.loc "https://devschool.rocks/partnerships/new-story"
+    xml.loc "https://devschool.rocks/coding-school/different"
   end
 
 end

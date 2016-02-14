@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   match "/partnerships/new-story"=> "web_page#new_story",  via: :get,   as: :new_story
   match "/gift-claimed"=> "web_page#gift_claimed",  via: :get,   as: :gift_claimed
 
+
+  match "/coding-school/different"      => "web_page#different",   via: :get,  as: :different
+
   resources :free_gifts, only: %i[create]
 
   get "/sitemap", controller: :sitemap, action: :index
