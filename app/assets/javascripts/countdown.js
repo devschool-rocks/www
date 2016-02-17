@@ -78,7 +78,7 @@ $(document).ready(function() {
   $('#countdown_dashboard').countDown({
     targetDate: {
       'day':   d.getDate()+1,
-      'month': d.getMonth()+1,
+      'month': 3,
       'year':  d.getYear()+1900,
       'hour':  0,
       'min':   0,
