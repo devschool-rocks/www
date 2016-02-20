@@ -72,11 +72,18 @@ header .carousel-content-panel .btn-banner  { color:#ffffff;  font-family: "Mont
   border-radius: 2px;
   padding: 16px 32px;
 font-size: 22px;}
-header .btn.btn-apply {  border: 1px solid #EC2D33 ;  
-padding: 7px 16px; border-radius:0px; 
-background: rgba(0,0,0,0.4); 
-font-size: 16px; 
-font-weight: 700 !important; }
+header .btn.btn-apply {
+  border: 2px solid #EC2D33;  
+  padding: 7px 16px; border-radius:0px; 
+  background: rgba(0,0,0,0.4); 
+  font-size: 16px; 
+  font-weight: 700 !important;
+  text-shadow: none !important;
+}
+header .btn.btn-apply:hover {
+  background: #EC2D33 !important; 
+  text-shadow: none !important;
+}
 header .container-fluid { padding:0; }
 /*holder*/
 .holder {  margin-top: -65px;}
@@ -245,7 +252,11 @@ header nav.navbar-default .navbar-nav>li>a:hover {
   display: flex;
   align-items: center;
 }
+ul.nav.navbar-nav li {
+  font-weight: 400 !important;
+  text-shadow: none !important;
+}
 
-ul.nav.navbar-nav.navbar-right li.last {
-  margin-right: 1em;
+ul.nav.navbar-nav.navbar-right li a.last {
+  margin-right: 1.5em;
 }
