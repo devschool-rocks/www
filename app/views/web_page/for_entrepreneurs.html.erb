@@ -1,0 +1,87 @@
+<%- content_for(:title) do %>
+Want to build and LAUNCH your app? Let us bootstrap YOU!
+<%- end %>
+
+<%- content_for(:description) do %>
+Devschool can fast track entrepreneurs, helping them prototype their applications 
+quickly and getting MVPs up you can code and extend yourself
+<%- end %>
+
+<%- content_for(:canonical) do %>
+https://devschool.rocks/online-coding-bootcamp/for-entrepreneurs
+<%- end %>
+
+<%- content_for(:keyword_tags) do %>
+coding bootcamp for entrepreneurs, build your app, learn to build your own applications,
+how to build you own sites, how to build your own business apps
+<%- end %>
+
+<%- content_for(:header) do %>
+  <div class="header-bottom">
+    <img src="<%= asset_path("banner_#{(1..6).to_a.sample}.jpg") %>" width="100%" class="center-block box">
+    <div class="container">
+      <div class="carousel-content-panel text-center">
+        <h2>build and launch your own dreams</h2>
+      </div>
+    </div>
+  </div>
+<%- end %>
+
+<h1 class="text-center">
+  <div class="top">Get to market a lot faster</div>
+  <div class="middle">By learning to build your own apps</div>
+  <div class="bottom">Knowing tech can be your secret weapon to launch great ideas quickly</div>
+</h1>
+
+
+<div class="holder">
+  <div class="form section blue entrepreneur-section">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>If you are going to make money from tech</h2>
+
+        <p>It is important that you have at least enough development
+        knowledge to be dangerous. You will have a much better idea of what
+        your tech sub-contractors are up to, how long things take to build
+        and what problems rise during the process.</p>
+
+        <p>You will learn how to be agile and to pivot when needed and how
+        to build minimum viable products. You will also get the inside scoop
+        on things like SEO, data scraping and mining, and upcoming tech.</p>
+
+        <p>All of this will become weaponry for your arsenal and will help 
+        you launch products and services in less time, with far less 
+        budget, and you will have a better understanding of the data.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="section entrepreneur-section">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h3>Life on the fast-track</h3>
+        <p>As an Entrepreneur you can enroll as a normal student, and tell us that
+        your goal is to build apps fast and to prototype your ideas and get them up
+        on the web. We will give you the fast track idea genius version of the course!</p>
+
+        <p>You want to build stuff and not try to get CS degree and we understand that.
+        Devschool in fact, was founded and bootstrapped and kick-started by its founder,
+        Jim - and he was only able to do it because every line of code that needed coding
+        was coded by him!</p>
+
+        <p>Your Instructor will narrow your focus to the tools you need to realize your
+        dreams and give you the tools to succeed. And as someone wanting to change the 
+        world, you can appreciate having the right palette and tool-set to do so!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+    <h2 class="text-center">Check out our online coding bootcamp to learn more about how to 
+    <a href="/coding-bootcamp">get started today!</a></h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'squeeze_open_group' %>

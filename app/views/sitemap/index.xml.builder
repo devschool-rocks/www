@@ -13,4 +13,8 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
     xml.loc "https://devschool.rocks/coding-school/different"
   end
 
+  xml.url do
+    xml.loc "https://devschool.rocks/online-coding-bootcamp/for-entrepreneurs"
+  end
+
 end

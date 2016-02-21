@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
 
   match "/coding-school/different"      => "web_page#different",   via: :get,  as: :different
+  match "/online-coding-bootcamp/for-entrepreneurs" => "web_page#for_entrepreneurs",   via: :get,  as: :entrepreneurs
 
   resources :free_gifts, only: %i[create]
 
