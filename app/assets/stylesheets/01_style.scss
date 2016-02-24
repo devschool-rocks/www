@@ -119,13 +119,24 @@ header .container-fluid { padding:0; }
 .holder .form-text .btn.btn-squeeze, .btn.btn-apply-submit {  background: #363636; font-family:'Montserrat'; font-weight:400; font-size:18px; color:#fff; border-radius:0px; margin:20px 0;}
 .holder .tool-icon-text.sp {  padding: 15px 41px;}
 .holder .faq-folder { padding: 25px 0 35px; }
-.holder .panel-group {  margin-bottom: 0;}
+.holder .panel-group {  margin-bottom: 1px;}
 .holder .panel-heading h4 {  color: #fff;  font-family: "Nunito";  font-size: 16px;  font-weight: 400;}
-.panel-default > .panel-heading {  background-color: #ff4147;  border-color: #ff4147;  color: #fff; font-size:16px;}
-.panel-default > .panel-heading {  background-image: none;  background-repeat: repeat-x;}
-.panel-heading {  border-bottom: 1px solid transparent;  border-top-left-radius: 0;  border-top-right-radius: 0;  padding: 10px 15px;	}
+.panel-default > .panel-heading {
+  background-color: #4A97EC;
+  border-color: #4086D4;
+  color: #fff;
+  font-size: 16px;
+}
+.panel-title h4 {
+  margin-left: 1em;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+      border-top-color: transparent;
+    }
 .panel i {  padding-top: 12px;}
 .panel .col-sm-10.col-xs-10 span {  padding: 15px 20px 0 0; font-size:17px;}
+.panel-body { margin: 2em; }
 .panel-body span {  color: #f00;  font-size: 20px;  padding-right: 10px;}
 .btn-primary a { color: white; text-decoration: underline; }
 .form-holder h2, .form-holder h3 { color: white; margin-bottom: 32px; }
